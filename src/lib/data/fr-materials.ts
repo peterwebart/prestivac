@@ -31,6 +31,187 @@ export type FrMaterialGuide = {
 
 export const FR_MATERIALS: FrMaterialGuide[] = [
   {
+    slug: "poussiere-de-papier",
+    name: "Poussière de papier",
+    group: "Poussières de papier et emballage",
+    metaTitle: "La poussière de papier est-elle combustible ? Fibres et conversion",
+    metaDescription:
+      "La poussière de papier et les fibres de cellulose issues de la coupe, du refendage et de la conversion sont combustibles. Dangers en usine et récupération sécuritaire.",
+    intro:
+      "Oui. Le papier est de la cellulose, et la poussière fine produite par la coupe, le refendage, le rainage et l'empilage est une poussière organique combustible. Elle est légère, elle voyage, et elle se dépose sur l'acier en hauteur loin de l'endroit où elle a été créée.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible (cellulose)" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G (poussière combustible non conductrice)" },
+      { label: "Où elle est produite", value: "Coupe, refendage, rainage, pliage, empilage" },
+      { label: "Norme applicable", value: "NFPA 660 (regroupant l'ancienne NFPA 664)" },
+    ],
+    overview: [
+      "Parce que la poussière de papier paraît anodine, elle est souvent balayée ou soufflée. Les deux méthodes déplacent le combustible au lieu de le retirer, et le soufflage met un nuage combustible dans un local qui contient déjà des moteurs d'entraînement, des éléments chauffants et de l'électricité statique.",
+      "Dans les usines de conversion, l'amidon des adhésifs ajoute une seconde fraction combustible, plus fine que la fibre elle-même.",
+    ],
+    risksHeading: "Ce qui compte avec la poussière de papier",
+    risks: [
+    "Fibre de cellulose combustible, produite à chaque opération mécanique.",
+    "Accumulation sur l'acier en hauteur, les rebords et le dessus des conduits.",
+    "Tassement dans les carters de machines et les enceintes d'entraînement.",
+    "Amidon des adhésifs ajoutant une fraction plus fine en conversion.",
+    "Électricité statique dans le travail de matière sèche.",
+    "Volume important dans les lignes à grande vitesse.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé dans les zones de conversion.",
+    "Nettoyage à fréquence définie de l'acier en hauteur, des conduits et des carters.",
+    "Rallonges pour atteindre les poutres et le dessus des conduits.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de papier est-elle combustible ?",
+        answer:
+          "Oui. Le papier est de la cellulose, et la poussière fine produite par la coupe, le refendage, le rainage et l'empilage est une poussière organique combustible. La NFPA 660 s'applique, ayant regroupé les dispositions auparavant contenues dans la NFPA 664 pour la cellulose.",
+      },
+      {
+        question: "Pourquoi la poussière fine compte-t-elle plus que les retailles ?",
+        answer:
+          "Parce que la granulométrie détermine le comportement. Les retailles et les chutes ne se mettent pas en suspension ; la poussière fine de coupe et de refendage le fait, et c'est le nuage en suspension qui peut déflagrer.",
+      },
+      {
+        question: "Où s'accumule-t-elle ?",
+        answer:
+          "Sur l'acier en hauteur, les rebords, le dessus des conduits et à l'intérieur des carters de machines. Ce sont les surfaces que personne n'inspecte depuis le plancher, et ce sont celles qui alimentent un événement secondaire.",
+      },
+      {
+        question: "L'amidon des adhésifs change-t-il le danger ?",
+        answer:
+          "Il ajoute une seconde fraction combustible plus fine que la fibre. Une usine de conversion utilisant des adhésifs à base d'amidon devrait faire évaluer les deux fractions plutôt que la fibre seule.",
+      },
+    ],
+    enPath: "/materials/paper-dust",
+  },
+  {
+    slug: "poussiere-de-cuir",
+    name: "Poussière de cuir",
+    group: "Poussières textiles",
+    metaTitle: "La poussière de cuir est-elle combustible ? Ponçage et finition",
+    metaDescription:
+      "La poussière de cuir issue du ponçage, du parage et de la finition est une poussière organique combustible, et les résidus de tannage peuvent ajouter des préoccupations chimiques.",
+    intro:
+      "Oui. Le cuir est une matière organique et sa poussière — produite par le ponçage, le parage, le refendage et la finition — est combustible. Les résidus du tannage peuvent ajouter des préoccupations chimiques à ce qui semblerait être une simple poussière de fibres.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G (poussière combustible non conductrice)" },
+      { label: "Où elle est produite", value: "Ponçage, parage, refendage, finition" },
+      { label: "Facteur additionnel", value: "Résidus de tannage et de finition" },
+    ],
+    overview: [
+      "La poussière de cuir est fine et légère, et elle se dépose largement dans les ateliers de maroquinerie et de chaussure. Le ponçage produit la fraction qui compte.",
+      "Les procédés de tannage laissent des résidus chimiques dans la matière — le chrome trivalent est courant en tannage au chrome. Ce n'est pas la même chose que le chrome hexavalent, mais cela justifie de connaître la composition de son stock plutôt que de la présumer.",
+    ],
+    risksHeading: "Ce qui compte avec la poussière de cuir",
+    risks: [
+    "Poussière organique combustible produite au ponçage et au parage.",
+    "Résidus de tannage et de finition présents dans la matière.",
+    "Accumulation en hauteur de la fraction fine.",
+    "Charges statiques dans le travail de matière sèche.",
+    "Exposition respiratoire à une poussière fine mixte.",
+    "Composition variable selon le procédé de tannage.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Captation à la source aux postes de ponçage et de parage.",
+    "Élimination du soufflage à l'air comprimé.",
+    "Vérification de la composition du stock auprès du fournisseur.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de cuir est-elle combustible ?",
+        answer:
+          "Oui. Le cuir est une matière organique et sa poussière, produite par le ponçage, le parage, le refendage et la finition, est une poussière organique combustible qui s'accumule sur les surfaces en hauteur comme les autres poussières de fibres.",
+      },
+      {
+        question: "Les résidus de tannage sont-ils un problème ?",
+        answer:
+          "Ils justifient de connaître la composition de son stock. Le tannage au chrome laisse du chrome trivalent, bien moins dangereux que le chrome hexavalent, mais les agents de finition varient et la seule façon de savoir est de demander au fournisseur.",
+      },
+      {
+        question: "Où la poussière de cuir s'accumule-t-elle ?",
+        answer:
+          "Autour des postes de ponçage et de parage, puis sur les surfaces en hauteur et dans les carters de machines. Le ponçage produit la fraction la plus fine et la plus facilement mise en suspension.",
+      },
+      {
+        question: "Comment la récupérer ?",
+        answer:
+          "Par captation à la source aux postes de travail et récupération sous vide avec filtration retenue. Le soufflage à l'air comprimé est à exclure : il disperse une poussière fine de composition mixte dans la zone respiratoire.",
+      },
+    ],
+    enPath: "/materials/leather-dust",
+  },
+  {
+    slug: "poussiere-de-cacao",
+    name: "Poussière de cacao",
+    group: "Poussières alimentaires",
+    metaTitle: "La poussière de cacao est-elle combustible ? Chocolaterie",
+    metaDescription:
+      "La poudre de cacao est une poussière organique combustible, fine et facilement mise en suspension. Dangers en chocolaterie et récupération sécuritaire.",
+    intro:
+      "Oui. La poudre de cacao est une poussière organique fine et combustible, et elle se met en suspension avec une facilité notable — au versement, au tamisage, au mélange et à l'ensachage.",
+    facts: [
+      { label: "Type de matière", value: "Poudre organique combustible fine" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G (poussière combustible non conductrice)" },
+      { label: "Où elle est produite", value: "Broyage, pressage, tamisage, mélange, ensachage" },
+      { label: "Norme applicable", value: "NFPA 660 (regroupant l'ancienne NFPA 61)" },
+    ],
+    overview: [
+      "Le cacao contient de la matière grasse, ce qui le rend collant en présence d'humidité et de chaleur. La poudre peut donc s'agglomérer sur les surfaces et dans les conduits, ce qui complique le retrait et masque l'ampleur d'une accumulation.",
+      "Comme pour les autres poussières alimentaires, l'accumulation en hauteur constitue le combustible d'un événement secondaire, et le nettoyage doit satisfaire les registres de salubrité autant que la prévention des incendies.",
+    ],
+    risksHeading: "Ce qui compte avec le cacao",
+    risks: [
+    "Poudre fine et combustible se mettant facilement en suspension.",
+    "Teneur en matière grasse rendant la poudre collante et difficile à retirer.",
+    "Agglomération dans les conduits, masquant l'ampleur des accumulations.",
+    "Accumulation en hauteur de la fraction fine.",
+    "Chaleur des opérations de broyage et de pressage.",
+    "Chevauchement avec les exigences de salubrité alimentaire.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction fine.",
+    "Récupération humide là où la poudre s'est agglomérée.",
+    "Élimination du soufflage à l'air comprimé.",
+    "Nettoyage à fréquence définie des conduits et des surfaces en hauteur.",
+    "Un seul passage documenté servant au programme de poussières et à la salubrité.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de cacao est-elle combustible ?",
+        answer:
+          "Oui. La poudre de cacao est une poussière organique fine et combustible qui se met en suspension avec une facilité notable au versement, au tamisage, au mélange et à l'ensachage. La NFPA 660 s'applique.",
+      },
+      {
+        question: "La matière grasse du cacao change-t-elle le nettoyage ?",
+        answer:
+          "Oui. La teneur en matière grasse rend la poudre collante en présence d'humidité et de chaleur, de sorte qu'elle s'agglomère sur les surfaces et dans les conduits. Cela complique le retrait et peut masquer l'ampleur réelle d'une accumulation ; une récupération humide est parfois appropriée pour la matière agglomérée.",
+      },
+      {
+        question: "Où le danger se concentre-t-il en chocolaterie ?",
+        answer:
+          "Au broyage et au pressage, qui produisent la fraction la plus fine et ajoutent de la chaleur, puis dans les conduits et sur les surfaces en hauteur où la poudre se dépose hors de vue.",
+      },
+      {
+        question: "Peut-on souffler les conduits ?",
+        answer:
+          "Non. Le soufflage met une poudre combustible fine en suspension et la déplace vers des surfaces moins accessibles. La récupération sous vide la retire du bâtiment.",
+      },
+    ],
+    enPath: "/materials/cocoa-dust",
+  },
+
+  {
     slug: "poussiere-de-zirconium",
     name: "Poussière de zirconium",
     group: "Poussières métalliques",

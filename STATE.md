@@ -5,7 +5,7 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 261 built, all 200
+- **Routes:** 264 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
@@ -19,7 +19,7 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
-poussieres-et-matieres hub, plus **30 material guides**.
+poussieres-et-matieres hub, plus **33 material guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -29,12 +29,12 @@ resolving page counterparts, reciprocal hreflang via `LOCALE_PAIRS`.
 amidon · farine · aluminium · cadmium · soufre · silice · métallique-combustible
 · bois · fer-et-acier · cuivre · charbon · titane · magnésium · plomb · sucre ·
 grain · béton-et-ciment · zinc · caoutchouc · coke · noir-de-carbone · café ·
-graphite · tabac · chrome · nickel · coton · zirconium · lithium · liège
+graphite · tabac · chrome · nickel · coton · zirconium · lithium · liège · papier ·
+cuir · cacao
 
 ### Remaining to translate
-17 material guides (cuir, papier, cacao, maïs, étain, cobalt, manganèse,
-vermiculite, thé, calcium, arsenic, béryllium, laiton-bronze, malt, amiante,
-fibre-de-carbone, plastique) · 21 application guides · 38 industry guides ·
+14 material guides (maïs, étain, cobalt, manganèse, vermiculite, thé, calcium,
+arsenic, béryllium, laiton-bronze, malt, amiante, fibre-de-carbone, plastique) · 21 application guides · 38 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**
@@ -62,6 +62,12 @@ leads, not fire).
 3. **French safety review** — gates the 11 compliance pages.
 4. **Footer stays English on /fr** — needs a client component or per-locale
    layout. Known, documented, not bodged.
+
+## Language switcher — settled
+ONE switcher only, in the navbar. It resolves to the counterpart page via
+LOCALE_PAIRS and falls back to the locale home for untranslated pages. The locale
+banner that used to sit in src/app/fr/layout.tsx was REMOVED — it duplicated the
+navbar switcher and only linked to the English home. Do not reintroduce it.
 
 ## Recovery after a container reset
 `bash bin/recover.sh` — unzips, installs pnpm at the pinned 10.15.1, installs

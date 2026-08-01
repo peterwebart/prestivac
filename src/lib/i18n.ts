@@ -101,6 +101,9 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/materials/zirconium-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-zirconium" },
   { en: "/materials/lithium-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-lithium" },
   { en: "/materials/cork-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-liege" },
+  { en: "/materials/paper-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-papier" },
+  { en: "/materials/leather-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-cuir" },
+  { en: "/materials/cocoa-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-cacao" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
