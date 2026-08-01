@@ -122,6 +122,12 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/applications/welding-cleanup", fr: "/fr/applications/nettoyage-de-soudage" },
   { en: "/applications/grinding-dust", fr: "/fr/applications/poussiere-de-meulage" },
   { en: "/applications/sanding", fr: "/fr/applications/poncage" },
+  { en: "/applications/cnc-machining", fr: "/fr/applications/usinage-cnc" },
+  { en: "/applications/powder-coating", fr: "/fr/applications/thermolaquage" },
+  { en: "/applications/abrasive-blasting", fr: "/fr/applications/decapage-abrasif" },
+  { en: "/applications/deburring", fr: "/fr/applications/ebavurage" },
+  { en: "/applications/silo-cleaning", fr: "/fr/applications/nettoyage-de-silo" },
+  { en: "/applications/spill-cleanup", fr: "/fr/applications/nettoyage-de-deversements" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */

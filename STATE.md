@@ -5,12 +5,12 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 282 built, all 200
+- **Routes:** 288 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
 ## English site — COMPLETE
-47 material guides · 18 application guides · 38 industry guides · 16 case studies
+47 material guides · 10 application guides · 38 industry guides · 16 case studies
 · 11 compliance pages · 8 guide articles · 6 resource guides · 11 product
 categories · 44 model pages · 112 pages with FAQPage schema.
 
@@ -20,7 +20,7 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
 poussieres-et-matieres hub, applications hub, plus **all 47 material guides** and
-**3 application guides**.
+**9 application guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -31,7 +31,7 @@ All 47 English material guides have a French counterpart, verified 47/47 for
 reciprocal hreflang and FAQPage schema, with zero unpaired English guides.
 
 ### Remaining to translate
-18 application guides · 38 industry guides ·
+10 application guides · 38 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**
@@ -54,6 +54,12 @@ Non-negotiable examples now translated: amiante (licensed abatement, HEPA is
 equipment WITHIN that framework and never a substitute, friability is the hinge,
 presume asbestos until tested), vermiculite (do NOT disturb, test first, DIY
 removal explicitly refused). Never soften either of these.
+
+Application guides carry HONEST LIMITS that must not be oversold: silo cleaning
+makes confined-space permits RARE, not unnecessary, and bulk bridging is a
+mechanical dislodging job that vacuum recovery does not replace. Powder coating
+reuse is conditional on a clean stream. Abrasive blasting waste inherits the
+regulatory status of whatever was stripped.
 
 Other worked examples: zirconium (wet handling is prevention, NOT extinction — a
 burning fire is still Class D), lithium (reacts with air moisture, so the
