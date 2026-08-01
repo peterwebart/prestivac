@@ -5,7 +5,7 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 268 built, all 200
+- **Routes:** 278 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
@@ -19,22 +19,18 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
-poussieres-et-matieres hub, plus **37 material guides**.
+poussieres-et-matieres hub, plus **all 47 material guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
 resolving page counterparts, reciprocal hreflang via `LOCALE_PAIRS`.
 
-### Translated guides (30)
-amidon · farine · aluminium · cadmium · soufre · silice · métallique-combustible
-· bois · fer-et-acier · cuivre · charbon · titane · magnésium · plomb · sucre ·
-grain · béton-et-ciment · zinc · caoutchouc · coke · noir-de-carbone · café ·
-graphite · tabac · chrome · nickel · coton · zirconium · lithium · liège · papier ·
-cuir · cacao · amiante · vermiculite · béryllium · fibre-de-carbone
+### Material guides — COMPLETE
+All 47 English material guides have a French counterpart, verified 47/47 for
+reciprocal hreflang and FAQPage schema, with zero unpaired English guides.
 
 ### Remaining to translate
-10 material guides (maïs, étain, cobalt, manganèse, thé, calcium, arsenic,
-laiton-bronze, malt, plastique) · 21 application guides · 38 industry guides ·
+21 application guides · 38 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**

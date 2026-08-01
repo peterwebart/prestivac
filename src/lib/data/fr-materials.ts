@@ -31,6 +31,604 @@ export type FrMaterialGuide = {
 
 export const FR_MATERIALS: FrMaterialGuide[] = [
   {
+    slug: "poussiere-de-calcium",
+    name: "Poussière de calcium",
+    group: "Poussières métalliques",
+    metaTitle: "Le calcium est-il inflammable ? Métal, carbonate et chaux distingués",
+    metaDescription:
+      "Le calcium métallique est réactif et s'enflamme comme fines en réagissant avec l'eau. Le carbonate de calcium ne brûle pas du tout. Savoir lequel on manipule est la première question.",
+    intro:
+      "Cela dépend entièrement duquel il s'agit, et la distinction est la plus importante de cette page. Le calcium métallique est un métal alcalino-terreux réactif qui s'enflamme facilement sous forme de fines, brûle à haute température et réagit avec l'eau en libérant de l'hydrogène.",
+    facts: [
+      { label: "Calcium métallique", value: "Réactif — s'enflamme comme fines, réagit avec l'eau en libérant de l'hydrogène" },
+      { label: "Carbonate de calcium", value: "Minéral non combustible — calcaire, craie, marbre broyé : ne brûle pas" },
+      { label: "Chaux vive et chaux hydratée", value: "Caustiques, réaction exothermique avec l'eau, mais non combustibles" },
+      { label: "Première question à poser", value: "Duquel s'agit-il ? La réponse change tout" },
+    ],
+    overview: [
+      "Le carbonate de calcium — ce que la plupart des gens rencontrent sous forme de calcaire, de craie ou de marbre broyé — est un minéral non combustible qui ne brûle pas du tout. L'oxyde et l'hydroxyde de calcium, soit la chaux vive et la chaux hydratée, sont caustiques et réagissent de façon exothermique avec l'eau, mais ne sont pas des combustibles.",
+      "Autrement dit, trois matières portant le même nom se comportent de trois manières différentes. Identifier laquelle circule dans votre procédé précède toute décision d'équipement.",
+    ],
+    risksHeading: "Trois matières, trois comportements",
+    risks: [
+    "Calcium métallique : fines inflammables, réaction avec l'eau libérant de l'hydrogène.",
+    "Carbonate de calcium : non combustible, aucun danger de déflagration.",
+    "Chaux vive et hydratée : caustiques, exothermiques à l'eau, non combustibles.",
+    "Confusion fréquente entre les trois, menant à un équipement inadapté.",
+    "Caustiques : les chaux causent des brûlures et des lésions oculaires.",
+    "Poussière minérale respirable pour les formes non combustibles.",
+    ],
+    solutions: [
+    "Identifier la forme exacte avant de choisir un équipement — c'est la décision déterminante.",
+    "Pour le calcium métallique : équipement conducteur, mis à la terre, dispositions de Classe D.",
+    "Pour le carbonate : récupération à filtration retenue, danger sanitaire et non incendie.",
+    "Pour les chaux : protection contre les brûlures et prudence avec toute méthode humide.",
+    "Élimination du soufflage à l'air comprimé dans tous les cas.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "Le calcium est-il inflammable ?",
+        answer:
+          "Le calcium métallique l'est : c'est un métal alcalino-terreux réactif qui s'enflamme facilement sous forme de fines, brûle à haute température et réagit avec l'eau en libérant de l'hydrogène. Le carbonate de calcium, que la plupart des gens rencontrent sous forme de calcaire, de craie ou de marbre broyé, est un minéral non combustible qui ne brûle pas du tout. L'oxyde et l'hydroxyde de calcium — chaux vive et chaux hydratée — sont caustiques et réagissent de façon exothermique avec l'eau, mais ne sont pas des combustibles. Savoir duquel il s'agit précède toute décision.",
+      },
+      {
+        question: "Le carbonate de calcium est-il combustible ?",
+        answer:
+          "Non. C'est un minéral et il ne brûle pas. Son danger est sanitaire — poussière minérale respirable — et non un danger de déflagration, quelle que soit sa finesse.",
+      },
+      {
+        question: "La chaux est-elle dangereuse ?",
+        answer:
+          "La chaux vive et la chaux hydratée sont caustiques : elles causent des brûlures cutanées et des lésions oculaires, et la chaux vive réagit de façon exothermique avec l'eau. Elles ne sont pas des combustibles, mais elles exigent une protection et de la prudence avec toute méthode humide.",
+      },
+      {
+        question: "Comment savoir quelle forme circule dans mon procédé ?",
+        answer:
+          "En demandant la fiche de données de sécurité et la composition au fournisseur. Les trois formes portent le mot calcium et se comportent de trois manières différentes ; deviner mène à un équipement inadapté.",
+      },
+    ],
+    enPath: "/materials/calcium-dust",
+  },
+  {
+    slug: "poussiere-d-arsenic",
+    name: "Poussière d'arsenic",
+    group: "Poussières métalliques",
+    metaTitle: "L'arsenic est-il toxique ? Norme OSHA et cancérogénicité",
+    metaDescription:
+      "L'arsenic inorganique et ses composés sont classés cancérogènes pour l'humain par le CIRC et régis par la norme OSHA 29 CFR 1910.1018.",
+    intro:
+      "Oui. L'arsenic inorganique et ses composés sont classés cancérogènes pour l'humain par le CIRC, avec des cancers du poumon et de la peau parmi les effets documentés, en plus d'effets systémiques liés à l'exposition chronique.",
+    facts: [
+      { label: "Type de matière", value: "Métalloïde toxique — poussière et composés" },
+      { label: "Classification", value: "Cancérogène pour l'humain (CIRC)" },
+      { label: "Norme applicable", value: "OSHA arsenic inorganique, 29 CFR 1910.1018" },
+      { label: "Danger dominant", value: "Toxicité, non la combustibilité" },
+    ],
+    overview: [
+      "OSHA régit l'arsenic inorganique par une norme substance dédiée, le 29 CFR 1910.1018, qui impose la surveillance de l'exposition, des zones réglementées et des exigences d'hygiène.",
+      "L'arsenic n'est ni recherché ni redouté comme combustible : c'est la toxicité qui détermine entièrement la manière de le manipuler et de nettoyer. Là où une norme substance s'applique, le balayage à sec n'est pas une méthode acceptable.",
+    ],
+    risksHeading: "Pourquoi l'arsenic exige des méthodes contenues",
+    risks: [
+    "Cancérogène pour l'humain, avec cancers du poumon et de la peau documentés.",
+    "Effets systémiques liés à l'exposition chronique.",
+    "Norme substance dédiée imposant surveillance, zones réglementées et hygiène.",
+    "Sources industrielles : métallurgie, semi-conducteurs, pigments, traitement du bois ancien.",
+    "Balayage à sec exclu là où la norme s'applique.",
+    "Contamination croisée par les vêtements et les outils.",
+    ],
+    solutions: [
+    "Récupération par aspirateur à filtration absolue HEPA 99,99 %.",
+    "Élimination du balayage à sec et du soufflage à l'air comprimé.",
+    "Collecte et élimination scellées, traitées comme un déchet réglementé.",
+    "Équipement dédié maintenu dans la zone réglementée et étiqueté.",
+    "Exigences d'hygiène soutenues : lavage, vêtements de travail, pas de repas en zone.",
+    "Consignation des fréquences de nettoyage dans le dossier de conformité.",
+    ],
+    faqs: [
+      {
+        question: "L'arsenic est-il toxique ?",
+        answer:
+          "Oui. L'arsenic inorganique et ses composés sont classés cancérogènes pour l'humain par le CIRC, avec des cancers du poumon et de la peau parmi les effets documentés, en plus d'effets systémiques liés à l'exposition chronique. OSHA le régit par une norme substance dédiée, le 29 CFR 1910.1018, qui impose la surveillance de l'exposition, des zones réglementées et des exigences d'hygiène.",
+      },
+      {
+        question: "L'arsenic est-il inflammable ?",
+        answer:
+          "L'arsenic n'est ni recherché ni redouté comme combustible. C'est la toxicité qui détermine entièrement la manière de le manipuler, et présenter l'arsenic d'abord comme un danger d'incendie passerait à côté de l'essentiel.",
+      },
+      {
+        question: "Où l'arsenic apparaît-il en industrie ?",
+        answer:
+          "En métallurgie et en affinage, dans la fabrication de semi-conducteurs, dans certains pigments et verres, et dans le bois traité ancien. Le travail sur bois traité au CCA est une source d'exposition souvent négligée.",
+      },
+      {
+        question: "Peut-on balayer la poussière d'arsenic ?",
+        answer:
+          "Non. Là où une norme substance s'applique, le balayage à sec remet un cancérogène réglementé en suspension et n'est pas une méthode acceptable. La récupération à filtration HEPA avec élimination scellée est le contrôle attendu.",
+      },
+    ],
+    enPath: "/materials/arsenic-dust",
+  },
+  {
+    slug: "poussiere-de-laiton-et-de-bronze",
+    name: "Poussière de laiton et de bronze",
+    group: "Poussières métalliques",
+    metaTitle: "Le laiton est-il toxique ? Plomb, zinc et fièvre des fondeurs",
+    metaDescription:
+      "Le laiton et le bronze sont des alliages de cuivre : les dangers viennent de ce à quoi le cuivre est allié — zinc, et souvent plomb dans les laitons de décolletage.",
+    intro:
+      "La question mérite d'être reformulée : le laiton et le bronze sont des alliages de cuivre, et les dangers viennent de ce à quoi le cuivre est allié plutôt que du cuivre lui-même.",
+    facts: [
+      { label: "Type de matière", value: "Alliages de cuivre — poussière métallique conductrice" },
+      { label: "Danger 1", value: "Zinc : fumées d'oxyde de zinc au travail à chaud, fièvre des fondeurs" },
+      { label: "Danger 2", value: "Plomb : fréquent dans les laitons de décolletage, régi par 1910.1025" },
+      { label: "Démarche", value: "Demander la composition de l'alliage avant d'usiner un stock inconnu" },
+    ],
+    overview: [
+      "Le zinc du laiton produit des fumées d'oxyde de zinc lorsqu'il est travaillé à chaud, cause classique de la fièvre des fondeurs. Et plusieurs laitons de décolletage contiennent du plomb, ajouté pour l'usinabilité, régi par sa propre norme OSHA avec une limite d'exposition basse.",
+      "C'est pourquoi la démarche pratique est de demander la composition de l'alliage au fournisseur avant d'usiner un stock inconnu : rien dans l'apparence d'une pièce en laiton n'indique si elle contient du plomb.",
+    ],
+    risksHeading: "Ce que contient réellement votre laiton",
+    risks: [
+    "Zinc : fumées d'oxyde de zinc au travail à chaud, causant la fièvre des fondeurs.",
+    "Plomb fréquent dans les laitons de décolletage, avec une limite d'exposition basse.",
+    "Rien dans l'apparence d'une pièce n'indique sa teneur en plomb.",
+    "Conductivité de la poussière métallique, pertinente pour l'équipement électrique.",
+    "Copeaux et particules abrasifs pour l'équipement de récupération.",
+    "Valeur de rebut perdue par mélange des alliages.",
+    ],
+    solutions: [
+    "Vérification de la composition de l'alliage auprès du fournisseur avant usinage.",
+    "Filtration absolue HEPA 99,99 % là où du plomb peut être présent.",
+    "Captation à la source au travail à chaud, pour les fumées d'oxyde de zinc.",
+    "Équipement dédié et collecte scellée là où la norme sur le plomb s'applique.",
+    "Ségrégation par alliage pour préserver la valeur de rebut.",
+    "Élimination du soufflage à l'air comprimé aux machines-outils.",
+    ],
+    faqs: [
+      {
+        question: "Le laiton est-il toxique ?",
+        answer:
+          "La question mérite d'être reformulée : le laiton et le bronze sont des alliages de cuivre, et les dangers viennent de ce à quoi le cuivre est allié. Le zinc produit des fumées d'oxyde de zinc au travail à chaud, cause classique de la fièvre des fondeurs, et plusieurs laitons de décolletage contiennent du plomb, régi par sa propre norme OSHA avec une limite d'exposition basse. Demandez la composition de l'alliage avant d'usiner un stock inconnu.",
+      },
+      {
+        question: "Comment savoir si un laiton contient du plomb ?",
+        answer:
+          "En demandant la composition au fournisseur. Rien dans l'apparence d'une pièce en laiton ne l'indique, et le plomb est ajouté précisément parce qu'il améliore l'usinabilité — donc il est courant dans les laitons de décolletage.",
+      },
+      {
+        question: "Qu'est-ce que la fièvre des fondeurs ?",
+        answer:
+          "Une réaction aiguë de type grippal causée par l'inhalation de fumées métalliques, le plus souvent des fumées d'oxyde de zinc issues du travail à chaud du laiton ou du soudage d'acier galvanisé. Elle se résorbe, mais elle signale une surexposition et devrait entraîner une révision des contrôles.",
+      },
+      {
+        question: "Comment récupérer la poussière de laiton ?",
+        answer:
+          "Avec une filtration absolue là où du plomb peut être présent, une captation à la source au travail à chaud, un équipement conducteur et mis à la terre, et une ségrégation par alliage. Là où la norme sur le plomb s'applique, l'équipement doit être dédié et la collecte scellée.",
+      },
+    ],
+    enPath: "/materials/brass-bronze-dust",
+  },
+  {
+    slug: "poussiere-de-the",
+    name: "Poussière de thé",
+    group: "Poussières alimentaires",
+    metaTitle: "La poussière de thé est-elle combustible ? Conditionnement",
+    metaDescription:
+      "La poussière et les fines de thé produites par le broyage, le tamisage et l'ensachage sont une poussière organique combustible.",
+    intro:
+      "Oui. Le thé est une matière végétale séchée, et la poussière et les fines produites par le broyage, le tamisage, le mélange et l'ensachage constituent une poussière organique combustible.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible (matière végétale séchée)" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G" },
+      { label: "Où elle est produite", value: "Broyage, tamisage, mélange, ensachage" },
+      { label: "Norme applicable", value: "NFPA 660 (regroupant l'ancienne NFPA 61)" },
+    ],
+    overview: [
+      "Le thé est extrêmement léger, et ses fines se mettent en suspension et voyagent facilement dans les conduits d'aspiration et sur les surfaces en hauteur. Les lignes d'ensachage à grande vitesse produisent la fraction la plus fine.",
+      "Comme pour les autres poussières alimentaires, le nettoyage doit satisfaire les registres de salubrité autant que la prévention des incendies, ce qu'un seul passage documenté peut accomplir.",
+    ],
+    risksHeading: "Ce qui compte avec le thé",
+    risks: [
+    "Poussière organique combustible produite au broyage et à l'ensachage.",
+    "Légèreté extrême : les fines voyagent dans les conduits et se déposent en hauteur.",
+    "Lignes d'ensachage à grande vitesse produisant la fraction la plus fine.",
+    "Accumulation hors de vue dans les conduits d'aspiration.",
+    "Charges statiques dans le travail de matière sèche.",
+    "Chevauchement avec les exigences de salubrité alimentaire.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé, qui met la poussière en suspension.",
+    "Nettoyage à fréquence définie des surfaces en hauteur et des carters de machines.",
+    "Retrait de la matière récupérée du bâtiment plutôt que de la laisser sur place.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de thé est-elle combustible ?",
+        answer:
+          "Oui. Le thé est une matière végétale séchée, et la poussière et les fines produites par le broyage, le tamisage, le mélange et l'ensachage constituent une poussière organique combustible. La NFPA 660 s'applique.",
+      },
+      {
+        question: "Où s'accumule la poussière de thé ?",
+        answer:
+          "Dans les conduits d'aspiration et sur les surfaces en hauteur, parce que les fines de thé sont extrêmement légères et voyagent facilement. Les lignes d'ensachage à grande vitesse en produisent le plus.",
+      },
+      {
+        question: "Peut-on souffler les lignes d'ensachage ?",
+        answer:
+          "Non. Le soufflage met une poussière combustible légère en suspension et la déplace vers des conduits et des surfaces en hauteur difficiles d'accès. La récupération sous vide la retire du bâtiment.",
+      },
+      {
+        question: "Un seul nettoyage peut-il servir aux deux exigences ?",
+        answer:
+          "Oui, et c'est l'approche efficace : un passage documenté avec un appareil à filtration retenue sert à la fois le programme de poussières combustibles et les registres de salubrité alimentaire.",
+      },
+    ],
+    enPath: "/materials/tea-dust",
+  },
+  {
+    slug: "poussiere-de-malt",
+    name: "Poussière de malt",
+    group: "Poussières agricoles",
+    metaTitle: "La poussière de malt est-elle combustible ? Brasserie et distillerie",
+    metaDescription:
+      "La poussière de malt issue du concassage, du transport et du brassage est une poussière organique combustible riche en amidon.",
+    intro:
+      "Oui. Le malt est de l'orge germée et séchée, et sa poussière — produite au concassage, au transport et au dépoussiérage — est une poussière organique combustible riche en amidon.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible riche en amidon" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G" },
+      { label: "Où elle est produite", value: "Réception, transport, concassage, dépoussiérage" },
+      { label: "Norme applicable", value: "NFPA 660 (regroupant l'ancienne NFPA 61)" },
+    ],
+    overview: [
+      "Le concassage est l'opération qui compte : il produit la fraction fine dans une enceinte contenant des rouleaux, des entraînements et des roulements — la géométrie classique d'une déflagration.",
+      "Les brasseries et distilleries de toutes tailles manipulent du malt, et la salle de concassage est souvent l'espace le moins bien ventilé du bâtiment. Le contrôle des accumulations y est la priorité.",
+    ],
+    risksHeading: "Ce qui compte en brasserie et distillerie",
+    risks: [
+    "Poussière combustible riche en amidon produite au concassage.",
+    "Enceinte de concassage combinant matière fine, confinement et entraînements.",
+    "Salle de concassage souvent la moins bien ventilée du bâtiment.",
+    "Accumulation en hauteur et dans les conduits de transport.",
+    "Charges statiques dans le transport pneumatique du malt.",
+    "Chevauchement avec les exigences de salubrité et de qualité.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé, qui met la poussière en suspension.",
+    "Nettoyage à fréquence définie des surfaces en hauteur et des carters de machines.",
+    "Retrait de la matière récupérée du bâtiment plutôt que de la laisser sur place.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de malt est-elle combustible ?",
+        answer:
+          "Oui. Le malt est de l'orge germée et séchée, et sa poussière — produite au concassage, au transport et au dépoussiérage — est une poussière organique combustible riche en amidon. La NFPA 660 s'applique.",
+      },
+      {
+        question: "Où le danger se concentre-t-il ?",
+        answer:
+          "À la salle de concassage. Le concassage produit la fraction fine dans une enceinte contenant des rouleaux, des entraînements et des roulements, et c'est souvent l'espace le moins bien ventilé du bâtiment.",
+      },
+      {
+        question: "Les petites brasseries sont-elles concernées ?",
+        answer:
+          "Le mécanisme ne dépend pas de l'échelle : une salle de concassage confinée avec de la poussière de malt accumulée et des entraînements mécaniques réunit les mêmes conditions dans un local plus petit. Le contrôle des accumulations reste la mesure principale.",
+      },
+      {
+        question: "Peut-on balayer la poussière de malt ?",
+        answer:
+          "Le balayage soulève les fines et laisse les accumulations en hauteur et dans les conduits. La récupération sous vide avec un appareil mis à la terre et à filtration retenue les retire du bâtiment.",
+      },
+    ],
+    enPath: "/materials/malt-dust",
+  },
+
+  {
+    slug: "poussiere-de-mais",
+    name: "Poussière de maïs",
+    group: "Poussières agricoles",
+    metaTitle: "La poussière de maïs est-elle combustible ? Meunerie et amidonnerie",
+    metaDescription:
+      "La poussière de maïs est une poussière organique combustible riche en amidon. Dangers en meunerie sèche et humide et récupération sécuritaire.",
+    intro:
+      "Oui. Le maïs est une céréale et sa poussière est une poussière organique combustible, riche en amidon — l'amidon de maïs étant précisément la matière servant de référence dans les essais d'explosibilité en laboratoire.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible riche en amidon" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G" },
+      { label: "Où elle est produite", value: "Réception, séchage, mouture, tamisage, ensachage" },
+      { label: "Norme applicable", value: "NFPA 660 (regroupant l'ancienne NFPA 61)" },
+    ],
+    overview: [
+      "La transformation du maïs combine les dangers du grain et de l'amidon : la manutention produit de la poussière de céréale aux points de transfert, et la mouture produit une fraction fine d'amidon qui se met en suspension avec une facilité remarquable.",
+      "Les séchoirs ajoutent une chaleur soutenue à proximité de matière fine accumulée, ce qui fait du contrôle des accumulations autour de ces zones la priorité.",
+    ],
+    risksHeading: "Ce qui compte avec le maïs",
+    risks: [
+    "Poussière de céréale combustible produite à chaque transfert.",
+    "Fraction fine d'amidon issue de la mouture, très facilement mise en suspension.",
+    "Chaleur soutenue des séchoirs près de matière accumulée.",
+    "Accumulation en hauteur alimentant un événement secondaire.",
+    "Combustion lente possible dans la matière accumulée.",
+    "Chevauchement avec les exigences de salubrité alimentaire.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé, qui met la poussière en suspension.",
+    "Nettoyage à fréquence définie des surfaces en hauteur et des carters de machines.",
+    "Retrait de la matière récupérée du bâtiment plutôt que de la laisser sur place.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de maïs est-elle combustible ?",
+        answer:
+          "Oui. Le maïs est une céréale et sa poussière est une poussière organique combustible riche en amidon. L'amidon de maïs est d'ailleurs la matière servant de référence dans les essais d'explosibilité en laboratoire, ce qui donne une idée du comportement de la fraction fine. La NFPA 660 s'applique.",
+      },
+      {
+        question: "Où le danger se concentre-t-il en amidonnerie ?",
+        answer:
+          "Au broyage et à la mouture, qui produisent la fraction la plus fine, et autour des séchoirs, qui ajoutent une chaleur soutenue près de matière accumulée. Les points de transfert produisent la poussière de céréale plus grossière.",
+      },
+      {
+        question: "Peut-on balayer la poussière de maïs ?",
+        answer:
+          "Le balayage soulève les fines et n'atteint pas les accumulations en hauteur qui alimentent réellement un événement secondaire. La récupération sous vide avec filtration retenue les retire du bâtiment.",
+      },
+      {
+        question: "Faut-il une filtration absolue ?",
+        answer:
+          "Elle sert deux fins : retenir la fraction respirable pendant le nettoyage, et éviter de renvoyer la poussière fine dans un local alimentaire que l'on vient de nettoyer.",
+      },
+    ],
+    enPath: "/materials/corn-dust",
+  },
+  {
+    slug: "poussiere-d-etain",
+    name: "Poussière d'étain",
+    group: "Poussières métalliques",
+    metaTitle: "L'étain est-il inflammable ? Poussière et fumées d'étain",
+    metaDescription:
+      "L'étain massif ne s'enflamme pas facilement ; la poudre fine est évaluée comme une poussière métallique combustible. Fumées de brasage et récupération.",
+    intro:
+      "L'étain massif ne s'enflamme pas facilement. La poudre d'étain finement divisée est évaluée comme une poussière métallique combustible et doit être caractérisée par essai plutôt que présumée inerte, comme pour les autres métaux moins réactifs.",
+    facts: [
+      { label: "Type de matière", value: "Poussière métallique conductrice, réactivité plus faible" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe E" },
+      { label: "Sources courantes", value: "Brasage, alliages, revêtements d'étamage" },
+      { label: "Danger courant", value: "Fumées de brasage et particules respirables" },
+    ],
+    overview: [
+      "L'étain se situe à l'extrémité moins réactive des poussières métalliques, mais la poussière reste conductrice — une accumulation peut ponter des connexions électriques.",
+      "En pratique, la préoccupation dominante est le brasage : les fumées de brasage contiennent des particules métalliques et, selon le flux utilisé, des produits de décomposition irritants. Les alliages de brasage anciens peuvent contenir du plomb, régi par sa propre norme.",
+    ],
+    risksHeading: "Ce qui compte avec l'étain",
+    risks: [
+    "Conductivité de la poussière métallique, pertinente pour l'équipement électrique.",
+    "Combustibilité de la poudre fine à caractériser par essai.",
+    "Fumées de brasage contenant particules métalliques et produits de flux.",
+    "Alliages de brasage anciens pouvant contenir du plomb.",
+    "Particules respirables générées par l'usinage et le polissage.",
+    "Valeur de rebut perdue par mélange des métaux.",
+    ],
+    solutions: [
+    "Équipement de récupération conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % là où des particules respirables sont générées.",
+    "Captation à la source au meulage, au soudage et à l'usinage.",
+    "Ségrégation par métal pour préserver la valeur de rebut et simplifier l'élimination.",
+    "Élimination du soufflage à l'air comprimé aux machines-outils.",
+    "Retrait rapide de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "L'étain est-il inflammable ?",
+        answer:
+          "L'étain massif ne s'enflamme pas facilement. La poudre d'étain finement divisée est évaluée comme une poussière métallique combustible et doit être caractérisée par essai plutôt que présumée inerte. La poussière demeure par ailleurs conductrice, ce qui compte pour l'équipement électrique.",
+      },
+      {
+        question: "Le brasage à l'étain est-il dangereux ?",
+        answer:
+          "Les fumées de brasage contiennent des particules métalliques et, selon le flux, des produits de décomposition irritants. La captation à la source au poste de brasage est le contrôle attendu.",
+      },
+      {
+        question: "Les alliages de brasage contiennent-ils du plomb ?",
+        answer:
+          "Les alliages anciens en contiennent fréquemment, et le plomb est régi par sa propre norme OSHA avec une limite d'exposition basse. Vérifier la composition avant de travailler un stock inconnu est la démarche prudente.",
+      },
+      {
+        question: "Comment récupérer la poussière d'étain ?",
+        answer:
+          "Par aspiration avec un circuit conducteur et mis à la terre, et une filtration retenue là où des particules respirables sont produites. Le soufflage à l'air comprimé est à exclure aux machines-outils.",
+      },
+    ],
+    enPath: "/materials/tin-dust",
+  },
+  {
+    slug: "poussiere-de-cobalt",
+    name: "Poussière de cobalt",
+    group: "Poussières métalliques",
+    metaTitle: "La poussière de cobalt est-elle combustible ? Métaux durs et poumon",
+    metaDescription:
+      "La poudre fine de cobalt est une poussière métallique combustible, mais le cobalt est surtout contrôlé pour sa toxicité — la maladie pulmonaire des métaux durs et une classification cancérogène.",
+    intro:
+      "La poudre fine de cobalt est évaluée comme une poussière métallique combustible. Mais comme pour le nickel, la raison dominante du contrôle strict de la poussière de cobalt est la toxicité plutôt que l'incendie.",
+    facts: [
+      { label: "Type de matière", value: "Poussière métallique conductrice, également toxique" },
+      { label: "Danger dominant", value: "Toxicité respiratoire — maladie pulmonaire des métaux durs" },
+      { label: "Classification", value: "Les composés du cobalt font l'objet d'une classification cancérogène" },
+      { label: "Secteurs", value: "Métaux durs et carbures, batteries, superalliages, pigments" },
+    ],
+    overview: [
+      "Le cobalt est un sensibilisant respiratoire et cutané, et l'exposition à la poussière de métaux durs — cobalt combiné au carbure de tungstène — est associée à la maladie pulmonaire des métaux durs, une fibrose interstitielle documentée dans les ateliers d'affûtage et de fabrication de carbures.",
+      "C'est le meulage et l'affûtage des outils en carbure qui produisent l'exposition la plus courante, souvent dans de petits ateliers où la captation à la source n'est pas systématique.",
+    ],
+    risksHeading: "Ce qui compte avec le cobalt",
+    risks: [
+    "Maladie pulmonaire des métaux durs associée à la poussière cobalt-carbure.",
+    "Sensibilisation respiratoire et cutanée documentée.",
+    "Classification cancérogène des composés du cobalt.",
+    "Exposition concentrée à l'affûtage et au meulage des carbures.",
+    "Conductivité de la poussière métallique.",
+    "Combustibilité de la poudre fine à caractériser par essai.",
+    ],
+    solutions: [
+    "Équipement de récupération conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % là où des particules respirables sont générées.",
+    "Captation à la source au meulage, au soudage et à l'usinage.",
+    "Ségrégation par métal pour préserver la valeur de rebut et simplifier l'élimination.",
+    "Élimination du soufflage à l'air comprimé aux machines-outils.",
+    "Retrait rapide de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de cobalt est-elle combustible ?",
+        answer:
+          "La poudre fine de cobalt est évaluée comme une poussière métallique combustible et devrait être testée plutôt que présumée. Mais la raison dominante du contrôle strict de la poussière de cobalt est la toxicité : le cobalt est un sensibilisant respiratoire et cutané, ses composés font l'objet d'une classification cancérogène, et la poussière de métaux durs est associée à la maladie pulmonaire des métaux durs.",
+      },
+      {
+        question: "Qu'est-ce que la maladie pulmonaire des métaux durs ?",
+        answer:
+          "Une fibrose interstitielle associée à l'exposition à la poussière de métaux durs — cobalt combiné au carbure de tungstène. Elle est documentée dans les ateliers d'affûtage et de fabrication de carbures, où le meulage produit une poussière fine mixte.",
+      },
+      {
+        question: "Où l'exposition se produit-elle ?",
+        answer:
+          "Principalement à l'affûtage et au meulage des outils en carbure, souvent dans de petits ateliers où la captation à la source n'est pas systématique. La fabrication de batteries et de superalliages constitue l'autre voie.",
+      },
+      {
+        question: "Faut-il une filtration absolue pour le cobalt ?",
+        answer:
+          "C'est la toxicité qui gouverne la spécification. Pour une poussière associée à une fibrose pulmonaire et portant une classification cancérogène, une filtration retenue est la fonction même de l'appareil.",
+      },
+    ],
+    enPath: "/materials/cobalt-dust",
+  },
+  {
+    slug: "poussiere-de-manganese",
+    name: "Poussière de manganèse",
+    group: "Poussières métalliques",
+    metaTitle: "Pourquoi le manganèse est-il préoccupant ? Manganisme et soudage",
+    metaDescription:
+      "Le manganèse est une neurotoxine : la surexposition chronique cause le manganisme, une atteinte neurologique. Il est présent dans presque tous les aciers et consommables de soudage.",
+    intro:
+      "Le manganèse est une neurotoxine, et la surexposition chronique cause le manganisme — une atteinte neurologique sérieuse dont le tableau ressemble à celui de la maladie de Parkinson.",
+    facts: [
+      { label: "Type de matière", value: "Poussière et fumées métalliques neurotoxiques" },
+      { label: "Maladie associée", value: "Manganisme — atteinte neurologique évoquant la maladie de Parkinson" },
+      { label: "Voie d'exposition principale", value: "Fumées de soudage" },
+      { label: "Particularité", value: "Présent dans presque tous les aciers et consommables de soudage" },
+    ],
+    overview: [
+      "Ce qui rend le manganèse particulièrement important à gérer est sa banalité : il est présent dans presque tous les aciers et dans les consommables de soudage, de sorte que l'exposition est courante dans le travail des métaux ordinaire plutôt que confinée à un procédé exotique.",
+      "L'exposition survient principalement par les fumées de soudage. Un atelier qui soude de l'acier au quotidien génère des fumées contenant du manganèse, que rien dans la description du travail ne signale.",
+    ],
+    risksHeading: "Pourquoi le manganèse mérite attention",
+    risks: [
+    "Neurotoxine : la surexposition chronique cause le manganisme.",
+    "Tableau clinique évoquant la maladie de Parkinson, avec atteinte durable.",
+    "Présent dans presque tous les aciers et consommables de soudage.",
+    "Exposition courante dans le travail des métaux ordinaire, non exotique.",
+    "Fumées de soudage comme voie dominante.",
+    "Rien dans la description du travail ne signale la présence de manganèse.",
+    ],
+    solutions: [
+    "Captation à la source au soudage : le contrôle le plus efficace pour les fumées.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Récupération sous vide des accumulations plutôt que balayage.",
+    "Ventilation adéquate des postes de soudage, en complément de la captation.",
+    "Élimination du soufflage à l'air comprimé dans les ateliers de soudage.",
+    "Consignation des fréquences de nettoyage dans le programme d'hygiène industrielle.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi le manganèse est-il préoccupant ?",
+        answer:
+          "Le manganèse est une neurotoxine, et la surexposition chronique cause le manganisme — une atteinte neurologique sérieuse dont le tableau ressemble à celui de la maladie de Parkinson. Ce qui le rend particulièrement important à gérer est sa banalité : il est présent dans presque tous les aciers et consommables de soudage, de sorte que l'exposition est courante dans le travail des métaux ordinaire plutôt que confinée à un procédé exotique.",
+      },
+      {
+        question: "Comment l'exposition se produit-elle ?",
+        answer:
+          "Principalement par les fumées de soudage. Un atelier qui soude de l'acier au quotidien génère des fumées contenant du manganèse, et rien dans la description du travail ne le signale. Le meulage et l'usinage produisent également des particules.",
+      },
+      {
+        question: "Le manganèse est-il combustible ?",
+        answer:
+          "La poudre fine de manganèse est évaluée comme une poussière métallique combustible et devrait être testée. Mais la raison du contrôle est neurologique : c'est l'exposition, non l'incendie, qui détermine les mesures.",
+      },
+      {
+        question: "Quel est le contrôle le plus efficace ?",
+        answer:
+          "La captation à la source au poste de soudage, complétée par une ventilation adéquate. Pour les accumulations, la récupération sous vide avec filtration retenue plutôt que le balayage, qui remet la fraction respirable en suspension.",
+      },
+    ],
+    enPath: "/materials/manganese-dust",
+  },
+  {
+    slug: "poussiere-de-plastique",
+    name: "Poussière de plastique",
+    group: "Poussières de plastiques et caoutchouc",
+    metaTitle: "La poussière de plastique est-elle combustible ? Fumée toxique",
+    metaDescription:
+      "La plupart des poussières de polymères sont combustibles et relèvent du Groupe G. Les plastiques en combustion produisent une fumée dense et toxique.",
+    intro:
+      "Oui. La plupart des poussières de polymères sont des poussières organiques combustibles, produites par le meulage, la coupe, le perçage et la granulation, et elles relèvent de la Classe II, Groupe G comme poussières non conductrices.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible (polymères)" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G (poussière non conductrice)" },
+      { label: "Où elle est produite", value: "Meulage, coupe, perçage, granulation, recyclage" },
+      { label: "Danger additionnel", value: "Fumée dense et toxique en cas de combustion" },
+    ],
+    overview: [
+      "Les plastiques en combustion produisent également une fumée dense et toxique, de sorte qu'un incendie de poussière de plastique crée un problème d'atmosphère en plus du feu lui-même.",
+      "La variété des polymères impose de caractériser sa propre matière : la granulométrie, les charges et les additifs ignifuges changent le comportement, et une résine ne se comporte pas comme une autre.",
+    ],
+    risksHeading: "Ce qui compte avec la poussière de plastique",
+    risks: [
+    "Poussière organique combustible produite à chaque opération mécanique.",
+    "Fumée dense et toxique en cas de combustion, créant un problème d'atmosphère.",
+    "Comportement variable selon le polymère, les charges et les additifs.",
+    "Accumulation en hauteur de la fraction fine.",
+    "Charges statiques importantes dans les polymères secs.",
+    "Volume élevé dans les opérations de granulation et de recyclage.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur, mis à la terre et équipotentiel.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé, qui met la poussière en suspension.",
+    "Nettoyage à fréquence définie des surfaces en hauteur et des carters de machines.",
+    "Retrait de la matière récupérée du bâtiment plutôt que de la laisser sur place.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de plastique est-elle combustible ?",
+        answer:
+          "Oui. La plupart des poussières de polymères sont des poussières organiques combustibles, produites par le meulage, la coupe, le perçage et la granulation, et elles relèvent de la Classe II, Groupe G comme poussières non conductrices. Les plastiques en combustion produisent aussi une fumée dense et toxique, de sorte qu'un incendie crée un problème d'atmosphère en plus du feu.",
+      },
+      {
+        question: "Tous les plastiques se comportent-ils pareillement ?",
+        answer:
+          "Non, et c'est pourquoi il faut caractériser sa propre matière. La granulométrie, les charges minérales et les additifs ignifuges changent le comportement, de sorte qu'une résine ne se comporte pas comme une autre. L'essai porte sur la poussière réellement produite par votre procédé.",
+      },
+      {
+        question: "L'électricité statique est-elle un problème ?",
+        answer:
+          "Oui, particulièrement : les polymères secs accumulent des charges facilement dans les boyaux et le transport pneumatique. Un circuit de récupération conducteur, mis à la terre et équipotentiel n'est pas un raffinement dans ce contexte.",
+      },
+      {
+        question: "Comment récupérer la poussière de plastique ?",
+        answer:
+          "Par aspiration avec un circuit conducteur et mis à la terre, une filtration retenue, et un nettoyage à fréquence définie des surfaces en hauteur. Le soufflage à l'air comprimé met une poussière combustible chargée en suspension.",
+      },
+    ],
+    enPath: "/materials/plastic-dust",
+  },
+
+  {
     slug: "amiante",
     name: "Amiante",
     group: "Poussières minérales",

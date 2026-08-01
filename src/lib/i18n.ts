@@ -108,6 +108,16 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/materials/vermiculite-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-vermiculite" },
   { en: "/materials/beryllium-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-beryllium" },
   { en: "/materials/carbon-fiber-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-fibre-de-carbone" },
+  { en: "/materials/corn-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-mais" },
+  { en: "/materials/tin-dust", fr: "/fr/poussieres-et-matieres/poussiere-d-etain" },
+  { en: "/materials/cobalt-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-cobalt" },
+  { en: "/materials/manganese-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-manganese" },
+  { en: "/materials/plastic-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-plastique" },
+  { en: "/materials/calcium-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-calcium" },
+  { en: "/materials/arsenic-dust", fr: "/fr/poussieres-et-matieres/poussiere-d-arsenic" },
+  { en: "/materials/brass-bronze-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-laiton-et-de-bronze" },
+  { en: "/materials/tea-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-the" },
+  { en: "/materials/malt-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-malt" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
