@@ -31,6 +31,247 @@ export type FrMaterialGuide = {
 
 export const FR_MATERIALS: FrMaterialGuide[] = [
   {
+    slug: "amiante",
+    name: "Amiante",
+    group: "Poussières minérales",
+    metaTitle: "L'amiante est-il encore un risque ? Retrait par entreprise agréée",
+    metaDescription:
+      "L'amiante est un cancérogène du Groupe 1 régi par ses propres normes OSHA. Le retrait relève d'entreprises agréées sous confinement — un aspirateur HEPA est un équipement nommé dans ce cadre, jamais un substitut.",
+    intro:
+      "Oui. L'amiante demeure en place dans d'énormes quantités de bâtiments et d'équipements existants, et le risque survient lorsque cette matière est perturbée — lors de rénovations, de démolitions, d'entretien ou de dommages.",
+    facts: [
+      { label: "Type de matière", value: "Fibre minérale — cancérogène du Groupe 1 (CIRC)" },
+      { label: "Maladies associées", value: "Amiantose, cancer du poumon, mésothéliome, avec des décennies de latence" },
+      { label: "Normes applicables", value: "OSHA 29 CFR 1910.1001 et 1926.1101" },
+      { label: "Point de bascule réglementaire", value: "La friabilité — la matière qui s'effrite libère des fibres" },
+    ],
+    overview: [
+      "Le travail sur amiante friable relève d'entreprises agréées et de travailleurs accrédités, à l'intérieur d'un confinement conçu à cet effet, sous obligations de notification et d'élimination. Un aspirateur à filtration HEPA est un équipement nommé à l'intérieur de ce cadre — il n'en est jamais un substitut.",
+      "La friabilité est la charnière réglementaire : une matière qui s'effrite sous la pression de la main libère des fibres facilement et déclenche les exigences les plus strictes, alors qu'une matière liée et intacte se gère autrement. Toute matière ancienne suspecte doit être traitée comme de l'amiante jusqu'à ce qu'une analyse démontre le contraire.",
+    ],
+    risksHeading: "Ce qu'il faut comprendre avant tout",
+    risks: [
+    "Cancérogène du Groupe 1, avec amiantose, cancer du poumon et mésothéliome documentés.",
+    "Latence de plusieurs décennies : l'absence de symptôme ne signifie rien.",
+    "Le retrait est un travail agréé, non une tâche d'entretien.",
+    "La friabilité déclenche les exigences les plus strictes.",
+    "Le balayage à sec est exclu, en toutes circonstances.",
+    "Toute matière ancienne suspecte est présumée amiantée jusqu'à analyse.",
+    ],
+    solutions: [
+    "Faire analyser avant de perturber : l'identification précède toute intervention.",
+    "Confier le travail sur matière friable à une entreprise agréée sous confinement.",
+    "Aspirateur à filtration HEPA testée, comme équipement nommé à l'intérieur du cadre réglementaire.",
+    "Circuits de boyaux scellés, intègres d'un bout à l'autre à l'intérieur des barrières.",
+    "Suppression à la source pendant le travail, pratique courante et non facultative.",
+    "Élimination scellée selon les obligations applicables — jamais de balayage à sec.",
+    ],
+    faqs: [
+      {
+        question: "L'amiante est-il encore un risque aujourd'hui ?",
+        answer:
+          "Oui. L'amiante demeure en place dans d'énormes quantités de bâtiments et d'équipements existants, et le risque survient lorsque cette matière est perturbée — lors de rénovations, de démolitions, d'entretien ou de dommages. L'amiante cause l'amiantose, le cancer du poumon et le mésothéliome, avec des décennies de latence. OSHA le régit par les normes 1910.1001 et 1926.1101, et le retrait est un travail d'entreprise agréée plutôt qu'une tâche d'entretien.",
+      },
+      {
+        question: "Un aspirateur HEPA suffit-il pour l'amiante ?",
+        answer:
+          "Non, et c'est le point le plus important de cette page. Un aspirateur à filtration HEPA testée est un équipement nommé à l'intérieur du cadre réglementaire de l'amiante — il n'en est pas un substitut. Le travail sur matière friable exige une entreprise agréée, des travailleurs accrédités, un confinement conçu, et des obligations de notification et d'élimination.",
+      },
+      {
+        question: "Qu'est-ce que la friabilité et pourquoi importe-t-elle ?",
+        answer:
+          "C'est la charnière réglementaire. Une matière friable s'effrite sous la pression de la main et libère des fibres facilement, ce qui déclenche les exigences les plus strictes. Une matière non friable est liée dans une matrice intacte et se gère autrement — mais la couper, la percer ou la casser peut la rendre friable.",
+      },
+      {
+        question: "Que faire devant une matière ancienne suspecte ?",
+        answer:
+          "La traiter comme de l'amiante jusqu'à ce qu'une analyse démontre le contraire, et ne pas la perturber entre-temps. L'identification par analyse précède toute intervention ; deviner à l'œil n'est pas une méthode.",
+      },
+    ],
+    enPath: "/materials/asbestos",
+  },
+  {
+    slug: "poussiere-de-vermiculite",
+    name: "Poussière de vermiculite",
+    group: "Poussières minérales",
+    metaTitle: "La vermiculite est-elle dangereuse ? Contamination par l'amiante",
+    metaDescription:
+      "La vermiculite elle-même n'est pas de l'amiante, mais une partie de la vermiculite historique est contaminée par de l'amiante. Ne pas perturber, faire analyser, et confier le retrait à une entreprise agréée.",
+    intro:
+      "La vermiculite elle-même est un minéral qui n'est pas de l'amiante. Le problème est la contamination : une part importante de la vermiculite d'isolation posée historiquement provient d'un gisement contaminé par de l'amiante, et c'est cette contamination qui détermine la conduite à tenir.",
+    facts: [
+      { label: "Type de matière", value: "Minéral exfolié — non amiante en soi" },
+      { label: "Risque réel", value: "Contamination possible par de l'amiante selon la provenance" },
+      { label: "Conduite à tenir", value: "Ne pas perturber ; faire analyser avant toute intervention" },
+      { label: "Si contaminée", value: "Retrait par entreprise agréée sous confinement, comme pour l'amiante" },
+    ],
+    overview: [
+      "La conduite à tenir est simple à énoncer et importante à respecter : ne pas perturber la matière, faire analyser avant toute intervention, et si la contamination est confirmée, traiter le retrait comme un travail d'amiante — entreprise agréée, confinement, élimination réglementée.",
+      "Rien sur cette page ne doit être lu comme un encouragement à retirer soi-même de la vermiculite d'un grenier. L'équipement de récupération à filtration HEPA a sa place à l'intérieur d'un cadre d'abatement mené par des professionnels, non comme moyen de contourner ce cadre.",
+    ],
+    risksHeading: "Pourquoi la prudence s'impose",
+    risks: [
+    "La vermiculite n'est pas de l'amiante, mais une part de la vermiculite historique est contaminée.",
+    "La provenance détermine le risque, et elle est rarement documentée dans un bâtiment ancien.",
+    "Perturber la matière est précisément ce qui libère des fibres.",
+    "L'analyse précède l'intervention : deviner à l'œil n'est pas une méthode.",
+    "Si contaminée, le retrait relève du cadre réglementaire de l'amiante.",
+    "Le retrait par soi-même n'est pas une option acceptable.",
+    ],
+    solutions: [
+    "Ne pas perturber la matière en attendant les résultats d'analyse.",
+    "Faire analyser par un laboratoire compétent avant toute intervention.",
+    "Si contaminée, confier le retrait à une entreprise agréée sous confinement.",
+    "Aspirateur à filtration HEPA testée, comme équipement à l'intérieur du cadre d'abatement.",
+    "Élimination scellée selon les obligations applicables.",
+    "Aucun balayage à sec, aucune perturbation exploratoire.",
+    ],
+    faqs: [
+      {
+        question: "La vermiculite est-elle dangereuse ?",
+        answer:
+          "La vermiculite elle-même est un minéral qui n'est pas de l'amiante. Le risque vient de la contamination : une part importante de la vermiculite d'isolation posée historiquement provient d'un gisement contaminé par de l'amiante. La conduite à tenir est donc de ne pas perturber la matière, de faire analyser avant toute intervention, et si la contamination est confirmée, de traiter le retrait comme un travail d'amiante.",
+      },
+      {
+        question: "Peut-on retirer soi-même de la vermiculite ?",
+        answer:
+          "Non. Si la contamination par l'amiante est possible — et elle l'est pour la vermiculite d'isolation ancienne dont la provenance est inconnue — le retrait relève d'une entreprise agréée sous confinement. Un aspirateur HEPA est un équipement à l'intérieur de ce cadre, non un moyen de s'en dispenser.",
+      },
+      {
+        question: "Comment savoir si la vermiculite est contaminée ?",
+        answer:
+          "Par analyse en laboratoire, pas à l'œil. La provenance du gisement détermine le risque et elle est rarement documentée dans un bâtiment ancien, ce qui explique pourquoi la présomption de prudence s'applique jusqu'aux résultats.",
+      },
+      {
+        question: "Que faire en attendant l'analyse ?",
+        answer:
+          "Ne rien perturber. La matière intacte et non dérangée ne libère pas de fibres ; c'est la perturbation qui crée l'exposition. Éviter les greniers concernés, ne pas y entreposer d'objets, et ne pas y faire circuler d'air.",
+      },
+    ],
+    enPath: "/materials/vermiculite-dust",
+  },
+  {
+    slug: "poussiere-de-beryllium",
+    name: "Poussière de béryllium",
+    group: "Poussières métalliques",
+    metaTitle: "La poussière de béryllium est-elle dangereuse ? Sensibilisation",
+    metaDescription:
+      "Le béryllium provoque une sensibilisation immunitaire pouvant évoluer vers la bérylliose chronique, une maladie pulmonaire irréversible. Régi par la norme OSHA 29 CFR 1910.1024.",
+    intro:
+      "Oui, et de façon inhabituelle. Le béryllium provoque une réponse immunitaire chez les personnes susceptibles — la sensibilisation — qui peut évoluer vers la bérylliose chronique, une maladie pulmonaire granulomateuse irréversible.",
+    facts: [
+      { label: "Type de matière", value: "Métal toxique — poussière, fumées et composés" },
+      { label: "Mécanisme", value: "Sensibilisation à médiation immunitaire, variable selon la susceptibilité" },
+      { label: "Norme applicable", value: "OSHA béryllium, 29 CFR 1910.1024" },
+      { label: "Source la plus fréquente", value: "Alliages cuivre-béryllium, souvent non identifiés comme tels" },
+    ],
+    overview: [
+      "Le béryllium et ses composés sont également classés cancérogènes pour l'humain par le CIRC. OSHA le régit par une norme substance distincte imposant l'évaluation de l'exposition, des zones réglementées, une surveillance médicale de la sensibilisation, et des dispositions d'entretien qui excluent les méthodes sèches.",
+      "La source la plus fréquente est aussi la plus discrète : le cuivre-béryllium ne représente souvent que quelques pour cent d'un alliage, présent dans des ressorts, des connecteurs, des outils antiétincelles et des moules. Rien dans la description d'une pièce ne l'indiquera, de sorte que l'exposition survient pendant un travail que personne n'avait signalé comme du travail sur béryllium.",
+    ],
+    risksHeading: "Pourquoi le béryllium se manipule autrement",
+    risks: [
+    "Sensibilisation à médiation immunitaire : la susceptibilité varie et les faibles expositions comptent.",
+    "Bérylliose chronique irréversible et potentiellement invalidante.",
+    "Classé cancérogène pour l'humain par le CIRC.",
+    "Alliages cuivre-béryllium rarement identifiés dans la description d'une pièce.",
+    "Contamination persistante des surfaces, des outils et des vêtements.",
+    "Le changement de contenant est souvent le moment de plus forte exposition.",
+    ],
+    solutions: [
+    "Aspirateurs à filtration absolue HEPA 99,99 % dédiés à la zone réglementée et étiquetés.",
+    "Élimination complète du balayage à sec et du soufflage à l'air comprimé.",
+    "Captation à la source au meulage, à l'ébavurage et au sciage.",
+    "Changements de filtre et de contenant traités comme des procédures contrôlées, avec sacs scellés.",
+    "Vérification de la composition des alliages auprès du fournisseur avant usinage.",
+    "Consignation de chaque passage de nettoyage dans le dossier de conformité.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de béryllium est-elle dangereuse à faible concentration ?",
+        answer:
+          "Oui, et c'est ce qui la rend inhabituelle. Le béryllium provoque une réponse immunitaire appelée sensibilisation chez les personnes susceptibles, laquelle peut évoluer vers la bérylliose chronique — irréversible et potentiellement invalidante. OSHA le régit par une norme distincte, le 29 CFR 1910.1024, avec des limites d'exposition très inférieures à celles des poussières ordinaires.",
+      },
+      {
+        question: "Comment un atelier saurait-il que du béryllium est présent ?",
+        answer:
+          "Souvent il ne le saurait pas, sans demander. Les alliages cuivre-béryllium ne contiennent souvent que quelques pour cent de béryllium et apparaissent dans des ressorts, des connecteurs, des outils antiétincelles, des moules et des pièces aérospatiales. Vérifier la composition auprès du fournisseur avant d'usiner un stock inconnu est le contrôle pratique.",
+      },
+      {
+        question: "Le même aspirateur peut-il servir ailleurs dans l'usine ?",
+        answer:
+          "Non. Un appareil qui récupère une matière réglementée puis nettoie ailleurs déplace un problème de conformité vers une autre partie du bâtiment. Des appareils dédiés et étiquetés demeurant dans la zone réglementée sont la pratique attendue, et c'est habituellement la première chose qu'un vérificateur examine.",
+      },
+      {
+        question: "Le béryllium est-il aussi un danger d'incendie ?",
+        answer:
+          "Le béryllium finement divisé est évalué comme une poussière métallique combustible et devrait être testé plutôt que présumé. Mais la raison de son contrôle aussi strict est toxicologique : ce sont les limites d'exposition, non le risque d'incendie, qui déterminent comment l'accumulation doit être retirée.",
+      },
+    ],
+    enPath: "/materials/beryllium-dust",
+  },
+  {
+    slug: "poussiere-de-fibre-de-carbone",
+    name: "Poussière de fibre de carbone",
+    group: "Poussières carbonées",
+    metaTitle: "La poussière de fibre de carbone est-elle conductrice ? Composites",
+    metaDescription:
+      "La poussière de fibre de carbone est électriquement conductrice et abrasive, et les fibres respirables issues de l'usinage de composites posent un problème d'exposition distinct.",
+    intro:
+      "La poussière de fibre de carbone présente deux problèmes que l'on n'associe pas d'emblée à un composite : elle est électriquement conductrice, ce qui lui permet de ponter et de court-circuiter de l'équipement, et elle est très abrasive.",
+    facts: [
+      { label: "Type de matière", value: "Poussière carbonée conductrice et abrasive" },
+      { label: "Danger distinctif", value: "Conductivité électrique — ponte et court-circuite l'équipement" },
+      { label: "Où elle est produite", value: "Coupe, perçage, ponçage et détourage de composites" },
+      { label: "Facteur additionnel", value: "Fibres respirables et résine partiellement polymérisée" },
+    ],
+    overview: [
+      "La conductivité est le problème le plus souvent négligé : une accumulation de poussière de fibre de carbone dans une armoire électrique ou sur un tableau est un chemin conducteur, ce qui explique les pannes d'équipement apparemment inexplicables dans les ateliers de composites.",
+      "S'y ajoute l'abrasivité, qui use rapidement boyaux, tubes et surfaces de séparation d'un équipement non conçu pour cette tâche, et la question de l'exposition : l'usinage de composites libère des fibres respirables et, selon l'état de polymérisation, des résidus de résine.",
+    ],
+    risksHeading: "Ce que fait la poussière de fibre de carbone",
+    risks: [
+    "Conductivité électrique : ponte et court-circuite l'équipement et les tableaux.",
+    "Abrasivité élevée : usure rapide des boyaux, tubes et séparateurs.",
+    "Fibres respirables libérées par la coupe, le perçage et le ponçage.",
+    "Résine partiellement polymérisée selon l'état de la pièce usinée.",
+    "Accumulation fine et pénétrante, difficile à confiner.",
+    "Pannes d'équipement apparemment inexplicables, causées par la conductivité.",
+    ],
+    solutions: [
+    "Récupération par aspirateur conducteur, mis à la terre et équipotentiel, adapté aux poussières conductrices.",
+    "Filtration absolue HEPA 99,99 % pour retenir les fibres respirables.",
+    "Construction tolérante à l'abrasion et pièces d'usure remplaçables.",
+    "Captation à la source au détourage, au perçage et au ponçage.",
+    "Nettoyage prioritaire des armoires, tableaux et chemins de câbles.",
+    "Élimination du soufflage à l'air comprimé, qui disperse fibres et poussière conductrice.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de fibre de carbone est-elle conductrice ?",
+        answer:
+          "Oui, et c'est le problème le plus souvent négligé. Une accumulation dans une armoire électrique ou sur un tableau constitue un chemin conducteur susceptible de ponter des bornes, ce qui explique des pannes d'équipement apparemment inexplicables dans les ateliers de composites. C'est une raison de nettoyer les zones électriques en priorité.",
+      },
+      {
+        question: "La fibre de carbone est-elle dangereuse à respirer ?",
+        answer:
+          "L'usinage de composites libère des fibres respirables et, selon l'état de polymérisation de la pièce, des résidus de résine. Une filtration retenue pendant le nettoyage fait donc partie du contrôle d'exposition et non seulement de la propreté.",
+      },
+      {
+        question: "Pourquoi l'équipement s'use-t-il si vite ?",
+        answer:
+          "Parce que la poussière de fibre de carbone est très abrasive. Elle érode boyaux, tubes et surfaces de séparation d'un appareil qui n'a pas été construit pour cette tâche, ce qui rend une construction tolérante à l'abrasion et des pièces d'usure remplaçables plus économiques à l'usage.",
+      },
+      {
+        question: "Comment récupérer la poussière de composite ?",
+        answer:
+          "Par captation à la source au détourage, au perçage et au ponçage, avec un appareil conducteur et mis à la terre, une filtration absolue, et une construction résistant à l'abrasion. Le soufflage à l'air comprimé est particulièrement inapproprié : il projette de la poussière conductrice dans les équipements électriques.",
+      },
+    ],
+    enPath: "/materials/carbon-fiber-dust",
+  },
+
+  {
     slug: "poussiere-de-papier",
     name: "Poussière de papier",
     group: "Poussières de papier et emballage",
