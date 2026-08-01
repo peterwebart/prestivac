@@ -31,6 +31,187 @@ export type FrMaterialGuide = {
 
 export const FR_MATERIALS: FrMaterialGuide[] = [
   {
+    slug: "poussiere-de-zirconium",
+    name: "Poussière de zirconium",
+    group: "Poussières métalliques",
+    metaTitle: "Le zirconium est-il inflammable ? Particules conservées humides",
+    metaDescription:
+      "Le zirconium fin compte parmi les métaux les plus sensibles à l'inflammation — il peut s'enflammer spontanément à l'air. Les fines sont souvent conservées humides, et pourtant un feu de zirconium reste de Classe D.",
+    intro:
+      "Les particules et la poudre de zirconium comptent parmi les poussières métalliques les plus sensibles à l'inflammation. Le zirconium fin peut s'enflammer spontanément à l'air et possède une énergie d'inflammation extrêmement faible.",
+    facts: [
+      { label: "Type de matière", value: "Poussière métallique combustible extrêmement sensible" },
+      { label: "Manipulation courante", value: "Les fines sont souvent conservées humides pour réduire le risque d'inflammation" },
+      { label: "Classe d'incendie", value: "Classe D — un feu de zirconium déclaré reste dangereux à l'eau" },
+      { label: "Norme applicable", value: "NFPA 660 (regroupant l'ancienne NFPA 484)" },
+    ],
+    overview: [
+      "Cette sensibilité extrême explique pourquoi le zirconium fin est souvent conservé humide pendant la manipulation, afin de réduire le risque, et pourquoi l'accumulation à sec est précisément ce qu'il faut éviter.",
+      "Il faut toutefois distinguer deux choses qui semblent contradictoires et ne le sont pas. Conserver les fines humides est une mesure de prévention destinée à empêcher l'inflammation. Une fois un feu de zirconium déclaré, il demeure de Classe D, où l'eau est dangereuse. L'humidification réduit le risque d'amorçage ; elle n'est pas un moyen d'extinction.",
+    ],
+    risksHeading: "Ce qui rend le zirconium exceptionnel",
+    risks: [
+      "Énergie d'inflammation extrêmement faible : parmi les poussières métalliques les plus sensibles.",
+      "Inflammation spontanée possible à l'air pour les particules très fines.",
+      "Accumulation à sec : la condition à éviter en priorité.",
+      "Feu de Classe D une fois déclaré : l'eau demeure dangereuse malgré la manipulation humide.",
+      "Conductivité de la poussière métallique, pertinente pour l'équipement électrique.",
+      "Confusion possible entre prévention par humidification et extinction.",
+    ],
+    solutions: [
+      "Séparation par immersion, pour que les fines récupérées demeurent humides plutôt que de s'accumuler à sec.",
+      "Équipement de récupération conducteur, mis à la terre et équipotentiel, exempt de sources d'inflammation.",
+      "Appareils pneumatiques là où l'air comprimé est disponible et où la classification le favorise.",
+      "Ségrégation stricte du zirconium, sans mélange avec d'autres métaux.",
+      "Élimination du soufflage à l'air comprimé partout où des fines de zirconium sont produites.",
+      "Dispositions de Classe D et personnel formé : l'humidification prévient, elle n'éteint pas.",
+    ],
+    faqs: [
+      {
+        question: "Le zirconium est-il inflammable ?",
+        answer:
+          "Les particules et la poudre de zirconium comptent parmi les poussières métalliques les plus sensibles à l'inflammation : le zirconium fin peut s'enflammer spontanément à l'air et possède une énergie d'inflammation extrêmement faible. C'est l'une des matières fréquemment manipulées et entreposées humides précisément pour réduire ce risque — et pourtant elle demeure un métal combustible de Classe D, de sorte que l'eau n'est pas une réponse d'extinction une fois la matière en combustion.",
+      },
+      {
+        question: "Pourquoi conserver le zirconium humide si l'eau est dangereuse sur un feu ?",
+        answer:
+          "Ce sont deux choses distinctes. Conserver les fines humides pendant la manipulation est une mesure de prévention : elle réduit le risque d'amorçage d'un métal exceptionnellement sensible. Une fois un feu déclaré, il demeure de Classe D, où l'eau est dangereuse. L'humidification empêche le départ de feu ; elle n'est pas un moyen de l'éteindre.",
+      },
+      {
+        question: "Comment récupérer les fines de zirconium ?",
+        answer:
+          "Par séparation par immersion lorsque l'évaluation le justifie, afin que la matière récupérée demeure humide plutôt que de s'accumuler à sec dans un contenant, avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation. L'accumulation à sec est le mode de défaillance à concevoir hors du procédé.",
+      },
+      {
+        question: "Le zirconium se manipule-t-il comme le titane ?",
+        answer:
+          "Ils partagent la classification de métal combustible et les dispositions de Classe D, mais le zirconium est nettement plus sensible à l'inflammation, au point de pouvoir s'enflammer spontanément à l'air sous forme très fine. C'est ce qui explique la pratique de conservation humide, plus systématique qu'avec le titane.",
+      },
+    ],
+    enPath: "/materials/zirconium-dust",
+  },
+  {
+    slug: "poussiere-de-lithium",
+    name: "Poussière de lithium",
+    group: "Poussières métalliques",
+    metaTitle: "Le lithium est-il inflammable ? Réactivité à l'eau et Classe D",
+    metaDescription:
+      "Le lithium métallique réagit violemment avec l'eau et même avec l'humidité de l'air, en libérant de l'hydrogène et de la chaleur. Manipulation de Classe D et récupération en fabrication de piles.",
+    intro:
+      "Le métal combustible réactif à l'eau au cœur de l'essor des batteries. Le lithium métallique réagit violemment avec l'eau — et même avec l'humidité de l'air ambiant — en libérant de l'hydrogène et de la chaleur, brûle intensément, et exige une manipulation de Classe D où l'eau est le mauvais outil.",
+    facts: [
+      { label: "Type de matière", value: "Métal combustible hautement réactif à l'eau" },
+      { label: "Réactivité", value: "Réagit violemment avec l'eau et avec l'humidité de l'air" },
+      { label: "Classe d'incendie", value: "Classe D — l'eau est le mauvais outil" },
+      { label: "Secteurs", value: "Fabrication de piles, chimie fine, alliages légers" },
+    ],
+    overview: [
+      "La réactivité à l'humidité ambiante distingue le lithium des autres métaux combustibles : il ne suffit pas d'éviter l'eau liquide, il faut contrôler l'atmosphère de manipulation. C'est pourquoi la fabrication de piles au lithium se déroule en salle sèche.",
+      "La récupération doit donc éviter d'introduire de l'humidité autant que des sources d'inflammation, ce qui exclut les méthodes humides utilisées pour d'autres métaux réactifs comme le zirconium. La séparation appropriée dépend de l'évaluation de la matière et du procédé.",
+    ],
+    risksHeading: "Ce qui rend le lithium particulier",
+    risks: [
+      "Réaction violente avec l'eau, libérant de l'hydrogène et de la chaleur.",
+      "Réaction avec l'humidité de l'air ambiant, et non seulement avec l'eau liquide.",
+      "Combustion intense une fois amorcée, exigeant des dispositions de Classe D.",
+      "Méthodes humides inappropriées, contrairement à d'autres métaux réactifs.",
+      "Contrôle de l'atmosphère nécessaire : d'où les salles sèches en fabrication de piles.",
+      "Accumulation dans les contenants, où chaleur et humidité peuvent se rencontrer.",
+    ],
+    solutions: [
+      "Équipement de récupération conducteur, mis à la terre et exempt de sources d'inflammation.",
+      "Méthodes de séparation adaptées à une matière réactive à l'humidité, établies par évaluation.",
+      "Contrôle de l'atmosphère de manipulation là où le procédé l'exige.",
+      "Ségrégation stricte du lithium, sans mélange avec d'autres matières.",
+      "Élimination du soufflage à l'air comprimé, qui disperse et introduit de l'humidité.",
+      "Dispositions de Classe D et personnel formé : l'eau est le mauvais outil.",
+    ],
+    faqs: [
+      {
+        question: "Le lithium est-il inflammable ?",
+        answer:
+          "Le lithium métallique est un métal combustible hautement réactif : il réagit violemment avec l'eau — et même avec l'humidité de l'air ambiant — en libérant de l'hydrogène et de la chaleur, et il brûle intensément. Il exige une manipulation de Classe D, où l'eau est le mauvais outil.",
+      },
+      {
+        question: "Pourquoi la fabrication de piles se fait-elle en salle sèche ?",
+        answer:
+          "Parce que le lithium ne réagit pas seulement avec l'eau liquide mais aussi avec l'humidité de l'air ambiant. Contrôler l'atmosphère de manipulation fait donc partie du procédé, et non d'une précaution supplémentaire.",
+      },
+      {
+        question: "Peut-on utiliser une méthode humide comme pour le zirconium ?",
+        answer:
+          "Non, et c'est une distinction importante entre deux métaux réactifs. Le zirconium fin est souvent conservé humide pour réduire le risque d'inflammation ; le lithium réagit avec l'eau elle-même, de sorte que l'humidification aggraverait la situation. La méthode de séparation appropriée pour le lithium s'établit par évaluation de la matière et du procédé.",
+      },
+      {
+        question: "Comment récupérer les particules de lithium ?",
+        answer:
+          "Avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation, une méthode de séparation adaptée à une matière réactive à l'humidité, et une ségrégation stricte. Les dispositions de Classe D doivent être en place et connues du personnel avant d'en avoir besoin.",
+      },
+    ],
+    enPath: "/materials/lithium-dust",
+  },
+  {
+    slug: "poussiere-de-liege",
+    name: "Poussière de liège",
+    group: "Poussières de bois",
+    metaTitle: "La poussière de liège est-elle dangereuse ? Subérose et combustibilité",
+    metaDescription:
+      "Le liège est une poussière naturelle combustible, et la poussière de liège moisie est associée à la subérose — le poumon des travailleurs du liège. Deux dangers distincts et comment les maîtriser.",
+    intro:
+      "Le liège surprend deux fois. C'est une poussière naturelle véritablement combustible, et la poussière de liège moisie est associée à la subérose, une pneumopathie d'hypersensibilité longtemps appelée poumon des travailleurs du liège.",
+    facts: [
+      { label: "Type de matière", value: "Poussière organique combustible (écorce)" },
+      { label: "Groupe de poussière", value: "Classe II, Groupe G (poussière combustible non conductrice)" },
+      { label: "Second danger", value: "Subérose — pneumopathie d'hypersensibilité liée au liège MOISI" },
+      { label: "Source du danger sanitaire", value: "Les moisissures présentes sur le liège, non le liège lui-même" },
+    ],
+    overview: [
+      "La distinction sanitaire mérite d'être précise : la subérose est associée à la poussière de liège moisie, c'est-à-dire à l'exposition aux moisissures qui se développent sur le liège entreposé ou humide, et non au liège lui-même. Un stock sec et sain ne présente pas le même risque qu'un stock ayant moisi.",
+      "Cela change la manière de gérer le danger. Contrôler l'humidité et la durée d'entreposage agit sur la cause de la subérose, tandis que le contrôle des accumulations agit sur le danger de déflagration. Les deux sont nécessaires et ne se substituent pas l'un à l'autre.",
+    ],
+    risksHeading: "Les deux dangers du liège",
+    risks: [
+      "Poussière naturelle combustible produite au ponçage, à la coupe et au broyage.",
+      "Subérose associée à la poussière de liège MOISIE, non au liège sain.",
+      "Développement de moisissures favorisé par l'humidité et un entreposage prolongé.",
+      "Accumulation en hauteur de la fraction fine, comme pour les autres poussières de bois.",
+      "Charges statiques dans le travail de matière sèche.",
+      "Confusion fréquente entre les deux dangers, qui appellent des contrôles différents.",
+    ],
+    solutions: [
+      "Récupération par aspirateur antidéflagrant conducteur, mis à la terre et équipotentiel.",
+      "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable, moisissures comprises.",
+      "Contrôle de l'humidité et de la durée d'entreposage, qui agit sur la cause de la subérose.",
+      "Nettoyage à fréquence définie des surfaces en hauteur et des carters de machines.",
+      "Élimination du soufflage à l'air comprimé, qui disperse spores et fines ensemble.",
+      "Retrait de la matière récupérée du bâtiment plutôt que de la laisser s'humidifier sur place.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de liège est-elle dangereuse ?",
+        answer:
+          "Le liège surprend deux fois. C'est une poussière naturelle véritablement combustible, et la poussière de liège moisie est associée à la subérose, une pneumopathie d'hypersensibilité longtemps appelée poumon des travailleurs du liège. Les deux dangers sont distincts et appellent des contrôles différents.",
+      },
+      {
+        question: "Qu'est-ce que la subérose ?",
+        answer:
+          "Une pneumopathie d'hypersensibilité associée à l'exposition à la poussière de liège moisie. La distinction importe : le danger provient des moisissures qui se développent sur le liège entreposé ou humide, et non du liège lui-même. Contrôler l'humidité et la durée d'entreposage agit donc directement sur la cause.",
+      },
+      {
+        question: "La poussière de liège est-elle combustible ?",
+        answer:
+          "Oui. Le liège est une écorce, et sa poussière — produite au ponçage, à la coupe et au broyage — est une poussière organique combustible qui s'accumule sur les surfaces en hauteur comme les autres poussières de bois.",
+      },
+      {
+        question: "Comment maîtriser les deux dangers à la fois ?",
+        answer:
+          "Le contrôle des accumulations traite le danger de déflagration ; le contrôle de l'humidité et de la durée d'entreposage traite la cause de la subérose. Une filtration retenue pendant le nettoyage sert les deux, en gardant captées les fines et les spores plutôt qu'en les redistribuant.",
+      },
+    ],
+    enPath: "/materials/cork-dust",
+  },
+
+  {
     slug: "poussiere-de-chrome",
     name: "Poussière de chrome",
     group: "Poussières métalliques",
