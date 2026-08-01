@@ -1,0 +1,19 @@
+# pnpm settings (pnpm 10+/11 read config from this file, not package.json)
+
+# Explicit build-script decisions (pnpm 11 requires a verdict per package):
+# - sharp: allowed — required for self-hosted next/image optimization
+# - unrs-resolver: denied — dev-only eslint transitive that ships prebuilt
+#   binaries; its build script is an unnecessary trust surface
+# `allowBuilds` is the pnpm 11 map; the two list keys keep pnpm 10 working.
+allowBuilds:
+  sharp: true
+  unrs-resolver: false
+onlyBuiltDependencies:
+  - sharp
+ignoredBuiltDependencies:
+  - unrs-resolver
+
+# Supply-chain hardening: only resolve package versions published >= 3 days ago.
+# pnpm 11 enforces a 24h default; we pin a stricter project-level policy so the
+# committed lockfile always passes verification on every machine and in CI.
+minimumReleaseAge: 4320

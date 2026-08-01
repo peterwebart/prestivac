@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-display: var(--font-archivo), var(--font-inter), ui-sans-serif,
+    system-ui, sans-serif;
+
+  /* Dark graphite backgrounds (sampled from approved mockup) */
+  --color-graphite-950: #05080c;
+  --color-graphite-900: #0a1119;
+  --color-graphite-800: #101a26;
+  --color-surface: #111827;
+
+  /* Light steel neutrals (white strip) */
+  --color-steel-50: #f6f7f9;
+  --color-steel-100: #eceef2;
+  --color-steel-200: #dde1e8;
+  --color-steel-300: #c3c9d4;
+  --color-steel-400: #98a2b3;
+  --color-steel-500: #5f6b7e;
+  --color-steel-600: #566274;
+  --color-steel-700: #3d4757;
+  --color-steel-800: #272f3c;
+
+  /* PrestiVac red */
+  --color-brand-200: #f9a9aa;
+  --color-brand-300: #f4696b;
+  --color-brand-400: #ef3b3d;
+  --color-brand-500: #e31b1e;
+  --color-brand-600: #d31113;
+  --color-brand-700: #ab0d0f;
+
+  /* Deep industrial blue */
+  --color-navy-700: #123152;
+  --color-navy-800: #0b1d33;
+
+  /* Electric blue accent (focus rings, highlights) */
+  --color-electric-400: #3fb6f6;
+
+  /* Soft premium shadows */
+  --shadow-panel: 0 18px 50px -12px rgb(3 7 12 / 0.55);
+  --shadow-card: 0 22px 45px -18px rgb(15 23 42 / 0.22);
+  --shadow-lift: 0 10px 24px -8px rgb(211 17 19 / 0.45);
+  --shadow-fab: 0 12px 30px -8px rgb(3 7 12 / 0.4);
+
+  /* Animations */
+  --animate-nudge: nudge 2.4s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2.8s ease-in-out infinite;
+  --animate-menu-in: menu-in 0.18s ease-out;
+
+  @keyframes nudge {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(6px);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 0.55;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  html {
+    /* Guard against any single element forcing a horizontal scrollbar on mobile. */
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-graphite-950 font-sans text-white antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-600 text-white;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-electric-400);
+    outline-offset: 3px;
+  }
+}
+
+/* Hide scrollbars on horizontal overflow rows while keeping them scrollable */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

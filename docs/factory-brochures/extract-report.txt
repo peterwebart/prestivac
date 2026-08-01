@@ -1,0 +1,15 @@
+Extracted 410/411 brochures
+
+[avx] 24 docs; sizes: ['AV1-5 EX', 'AV2-5 EX', 'AV1-10 EX', 'AV1-25 EX', 'AV1-55 EX', 'AV2-10 EX', 'AV2-25 EX', 'AV2-55 EX', 'AV1-5 EX ACF', 'AV1-5 EX RCT']
+  CERT: II 2 GD c IIC T6 (85oC)
+  CERT: Class I, Division 1, Groups A, B, C and D T6 and Class II, Division 1, Groups E, F, G Hazardous Locations as defined in the National Electric Code (NEC) and NFPA 70
+  CERT: Certified EPL Db and EPL Gb (Equipment Protection Level)
+
+[evx] 12 docs; sizes: ['EX-5', 'EX-10', 'EX-25', 'EX-55', 'EX-5 ACF', 'EX-5 RCT', 'EX-10 ACF', 'EX-10 RCT', 'EX-25 ACF', 'EX-55 ACF']
+  CERT: Certified EPL Db and EPL Gb (Equipment Protection Level)
+
+[ex1] 14 docs; sizes: ['EV1-5 HEPA', 'EV2-5 HEPA', 'EV1-10 HEPA', 'EV1-25 HEPA', 'EV1-55 HEPA', 'EV2-10 HEPA', 'EV2-25 HEPA', 'EV2-55 HEPA', 'EV1-5 HEPA RCT', 'EV1-55 HEPA DT']
+
+[av1] 14 docs; sizes: ['AV1-5', 'AV2-5', 'AV1-10', 'AV1-25', 'AV1-55', 'AV2-10', 'AV2-25', 'AV2-55', 'AV1-5 RCT', 'AV1-55 DT']
+
+[ev1] 13 docs; sizes: ['EV1-5', 'EV1-10', 'EV1-25', 'EV1-55', 'EV2-10', 'EV2-25', 'EV2-55', 'EV1-5 RCT', 'EV1-55 DT', 'EV2-5 RCT']
