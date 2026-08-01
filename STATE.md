@@ -5,12 +5,12 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 278 built, all 200
+- **Routes:** 282 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
 ## English site — COMPLETE
-47 material guides · 21 application guides · 38 industry guides · 16 case studies
+47 material guides · 18 application guides · 38 industry guides · 16 case studies
 · 11 compliance pages · 8 guide articles · 6 resource guides · 11 product
 categories · 44 model pages · 112 pages with FAQPage schema.
 
@@ -19,7 +19,8 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
-poussieres-et-matieres hub, plus **all 47 material guides**.
+poussieres-et-matieres hub, applications hub, plus **all 47 material guides** and
+**3 application guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -30,17 +31,23 @@ All 47 English material guides have a French counterpart, verified 47/47 for
 reciprocal hreflang and FAQPage schema, with zero unpaired English guides.
 
 ### Remaining to translate
-21 application guides · 38 industry guides ·
+18 application guides · 38 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**
 They carry the Class/Division/Group designations and the antidéflagrant vs
 protégé-contre-l'inflammation distinction. Mistranslation is a safety error.
 
-## How to add a French material guide (the whole procedure)
-1. Append an entry to `src/lib/data/fr-materials.ts`
-2. Add one line to `LOCALE_PAIRS` in `src/lib/i18n.ts`
-3. Routes, sitemap, hreflang and FAQPage schema follow automatically
+## How to add a French guide (the whole procedure)
+**Material:** append to `src/lib/data/fr-materials.ts`
+**Application:** append to `src/lib/data/fr-applications.ts` (same shape, reused type)
+
+Then in both cases: add one line to `LOCALE_PAIRS` in `src/lib/i18n.ts`. Routes,
+sitemap, hreflang, breadcrumb and FAQPage schema follow automatically.
+
+Both sections render through ONE shared template,
+`src/components/templates/fr-guide.tsx`. Change it once and both sections change —
+which is the point. Do not fork it.
 
 Preserve the safety nuance from the English guide verbatim — do not paraphrase.
 Non-negotiable examples now translated: amiante (licensed abatement, HEPA is

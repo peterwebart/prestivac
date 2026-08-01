@@ -118,6 +118,10 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/materials/brass-bronze-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-laiton-et-de-bronze" },
   { en: "/materials/tea-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-the" },
   { en: "/materials/malt-dust", fr: "/fr/poussieres-et-matieres/poussiere-de-malt" },
+  { en: "/applications", fr: "/fr/applications" },
+  { en: "/applications/welding-cleanup", fr: "/fr/applications/nettoyage-de-soudage" },
+  { en: "/applications/grinding-dust", fr: "/fr/applications/poussiere-de-meulage" },
+  { en: "/applications/sanding", fr: "/fr/applications/poncage" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */

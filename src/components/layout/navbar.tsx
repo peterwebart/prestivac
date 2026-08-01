@@ -27,6 +27,7 @@ const topLevelLink =
 const FR_NAV = [
   { label: "Aspirateurs antidéflagrants", href: "/fr/aspirateurs-antideflagrants" },
   { label: "Poussières et matières", href: "/fr/poussieres-et-matieres" },
+  { label: "Applications", href: "/fr/applications" },
   { label: "À propos", href: "/fr/a-propos" },
 ];
 
