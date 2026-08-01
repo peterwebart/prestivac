@@ -128,6 +128,12 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/applications/deburring", fr: "/fr/applications/ebavurage" },
   { en: "/applications/silo-cleaning", fr: "/fr/applications/nettoyage-de-silo" },
   { en: "/applications/spill-cleanup", fr: "/fr/applications/nettoyage-de-deversements" },
+  { en: "/applications/bagging-dumping", fr: "/fr/applications/ensachage-et-vidage-de-sacs" },
+  { en: "/applications/cleanroom-vacuuming", fr: "/fr/applications/nettoyage-de-salle-blanche" },
+  { en: "/applications/conveyor-housekeeping", fr: "/fr/applications/entretien-des-convoyeurs" },
+  { en: "/applications/drum-filling", fr: "/fr/applications/remplissage-de-futs" },
+  { en: "/applications/dust-collector-cleaning", fr: "/fr/applications/nettoyage-de-depoussiereur" },
+  { en: "/applications/metal-3d-printing", fr: "/fr/applications/impression-3d-metal" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */

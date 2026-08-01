@@ -16,6 +16,367 @@ export type FrApplicationGuide = FrMaterialGuide;
 
 export const FR_APPLICATIONS: FrApplicationGuide[] = [
   {
+    slug: "ensachage-et-vidage-de-sacs",
+    name: "Ensachage et vidage de sacs",
+    group: "Manutention de matières",
+    metaTitle: "Ensachage et vidage de sacs | Le point de poussière le plus élevé",
+    metaDescription:
+      "Le vidage manuel de sacs est souvent le point de génération de poussière le plus important d'une usine. Captation à la source et récupération.",
+    intro:
+      "Le vidage manuel de sacs est fréquemment le point unique de génération de poussière le plus important d'une installation, et il est presque toujours situé à hauteur de respiration de l'opérateur.",
+    facts: [
+      { label: "Ce que l'opération génère", value: "Nuage de poudre à chaque sac vidé" },
+      { label: "Position", value: "À hauteur de respiration de l'opérateur" },
+      { label: "Pourquoi c'est sous-estimé", value: "L'opération paraît banale et manuelle" },
+      { label: "Contrôle attendu", value: "Captation à la source à la station de vidage" },
+    ],
+    overview: [
+      "Le geste lui-même crée le nuage : le sac est secoué pour le vider, ce qui met en suspension exactement la fraction fine que le procédé cherchait à contenir. Les sacs vides retiennent aussi de la matière résiduelle et deviennent une seconde source lorsqu'ils sont manipulés ou compactés.",
+      "Pour une poudre combustible, la station de vidage réunit donc un nuage, un opérateur, et souvent une trémie qui fournit le confinement. Pour une poudre toxique, c'est simplement le point d'exposition le plus élevé de la journée.",
+    ],
+    risksHeading: "Ce qui compte au vidage de sacs",
+    risks: [
+    "Nuage créé par le geste de vidage, à hauteur de respiration.",
+    "Sacs vides retenant de la matière et constituant une seconde source.",
+    "Confinement fourni par la trémie sous la station.",
+    "Charges statiques importantes dans le versement de poudres sèches.",
+    "Accumulation rapide autour de la station et sur les surfaces adjacentes.",
+    "Opération sous-estimée parce qu'elle paraît banale.",
+    ],
+    solutions: [
+    "Captation à la source intégrée à la station de vidage.",
+    "Récupération par aspirateur conducteur, mis à la terre et équipotentiel pour les accumulations.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction fine.",
+    "Gestion des sacs vides comme source distincte, non comme déchet ordinaire.",
+    "Élimination du soufflage à l'air comprimé autour des stations.",
+    "Nettoyage à fréquence définie de la station et des surfaces adjacentes.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi le vidage de sacs est-il si important ?",
+        answer:
+          "Parce qu'il est fréquemment le point unique de génération de poussière le plus important d'une installation, et qu'il se situe presque toujours à hauteur de respiration de l'opérateur. Le geste de vidage crée le nuage : secouer le sac met en suspension exactement la fraction fine que le procédé cherchait à contenir.",
+      },
+      {
+        question: "Les sacs vides posent-ils problème ?",
+        answer:
+          "Oui, et ils sont souvent négligés. Un sac vide retient de la matière résiduelle et redevient une source lorsqu'il est manipulé, plié ou compacté. Les traiter comme une source distincte plutôt que comme un déchet ordinaire ferme cette voie.",
+      },
+      {
+        question: "La captation à la source suffit-elle ?",
+        answer:
+          "Elle traite le nuage au moment où il est créé, ce qui en fait le contrôle principal, mais elle ne retire pas ce qui s'est déjà déposé autour de la station. Les deux sont nécessaires.",
+      },
+      {
+        question: "Pourquoi la mise à la terre importe-t-elle au versement ?",
+        answer:
+          "Parce que le versement de poudres sèches génère des charges statiques importantes, et qu'une station de vidage réunit un nuage de poudre, un confinement dans la trémie, et un opérateur. Un circuit conducteur et mis à la terre supprime la source d'inflammation la plus probable.",
+      },
+    ],
+    enPath: "/applications/bagging-dumping",
+  },
+  {
+    slug: "nettoyage-de-salle-blanche",
+    name: "Nettoyage de salle blanche",
+    group: "Environnements contrôlés",
+    metaTitle: "Nettoyage de salle blanche | Ce qui sort de l'échappement",
+    metaDescription:
+      "En salle blanche, l'appareil est jugé sur ce qui sort de son échappement autant que sur ce qu'il ramasse. Filtration absolue et équipement dédié.",
+    intro:
+      "En salle blanche, un aspirateur est jugé sur ce qui sort de son échappement autant que sur ce qu'il ramasse. Un appareil qui retire des particules du plancher et en rejette de plus fines dans l'air a aggravé la situation.",
+    facts: [
+      { label: "Ce qui définit l'exigence", value: "La classification de la salle" },
+      { label: "Critère décisif", value: "Ce que rejette l'échappement, non seulement ce qui est ramassé" },
+      { label: "Filtration", value: "HEPA ou ULPA selon la classification" },
+      { label: "Règle d'usage", value: "Équipement dédié, jamais partagé avec les zones générales" },
+    ],
+    overview: [
+      "La classification de la salle détermine l'exigence de filtration : HEPA pour la plupart des environnements contrôlés, ULPA là où la salle l'impose. La bonne question à poser à un fournisseur est à quoi le filtre est testé, non comment il est nommé.",
+      "L'appareil est aussi une surface : une construction lisse en acier inoxydable essuyable lui permet de passer un protocole de nettoyage et d'habillage plutôt que de le contrarier. Et un aspirateur qui nettoie aussi le quai de chargement n'a rien à faire en salle blanche.",
+    ],
+    risksHeading: "Ce qui compte en environnement contrôlé",
+    risks: [
+    "L'échappement compte autant que la captation.",
+    "Classification de la salle déterminant l'exigence de filtration.",
+    "Équipement partagé introduisant de la contamination depuis l'extérieur.",
+    "Surfaces de l'appareil devant supporter l'essuyage et l'habillage.",
+    "Collecte devant rester contenue lors de la vidange.",
+    "Poudres pharmaceutiques parfois aussi combustibles.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 % ou ULPA selon la classification de la salle.",
+    "Équipement dédié et étiqueté, ne quittant jamais la zone contrôlée.",
+    "Construction lisse en acier inoxydable 316 et 304, essuyable.",
+    "Collecte scellée pour une vidange contenue.",
+    "Vérification de ce à quoi le filtre est testé, non de son appellation.",
+    "Prise en compte de la combustibilité là où la poudre est aussi combustible.",
+    ],
+    faqs: [
+      {
+        question: "Quelle filtration faut-il en salle blanche ?",
+        answer:
+          "Celle qu'impose la classification de la salle. HEPA convient à la plupart des environnements contrôlés ; ULPA s'impose là où la salle l'exige. La bonne question à poser est à quoi le filtre est testé plutôt que comment il est nommé.",
+      },
+      {
+        question: "Pourquoi l'échappement est-il le critère décisif ?",
+        answer:
+          "Parce qu'un appareil qui retire des particules du plancher et en rejette de plus fines dans l'air de la salle a aggravé la situation qu'il devait corriger. En environnement contrôlé, la performance se mesure à ce qui sort autant qu'à ce qui entre.",
+      },
+      {
+        question: "Un aspirateur de salle blanche peut-il servir ailleurs ?",
+        answer:
+          "Non. Un appareil qui nettoie aussi le quai de chargement rapporte de la contamination dans la salle. L'équipement dédié et étiqueté, qui ne quitte jamais la zone contrôlée, est la pratique attendue.",
+      },
+      {
+        question: "La construction de l'appareil importe-t-elle ?",
+        answer:
+          "Oui : l'appareil est lui-même une surface dans la salle. Une construction lisse en acier inoxydable essuyable lui permet de passer un protocole de nettoyage et d'habillage, alors qu'une surface texturée ou poreuse le contrarie.",
+      },
+    ],
+    enPath: "/applications/cleanroom-vacuuming",
+  },
+  {
+    slug: "entretien-des-convoyeurs",
+    name: "Entretien des convoyeurs",
+    group: "Entretien d'installations",
+    metaTitle: "Entretien des convoyeurs | Galeries et points de transfert",
+    metaDescription:
+      "Les galeries de convoyeurs accumulent de la poussière sur toute leur longueur, avec des entraînements répartis partout. Nettoyage sécuritaire, équipement à l'arrêt.",
+    intro:
+      "Une galerie de convoyeurs est une longue enceinte contenant des accumulations sur chaque surface horizontale et des moteurs, roulements et entraînements répartis sur toute sa longueur. C'est la géométrie qui a causé les événements secondaires les mieux documentés de l'industrie.",
+    facts: [
+      { label: "Ce que l'opération implique", value: "Retrait des accumulations le long des galeries et aux transferts" },
+      { label: "Géométrie", value: "Enceinte longue, confinée, avec entraînements répartis" },
+      { label: "Points critiques", value: "Transferts, chutes, têtes et pieds, périmètre des entraînements" },
+      { label: "Règle absolue", value: "Nettoyer à l'arrêt et consigné, jamais en marche" },
+    ],
+    overview: [
+      "Les points de transfert produisent la fraction la plus fine et la confinent. Les entraînements et roulements fournissent la chaleur. Les surfaces horizontales sur toute la longueur fournissent l'inventaire de combustible.",
+      "Une règle prime sur toutes les autres : le nettoyage se fait équipement arrêté et consigné. Nettoyer autour d'un convoyeur en marche expose l'opérateur à des pièces mobiles pour retirer une poussière qui sera toujours là au prochain arrêt.",
+    ],
+    risksHeading: "Ce qui compte dans une galerie",
+    risks: [
+    "Accumulations sur toute la longueur, constituant l'inventaire de combustible.",
+    "Entraînements et roulements répartis, fournissant la chaleur.",
+    "Points de transfert produisant la fraction fine et la confinant.",
+    "Confinement de la galerie favorisant la propagation d'un événement.",
+    "Accès difficile en hauteur et sur les passerelles.",
+    "Pièces mobiles : le nettoyage en marche est un risque distinct.",
+    ],
+    solutions: [
+    "Nettoyage équipement arrêté et consigné, sans exception.",
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Appareils pneumatiques adaptés au travail continu en galerie là où l'air est disponible.",
+    "Rallonges pour les surfaces hautes et les passerelles.",
+    "Fréquences définies par surface : transferts, têtes et pieds, périmètre des entraînements.",
+    "Élimination du soufflage à l'air comprimé, qui déplace la poussière le long de la galerie.",
+    ],
+    faqs: [
+      {
+        question: "Peut-on nettoyer un convoyeur en marche ?",
+        answer:
+          "Non. Le nettoyage se fait équipement arrêté et consigné. Nettoyer autour d'un convoyeur en marche expose l'opérateur à des pièces mobiles pour retirer une poussière qui sera toujours là au prochain arrêt planifié — le gain ne justifie jamais le risque.",
+      },
+      {
+        question: "Où se concentre le danger dans une galerie ?",
+        answer:
+          "Aux points de transfert, qui produisent la fraction la plus fine et la confinent, et autour des entraînements et roulements, qui fournissent la chaleur. Les surfaces horizontales sur toute la longueur fournissent l'inventaire de combustible qu'un événement primaire disperserait.",
+      },
+      {
+        question: "Pourquoi le soufflage est-il particulièrement inadapté ici ?",
+        answer:
+          "Parce qu'il déplace la poussière le long de la galerie plutôt que de la retirer, généralement vers des surfaces hautes moins accessibles. Dans une enceinte confinée avec des sources d'inflammation réparties, il crée aussi exactement le nuage qu'un programme de poussières cherche à éviter.",
+      },
+      {
+        question: "À quelle fréquence nettoyer ?",
+        answer:
+          "La fréquence sort de l'analyse des dangers liés aux poussières plutôt que d'une règle générale. Ce qui compte est qu'un intervalle soit assigné par surface — transferts, têtes et pieds, périmètre des entraînements, passerelles — et que le passage soit consigné.",
+      },
+    ],
+    enPath: "/applications/conveyor-housekeeping",
+  },
+  {
+    slug: "remplissage-de-futs",
+    name: "Remplissage de fûts",
+    group: "Manutention de matières",
+    metaTitle: "Remplissage de fûts | Déplacement d'air et exposition",
+    metaDescription:
+      "Remplir un fût déplace un volume d'air chargé de poudre. Captation au point de remplissage et vidange contenue.",
+    intro:
+      "Remplir un fût déplace un volume d'air égal à celui de la matière introduite, et cet air sort chargé de poudre. C'est un problème de déplacement, non de déversement, ce qui explique pourquoi un remplissage soigné produit tout de même un nuage.",
+    facts: [
+      { label: "Ce que l'opération génère", value: "Air déplacé chargé de poudre, à chaque fût rempli" },
+      { label: "Mécanisme", value: "Déplacement d'air, non déversement" },
+      { label: "Position", value: "À hauteur de respiration lors du remplissage manuel" },
+      { label: "Facteur additionnel", value: "Charges statiques dans le versement de poudres sèches" },
+    ],
+    overview: [
+      "Le déplacement d'air explique aussi pourquoi le débit importe : remplir vite déplace l'air vite, et un remplissage rapide produit un nuage plus dense qu'un remplissage progressif.",
+      "Pour les poudres réglementées, le remplissage et le changement de fût constituent souvent le moment d'exposition le plus élevé du cycle — davantage que la manipulation en amont.",
+    ],
+    risksHeading: "Ce qui compte au remplissage",
+    risks: [
+    "Air déplacé chargé de poudre à chaque fût, indépendamment du soin apporté.",
+    "Débit de remplissage influant directement sur la densité du nuage.",
+    "Position à hauteur de respiration lors du remplissage manuel.",
+    "Charges statiques dans le versement de poudres sèches.",
+    "Changement de fût comme moment d'exposition élevé.",
+    "Poids et manutention du fût plein.",
+    ],
+    solutions: [
+    "Captation au point de remplissage, dimensionnée pour l'air déplacé.",
+    "Équipement conducteur, mis à la terre et équipotentiel pour les poudres sèches.",
+    "Filtration absolue HEPA 99,99 % pour les poudres réglementées ou fines.",
+    "Remplissage progressif plutôt que rapide, là où le procédé le permet.",
+    "Collecte scellée et procédure définie pour le changement de fût.",
+    "Nettoyage à fréquence définie de la station de remplissage.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi un remplissage soigné produit-il quand même de la poussière ?",
+        answer:
+          "Parce que le mécanisme est le déplacement d'air, non le déversement. Introduire de la matière dans un fût déplace un volume d'air égal, et cet air sort chargé de poudre. C'est pourquoi la captation doit être dimensionnée pour l'air déplacé plutôt que pour un déversement accidentel.",
+      },
+      {
+        question: "Le débit de remplissage change-t-il quelque chose ?",
+        answer:
+          "Oui, directement : remplir vite déplace l'air vite et produit un nuage plus dense. Là où le procédé le permet, un remplissage progressif réduit la génération à la source sans équipement supplémentaire.",
+      },
+      {
+        question: "Quel est le moment le plus risqué ?",
+        answer:
+          "Pour les poudres réglementées, le changement de fût plutôt que le remplissage lui-même. C'est le moment où le contenu est ouvert, manipulé et déplacé, souvent en fin de série lorsque l'attention baisse.",
+      },
+      {
+        question: "Faut-il mettre l'équipement à la terre ?",
+        answer:
+          "Pour les poudres sèches, oui. Le versement génère des charges statiques et le fût constitue un confinement partiel. Un circuit conducteur et mis à la terre supprime la source d'inflammation la plus probable.",
+      },
+    ],
+    enPath: "/applications/drum-filling",
+  },
+  {
+    slug: "nettoyage-de-depoussiereur",
+    name: "Nettoyage de dépoussiéreur",
+    group: "Entretien d'installations",
+    metaTitle: "Nettoyage de dépoussiéreur | L'appareil est plein de la poussière",
+    metaDescription:
+      "Un dépoussiéreur contient concentrée la poussière que toute l'installation produit. Entretien des trémies, manches et plénums en sécurité.",
+    intro:
+      "Entretenir un dépoussiéreur revient à travailler à l'intérieur d'un appareil dont la fonction est de concentrer en un seul endroit la poussière combustible de toute l'installation.",
+    facts: [
+      { label: "Ce que l'opération implique", value: "Entretien des trémies, manches, cartouches et plénums" },
+      { label: "Particularité", value: "L'appareil concentre la poussière de toute l'installation" },
+      { label: "Danger ajouté", value: "Combustion lente possible dans une trémie chargée" },
+      { label: "Considération", value: "Espace clos selon la géométrie de l'appareil" },
+    ],
+    overview: [
+      "Une trémie chargée peut abriter un foyer profond, particulièrement avec des poussières carbonées, et le changement de manches remet en suspension exactement ce que l'appareil avait capté. C'est un travail d'entretien planifié plutôt qu'une intervention improvisée.",
+      "Selon la géométrie, l'accès à l'intérieur d'un dépoussiéreur peut constituer une entrée en espace clos, avec le processus de permis correspondant. La consignation de l'appareil précède toute intervention.",
+    ],
+    risksHeading: "Ce qui compte à l'entretien d'un dépoussiéreur",
+    risks: [
+    "Concentration de la poussière de toute l'installation en un seul appareil.",
+    "Combustion lente possible dans une trémie chargée, surtout avec des poussières carbonées.",
+    "Changement de manches remettant en suspension la matière captée.",
+    "Accès intérieur pouvant constituer une entrée en espace clos.",
+    "Consignation nécessaire avant toute intervention.",
+    "Trémies pleines laissées en place entre les entretiens.",
+    ],
+    solutions: [
+    "Consignation de l'appareil avant toute intervention, sans exception.",
+    "Vidange régulière des trémies plutôt qu'accumulation entre entretiens.",
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour la manipulation des manches et cartouches.",
+    "Application du processus de permis d'espace clos lorsque l'accès l'exige.",
+    "Vigilance sur les foyers profonds : une trémie tiède mérite un suivi.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi l'entretien d'un dépoussiéreur est-il particulier ?",
+        answer:
+          "Parce qu'on travaille à l'intérieur d'un appareil dont la fonction est de concentrer en un seul endroit la poussière combustible de toute l'installation. Ce qui était réparti en couche mince dans l'usine se trouve rassemblé dans la trémie et sur les manches.",
+      },
+      {
+        question: "Une trémie peut-elle abriter un incendie ?",
+        answer:
+          "Oui, particulièrement avec des poussières carbonées, qui se consument lentement en profondeur. Un foyer peut persister sans flamme visible et se rallumer. Une trémie tiède mérite un suivi plutôt qu'un soulagement, et la vidange régulière vaut mieux que l'accumulation entre entretiens.",
+      },
+      {
+        question: "L'accès à un dépoussiéreur est-il un espace clos ?",
+        answer:
+          "Selon la géométrie, oui, avec le processus de permis correspondant. La consignation de l'appareil précède dans tous les cas toute intervention, y compris pour un changement de manches effectué depuis l'extérieur.",
+      },
+      {
+        question: "Le changement de manches libère-t-il de la poussière ?",
+        answer:
+          "Il remet en suspension exactement ce que l'appareil avait capté, ce qui en fait l'étape la plus exposante de l'entretien. Une récupération à filtration retenue et une manipulation planifiée plutôt qu'improvisée sont les contrôles attendus.",
+      },
+    ],
+    enPath: "/applications/dust-collector-cleaning",
+  },
+  {
+    slug: "impression-3d-metal",
+    name: "Impression 3D métal",
+    group: "Fabrication avancée",
+    metaTitle: "Récupération des poudres d'impression 3D métal | Titane et aluminium",
+    metaDescription:
+      "Les poudres métalliques d'impression 3D sont fines, réactives et réutilisables. Récupération, tamisage et manipulation des poudres de titane et d'aluminium.",
+    intro:
+      "Les poudres d'impression 3D métal réunissent trois caractéristiques qui, ensemble, exigent une manipulation particulière : elles sont extrêmement fines, souvent réactives, et elles ont une valeur suffisante pour être récupérées et réutilisées.",
+    facts: [
+      { label: "Poudres courantes", value: "Titane, aluminium, inox, superalliages" },
+      { label: "Réactivité", value: "Titane et aluminium : métaux combustibles de Classe D" },
+      { label: "Finesse", value: "Granulométrie contrôlée, dans la fraction la plus réactive" },
+      { label: "Contrainte additionnelle", value: "La poudre a une valeur — la contamination la détruit" },
+    ],
+    overview: [
+      "Le titane et l'aluminium sont des métaux combustibles : leurs poudres s'enflament facilement, brûlent à haute température, et l'eau est inappropriée sur un feu déclaré. La granulométrie contrôlée qui rend ces poudres imprimables les place précisément dans la fraction la plus réactive.",
+      "S'y ajoute une contrainte économique qui influence la sécurité : la poudre non fusionnée est récupérée, tamisée et réutilisée, de sorte que la contamination croisée entre alliages détruit sa valeur. La ségrégation stricte sert donc à la fois la sécurité et le coût.",
+    ],
+    risksHeading: "Ce qui compte en fabrication additive métal",
+    risks: [
+    "Poudres de titane et d'aluminium combustibles, de Classe D.",
+    "Granulométrie contrôlée située dans la fraction la plus réactive.",
+    "Eau inappropriée sur un feu de poudre métallique déclaré.",
+    "Contamination croisée entre alliages détruisant la valeur de la poudre.",
+    "Accumulation à sec dans les contenants de récupération.",
+    "Conductivité des poudres métalliques, pertinente pour l'équipement.",
+    ],
+    solutions: [
+    "Équipement de récupération conducteur, mis à la terre et exempt de sources d'inflammation.",
+    "Séparation par immersion pour les poudres réactives, gardées humides plutôt qu'à sec.",
+    "Ségrégation stricte par alliage, servant la sécurité et la valeur de la poudre.",
+    "Appareils dédiés par matière pour éviter la contamination croisée.",
+    "Dispositions de Classe D et personnel formé.",
+    "Retrait rapide de la matière récupérée, sans contenants pleins laissés en place.",
+    ],
+    faqs: [
+      {
+        question: "Les poudres d'impression 3D métal sont-elles dangereuses ?",
+        answer:
+          "Le titane et l'aluminium sont des métaux combustibles : leurs poudres s'enflamment facilement, brûlent à haute température, et l'eau est inappropriée sur un feu déclaré, ce qui en fait des feux de Classe D. La granulométrie contrôlée qui rend ces poudres imprimables les situe précisément dans la fraction la plus réactive.",
+      },
+      {
+        question: "Peut-on utiliser le même aspirateur pour plusieurs alliages ?",
+        answer:
+          "Non, pour deux raisons qui pointent dans la même direction. La contamination croisée détruit la valeur de la poudre récupérée, et mélanger des poudres réactives crée des conditions qui n'ont pas été évaluées. Des appareils dédiés par matière servent à la fois la sécurité et le coût.",
+      },
+      {
+        question: "Comment récupérer une poudre réactive ?",
+        answer:
+          "Avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation, et lorsque l'évaluation le justifie, une séparation par immersion qui garde la poudre récupérée humide plutôt que de la laisser s'accumuler à sec dans un contenant.",
+      },
+      {
+        question: "Que faire de la poudre non fusionnée ?",
+        answer:
+          "Elle est normalement récupérée, tamisée et réutilisée, ce qui explique l'importance de la ségrégation. La manipulation propre a donc une valeur directe, en plus de son rôle de sécurité.",
+      },
+    ],
+    enPath: "/applications/metal-3d-printing",
+  },
+
+  {
     slug: "usinage-cnc",
     name: "Usinage CNC",
     group: "Travail des métaux",
