@@ -18,6 +18,473 @@ const A = "/fr/applications";
 
 export const FR_INDUSTRIES: FrIndustryGuide[] = [
   {
+    slug: "recyclage",
+    name: "Recyclage",
+    group: "Ressources",
+    metaTitle: "Aspirateurs pour le recyclage | Flux mixtes et matières inconnues",
+    metaDescription:
+      "Le recyclage traite des flux dont la composition n'est pas connue à l'avance, ce qui inverse la logique habituelle d'évaluation des dangers.",
+    intro:
+      "Le recyclage inverse la logique habituelle : partout ailleurs on connaît sa matière et on spécifie contre elle, alors qu'ici le flux arrive avec une composition qu'on ne contrôle pas.",
+    facts: [
+      { label: "Difficulté centrale", value: "La composition du flux n'est pas connue à l'avance" },
+      { label: "Poussières typiques", value: "Papier, plastique, bois, métaux, verre — souvent mélangés" },
+      { label: "Danger émergent", value: "Piles au lithium dans les flux, cause d'incendies documentée" },
+      { label: "Conséquence", value: "Spécifier pour le pire cas plausible plutôt que le cas moyen" },
+    ],
+    overview: [
+      "Cette incertitude change la façon de spécifier : il faut couvrir le pire cas plausible du flux plutôt que sa composition moyenne, parce qu'un lot atypique n'annonce pas son arrivée.",
+      "Les piles au lithium présentes dans les flux de déchets sont devenues une cause d'incendie documentée dans le secteur : endommagées au broyage, elles s'enflamment. C'est un danger qui n'existait pas dans les installations plus anciennes et qui n'apparaît dans aucune fiche de matière.",
+    ],
+    risksHeading: "Ce que le recyclage doit maîtriser",
+    risks: [
+    "Composition du flux inconnue et variable d'un lot à l'autre.",
+    "Piles au lithium dans les flux, s'enflammant au broyage.",
+    "Mélange de poussières combustibles de natures différentes.",
+    "Volumes élevés et matières abrasives.",
+    "Matières régulées arrivant sans être déclarées.",
+    "Impossibilité de caractériser à l'avance chaque lot.",
+    ],
+    solutions: [
+    "Spécification couvrant le pire cas plausible du flux, non sa moyenne.",
+    "Équipement antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 %, la composition étant incertaine.",
+    "Construction tolérante à l'abrasion pour les flux mixtes.",
+    "Retrait rapide de la matière récupérée, sans contenants laissés en place.",
+    "Vigilance sur les foyers dans la matière collectée.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi le recyclage est-il un cas particulier ?",
+        answer:
+          "Parce que la composition du flux n'est pas connue à l'avance. Partout ailleurs on connaît sa matière et on spécifie contre elle ; ici il faut couvrir le pire cas plausible plutôt que la composition moyenne, puisqu'un lot atypique n'annonce pas son arrivée.",
+      },
+      {
+        question: "Les piles au lithium sont-elles un danger réel ?",
+        answer:
+          "C'est devenu une cause d'incendie documentée dans le secteur : des piles au lithium présentes dans les flux de déchets s'enflamment lorsqu'elles sont endommagées au broyage. C'est un danger qui n'apparaît dans aucune fiche de matière et qui n'existait pas dans les installations plus anciennes.",
+      },
+      {
+        question: "Comment spécifier sans connaître la matière ?",
+        answer:
+          "En couvrant le pire cas plausible : équipement antidéflagrant conducteur et mis à la terre, filtration absolue, et construction tolérante à l'abrasion. C'est plus prudent que le strict nécessaire pour un flux moyen, et c'est le prix de l'incertitude.",
+      },
+      {
+        question: "Faut-il surveiller la matière collectée ?",
+        answer:
+          "Oui, particulièrement dans ce secteur. Un flux mixte peut contenir de quoi entretenir un foyer, et un contenant plein laissé en place concentre le problème. Le retrait rapide est un contrôle simple et efficace.",
+      },
+    ],
+    enPath: "/industries/recycling",
+    related: [
+      { label: "Poussière de papier", href: `${M}/poussiere-de-papier` },
+      { label: "Poussière de plastique", href: `${M}/poussiere-de-plastique` },
+      { label: "Poussière de lithium", href: `${M}/poussiere-de-lithium` },
+      { label: "Poussière de bois", href: `${M}/poussiere-de-bois` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+    ],
+  },
+  {
+    slug: "textile",
+    name: "Textile",
+    group: "Transformation",
+    metaTitle: "Aspirateurs pour le textile | Charpie, byssinose et machines",
+    metaDescription:
+      "La charpie textile est combustible, isole les surfaces chaudes des machines, et le coton possède sa propre norme OSHA en raison de la byssinose.",
+    intro:
+      "Dans le textile, la charpie fait deux choses à la fois : elle constitue un combustible réparti dans tout l'atelier, et elle isole les surfaces chaudes des machines — créant ainsi la source d'inflammation qu'elle alimente ensuite.",
+    facts: [
+      { label: "Matière", value: "Charpie et fines de fibres — combustibles" },
+      { label: "Danger sanitaire", value: "Byssinose pour le coton, avec norme OSHA dédiée" },
+      { label: "Mécanisme particulier", value: "La charpie isole les surfaces chaudes des machines" },
+      { label: "Zones critiques", value: "Cardage, filature, moteurs et carters d'entraînement" },
+    ],
+    overview: [
+      "Le cardage et la filature produisent le plus de charpie, et les moteurs et carters d'entraînement sont les endroits où elle cause le plus de dommage : une couche isolante fait monter la température de la surface qu'elle recouvre.",
+      "Le coton ajoute un régime distinct : OSHA le régit par une norme dédiée en raison de la byssinose, la maladie respiratoire historiquement appelée poumon brun. Un atelier de coton porte donc un danger d'incendie et un danger sanitaire réglementé simultanément.",
+    ],
+    risksHeading: "Ce que le textile doit maîtriser",
+    risks: [
+    "Charpie combustible répartie dans tout l'atelier.",
+    "Isolation des surfaces chaudes par la charpie accumulée.",
+    "Byssinose pour le coton, régie par une norme OSHA dédiée.",
+    "Cardage et filature comme points de production principaux.",
+    "Blocage des systèmes de refroidissement des machines.",
+    "Charges statiques dans le travail de fibre sèche.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Nettoyage prioritaire des moteurs et carters d'entraînement.",
+    "Fréquences définies pour le cardage, la filature et les surfaces hautes.",
+    "Élimination du soufflage à l'air comprimé, qui redistribue la charpie.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi la charpie est-elle particulièrement dangereuse ?",
+        answer:
+          "Parce qu'elle fait deux choses à la fois : elle constitue un combustible réparti dans tout l'atelier, et elle isole les surfaces chaudes des machines. Une couche de charpie sur un moteur fait monter la température de la surface qu'elle recouvre — elle crée la source d'inflammation qu'elle alimente ensuite.",
+      },
+      {
+        question: "Le coton a-t-il sa propre réglementation ?",
+        answer:
+          "Oui, ce qui est inhabituel pour une poussière organique. OSHA le régit par une norme dédiée en raison de la byssinose, la maladie respiratoire historiquement appelée poumon brun. Un atelier de coton porte donc un danger d'incendie et un danger sanitaire réglementé en même temps.",
+      },
+      {
+        question: "Où nettoyer en priorité ?",
+        answer:
+          "Sur les moteurs et les carters d'entraînement, où la charpie cause le plus de dommage, puis au cardage et à la filature qui en produisent le plus, puis sur les surfaces hautes.",
+      },
+      {
+        question: "Peut-on souffler la charpie à l'air comprimé ?",
+        answer:
+          "Non. Le soufflage la redistribue sur d'autres surfaces, souvent en hauteur et hors de vue, et met la fraction respirable en suspension dans un atelier où la byssinose est le danger sanitaire documenté.",
+      },
+    ],
+    enPath: "/industries/textile",
+    related: [
+      { label: "Poussière de coton", href: `${M}/poussiere-de-coton` },
+      { label: "Poussière de cuir", href: `${M}/poussiere-de-cuir` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+      { label: "Nettoyage de dépoussiéreur", href: `${A}/nettoyage-de-depoussiereur` },
+    ],
+  },
+  {
+    slug: "materiaux-de-construction",
+    name: "Matériaux de construction",
+    group: "Ressources",
+    metaTitle: "Aspirateurs pour matériaux de construction | Silice avant tout",
+    metaDescription:
+      "Béton, brique, pierre et maçonnerie ne brûlent pas. Le danger est la silice cristalline respirable, avec une limite d'exposition très basse.",
+    intro:
+      "Dans les matériaux de construction, la question de la combustibilité est la mauvaise question : le béton, la brique et la pierre ne brûlent pas. Le danger est la silice cristalline respirable, et il est sérieux.",
+    facts: [
+      { label: "Combustibilité", value: "Nulle — ces matériaux ne brûlent pas et ne déflagrent pas" },
+      { label: "Danger réel", value: "Silice cristalline respirable — silicose, cancer du poumon" },
+      { label: "Limite d'exposition", value: "50 µg/m³ (MPT 8 h) selon la norme OSHA" },
+      { label: "Opérations concernées", value: "Coupe, meulage, ponçage, démolition, sablage" },
+    ],
+    overview: [
+      "La coupe, le meulage, le ponçage et la démolition libèrent la silice, et ce sont des opérations ordinaires effectuées quotidiennement sur des chantiers et dans des usines de préfabrication.",
+      "Parce qu'il n'y a aucun danger de déflagration, la matière échoue au test mental que beaucoup d'installations utilisent pour décider si une poussière mérite attention. C'est précisément l'erreur : le balayage à sec et le soufflage sont inappropriés, non pour un risque d'incendie mais parce qu'ils remettent en suspension une poussière dont la limite est parmi les plus basses.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Silice cristalline respirable causant une maladie pulmonaire irréversible.",
+    "Limite d'exposition très basse, bien en dessous d'une poussière visible.",
+    "Opérations ordinaires générant la silice quotidiennement.",
+    "Absence de danger d'incendie menant à sous-estimer la matière.",
+    "Volume élevé en démolition et en préfabrication.",
+    "Balayage à sec encore courant et inapproprié.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 %, la silice gouvernant entièrement la spécification.",
+    "Captation à la source sur les scies, meuleuses et ponceuses.",
+    "Méthodes humides là où le procédé et l'évaluation d'exposition le permettent.",
+    "Élimination du balayage à sec et du soufflage à l'air comprimé.",
+    "Grande capacité de collecte pour les chantiers de démolition.",
+    "Consignation des fréquences dans le programme d'hygiène industrielle.",
+    ],
+    faqs: [
+      {
+        question: "Le béton et la brique sont-ils combustibles ?",
+        answer:
+          "Non. Ce sont des matériaux minéraux : ils ne brûlent pas et ne présentent aucun danger de déflagration, quelle que soit la finesse de leur poussière. C'est une exception réelle parmi les poussières industrielles.",
+      },
+      {
+        question: "Quel est le vrai danger alors ?",
+        answer:
+          "La silice cristalline respirable, qui cause la silicose — une maladie pulmonaire irréversible — et qui est associée au cancer du poumon. La norme OSHA fixe une limite d'exposition de 50 microgrammes par mètre cube, assez bas pour qu'une poussière visible la dépasse largement.",
+      },
+      {
+        question: "Pourquoi cette poussière est-elle sous-estimée ?",
+        answer:
+          "Parce qu'elle échoue au test mental habituel : elle ne brûle pas, donc elle paraît inoffensive. C'est l'erreur exacte que cette page existe pour corriger — l'absence de danger d'incendie ne dit rien du danger sanitaire.",
+      },
+      {
+        question: "Le balayage à sec est-il acceptable ?",
+        answer:
+          "Non. Il remet en suspension une poussière dont la limite d'exposition est parmi les plus basses. La captation à la source sur les outils et la récupération à filtration absolue sont les contrôles attendus, avec des méthodes humides là où le procédé le permet.",
+      },
+    ],
+    enPath: "/industries/construction-materials",
+    related: [
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Poussière de béton et de ciment", href: `${M}/poussiere-de-beton-et-de-ciment` },
+      { label: "Ponçage", href: `${A}/poncage` },
+      { label: "Décapage abrasif", href: `${A}/decapage-abrasif` },
+    ],
+  },
+  {
+    slug: "verre-et-ceramique",
+    name: "Verre et céramique",
+    group: "Transformation",
+    metaTitle: "Aspirateurs pour verre et céramique | Silice et abrasivité",
+    metaDescription:
+      "Le verre et la céramique combinent silice cristalline respirable, abrasivité extrême et chaleur de procédé élevée.",
+    intro:
+      "Le verre et la céramique posent la même question que les matériaux de construction — la silice — avec deux contraintes ajoutées : une abrasivité qui détruit l'équipement et une chaleur de procédé très élevée.",
+    facts: [
+      { label: "Danger dominant", value: "Silice cristalline respirable des matières premières et du façonnage" },
+      { label: "Contrainte 1", value: "Abrasivité extrême du verre et des céramiques" },
+      { label: "Contrainte 2", value: "Chaleur de procédé élevée des fours" },
+      { label: "Combustibilité", value: "Nulle pour la matière — le danger est sanitaire" },
+    ],
+    overview: [
+      "Les matières premières — sable, feldspath, argiles — contiennent de la silice, et le façonnage, le meulage et le polissage la libèrent sous forme respirable. Le danger est sanitaire plutôt qu'incendiaire.",
+      "L'abrasivité est la contrainte pratique : les particules de verre et de céramique érodent boyaux, tubes et surfaces de séparation plus vite que presque toute autre matière. Une construction tolérante à l'abrasion n'est pas un luxe.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Silice cristalline respirable des matières premières et du façonnage.",
+    "Abrasivité extrême érodant rapidement l'équipement.",
+    "Chaleur de procédé élevée à proximité des zones de manutention.",
+    "Poudres d'émaux et de pigments avec leurs propres compatibilités.",
+    "Absence de danger de déflagration menant à sous-estimer la matière.",
+    "Éclats de verre mêlés à la poussière fine.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 %, la silice gouvernant la spécification.",
+    "Construction tolérante à l'abrasion et pièces d'usure remplaçables.",
+    "Captation à la source au façonnage, au meulage et au polissage.",
+    "Élimination du balayage à sec et du soufflage à l'air comprimé.",
+    "Vérification de la composition des émaux et pigments utilisés.",
+    "Fréquences définies incluant le pourtour des fours.",
+    ],
+    faqs: [
+      {
+        question: "Le verre pose-t-il un danger de poussière ?",
+        answer:
+          "Oui, mais sanitaire plutôt qu'incendiaire. Les matières premières contiennent de la silice, et le façonnage, le meulage et le polissage la libèrent sous forme respirable. Le verre ne brûle pas et ne déflagre pas.",
+      },
+      {
+        question: "Pourquoi l'équipement s'use-t-il si vite ?",
+        answer:
+          "Parce que les particules de verre et de céramique sont parmi les plus abrasives qu'un appareil de récupération puisse rencontrer. Elles érodent boyaux, tubes et surfaces de séparation, ce qui rend une construction tolérante à l'abrasion nécessaire plutôt qu'optionnelle.",
+      },
+      {
+        question: "Les émaux et pigments changent-ils quelque chose ?",
+        answer:
+          "Ils peuvent : certains contiennent des métaux régulés, et leur composition détermine des exigences supplémentaires. Vérifier la composition auprès du fournisseur avant de travailler une nouvelle formulation est la démarche prudente.",
+      },
+      {
+        question: "Comment gérer les éclats mêlés à la poussière fine ?",
+        answer:
+          "Par une récupération conçue pour un flux mixte, avec une construction résistante et une filtration retenue pour la fraction fine. Séparer les deux à la source, quand le procédé le permet, simplifie les deux problèmes.",
+      },
+    ],
+    enPath: "/industries/glass-ceramics",
+    related: [
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Poussière de béton et de ciment", href: `${M}/poussiere-de-beton-et-de-ciment` },
+      { label: "Poussière de plomb", href: `${M}/poussiere-de-plomb` },
+      { label: "Poussière de meulage", href: `${A}/poussiere-de-meulage` },
+      { label: "Décapage abrasif", href: `${A}/decapage-abrasif` },
+    ],
+  },
+  {
+    slug: "agriculture",
+    name: "Agriculture",
+    group: "Agroalimentaire",
+    metaTitle: "Aspirateurs pour l'agriculture | Silos, élévateurs et grain",
+    metaDescription:
+      "La poussière de grain est combustible et le secteur agricole est l'un des rares où les fréquences de nettoyage figurent dans une réglementation.",
+    intro:
+      "L'agriculture est l'un des rares secteurs où des fréquences de nettoyage figurent dans une réglementation plutôt que seulement dans une norme consensuelle — conséquence directe du registre d'explosions d'élévateurs à grains.",
+    facts: [
+      { label: "Matière", value: "Poussière de grain combustible — Classe II, Groupe G" },
+      { label: "Normes", value: "NFPA 660 et dispositions OSHA sur la manutention des grains" },
+      { label: "Zones critiques", value: "Fosses, élévateurs, tours de transfert, séchoirs" },
+      { label: "Espaces clos", value: "Silos et cellules, avec processus de permis" },
+    ],
+    overview: [
+      "Le danger se concentre là où le grain change de direction : fosses de réception, têtes et pieds d'élévateurs, tours de transfert et nettoyeurs. Ces points combinent la fraction la plus fine, du confinement et des sources d'inflammation mécaniques.",
+      "Les séchoirs ajoutent une chaleur soutenue près de matière fine accumulée, et les silos posent la question de l'entrée en espace clos, avec le processus de permis complet lorsque l'entrée est nécessaire.",
+    ],
+    risksHeading: "Ce que l'agriculture doit maîtriser",
+    risks: [
+    "Poussière de grain combustible avec un registre d'explosions documenté.",
+    "Fréquences de nettoyage figurant dans la réglementation.",
+    "Fosses, élévateurs et tours de transfert comme points critiques.",
+    "Chaleur soutenue des séchoirs près de matière fine.",
+    "Entrée en espace clos dans les silos et cellules.",
+    "Combustion lente possible dans le grain accumulé.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Appareils pneumatiques adaptés au travail prolongé là où l'air est disponible.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Nettoyage depuis les ouvertures pour réduire la fréquence des entrées en silo.",
+    "Fréquences définies pour fosses, élévateurs, tours et pourtour des séchoirs.",
+    "Application intégrale du processus de permis lorsqu'une entrée est nécessaire.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de grain est-elle vraiment explosive ?",
+        answer:
+          "Oui, et le registre des explosions d'élévateurs à grains est la raison pour laquelle la maîtrise des poussières est devenue un sujet réglementé en agriculture. La NFPA 660 s'applique, ainsi que les dispositions OSHA sur les installations de manutention des grains.",
+      },
+      {
+        question: "Où se concentre le danger ?",
+        answer:
+          "Là où le grain change de direction : fosses de réception, têtes et pieds d'élévateurs, tours de transfert et nettoyeurs. Ces points réunissent la fraction la plus fine, du confinement et des entraînements mécaniques. Les séchoirs y ajoutent une chaleur soutenue.",
+      },
+      {
+        question: "Le nettoyage de silo exige-t-il une entrée ?",
+        answer:
+          "Pas toujours. Nettoyer depuis les trous d'homme et les ouvertures rend les entrées rares plutôt qu'inutiles — lorsque la géométrie exige réellement une entrée, le processus complet de permis s'applique exactement comme avant.",
+      },
+      {
+        question: "Les petites exploitations sont-elles concernées ?",
+        answer:
+          "Le mécanisme ne dépend pas de l'échelle : une fosse confinée avec de la poussière accumulée et un élévateur mécanique réunit les mêmes conditions dans une installation plus petite.",
+      },
+    ],
+    enPath: "/industries/agriculture",
+    related: [
+      { label: "Poussière de grain", href: `${M}/poussiere-de-grain` },
+      { label: "Poussière de maïs", href: `${M}/poussiere-de-mais` },
+      { label: "Poussière de malt", href: `${M}/poussiere-de-malt` },
+      { label: "Nettoyage de silo", href: `${A}/nettoyage-de-silo` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+    ],
+  },
+  {
+    slug: "cannabis",
+    name: "Cannabis",
+    group: "Transformation",
+    metaTitle: "Aspirateurs pour le cannabis | Poussière végétale et extraction",
+    metaDescription:
+      "La transformation du cannabis combine poussière végétale combustible et, en extraction aux solvants, des zones classifiées Classe I.",
+    intro:
+      "La transformation du cannabis présente deux profils très différents sous un même toit : la manipulation de matière végétale sèche, et l'extraction aux solvants — qui crée des zones classifiées.",
+    facts: [
+      { label: "Côté végétal", value: "Poussière organique combustible du broyage et du tamisage" },
+      { label: "Côté extraction", value: "Solvants inflammables créant des zones de Classe I" },
+      { label: "Conséquence", value: "Deux régimes d'équipement dans la même installation" },
+      { label: "Facteur additionnel", value: "Exigences de salubrité et de traçabilité" },
+    ],
+    overview: [
+      "La matière végétale sèche produit une poussière combustible au broyage, au tamisage et à la manipulation du kief — une fraction fine et facilement mise en suspension.",
+      "L'extraction change le régime : les solvants inflammables comme le butane et l'éthanol créent des zones classifiées en Classe I pour les gaz et vapeurs, où l'équipement doit correspondre à la classification assignée par l'ingénieur de l'installation. Un appareil convenant à la salle de broyage ne convient pas nécessairement à la salle d'extraction.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Poussière végétale combustible au broyage et au tamisage.",
+    "Solvants inflammables créant des zones de Classe I en extraction.",
+    "Deux régimes d'équipement dans la même installation.",
+    "Exigences de salubrité et de traçabilité s'ajoutant à la sécurité.",
+    "Charges statiques dans le travail de matière végétale sèche.",
+    "Résidus résineux compliquant le nettoyage des surfaces.",
+    ],
+    solutions: [
+    "Équipement correspondant à la classification assignée, par zone.",
+    "Récupération conductrice et mise à la terre côté végétal.",
+    "Équipement adapté à la Classe I en zone d'extraction.",
+    "Filtration absolue HEPA 99,99 % pour la fraction fine.",
+    "Construction lavable répondant aux exigences de salubrité.",
+    "Consignation des nettoyages, servant sécurité et traçabilité.",
+    ],
+    faqs: [
+      {
+        question: "Quels sont les deux profils de danger ?",
+        answer:
+          "La manipulation de matière végétale sèche, qui produit une poussière organique combustible au broyage et au tamisage, et l'extraction aux solvants, qui crée des zones classifiées en Classe I pour les gaz et vapeurs. Ce sont deux régimes d'équipement différents dans la même installation.",
+      },
+      {
+        question: "Un appareil peut-il servir dans les deux zones ?",
+        answer:
+          "Pas nécessairement. Un appareil convenant à la salle de broyage ne convient pas forcément à une zone d'extraction classifiée en Classe I. La classification est assignée par l'ingénieur de l'installation, et l'équipement doit y correspondre zone par zone.",
+      },
+      {
+        question: "La poussière de cannabis est-elle combustible ?",
+        answer:
+          "La matière végétale sèche produit une poussière organique combustible, particulièrement au broyage et au tamisage, et la manipulation du kief génère une fraction fine facilement mise en suspension.",
+      },
+      {
+        question: "Comment concilier sécurité et traçabilité ?",
+        answer:
+          "Par un nettoyage documenté avec un appareil à construction lavable : un même passage consigné sert le programme de poussières combustibles et les exigences de salubrité et de traçabilité du secteur.",
+      },
+    ],
+    enPath: "/industries/cannabis",
+    related: [
+      { label: "Poussière de tabac", href: `${M}/poussiere-de-tabac` },
+      { label: "Poussière de grain", href: `${M}/poussiere-de-grain` },
+      { label: "Mélange et malaxage", href: `${A}/melange-et-malaxage` },
+      { label: "Nettoyage de déversements", href: `${A}/nettoyage-de-deversements` },
+    ],
+  },
+  {
+    slug: "cosmetiques",
+    name: "Cosmétiques",
+    group: "Sciences de la vie",
+    metaTitle: "Aspirateurs pour les cosmétiques | Poudres fines et contamination",
+    metaDescription:
+      "Les poudres cosmétiques sont fines, souvent combustibles, et la contamination croisée entre teintes est un enjeu de conformité distinct.",
+    intro:
+      "Les poudres cosmétiques sont conçues pour être extrêmement fines — c'est ce qui les rend agréables à l'usage, et c'est aussi ce qui les rend faciles à mettre en suspension.",
+    facts: [
+      { label: "Matières", value: "Talc, mica, pigments, amidons et charges" },
+      { label: "Finesse", value: "Conçue pour être extrême, donc facilement mise en suspension" },
+      { label: "Combustibilité", value: "Réelle pour les poudres organiques ; nulle pour les minérales" },
+      { label: "Enjeu additionnel", value: "Contamination croisée entre teintes et formulations" },
+    ],
+    overview: [
+      "La combustibilité dépend de la matière : les amidons et charges organiques sont combustibles, alors que le talc et le mica sont minéraux et ne brûlent pas. Une même ligne peut traiter les deux, ce qui rend l'évaluation par produit nécessaire plutôt qu'une hypothèse globale.",
+      "La contamination croisée est l'autre contrainte : une trace de pigment d'une teinte dans un lot d'une autre est un défaut de production, ce qui impose un nettoyage documenté entre séries — exactement ce qu'exige aussi une analyse des dangers liés aux poussières.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Poudres conçues pour être extrêmement fines, donc facilement en suspension.",
+    "Combustibilité variable selon la matière — organique ou minérale.",
+    "Contamination croisée entre teintes comme défaut de production.",
+    "Nettoyage documenté exigé entre séries.",
+    "Pigments contenant parfois des métaux régulés.",
+    "Exigences de salubrité s'ajoutant à la sécurité.",
+    ],
+    solutions: [
+    "Récupération à filtration absolue HEPA 99,99 % pour la fraction fine.",
+    "Évaluation par produit plutôt qu'hypothèse globale sur la combustibilité.",
+    "Récupération dédiée par teinte là où la contamination croisée est un enjeu.",
+    "Construction lavable répondant aux exigences de salubrité.",
+    "Vérification de la composition des pigments utilisés.",
+    "Un seul passage documenté servant la sécurité et la conformité produit.",
+    ],
+    faqs: [
+      {
+        question: "Les poudres cosmétiques sont-elles combustibles ?",
+        answer:
+          "Cela dépend de la matière. Les amidons et charges organiques le sont ; le talc et le mica sont minéraux et ne brûlent pas. Une même ligne pouvant traiter les deux, l'évaluation se fait par produit plutôt que par hypothèse globale.",
+      },
+      {
+        question: "Pourquoi la finesse pose-t-elle problème ?",
+        answer:
+          "Parce que ces poudres sont conçues pour être extrêmement fines — c'est ce qui les rend agréables à l'usage. La même propriété les rend faciles à mettre en suspension et difficiles à retenir sans filtration absolue.",
+      },
+      {
+        question: "Comment gérer la contamination entre teintes ?",
+        answer:
+          "Par une récupération dédiée par teinte là où l'enjeu existe, et un nettoyage documenté entre séries. C'est un défaut de production plutôt qu'un danger, mais il impose exactement la même discipline qu'une analyse des dangers liés aux poussières.",
+      },
+      {
+        question: "Les pigments posent-ils un danger particulier ?",
+        answer:
+          "Certains contiennent des métaux régulés, ce qui ajoute des exigences d'exposition et d'élimination. Vérifier la composition auprès du fournisseur avant d'introduire une nouvelle formulation est la démarche prudente.",
+      },
+    ],
+    enPath: "/industries/cosmetics",
+    related: [
+      { label: "Poussière d'amidon", href: `${M}/poussiere-d-amidon` },
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Ensachage et vidage de sacs", href: `${A}/ensachage-et-vidage-de-sacs` },
+      { label: "Mélange et malaxage", href: `${A}/melange-et-malaxage` },
+      { label: "Nettoyage de salle blanche", href: `${A}/nettoyage-de-salle-blanche` },
+    ],
+  },
+
+  {
     slug: "mines-et-mineraux",
     name: "Mines et minéraux",
     group: "Ressources",

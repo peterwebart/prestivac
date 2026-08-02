@@ -5,13 +5,13 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 316 built, all 200
+- **Routes:** 323 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
 ## English site — COMPLETE
 47 material guides · 4 application guides (mixing-blending, tank-cleaning, thermal-spray,
-warehouse-housekeeping) · 21 industry guides · 16 case studies
+warehouse-housekeeping) · 14 industry guides · 16 case studies
 · 11 compliance pages · 8 guide articles · 6 resource guides · 11 product
 categories · 44 model pages · 112 pages with FAQPage schema.
 
@@ -21,7 +21,7 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
 poussieres-et-matieres hub, applications hub, industries hub, plus **all 47 material guides** and
-**all 19 application guides** and **17 industry guides**.
+**all 19 application guides** and **24 industry guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -36,7 +36,7 @@ All 19 English application guides have a French counterpart, verified 19/19 for
 reciprocal hreflang and FAQPage schema, zero unpaired.
 
 ### Remaining to translate
-21 industry guides ·
+14 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**

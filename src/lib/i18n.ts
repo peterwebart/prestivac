@@ -156,6 +156,13 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/industries/paper-packaging", fr: "/fr/industries/papier-et-emballage" },
   { en: "/industries/plastics-rubber", fr: "/fr/industries/plastiques-et-caoutchouc" },
   { en: "/industries/printing", fr: "/fr/industries/imprimerie" },
+  { en: "/industries/recycling", fr: "/fr/industries/recyclage" },
+  { en: "/industries/textile", fr: "/fr/industries/textile" },
+  { en: "/industries/construction-materials", fr: "/fr/industries/materiaux-de-construction" },
+  { en: "/industries/glass-ceramics", fr: "/fr/industries/verre-et-ceramique" },
+  { en: "/industries/agriculture", fr: "/fr/industries/agriculture" },
+  { en: "/industries/cannabis", fr: "/fr/industries/cannabis" },
+  { en: "/industries/cosmetics", fr: "/fr/industries/cosmetiques" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
