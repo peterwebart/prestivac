@@ -18,6 +18,473 @@ const A = "/fr/applications";
 
 export const FR_INDUSTRIES: FrIndustryGuide[] = [
   {
+    slug: "desamiantage-et-decontamination",
+    name: "Désamiantage et décontamination",
+    group: "Environnement",
+    metaTitle: "Aspirateurs pour désamiantage et décontamination | Cadre réglementaire",
+    metaDescription:
+      "Le désamiantage et le retrait du plomb sont des travaux d'entreprise agréée. Un aspirateur HEPA est un équipement nommé dans ce cadre, jamais un substitut.",
+    intro:
+      "Cette page a une chose à dire avant toute autre : le désamiantage et le retrait de peinture au plomb sont des travaux d'entreprise agréée, menés par des travailleurs accrédités sous confinement conçu. Notre équipement a sa place à l'intérieur de ce cadre.",
+    facts: [
+      { label: "Nature du travail", value: "Travaux d'entreprise agréée, non des tâches d'entretien" },
+      { label: "Rôle de l'équipement", value: "Équipement nommé À L'INTÉRIEUR du cadre réglementaire" },
+      { label: "Ce qu'il n'est pas", value: "Un substitut au confinement, au permis ou à l'accréditation" },
+      { label: "Normes", value: "OSHA 1910.1001 et 1926.1101 (amiante) ; 1910.1025 (plomb)" },
+    ],
+    overview: [
+      "L'amiante cause l'amiantose, le cancer du poumon et le mésothéliome, avec des décennies de latence. Le plomb est une toxine systémique cumulative avec une limite d'exposition de 50 microgrammes par mètre cube. Les deux sont régis par des normes substances dédiées qui imposent l'accréditation, le confinement, la notification et l'élimination réglementée.",
+      "Un aspirateur à filtration HEPA testée est nommé dans ces cadres, et il est indispensable — mais il ne remplace ni le confinement, ni le permis, ni la formation. Toute lecture de cette page qui suggérerait le contraire serait une mauvaise lecture.",
+    ],
+    risksHeading: "Ce que ce travail exige",
+    risks: [
+    "Accréditation et agrément : ce n'est pas un travail d'entretien général.",
+    "Confinement conçu, notification et élimination réglementée.",
+    "Filtration HEPA testée, comme équipement à l'intérieur du cadre.",
+    "Aucun balayage à sec, en aucune circonstance.",
+    "Matière ancienne suspecte présumée amiantée jusqu'à analyse.",
+    "Décontamination des équipements et des vêtements en sortie.",
+    ],
+    solutions: [
+    "Aspirateur à filtration HEPA testée, dédié et demeurant dans la zone.",
+    "Circuits de boyaux scellés et intègres à l'intérieur des barrières.",
+    "Collecte scellée et élimination selon les obligations applicables.",
+    "Suppression à la source pendant le travail, pratique courante et non facultative.",
+    "Analyse avant perturbation, systématiquement.",
+    "Application intégrale des exigences d'accréditation et de confinement.",
+    ],
+    faqs: [
+      {
+        question: "Un aspirateur HEPA suffit-il pour du désamiantage ?",
+        answer:
+          "Non, et c'est le point central de cette page. Un aspirateur à filtration HEPA testée est un équipement nommé à l'intérieur du cadre réglementaire de l'amiante, et il y est indispensable — mais il ne remplace ni le confinement conçu, ni le permis, ni l'accréditation des travailleurs. Le travail relève d'une entreprise agréée.",
+      },
+      {
+        question: "Peut-on faire ce travail à l'interne ?",
+        answer:
+          "Le travail sur matière friable relève d'entreprises agréées avec des travailleurs accrédités. Ce n'est pas une question d'équipement mais de qualification réglementaire, et aucun appareil ne change cela.",
+      },
+      {
+        question: "Que faire d'une matière ancienne suspecte ?",
+        answer:
+          "La traiter comme de l'amiante jusqu'à ce qu'une analyse démontre le contraire, et ne pas la perturber entre-temps. L'identification par analyse précède toute intervention.",
+      },
+      {
+        question: "Le retrait de peinture au plomb suit-il les mêmes règles ?",
+        answer:
+          "Il relève de sa propre norme, le 29 CFR 1910.1025, avec une limite d'exposition de 50 microgrammes par mètre cube. La logique est la même : filtration absolue, collecte scellée, équipement dédié, et aucun balayage à sec.",
+      },
+    ],
+    enPath: "/industries/abatement",
+    related: [
+      { label: "Amiante", href: `${M}/amiante` },
+      { label: "Poussière de vermiculite", href: `${M}/poussiere-de-vermiculite` },
+      { label: "Poussière de plomb", href: `${M}/poussiere-de-plomb` },
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Décapage abrasif", href: `${A}/decapage-abrasif` },
+    ],
+  },
+  {
+    slug: "fabrication-additive",
+    name: "Fabrication additive",
+    group: "Fabrication avancée",
+    metaTitle: "Aspirateurs pour la fabrication additive | Poudres réactives et réemploi",
+    metaDescription:
+      "Les poudres de fabrication additive sont fines, souvent réactives, et destinées au réemploi. Récupération, tamisage et ségrégation.",
+    intro:
+      "La fabrication additive réunit trois contraintes qui se renforcent : les poudres sont extrêmement fines, souvent réactives, et destinées à être récupérées et réutilisées.",
+    facts: [
+      { label: "Poudres métalliques", value: "Titane, aluminium, inox, superalliages — Classe D pour les réactives" },
+      { label: "Poudres polymères", value: "Combustibles, du Groupe G" },
+      { label: "Granulométrie", value: "Contrôlée, donc dans la fraction la plus réactive" },
+      { label: "Contrainte économique", value: "La poudre a une valeur — la contamination la détruit" },
+    ],
+    overview: [
+      "La granulométrie contrôlée qui rend une poudre imprimable la place précisément dans la fraction la plus réactive. Le titane et l'aluminium sont des métaux combustibles où l'eau est inappropriée sur un feu déclaré.",
+      "Le réemploi ajoute une contrainte qui sert la sécurité : la poudre non fusionnée est récupérée, tamisée et réutilisée, de sorte que la contamination croisée entre alliages détruit sa valeur. La ségrégation stricte est donc à la fois une mesure de sécurité et une mesure de coût.",
+    ],
+    risksHeading: "Ce que la fabrication additive doit maîtriser",
+    risks: [
+    "Poudres réactives de titane et d'aluminium, de Classe D.",
+    "Granulométrie contrôlée située dans la fraction la plus réactive.",
+    "Contamination croisée détruisant la valeur de la poudre.",
+    "Accumulation à sec dans les contenants de récupération.",
+    "Poudres polymères combustibles dans les procédés non métalliques.",
+    "Conductivité des poudres métalliques.",
+    ],
+    solutions: [
+    "Équipement conducteur, mis à la terre et exempt de sources d'inflammation.",
+    "Séparation par immersion pour les poudres réactives là où l'évaluation le justifie.",
+    "Appareils dédiés par matière, servant la sécurité et la valeur.",
+    "Ségrégation stricte par alliage.",
+    "Dispositions de Classe D et personnel formé.",
+    "Retrait rapide de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi les poudres additives sont-elles particulièrement réactives ?",
+        answer:
+          "Parce que la granulométrie contrôlée qui les rend imprimables les situe précisément dans la fraction la plus réactive. Le titane et l'aluminium sont des métaux combustibles de Classe D, où l'eau est inappropriée sur un feu déclaré.",
+      },
+      {
+        question: "Peut-on utiliser un seul appareil pour plusieurs poudres ?",
+        answer:
+          "Non, pour deux raisons convergentes : la contamination croisée détruit la valeur de la poudre récupérée, et mélanger des poudres réactives crée des conditions non évaluées. Des appareils dédiés par matière servent la sécurité et le coût ensemble.",
+      },
+      {
+        question: "Comment récupérer une poudre réactive ?",
+        answer:
+          "Avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation, et lorsque l'évaluation le justifie, une séparation par immersion qui garde la poudre humide plutôt que de la laisser s'accumuler à sec.",
+      },
+      {
+        question: "Les procédés polymères posent-ils le même problème ?",
+        answer:
+          "Un problème différent : les poudres polymères sont des poussières organiques combustibles du Groupe G, non des métaux réactifs. Elles exigent une mise à la terre et une filtration retenue, mais pas les dispositions de Classe D.",
+      },
+    ],
+    enPath: "/industries/additive-manufacturing",
+    related: [
+      { label: "Poussière de titane", href: `${M}/poussiere-de-titane` },
+      { label: "Poussière d'aluminium", href: `${M}/poussiere-d-aluminium` },
+      { label: "Poussière métallique combustible", href: `${M}/poussiere-metallique-combustible` },
+      { label: "Poussière de plastique", href: `${M}/poussiere-de-plastique` },
+      { label: "Impression 3D métal", href: `${A}/impression-3d-metal` },
+    ],
+  },
+  {
+    slug: "salles-blanches",
+    name: "Salles blanches",
+    group: "Environnements contrôlés",
+    metaTitle: "Aspirateurs pour salles blanches | Filtration absolue et équipement dédié",
+    metaDescription:
+      "En salle blanche, l'appareil est jugé sur son échappement autant que sur sa captation, et il ne doit jamais quitter la zone contrôlée.",
+    intro:
+      "En salle blanche, la règle est simple à énoncer : un appareil qui retire des particules du plancher et en rejette de plus fines dans l'air a aggravé la situation qu'il devait corriger.",
+    facts: [
+      { label: "Critère décisif", value: "Ce que rejette l'échappement, non seulement ce qui est capté" },
+      { label: "Filtration", value: "HEPA ou ULPA selon la classification de la salle" },
+      { label: "Règle d'usage", value: "Équipement dédié, ne quittant jamais la zone" },
+      { label: "L'appareil", value: "Est lui-même une surface dans la salle" },
+    ],
+    overview: [
+      "La classification détermine l'exigence : HEPA pour la plupart des environnements contrôlés, ULPA là où la salle l'impose. La bonne question à poser est à quoi le filtre est testé plutôt que comment il est nommé.",
+      "L'appareil est aussi une surface : une construction lisse en acier inoxydable essuyable lui permet de passer un protocole de nettoyage et d'habillage. Et un appareil qui nettoie aussi une zone générale rapporte de la contamination dans la salle.",
+    ],
+    risksHeading: "Ce que les salles blanches exigent",
+    risks: [
+    "Échappement comptant autant que la captation.",
+    "Classification de la salle déterminant l'exigence de filtration.",
+    "Équipement partagé important de la contamination depuis l'extérieur.",
+    "Surfaces de l'appareil devant supporter l'essuyage et l'habillage.",
+    "Vidange devant rester contenue.",
+    "Poudres parfois aussi combustibles selon le procédé.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 % ou ULPA selon la classification.",
+    "Équipement dédié et étiqueté, demeurant dans la zone contrôlée.",
+    "Construction lisse en acier inoxydable 316 et 304.",
+    "Collecte scellée pour une vidange contenue.",
+    "Vérification de ce à quoi le filtre est testé.",
+    "Prise en compte de la combustibilité là où la poudre l'est aussi.",
+    ],
+    faqs: [
+      {
+        question: "Quelle filtration faut-il ?",
+        answer:
+          "Celle qu'impose la classification de la salle : HEPA pour la plupart des environnements contrôlés, ULPA là où la salle l'exige. La bonne question à poser à un fournisseur est à quoi le filtre est testé plutôt que comment il est nommé.",
+      },
+      {
+        question: "Pourquoi l'échappement est-il le critère ?",
+        answer:
+          "Parce qu'un appareil qui retire des particules du plancher et en rejette de plus fines dans l'air a aggravé la situation. En environnement contrôlé, la performance se mesure autant à ce qui sort qu'à ce qui entre.",
+      },
+      {
+        question: "Un appareil de salle blanche peut-il servir ailleurs ?",
+        answer:
+          "Non. Un appareil qui nettoie aussi une zone générale rapporte de la contamination dans la salle. L'équipement dédié et étiqueté est la pratique attendue.",
+      },
+      {
+        question: "La construction de l'appareil compte-t-elle ?",
+        answer:
+          "Oui : il est lui-même une surface dans la salle. Une construction lisse en acier inoxydable essuyable lui permet de passer un protocole de nettoyage et d'habillage, alors qu'une surface texturée le contrarie.",
+      },
+    ],
+    enPath: "/industries/cleanrooms",
+    related: [
+      { label: "Nettoyage de salle blanche", href: `${A}/nettoyage-de-salle-blanche` },
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Poussière de fibre de carbone", href: `${M}/poussiere-de-fibre-de-carbone` },
+      { label: "Poussière d'amidon", href: `${M}/poussiere-d-amidon` },
+    ],
+  },
+  {
+    slug: "centres-de-donnees",
+    name: "Centres de données",
+    group: "Infrastructure",
+    metaTitle: "Aspirateurs pour centres de données | Poussière conductrice et faux planchers",
+    metaDescription:
+      "Dans un centre de données, la poussière conductrice peut ponter des connexions, et les whiskers de zinc des dalles de faux plancher sont un mode de défaillance documenté.",
+    intro:
+      "Dans un centre de données, la poussière ne présente pas de danger d'incendie notable — elle présente un danger de panne. Une accumulation conductrice peut ponter des connexions et provoquer des défaillances difficiles à diagnostiquer.",
+    facts: [
+      { label: "Danger dominant", value: "Panne d'équipement, non l'incendie" },
+      { label: "Mode documenté", value: "Whiskers de zinc issus des dalles de faux plancher" },
+      { label: "Zones critiques", value: "Sous les faux planchers, dans les baies, aux entrées d'air" },
+      { label: "Contrainte", value: "Aucune méthode humide près d'équipement sous tension" },
+    ],
+    overview: [
+      "Les whiskers de zinc méritent une mention particulière : de fines excroissances cristallines se formant sur les revêtements de zinc électrodéposé de certaines dalles de faux plancher anciennes. Elles se détachent, circulent avec l'air de refroidissement, et provoquent des courts-circuits.",
+      "Le nettoyage sous faux plancher est donc une opération d'infrastructure plutôt qu'un entretien ménager : elle se planifie, elle exige une filtration absolue pour ne pas remettre de particules dans le flux d'air, et elle exclut toute méthode humide près d'équipement sous tension.",
+    ],
+    risksHeading: "Ce qu'un centre de données doit maîtriser",
+    risks: [
+    "Poussière conductrice pontant des connexions et provoquant des pannes.",
+    "Whiskers de zinc des dalles de faux plancher anciennes.",
+    "Circulation par l'air de refroidissement, distribuant les particules.",
+    "Filtration insuffisante remettant des particules dans le flux d'air.",
+    "Méthodes humides exclues près d'équipement sous tension.",
+    "Diagnostic difficile des pannes causées par la poussière.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 %, pour ne rien remettre dans le flux d'air.",
+    "Nettoyage planifié sous faux plancher comme opération d'infrastructure.",
+    "Aucune méthode humide près d'équipement sous tension.",
+    "Attention particulière aux dalles anciennes à revêtement de zinc.",
+    "Nettoyage des entrées d'air et des baies selon un intervalle défini.",
+    "Collecte contenue, sans redispersion à la vidange.",
+    ],
+    faqs: [
+      {
+        question: "La poussière est-elle un danger d'incendie en centre de données ?",
+        answer:
+          "Rarement le danger dominant. Le problème est la panne : une accumulation conductrice peut ponter des connexions et provoquer des défaillances difficiles à diagnostiquer, ce qui en fait un enjeu de disponibilité plutôt que de sécurité incendie.",
+      },
+      {
+        question: "Qu'est-ce que les whiskers de zinc ?",
+        answer:
+          "De fines excroissances cristallines qui se forment sur les revêtements de zinc électrodéposé de certaines dalles de faux plancher anciennes. Elles se détachent, circulent avec l'air de refroidissement, et provoquent des courts-circuits — un mode de défaillance documenté dans les installations plus anciennes.",
+      },
+      {
+        question: "Peut-on nettoyer sous un faux plancher sans arrêter les services ?",
+        answer:
+          "Le nettoyage se planifie comme une opération d'infrastructure. La contrainte principale est la filtration : un appareil qui rejette des particules dans le flux d'air de refroidissement distribue le problème plutôt que de le retirer.",
+      },
+      {
+        question: "Les méthodes humides sont-elles utilisables ?",
+        answer:
+          "Pas près d'équipement sous tension. C'est une contrainte absolue dans ce contexte, et elle rend la récupération à sec avec filtration absolue la seule approche appropriée pour la plupart des zones.",
+      },
+    ],
+    enPath: "/industries/data-centers",
+    related: [
+      { label: "Poussière de zinc", href: `${M}/poussiere-de-zinc` },
+      { label: "Poussière de fibre de carbone", href: `${M}/poussiere-de-fibre-de-carbone` },
+      { label: "Poussière de graphite", href: `${M}/poussiere-de-graphite` },
+      { label: "Nettoyage de salle blanche", href: `${A}/nettoyage-de-salle-blanche` },
+    ],
+  },
+  {
+    slug: "dispositifs-medicaux",
+    name: "Dispositifs médicaux",
+    group: "Sciences de la vie",
+    metaTitle: "Aspirateurs pour dispositifs médicaux | Usinage et propreté",
+    metaDescription:
+      "La fabrication de dispositifs médicaux combine usinage d'alliages exigeants, exigences de propreté et matières régulées.",
+    intro:
+      "La fabrication de dispositifs médicaux réunit deux mondes qui se rencontrent rarement : l'usinage de métaux exigeants et les exigences de propreté d'un environnement contrôlé.",
+    facts: [
+      { label: "Alliages typiques", value: "Titane, cobalt-chrome, inox, parfois cuivre-béryllium" },
+      { label: "Matières régulées", value: "Cobalt, chrome, béryllium selon les alliages" },
+      { label: "Second régime", value: "Propreté de production et validation du nettoyage" },
+      { label: "Conséquence", value: "Deux exigences à satisfaire simultanément" },
+    ],
+    overview: [
+      "Les alliages employés ne sont pas neutres : le titane est un métal combustible, le cobalt-chrome produit une poussière associée à la maladie pulmonaire des métaux durs, et certains alliages contiennent du cuivre-béryllium — régi par sa propre norme et rarement identifié dans une description de pièce.",
+      "S'y ajoute l'exigence de propreté : une particule laissée sur un implant ou un instrument est un défaut, et le nettoyage doit être validé et consigné plutôt que simplement effectué.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Titane combustible de Classe D dans plusieurs procédés d'usinage.",
+    "Cobalt-chrome associé à la maladie pulmonaire des métaux durs.",
+    "Cuivre-béryllium possible et rarement identifié dans les descriptions.",
+    "Propreté de production : une particule est un défaut.",
+    "Nettoyage devant être validé et consigné.",
+    "Deux régimes à satisfaire simultanément.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 % pour les matières régulées et la propreté.",
+    "Équipement conducteur et mis à la terre pour les fines métalliques.",
+    "Séparation par immersion pour le titane là où l'évaluation le justifie.",
+    "Appareils dédiés par matière et par zone.",
+    "Vérification de la composition des alliages avant usinage.",
+    "Consignation des nettoyages, servant sécurité et validation.",
+    ],
+    faqs: [
+      {
+        question: "Quels alliages posent problème ?",
+        answer:
+          "Le titane est un métal combustible de Classe D. Le cobalt-chrome produit une poussière associée à la maladie pulmonaire des métaux durs. Et certains alliages contiennent du cuivre-béryllium, régi par sa propre norme OSHA et rarement identifié dans une description de pièce.",
+      },
+      {
+        question: "Pourquoi vérifier la composition des alliages ?",
+        answer:
+          "Parce que la teneur en béryllium d'un alliage de cuivre n'apparaît pas dans la description d'une pièce, et qu'elle change entièrement les exigences d'exposition. La vérification auprès du fournisseur précède l'usinage d'un stock inconnu.",
+      },
+      {
+        question: "Comment concilier sécurité et propreté ?",
+        answer:
+          "Par une filtration absolue, qui sert les deux : elle retient les matières régulées et elle évite de remettre des particules dans un environnement où une particule est un défaut. Le nettoyage validé et consigné répond au second régime.",
+      },
+      {
+        question: "Faut-il des appareils dédiés ?",
+        answer:
+          "Par matière et par zone, oui. Mélanger des fines réactives crée des conditions non évaluées, et un appareil circulant entre zones compromet la propreté de production.",
+      },
+    ],
+    enPath: "/industries/medical-devices",
+    related: [
+      { label: "Poussière de titane", href: `${M}/poussiere-de-titane` },
+      { label: "Poussière de cobalt", href: `${M}/poussiere-de-cobalt` },
+      { label: "Poussière de béryllium", href: `${M}/poussiere-de-beryllium` },
+      { label: "Poussière de chrome", href: `${M}/poussiere-de-chrome` },
+      { label: "Nettoyage de salle blanche", href: `${A}/nettoyage-de-salle-blanche` },
+      { label: "Usinage CNC", href: `${A}/usinage-cnc` },
+    ],
+  },
+  {
+    slug: "biotechnologie",
+    name: "Biotechnologie",
+    group: "Sciences de la vie",
+    metaTitle: "Aspirateurs pour la biotechnologie | Confinement et poudres actives",
+    metaDescription:
+      "En biotechnologie, le confinement est gouverné par la limite d'exposition du composé, et plusieurs excipients sont aussi combustibles.",
+    intro:
+      "En biotechnologie comme en pharmaceutique, la spécification découle d'une chose : la limite d'exposition professionnelle du composé manipulé. Le reste en découle.",
+    facts: [
+      { label: "Ce qui gouverne", value: "La limite d'exposition professionnelle du composé" },
+      { label: "Second régime", value: "Nettoyage validé, traçabilité, contamination croisée" },
+      { label: "Fait souvent oublié", value: "Plusieurs excipients sont aussi combustibles" },
+      { label: "Moment critique", value: "Le changement de contenant" },
+    ],
+    overview: [
+      "Les composés à forte activité imposent un confinement supérieur à ce qu'une poussière ordinaire exigerait, et c'est l'évaluation d'exposition qui fixe le niveau plutôt qu'une préférence d'équipement.",
+      "Un point régulièrement négligé : les excipients — amidons, lactose, charges — sont des poussières organiques combustibles. Lorsque la poudre est les deux, le confinement et la protection contre les explosions se spécifient ensemble.",
+    ],
+    risksHeading: "Ce que la biotechnologie doit maîtriser",
+    risks: [
+    "Limites d'exposition très basses pour les composés actifs.",
+    "Excipients souvent aussi combustibles.",
+    "Changement de contenant comme moment d'exposition le plus élevé.",
+    "Nettoyage validé et traçabilité exigés.",
+    "Contamination croisée entre produits.",
+    "Constructions devant supporter le nettoyage et la validation.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 % ou ULPA selon la limite d'exposition.",
+    "Collecte scellée avec procédure définie pour le changement de contenant.",
+    "Construction en acier inoxydable 316 et 304, lavable et validable.",
+    "Équipement dédié par zone et par produit.",
+    "Spécification conjointe du confinement et de la protection contre les explosions.",
+    "Consignation des nettoyages.",
+    ],
+    faqs: [
+      {
+        question: "Qu'est-ce qui détermine l'équipement ?",
+        answer:
+          "La limite d'exposition professionnelle du composé manipulé. Elle fixe le niveau de confinement et de filtration requis, et la procédure de vidange en découle. C'est une conséquence de l'évaluation d'exposition plutôt qu'une préférence.",
+      },
+      {
+        question: "Les excipients sont-ils combustibles ?",
+        answer:
+          "Beaucoup le sont — amidons, lactose et de nombreuses charges sont des poussières organiques combustibles. C'est régulièrement négligé parce que l'attention porte sur le confinement. Lorsque la poudre est les deux, les deux exigences se spécifient ensemble.",
+      },
+      {
+        question: "Quel est le moment le plus exposant ?",
+        answer:
+          "Le changement de contenant plutôt que la récupération. C'est le moment où la matière captée est ouverte et déplacée, et une procédure définie avec sacs scellés vaut davantage qu'une aspiration supplémentaire.",
+      },
+      {
+        question: "Un appareil peut-il servir plusieurs produits ?",
+        answer:
+          "Là où la contamination croisée est un enjeu de conformité, non. Un équipement dédié par zone et par produit est attendu, et le nettoyage entre produits doit être validé et consigné.",
+      },
+    ],
+    enPath: "/industries/biotech",
+    related: [
+      { label: "Poussière d'amidon", href: `${M}/poussiere-d-amidon` },
+      { label: "Nettoyage de salle blanche", href: `${A}/nettoyage-de-salle-blanche` },
+      { label: "Ensachage et vidage de sacs", href: `${A}/ensachage-et-vidage-de-sacs` },
+      { label: "Mélange et malaxage", href: `${A}/melange-et-malaxage` },
+    ],
+  },
+  {
+    slug: "hydrogene",
+    name: "Hydrogène",
+    group: "Énergie",
+    metaTitle: "Aspirateurs pour installations à hydrogène | Zones de Classe I",
+    metaDescription:
+      "L'hydrogène est un danger de gaz, non de poussière : ce qui compte est la classification de zone et l'équipement qui peut y entrer.",
+    intro:
+      "L'hydrogène est le cas où il faut être clair sur ce dont on parle : ce n'est pas un danger de poussière. C'est un gaz inflammable, et ce qui détermine l'équipement est la classification de la zone.",
+    facts: [
+      { label: "Nature du danger", value: "Gaz inflammable — non une poussière combustible" },
+      { label: "Classification", value: "Classe I, Groupe B pour l'hydrogène" },
+      { label: "Ce que cela change", value: "L'équipement doit convenir à une zone de Classe I" },
+      { label: "Poussières présentes", value: "Celles des procédés adjacents, non l'hydrogène lui-même" },
+    ],
+    overview: [
+      "L'hydrogène brûle avec une plage d'inflammabilité très large et une énergie d'inflammation très faible, ce qui explique son classement en Groupe B — le plus exigeant des groupes de gaz après l'acétylène.",
+      "Ce qu'un aspirateur fait dans une telle installation concerne donc les poussières des procédés adjacents — catalyseurs, matières premières, résidus — récupérées avec un équipement convenant à la classification assignée. La classification est établie par l'ingénieur de l'installation, non déduite de l'apparence de la zone.",
+    ],
+    risksHeading: "Ce que ces installations doivent maîtriser",
+    risks: [
+    "Hydrogène classé en Classe I, Groupe B — parmi les plus exigeants.",
+    "Plage d'inflammabilité très large et énergie d'inflammation très faible.",
+    "Équipement devant convenir à la classification assignée.",
+    "Poussières des procédés adjacents, distinctes du danger gazeux.",
+    "Catalyseurs et matières premières avec leurs propres exigences.",
+    "Classification établie par l'ingénieur, non présumée.",
+    ],
+    solutions: [
+    "Équipement correspondant à la classification de zone assignée par votre ingénieur.",
+    "Récupération conductrice, mise à la terre et exempte de sources d'inflammation.",
+    "Filtration absolue HEPA 99,99 % pour les poussières de procédé.",
+    "Compatibilité établie pour les catalyseurs et résidus manipulés.",
+    "Aucune présomption sur la classification à partir de l'apparence de la zone.",
+    "Documentation de certification fournie pour la configuration retenue.",
+    ],
+    faqs: [
+      {
+        question: "L'hydrogène est-il un danger de poussière ?",
+        answer:
+          "Non, et il vaut la peine d'être clair : l'hydrogène est un gaz inflammable, classé en Classe I, Groupe B — parmi les plus exigeants des groupes de gaz. Ce qui détermine l'équipement est la classification de la zone, non une évaluation de poussière combustible.",
+      },
+      {
+        question: "Que fait un aspirateur dans une installation à hydrogène ?",
+        answer:
+          "Il récupère les poussières des procédés adjacents — catalyseurs, matières premières, résidus — avec un équipement convenant à la classification assignée à la zone où il est utilisé.",
+      },
+      {
+        question: "Pourquoi le Groupe B est-il exigeant ?",
+        answer:
+          "Parce que l'hydrogène a une plage d'inflammabilité très large et une énergie d'inflammation très faible. Cela restreint ce qui peut être utilisé dans une zone classifiée pour lui.",
+      },
+      {
+        question: "Qui détermine la classification ?",
+        answer:
+          "L'ingénieur électrique ou de procédé de votre installation, et elle est acceptée par l'autorité compétente. Nous adaptons l'équipement à cette assignation plutôt que de la deviner.",
+      },
+    ],
+    enPath: "/industries/hydrogen",
+    related: [
+      { label: "Poussière de soufre", href: `${M}/poussiere-de-soufre` },
+      { label: "Nettoyage de réservoirs", href: `${A}/nettoyage-de-reservoirs` },
+      { label: "Nettoyage de déversements", href: `${A}/nettoyage-de-deversements` },
+      { label: "Poussière métallique combustible", href: `${M}/poussiere-metallique-combustible` },
+    ],
+  },
+
+  {
     slug: "recyclage",
     name: "Recyclage",
     group: "Ressources",

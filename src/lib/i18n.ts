@@ -163,6 +163,13 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/industries/agriculture", fr: "/fr/industries/agriculture" },
   { en: "/industries/cannabis", fr: "/fr/industries/cannabis" },
   { en: "/industries/cosmetics", fr: "/fr/industries/cosmetiques" },
+  { en: "/industries/abatement", fr: "/fr/industries/desamiantage-et-decontamination" },
+  { en: "/industries/additive-manufacturing", fr: "/fr/industries/fabrication-additive" },
+  { en: "/industries/cleanrooms", fr: "/fr/industries/salles-blanches" },
+  { en: "/industries/data-centers", fr: "/fr/industries/centres-de-donnees" },
+  { en: "/industries/medical-devices", fr: "/fr/industries/dispositifs-medicaux" },
+  { en: "/industries/biotech", fr: "/fr/industries/biotechnologie" },
+  { en: "/industries/hydrogen", fr: "/fr/industries/hydrogene" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
