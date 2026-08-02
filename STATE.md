@@ -5,13 +5,13 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 298 built, all 200
+- **Routes:** 302 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
 ## English site — COMPLETE
 47 material guides · 4 application guides (mixing-blending, tank-cleaning, thermal-spray,
-warehouse-housekeeping) · 38 industry guides · 16 case studies
+warehouse-housekeeping) · 35 industry guides · 16 case studies
 · 11 compliance pages · 8 guide articles · 6 resource guides · 11 product
 categories · 44 model pages · 112 pages with FAQPage schema.
 
@@ -20,8 +20,8 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
-poussieres-et-matieres hub, applications hub, plus **all 47 material guides** and
-**all 19 application guides**.
+poussieres-et-matieres hub, applications hub, industries hub, plus **all 47 material guides** and
+**all 19 application guides** and **3 industry guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -36,7 +36,7 @@ All 19 English application guides have a French counterpart, verified 19/19 for
 reciprocal hreflang and FAQPage schema, zero unpaired.
 
 ### Remaining to translate
-38 industry guides ·
+35 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**
@@ -46,6 +46,11 @@ protégé-contre-l'inflammation distinction. Mistranslation is a safety error.
 ## How to add a French guide (the whole procedure)
 **Material:** append to `src/lib/data/fr-materials.ts`
 **Application:** append to `src/lib/data/fr-applications.ts` (same shape, reused type)
+**Industry:** append to `src/lib/data/fr-industries.ts` — and use the optional
+`related` field to ROUTE INTO the translated material and application guides
+rather than restating their content. Sector pages describe the sector; they do not
+re-explain silica. This keeps 38 sector pages from competing with the 66 guides
+they draw on.
 
 Then in both cases: add one line to `LOCALE_PAIRS` in `src/lib/i18n.ts`. Routes,
 sitemap, hreflang, breadcrumb and FAQPage schema follow automatically.

@@ -138,6 +138,10 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/applications/tank-cleaning", fr: "/fr/applications/nettoyage-de-reservoirs" },
   { en: "/applications/thermal-spray", fr: "/fr/applications/projection-thermique" },
   { en: "/applications/warehouse-housekeeping", fr: "/fr/applications/entretien-d-entrepot" },
+  { en: "/industries", fr: "/fr/industries" },
+  { en: "/industries/foundry", fr: "/fr/industries/fonderie" },
+  { en: "/industries/aerospace", fr: "/fr/industries/aerospatiale" },
+  { en: "/industries/food-beverage", fr: "/fr/industries/agroalimentaire" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */

@@ -27,6 +27,12 @@ export type FrMaterialGuide = {
   faqs: { question: string; answer: string }[];
   /** English counterpart, for hreflang and the language switch. */
   enPath: string;
+  /**
+   * Optional cross-links. Industry guides use this to route into the translated
+   * material and application guides instead of restating their content, which
+   * keeps sector pages from competing with the guides they draw on.
+   */
+  related?: { label: string; href: string }[];
 };
 
 export const FR_MATERIALS: FrMaterialGuide[] = [

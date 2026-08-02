@@ -132,6 +132,26 @@ export function FrGuidePage({
             </Link>
           </div>
 
+          {guide.related && guide.related.length > 0 && (
+            <div className="mt-12">
+              <h2 className="font-display text-[18px] font-extrabold uppercase text-white">
+                Guides connexes
+              </h2>
+              <ul className="mt-5 flex flex-wrap gap-2.5">
+                {guide.related.map((r) => (
+                  <li key={r.href}>
+                    <Link
+                      href={r.href}
+                      className="inline-block rounded-full bg-white/[0.06] px-3.5 py-1.5 text-[12.5px] font-semibold text-white/70 ring-1 ring-white/10 transition-colors hover:text-white"
+                    >
+                      {r.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {others.length > 0 && (
             <div className="mt-12">
               <h2 className="font-display text-[18px] font-extrabold uppercase text-white">Autres guides</h2>

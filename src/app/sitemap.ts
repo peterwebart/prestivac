@@ -5,6 +5,7 @@ import { GUIDE_ARTICLES } from "@/lib/data/guides";
 import { HAZARDOUS_LOCATION_TOPICS } from "@/lib/data/hazardous-locations";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { FR_APPLICATIONS } from "@/lib/data/fr-applications";
+import { FR_INDUSTRIES } from "@/lib/data/fr-industries";
 import { FR_MATERIALS } from "@/lib/data/fr-materials";
 import { RESOURCES } from "@/lib/data/resources";
 import { ALL_MODELS } from "@/lib/data/product-models";
@@ -134,6 +135,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: site.url + "/fr/a-propos", lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: site.url + "/fr/poussieres-et-matieres", lastModified, changeFrequency: "monthly", priority: 0.85 },
     { url: site.url + "/fr/applications", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
+    { url: site.url + "/fr/industries", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
+    ...FR_INDUSTRIES.map((i) => ({
+      url: site.url + "/fr/industries/" + i.slug,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     ...FR_APPLICATIONS.map((a) => ({
       url: site.url + "/fr/applications/" + a.slug,
       lastModified,
