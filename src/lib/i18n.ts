@@ -196,6 +196,13 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/case-studies/coating-powder-automotive-finishing", fr: "/fr/etudes-de-cas/poudre-de-thermolaquage-finition-automobile" },
   { en: "/case-studies/magnesium-fines-automotive-components", fr: "/fr/etudes-de-cas/fines-de-magnesium-composants-automobiles" },
   { en: "/case-studies/grain-dust-elevator-feed-mill", fr: "/fr/etudes-de-cas/poussiere-de-grain-elevateur" },
+  { en: "/case-studies/lactose-dust-pharmaceutical-tablet", fr: "/fr/etudes-de-cas/poussiere-de-lactose-comprimes-pharmaceutiques" },
+  { en: "/case-studies/sulfur-dust-specialty-chemical-plant", fr: "/fr/etudes-de-cas/poussiere-de-soufre-usine-chimique" },
+  { en: "/case-studies/zinc-whisker-data-center", fr: "/fr/etudes-de-cas/whiskers-de-zinc-centre-de-donnees" },
+  { en: "/case-studies/silicon-dust-semiconductor-fab", fr: "/fr/etudes-de-cas/poussiere-de-silicium-usine-de-semi-conducteurs" },
+  { en: "/case-studies/paper-dust-packaging-converting", fr: "/fr/etudes-de-cas/poussiere-de-papier-conversion-emballage" },
+  { en: "/case-studies/coal-dust-power-generation", fr: "/fr/etudes-de-cas/poussiere-de-charbon-centrale" },
+  { en: "/case-studies/beryllium-dust-national-laboratory", fr: "/fr/etudes-de-cas/poussiere-de-beryllium-laboratoire-de-recherche" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
