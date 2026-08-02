@@ -18,7 +18,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "qu-est-ce-que-la-poussiere-noire",
     name: "Qu'est-ce que la poussière noire ?",
     group: "Identification",
-    metaTitle: "Qu'est-ce que la poussière noire ? Les sources industrielles",
+    metaTitle: "Qu'est-ce que la poussière noire ? Les sources",
     metaDescription:
       "La poussière noire est une couleur, non une matière. Noir de carbone, charbon, coke, graphite, oxyde de fer, toner ou caoutchouc : chacun se comporte différemment.",
     intro:
@@ -86,7 +86,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "elimination-et-valorisation-des-poussieres",
     name: "Poussières récupérées : valoriser ou éliminer ?",
     group: "Exploitation",
-    metaTitle: "Poussières récupérées | Valorisation, recyclage ou élimination",
+    metaTitle: "Poussières récupérées",
     metaDescription:
       "La poussière collectée n'est pas une affaire classée. Quand la matière peut être valorisée, quand elle est un déchet réglementé, et pourquoi un contenant plein est un danger.",
     intro:
@@ -153,7 +153,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "recuperation-de-liquides-toxiques",
     name: "Récupération de liquides toxiques",
     group: "Choix d'équipement",
-    metaTitle: "Récupération de liquides toxiques | La compatibilité d'abord",
+    metaTitle: "Récupération de liquides toxiques",
     metaDescription:
       "Récupérer un liquide dangereux est un problème de compatibilité avant d'être un problème d'aspiration. Chimie, confinement et élimination.",
     intro:
@@ -220,7 +220,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "aspirateurs-antistatiques-et-esd",
     name: "Antistatique ou ESD ?",
     group: "Choix d'équipement",
-    metaTitle: "Aspirateurs antistatiques et ESD | Deux exigences distinctes",
+    metaTitle: "Aspirateurs antistatiques et ESD",
     metaDescription:
       "L'antistatique protège la zone contre l'inflammation ; l'ESD protège le produit contre les décharges. Même physique, exigences différentes.",
     intro:
@@ -288,7 +288,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "aspirateur-ou-depoussiereur",
     name: "Aspirateur ou dépoussiéreur ?",
     group: "Choix d'équipement",
-    metaTitle: "Aspirateur industriel ou dépoussiéreur ? La différence expliquée",
+    metaTitle: "Aspirateur industriel ou dépoussiéreur ? La",
     metaDescription:
       "Un dépoussiéreur capte à la source ce qui est produit ; un aspirateur retire ce qui s'est déjà déposé. Deux machines différentes pour deux problèmes différents.",
     intro:
@@ -353,7 +353,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "explosions-de-poussieres",
     name: "Comment fonctionne une explosion de poussières",
     group: "Notions fondamentales",
-    metaTitle: "Explosion de poussières : les cinq conditions et l'événement secondaire",
+    metaTitle: "Explosion de poussières : les cinq conditions et",
     metaDescription:
       "Une déflagration exige cinq conditions simultanées. C'est l'événement secondaire — l'accumulation soulevée — qui détruit les bâtiments.",
     intro:
@@ -419,7 +419,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "sources-d-inflammation",
     name: "Sources d'inflammation",
     group: "Notions fondamentales",
-    metaTitle: "Sources d'inflammation en milieu poussiéreux | Les identifier",
+    metaTitle: "Sources d'inflammation en milieu poussiéreux",
     metaDescription:
       "Étincelles mécaniques, surfaces chaudes, décharges statiques, équipement électrique et combustion lente : où les inflammations commencent réellement.",
     intro:
@@ -485,7 +485,7 @@ export const FR_ARTICLES: FrArticle[] = [
     slug: "analyse-des-dangers-lies-aux-poussieres",
     name: "L'analyse des dangers liés aux poussières",
     group: "Conformité",
-    metaTitle: "Analyse des dangers liés aux poussières (DHA) | Ce qu'elle implique",
+    metaTitle: "Analyse des dangers liés aux poussières (DHA)",
     metaDescription:
       "La NFPA 660 exige une analyse des dangers liés aux poussières. Ce qu'elle couvre, ce qu'elle produit, et pourquoi elle est propre à votre installation.",
     intro:

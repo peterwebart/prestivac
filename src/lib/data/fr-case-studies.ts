@@ -42,7 +42,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-lactose-comprimes-pharmaceutiques",
     name: "Poussière de lactose en production de comprimés",
     group: "Sciences de la vie",
-    metaTitle: "Étude de cas : poussière de lactose en production pharmaceutique",
+    metaTitle: "Étude de cas : poussière de lactose en production",
     metaDescription:
       "Scénario représentatif : maîtriser une poudre à la fois soumise à une limite d'exposition et combustible dans une ligne de comprimés.",
     intro:
@@ -107,7 +107,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-soufre-usine-chimique",
     name: "Poussière de soufre en usine chimique",
     group: "Procédés",
-    metaTitle: "Étude de cas : poussière de soufre en usine chimique",
+    metaTitle: "Étude de cas : poussière de soufre en usine",
     metaDescription:
       "Scénario représentatif : maîtriser une poussière qui s'enflamme à faible énergie et produit un gaz toxique en brûlant.",
     intro:
@@ -172,7 +172,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "whiskers-de-zinc-centre-de-donnees",
     name: "Whiskers de zinc en centre de données",
     group: "Infrastructure",
-    metaTitle: "Étude de cas : whiskers de zinc en centre de données",
+    metaTitle: "Étude de cas : whiskers de zinc en centre de",
     metaDescription:
       "Scénario représentatif : un mode de défaillance où la poussière ne brûle pas mais provoque des pannes difficiles à diagnostiquer.",
     intro:
@@ -237,7 +237,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-silicium-usine-de-semi-conducteurs",
     name: "Poussière de silicium en usine de semi-conducteurs",
     group: "Fabrication de précision",
-    metaTitle: "Étude de cas : poussière de silicium en usine de semi-conducteurs",
+    metaTitle: "Étude de cas : poussière de silicium en usine de",
     metaDescription:
       "Scénario représentatif : une installation où la contamination particulaire est un défaut de production autant qu'un danger.",
     intro:
@@ -302,7 +302,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-papier-conversion-emballage",
     name: "Poussière de papier en conversion d'emballage",
     group: "Pâtes et papiers",
-    metaTitle: "Étude de cas : poussière de papier en conversion d'emballage",
+    metaTitle: "Étude de cas : poussière de papier en conversion",
     metaDescription:
       "Scénario représentatif : maîtriser fibre de cellulose et fines d'amidon sur des lignes de conversion rapides.",
     intro:
@@ -367,7 +367,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-charbon-centrale",
     name: "Poussière de charbon en centrale thermique",
     group: "Production d'énergie",
-    metaTitle: "Étude de cas : poussière de charbon en centrale thermique",
+    metaTitle: "Étude de cas : poussière de charbon en centrale",
     metaDescription:
       "Scénario représentatif : maîtriser une poussière carbonée qui se consume lentement dans les galeries de manutention de combustible.",
     intro:
@@ -432,7 +432,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-beryllium-laboratoire-de-recherche",
     name: "Poussière de béryllium en laboratoire de recherche",
     group: "Institutions",
-    metaTitle: "Étude de cas : poussière de béryllium en laboratoire de recherche",
+    metaTitle: "Étude de cas : poussière de béryllium en",
     metaDescription:
       "Scénario représentatif : contenir une matière régulée dont la présence n'est souvent pas signalée par la description de la pièce.",
     intro:
@@ -498,7 +498,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poudre-de-titane-fabrication-additive",
     name: "Poudre de titane en fabrication additive",
     group: "Fabrication avancée",
-    metaTitle: "Étude de cas : poudre de titane en fabrication additive",
+    metaTitle: "Étude de cas : poudre de titane en fabrication",
     metaDescription:
       "Scénario représentatif : récupérer une poudre de titane réactive destinée au réemploi dans un atelier de fabrication additive.",
     intro:
@@ -563,7 +563,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-graphite-usine-de-piles",
     name: "Poussière de graphite en usine de piles",
     group: "Fabrication avancée",
-    metaTitle: "Étude de cas : poussière de graphite en usine de piles",
+    metaTitle: "Étude de cas : poussière de graphite en usine de",
     metaDescription:
       "Scénario représentatif : maîtriser une poussière de graphite à la fois combustible et conductrice dans une usine de fabrication d'électrodes.",
     intro:
@@ -628,7 +628,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-bois-mobilier",
     name: "Poussière de bois en fabrication de mobilier",
     group: "Transformation",
-    metaTitle: "Étude de cas : poussière de bois en fabrication de mobilier",
+    metaTitle: "Étude de cas : poussière de bois en fabrication",
     metaDescription:
       "Scénario représentatif : maîtriser un volume élevé de poussière de bois combustible et cancérogène dans un atelier de mobilier.",
     intro:
@@ -693,7 +693,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poudre-de-thermolaquage-finition-automobile",
     name: "Poudre de thermolaquage en finition automobile",
     group: "Finition de surface",
-    metaTitle: "Étude de cas : poudre de thermolaquage en finition automobile",
+    metaTitle: "Étude de cas : poudre de thermolaquage en",
     metaDescription:
       "Scénario représentatif : récupérer proprement une surpulvérisation de thermolaquage pour la réintroduire au procédé.",
     intro:
@@ -758,7 +758,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "fines-de-magnesium-composants-automobiles",
     name: "Fines de magnésium en composants automobiles",
     group: "Fabrication",
-    metaTitle: "Étude de cas : fines de magnésium en composants automobiles",
+    metaTitle: "Étude de cas : fines de magnésium en composants",
     metaDescription:
       "Scénario représentatif : récupérer des fines de magnésium, parmi les métaux structuraux les plus facilement inflammables.",
     intro:
@@ -823,7 +823,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-grain-elevateur",
     name: "Poussière de grain en élévateur et meunerie",
     group: "Agroalimentaire",
-    metaTitle: "Étude de cas : poussière de grain en élévateur et meunerie",
+    metaTitle: "Étude de cas : poussière de grain en élévateur et",
     metaDescription:
       "Scénario représentatif : maîtriser la poussière de grain aux points de transfert d'un élévateur et d'une meunerie.",
     intro:
@@ -889,7 +889,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "sable-de-silice-fonderie",
     name: "Sable de silice en fonderie",
     group: "Métaux primaires",
-    metaTitle: "Étude de cas : sable de silice en fonderie | Scénario type",
+    metaTitle: "Étude de cas : sable de silice en fonderie",
     metaDescription:
       "Scénario représentatif : maîtriser la silice cristalline respirable du sable de moulage et les fines métalliques du parachèvement dans une fonderie.",
     intro:
@@ -954,7 +954,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-de-farine-boulangerie",
     name: "Poussière de farine en boulangerie industrielle",
     group: "Transformation alimentaire",
-    metaTitle: "Étude de cas : poussière de farine en boulangerie | Scénario type",
+    metaTitle: "Étude de cas : poussière de farine en boulangerie",
     metaDescription:
       "Scénario représentatif : maîtriser la poussière de farine combustible dans une boulangerie industrielle tout en satisfaisant les registres de salubrité.",
     intro:
@@ -1019,7 +1019,7 @@ export const FR_CASE_STUDIES: FrCaseStudy[] = [
     slug: "poussiere-d-aluminium-usinage-automobile",
     name: "Fines d'aluminium en usinage automobile",
     group: "Fabrication",
-    metaTitle: "Étude de cas : fines d'aluminium en usinage automobile",
+    metaTitle: "Étude de cas : fines d'aluminium en usinage",
     metaDescription:
       "Scénario représentatif : récupérer des fines d'aluminium réactives mêlées à du liquide de coupe dans un atelier d'usinage automobile.",
     intro:

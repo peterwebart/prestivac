@@ -21,7 +21,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "munitions",
     name: "Munitions",
     group: "Défense",
-    metaTitle: "Aspirateurs pour la fabrication de munitions | Poussières métalliques",
+    metaTitle: "Aspirateurs pour la fabrication de munitions",
     metaDescription:
       "Cette page traite de la poussière métallique et de l'entretien ménager en usine de munitions. Elle ne fournit aucune indication sur les matières énergétiques.",
     intro:
@@ -88,7 +88,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "industrie-du-charbon",
     name: "Industrie du charbon",
     group: "Ressources",
-    metaTitle: "Aspirateurs pour l'industrie du charbon | Groupe F et combustion lente",
+    metaTitle: "Aspirateurs pour l'industrie du charbon",
     metaDescription:
       "Le charbon est une poussière carbonée du Groupe F qui se consume lentement en profondeur. Manutention, préparation et entreposage.",
     intro:
@@ -155,7 +155,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "education-et-recherche",
     name: "Éducation et recherche",
     group: "Institutions",
-    metaTitle: "Aspirateurs pour établissements d'enseignement et laboratoires",
+    metaTitle: "Aspirateurs pour ateliers d'enseignement",
     metaDescription:
       "Les ateliers d'enseignement et les laboratoires manipulent une grande variété de matières, souvent inconnues à l'avance et par des opérateurs peu expérimentés.",
     intro:
@@ -222,7 +222,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "naval-et-maritime",
     name: "Naval et maritime",
     group: "Fabrication lourde",
-    metaTitle: "Aspirateurs pour chantiers navals | Décapage, soudage et espaces clos",
+    metaTitle: "Aspirateurs pour chantiers navals",
     metaDescription:
       "Les chantiers navals combinent décapage abrasif, soudage, revêtements anciens et travail en espace clos dans les compartiments.",
     intro:
@@ -290,7 +290,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "ferroviaire",
     name: "Ferroviaire",
     group: "Fabrication lourde",
-    metaTitle: "Aspirateurs pour l'industrie ferroviaire | Meulage, freins et ateliers",
+    metaTitle: "Aspirateurs pour l'industrie ferroviaire",
     metaDescription:
       "L'entretien ferroviaire produit de la poussière de meulage, des résidus de freinage et des revêtements anciens à décaper.",
     intro:
@@ -358,7 +358,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "fours-sous-vide",
     name: "Fours sous vide",
     group: "Traitement thermique",
-    metaTitle: "Aspirateurs pour fours sous vide | Résidus fins et entretien",
+    metaTitle: "Aspirateurs pour fours sous vide",
     metaDescription:
       "L'entretien des fours sous vide implique des résidus métalliques très fins, parfois réactifs, dans une enceinte confinée.",
     intro:
@@ -424,7 +424,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "peintures-et-revetements",
     name: "Peintures et revêtements",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour peintures et revêtements | Poudres et pigments",
+    metaTitle: "Aspirateurs pour peintures et revêtements",
     metaDescription:
       "La fabrication de peintures et revêtements combine poudres combustibles, pigments contenant parfois des métaux régulés, et solvants inflammables.",
     intro:
@@ -493,7 +493,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "desamiantage-et-decontamination",
     name: "Désamiantage et décontamination",
     group: "Environnement",
-    metaTitle: "Aspirateurs pour désamiantage et décontamination | Cadre réglementaire",
+    metaTitle: "Aspirateurs pour désamiantage et décontamination",
     metaDescription:
       "Le désamiantage et le retrait du plomb sont des travaux d'entreprise agréée. Un aspirateur HEPA est un équipement nommé dans ce cadre, jamais un substitut.",
     intro:
@@ -560,7 +560,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "fabrication-additive",
     name: "Fabrication additive",
     group: "Fabrication avancée",
-    metaTitle: "Aspirateurs pour la fabrication additive | Poudres réactives et réemploi",
+    metaTitle: "Aspirateurs pour la fabrication additive",
     metaDescription:
       "Les poudres de fabrication additive sont fines, souvent réactives, et destinées au réemploi. Récupération, tamisage et ségrégation.",
     intro:
@@ -627,7 +627,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "salles-blanches",
     name: "Salles blanches",
     group: "Environnements contrôlés",
-    metaTitle: "Aspirateurs pour salles blanches | Filtration absolue et équipement dédié",
+    metaTitle: "Aspirateurs pour salles blanches",
     metaDescription:
       "En salle blanche, l'appareil est jugé sur son échappement autant que sur sa captation, et il ne doit jamais quitter la zone contrôlée.",
     intro:
@@ -693,7 +693,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "centres-de-donnees",
     name: "Centres de données",
     group: "Infrastructure",
-    metaTitle: "Aspirateurs pour centres de données | Poussière conductrice et faux planchers",
+    metaTitle: "Aspirateurs pour centres de données",
     metaDescription:
       "Dans un centre de données, la poussière conductrice peut ponter des connexions, et les whiskers de zinc des dalles de faux plancher sont un mode de défaillance documenté.",
     intro:
@@ -759,7 +759,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "dispositifs-medicaux",
     name: "Dispositifs médicaux",
     group: "Sciences de la vie",
-    metaTitle: "Aspirateurs pour dispositifs médicaux | Usinage et propreté",
+    metaTitle: "Aspirateurs pour dispositifs médicaux",
     metaDescription:
       "La fabrication de dispositifs médicaux combine usinage d'alliages exigeants, exigences de propreté et matières régulées.",
     intro:
@@ -827,7 +827,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "biotechnologie",
     name: "Biotechnologie",
     group: "Sciences de la vie",
-    metaTitle: "Aspirateurs pour la biotechnologie | Confinement et poudres actives",
+    metaTitle: "Aspirateurs pour la biotechnologie",
     metaDescription:
       "En biotechnologie, le confinement est gouverné par la limite d'exposition du composé, et plusieurs excipients sont aussi combustibles.",
     intro:
@@ -893,7 +893,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "hydrogene",
     name: "Hydrogène",
     group: "Énergie",
-    metaTitle: "Aspirateurs pour installations à hydrogène | Zones de Classe I",
+    metaTitle: "Aspirateurs pour installations à hydrogène",
     metaDescription:
       "L'hydrogène est un danger de gaz, non de poussière : ce qui compte est la classification de zone et l'équipement qui peut y entrer.",
     intro:
@@ -960,7 +960,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "recyclage",
     name: "Recyclage",
     group: "Ressources",
-    metaTitle: "Aspirateurs pour le recyclage | Flux mixtes et matières inconnues",
+    metaTitle: "Aspirateurs pour le recyclage",
     metaDescription:
       "Le recyclage traite des flux dont la composition n'est pas connue à l'avance, ce qui inverse la logique habituelle d'évaluation des dangers.",
     intro:
@@ -1027,7 +1027,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "textile",
     name: "Textile",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour le textile | Charpie, byssinose et machines",
+    metaTitle: "Aspirateurs pour le textile",
     metaDescription:
       "La charpie textile est combustible, isole les surfaces chaudes des machines, et le coton possède sa propre norme OSHA en raison de la byssinose.",
     intro:
@@ -1093,7 +1093,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "materiaux-de-construction",
     name: "Matériaux de construction",
     group: "Ressources",
-    metaTitle: "Aspirateurs pour matériaux de construction | Silice avant tout",
+    metaTitle: "Aspirateurs pour matériaux de construction",
     metaDescription:
       "Béton, brique, pierre et maçonnerie ne brûlent pas. Le danger est la silice cristalline respirable, avec une limite d'exposition très basse.",
     intro:
@@ -1159,7 +1159,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "verre-et-ceramique",
     name: "Verre et céramique",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour verre et céramique | Silice et abrasivité",
+    metaTitle: "Aspirateurs pour verre et céramique",
     metaDescription:
       "Le verre et la céramique combinent silice cristalline respirable, abrasivité extrême et chaleur de procédé élevée.",
     intro:
@@ -1226,7 +1226,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "agriculture",
     name: "Agriculture",
     group: "Agroalimentaire",
-    metaTitle: "Aspirateurs pour l'agriculture | Silos, élévateurs et grain",
+    metaTitle: "Aspirateurs pour l'agriculture",
     metaDescription:
       "La poussière de grain est combustible et le secteur agricole est l'un des rares où les fréquences de nettoyage figurent dans une réglementation.",
     intro:
@@ -1293,7 +1293,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "cannabis",
     name: "Cannabis",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour le cannabis | Poussière végétale et extraction",
+    metaTitle: "Aspirateurs pour le cannabis",
     metaDescription:
       "La transformation du cannabis combine poussière végétale combustible et, en extraction aux solvants, des zones classifiées Classe I.",
     intro:
@@ -1359,7 +1359,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "cosmetiques",
     name: "Cosmétiques",
     group: "Sciences de la vie",
-    metaTitle: "Aspirateurs pour les cosmétiques | Poudres fines et contamination",
+    metaTitle: "Aspirateurs pour les cosmétiques",
     metaDescription:
       "Les poudres cosmétiques sont fines, souvent combustibles, et la contamination croisée entre teintes est un enjeu de conformité distinct.",
     intro:
@@ -1427,7 +1427,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "mines-et-mineraux",
     name: "Mines et minéraux",
     group: "Ressources",
-    metaTitle: "Aspirateurs pour mines et traitement des minéraux | Silice",
+    metaTitle: "Aspirateurs pour mines et traitement des minéraux",
     metaDescription:
       "Le traitement des minéraux combine silice cristalline respirable, volumes élevés et abrasivité extrême. Récupération adaptée.",
     intro:
@@ -1494,7 +1494,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "energie",
     name: "Énergie",
     group: "Production d'énergie",
-    metaTitle: "Aspirateurs pour la production d'énergie | Manutention de combustible",
+    metaTitle: "Aspirateurs pour la production d'énergie",
     metaDescription:
       "En production d'énergie, les galeries de convoyeurs et les tours de transfert combinent poussière carbonée, confinement et sources d'inflammation.",
     intro:
@@ -1562,7 +1562,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "petrole-et-gaz",
     name: "Pétrole et gaz",
     group: "Procédés",
-    metaTitle: "Aspirateurs pour pétrole et gaz | Zones classifiées et catalyseurs",
+    metaTitle: "Aspirateurs pour pétrole et gaz",
     metaDescription:
       "En pétrole et gaz, la classification de zone détermine tout, et les catalyseurs, boues et résidus posent des questions de compatibilité distinctes.",
     intro:
@@ -1628,7 +1628,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "papeteries",
     name: "Papeteries",
     group: "Pâtes et papiers",
-    metaTitle: "Aspirateurs pour papeteries | Fibres, poussière et volumes",
+    metaTitle: "Aspirateurs pour papeteries",
     metaDescription:
       "Les papeteries combinent fibre de cellulose combustible, volumes élevés et environnements humides puis secs selon la section.",
     intro:
@@ -1693,7 +1693,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "papier-et-emballage",
     name: "Papier et emballage",
     group: "Pâtes et papiers",
-    metaTitle: "Aspirateurs pour la conversion et l'emballage | Fibre et amidon",
+    metaTitle: "Aspirateurs pour la conversion et l'emballage",
     metaDescription:
       "La conversion produit de la poussière de fibre et, avec les adhésifs à base d'amidon, une seconde fraction plus fine encore.",
     intro:
@@ -1758,7 +1758,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "plastiques-et-caoutchouc",
     name: "Plastiques et caoutchouc",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour plastiques et caoutchouc | Fumée toxique et statique",
+    metaTitle: "Aspirateurs pour plastiques et caoutchouc",
     metaDescription:
       "Les poussières de polymères et de caoutchouc sont combustibles et produisent une fumée dense et toxique en brûlant.",
     intro:
@@ -1825,7 +1825,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "imprimerie",
     name: "Imprimerie",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour l'imprimerie | Poussière de papier, toner et encres",
+    metaTitle: "Aspirateurs pour l'imprimerie",
     metaDescription:
       "L'imprimerie combine poussière de papier combustible, toner fin et résidus d'encre. Récupération et propreté de production.",
     intro:
@@ -1891,7 +1891,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "automobile",
     name: "Automobile",
     group: "Fabrication",
-    metaTitle: "Aspirateurs pour l'industrie automobile | Alliages et thermolaquage",
+    metaTitle: "Aspirateurs pour l'industrie automobile",
     metaDescription:
       "L'automobile combine alliages légers réactifs, poussière de thermolaquage et parachèvement métallique sur une même chaîne. Récupération par zone.",
     intro:
@@ -1959,7 +1959,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "pharmaceutique",
     name: "Pharmaceutique",
     group: "Sciences de la vie",
-    metaTitle: "Aspirateurs pharmaceutiques | Confinement et salubrité",
+    metaTitle: "Aspirateurs pharmaceutiques",
     metaDescription:
       "En pharmaceutique, les limites d'exposition professionnelle gouvernent la spécification, et plusieurs poudres actives sont aussi combustibles.",
     intro:
@@ -2026,7 +2026,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "travail-du-bois",
     name: "Travail du bois",
     group: "Transformation",
-    metaTitle: "Aspirateurs pour le travail du bois | Poussière fine et cancérogène",
+    metaTitle: "Aspirateurs pour le travail du bois",
     metaDescription:
       "La poussière de bois est combustible et classée cancérogène par le CIRC. Volume élevé, accumulation en hauteur et récupération sécuritaire.",
     intro:
@@ -2093,7 +2093,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "travail-des-metaux",
     name: "Travail des métaux",
     group: "Fabrication",
-    metaTitle: "Aspirateurs pour le travail des métaux | Fines et exposition",
+    metaTitle: "Aspirateurs pour le travail des métaux",
     metaDescription:
       "Le travail des métaux produit des fines conductrices, parfois réactives, et des expositions créées par l'opération plutôt que présentes dans le stock.",
     intro:
@@ -2162,7 +2162,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "chimie",
     name: "Chimie",
     group: "Procédés",
-    metaTitle: "Aspirateurs pour l'industrie chimique | Compatibilité et classification",
+    metaTitle: "Aspirateurs pour l'industrie chimique",
     metaDescription:
       "En chimie, la compatibilité des matériaux et la classification de la zone déterminent l'équipement avant toute question de performance.",
     intro:
@@ -2229,7 +2229,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "batterie",
     name: "Fabrication de piles",
     group: "Fabrication avancée",
-    metaTitle: "Aspirateurs pour la fabrication de piles | Graphite et lithium",
+    metaTitle: "Aspirateurs pour la fabrication de piles",
     metaDescription:
       "La fabrication de piles combine graphite conducteur, lithium réactif à l'humidité et exigences de salle sèche. Récupération adaptée.",
     intro:
@@ -2296,7 +2296,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "electronique",
     name: "Électronique",
     group: "Fabrication de précision",
-    metaTitle: "Aspirateurs ESD pour l'électronique | Décharges et contamination",
+    metaTitle: "Aspirateurs ESD pour l'électronique",
     metaDescription:
       "En électronique, la maîtrise de l'électricité statique protège le produit autant que l'environnement, et la filtration absolue est la fonction de l'appareil.",
     intro:
@@ -2363,7 +2363,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "fonderie",
     name: "Fonderie",
     group: "Métaux primaires",
-    metaTitle: "Aspirateurs pour fonderie | Sable de moulage et silice",
+    metaTitle: "Aspirateurs pour fonderie",
     metaDescription:
       "Les fonderies combinent silice cristalline respirable, poussières métalliques et chaleur soutenue. Récupération sécuritaire du sable de moulage et des fines.",
     intro:
@@ -2430,7 +2430,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "aerospatiale",
     name: "Aérospatiale",
     group: "Fabrication de précision",
-    metaTitle: "Aspirateurs pour l'aérospatiale | Composites et alliages légers",
+    metaTitle: "Aspirateurs pour l'aérospatiale",
     metaDescription:
       "L'aérospatiale combine composites conducteurs, alliages légers réactifs et exigences de propreté FOD. Récupération adaptée à chaque atelier.",
     intro:
@@ -2498,7 +2498,7 @@ export const FR_INDUSTRIES: FrIndustryGuide[] = [
     slug: "agroalimentaire",
     name: "Agroalimentaire",
     group: "Transformation alimentaire",
-    metaTitle: "Aspirateurs pour l'agroalimentaire | Poussières et salubrité",
+    metaTitle: "Aspirateurs pour l'agroalimentaire",
     metaDescription:
       "En agroalimentaire, un même passage de nettoyage doit servir le programme de poussières combustibles et les registres de salubrité. Farine, sucre, amidon et allergènes.",
     intro:

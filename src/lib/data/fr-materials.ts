@@ -40,7 +40,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-calcium",
     name: "Poussière de calcium",
     group: "Poussières métalliques",
-    metaTitle: "Le calcium est-il inflammable ? Métal, carbonate et chaux distingués",
+    metaTitle: "Le calcium est-il inflammable ? Métal, carbonate",
     metaDescription:
       "Le calcium métallique est réactif et s'enflamme comme fines en réagissant avec l'eau. Le carbonate de calcium ne brûle pas du tout. Savoir lequel on manipule est la première question.",
     intro:
@@ -100,7 +100,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-d-arsenic",
     name: "Poussière d'arsenic",
     group: "Poussières métalliques",
-    metaTitle: "L'arsenic est-il toxique ? Norme OSHA et cancérogénicité",
+    metaTitle: "L'arsenic est-il toxique ? Norme OSHA et",
     metaDescription:
       "L'arsenic inorganique et ses composés sont classés cancérogènes pour l'humain par le CIRC et régis par la norme OSHA 29 CFR 1910.1018.",
     intro:
@@ -160,7 +160,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-laiton-et-de-bronze",
     name: "Poussière de laiton et de bronze",
     group: "Poussières métalliques",
-    metaTitle: "Le laiton est-il toxique ? Plomb, zinc et fièvre des fondeurs",
+    metaTitle: "Le laiton est-il toxique ? Plomb, zinc et fièvre",
     metaDescription:
       "Le laiton et le bronze sont des alliages de cuivre : les dangers viennent de ce à quoi le cuivre est allié — zinc, et souvent plomb dans les laitons de décolletage.",
     intro:
@@ -220,7 +220,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-the",
     name: "Poussière de thé",
     group: "Poussières alimentaires",
-    metaTitle: "La poussière de thé est-elle combustible ? Conditionnement",
+    metaTitle: "La poussière de thé est-elle combustible ?",
     metaDescription:
       "La poussière et les fines de thé produites par le broyage, le tamisage et l'ensachage sont une poussière organique combustible.",
     intro:
@@ -279,7 +279,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-malt",
     name: "Poussière de malt",
     group: "Poussières agricoles",
-    metaTitle: "La poussière de malt est-elle combustible ? Brasserie et distillerie",
+    metaTitle: "La poussière de malt est-elle combustible ?",
     metaDescription:
       "La poussière de malt issue du concassage, du transport et du brassage est une poussière organique combustible riche en amidon.",
     intro:
@@ -339,7 +339,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-mais",
     name: "Poussière de maïs",
     group: "Poussières agricoles",
-    metaTitle: "La poussière de maïs est-elle combustible ? Meunerie et amidonnerie",
+    metaTitle: "La poussière de maïs est-elle combustible ?",
     metaDescription:
       "La poussière de maïs est une poussière organique combustible riche en amidon. Dangers en meunerie sèche et humide et récupération sécuritaire.",
     intro:
@@ -398,7 +398,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-d-etain",
     name: "Poussière d'étain",
     group: "Poussières métalliques",
-    metaTitle: "L'étain est-il inflammable ? Poussière et fumées d'étain",
+    metaTitle: "L'étain est-il inflammable ? Poussière et fumées",
     metaDescription:
       "L'étain massif ne s'enflamme pas facilement ; la poudre fine est évaluée comme une poussière métallique combustible. Fumées de brasage et récupération.",
     intro:
@@ -458,7 +458,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-cobalt",
     name: "Poussière de cobalt",
     group: "Poussières métalliques",
-    metaTitle: "La poussière de cobalt est-elle combustible ? Métaux durs et poumon",
+    metaTitle: "La poussière de cobalt est-elle combustible ?",
     metaDescription:
       "La poudre fine de cobalt est une poussière métallique combustible, mais le cobalt est surtout contrôlé pour sa toxicité — la maladie pulmonaire des métaux durs et une classification cancérogène.",
     intro:
@@ -518,7 +518,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-manganese",
     name: "Poussière de manganèse",
     group: "Poussières métalliques",
-    metaTitle: "Pourquoi le manganèse est-il préoccupant ? Manganisme et soudage",
+    metaTitle: "Pourquoi le manganèse est-il préoccupant ?",
     metaDescription:
       "Le manganèse est une neurotoxine : la surexposition chronique cause le manganisme, une atteinte neurologique. Il est présent dans presque tous les aciers et consommables de soudage.",
     intro:
@@ -578,7 +578,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-plastique",
     name: "Poussière de plastique",
     group: "Poussières de plastiques et caoutchouc",
-    metaTitle: "La poussière de plastique est-elle combustible ? Fumée toxique",
+    metaTitle: "La poussière de plastique est-elle combustible ?",
     metaDescription:
       "La plupart des poussières de polymères sont combustibles et relèvent du Groupe G. Les plastiques en combustion produisent une fumée dense et toxique.",
     intro:
@@ -638,7 +638,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "amiante",
     name: "Amiante",
     group: "Poussières minérales",
-    metaTitle: "L'amiante est-il encore un risque ? Retrait par entreprise agréée",
+    metaTitle: "L'amiante est-il encore un risque ? Retrait par",
     metaDescription:
       "L'amiante est un cancérogène du Groupe 1 régi par ses propres normes OSHA. Le retrait relève d'entreprises agréées sous confinement — un aspirateur HEPA est un équipement nommé dans ce cadre, jamais un substitut.",
     intro:
@@ -698,7 +698,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-vermiculite",
     name: "Poussière de vermiculite",
     group: "Poussières minérales",
-    metaTitle: "La vermiculite est-elle dangereuse ? Contamination par l'amiante",
+    metaTitle: "La vermiculite est-elle dangereuse ?",
     metaDescription:
       "La vermiculite elle-même n'est pas de l'amiante, mais une partie de la vermiculite historique est contaminée par de l'amiante. Ne pas perturber, faire analyser, et confier le retrait à une entreprise agréée.",
     intro:
@@ -758,7 +758,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-beryllium",
     name: "Poussière de béryllium",
     group: "Poussières métalliques",
-    metaTitle: "La poussière de béryllium est-elle dangereuse ? Sensibilisation",
+    metaTitle: "La poussière de béryllium est-elle dangereuse ?",
     metaDescription:
       "Le béryllium provoque une sensibilisation immunitaire pouvant évoluer vers la bérylliose chronique, une maladie pulmonaire irréversible. Régi par la norme OSHA 29 CFR 1910.1024.",
     intro:
@@ -818,7 +818,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-fibre-de-carbone",
     name: "Poussière de fibre de carbone",
     group: "Poussières carbonées",
-    metaTitle: "La poussière de fibre de carbone est-elle conductrice ? Composites",
+    metaTitle: "La poussière de fibre de carbone est-elle",
     metaDescription:
       "La poussière de fibre de carbone est électriquement conductrice et abrasive, et les fibres respirables issues de l'usinage de composites posent un problème d'exposition distinct.",
     intro:
@@ -879,7 +879,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-papier",
     name: "Poussière de papier",
     group: "Poussières de papier et emballage",
-    metaTitle: "La poussière de papier est-elle combustible ? Fibres et conversion",
+    metaTitle: "La poussière de papier est-elle combustible ?",
     metaDescription:
       "La poussière de papier et les fibres de cellulose issues de la coupe, du refendage et de la conversion sont combustibles. Dangers en usine et récupération sécuritaire.",
     intro:
@@ -939,7 +939,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-cuir",
     name: "Poussière de cuir",
     group: "Poussières textiles",
-    metaTitle: "La poussière de cuir est-elle combustible ? Ponçage et finition",
+    metaTitle: "La poussière de cuir est-elle combustible ?",
     metaDescription:
       "La poussière de cuir issue du ponçage, du parage et de la finition est une poussière organique combustible, et les résidus de tannage peuvent ajouter des préoccupations chimiques.",
     intro:
@@ -999,7 +999,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-cacao",
     name: "Poussière de cacao",
     group: "Poussières alimentaires",
-    metaTitle: "La poussière de cacao est-elle combustible ? Chocolaterie",
+    metaTitle: "La poussière de cacao est-elle combustible ?",
     metaDescription:
       "La poudre de cacao est une poussière organique combustible, fine et facilement mise en suspension. Dangers en chocolaterie et récupération sécuritaire.",
     intro:
@@ -1060,7 +1060,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-zirconium",
     name: "Poussière de zirconium",
     group: "Poussières métalliques",
-    metaTitle: "Le zirconium est-il inflammable ? Particules conservées humides",
+    metaTitle: "Le zirconium est-il inflammable ? Particules",
     metaDescription:
       "Le zirconium fin compte parmi les métaux les plus sensibles à l'inflammation — il peut s'enflammer spontanément à l'air. Les fines sont souvent conservées humides, et pourtant un feu de zirconium reste de Classe D.",
     intro:
@@ -1120,7 +1120,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-lithium",
     name: "Poussière de lithium",
     group: "Poussières métalliques",
-    metaTitle: "Le lithium est-il inflammable ? Réactivité à l'eau et Classe D",
+    metaTitle: "Le lithium est-il inflammable ? Réactivité à",
     metaDescription:
       "Le lithium métallique réagit violemment avec l'eau et même avec l'humidité de l'air, en libérant de l'hydrogène et de la chaleur. Manipulation de Classe D et récupération en fabrication de piles.",
     intro:
@@ -1180,7 +1180,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-liege",
     name: "Poussière de liège",
     group: "Poussières de bois",
-    metaTitle: "La poussière de liège est-elle dangereuse ? Subérose et combustibilité",
+    metaTitle: "La poussière de liège est-elle dangereuse ?",
     metaDescription:
       "Le liège est une poussière naturelle combustible, et la poussière de liège moisie est associée à la subérose — le poumon des travailleurs du liège. Deux dangers distincts et comment les maîtriser.",
     intro:
@@ -1241,7 +1241,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-chrome",
     name: "Poussière de chrome",
     group: "Poussières métalliques",
-    metaTitle: "La poussière de chrome est-elle dangereuse ? Chrome hexavalent",
+    metaTitle: "La poussière de chrome est-elle dangereuse ?",
     metaDescription:
       "Le danger du chrome dépend de son état d'oxydation. Le chrome hexavalent est un cancérogène reconnu régi par la norme OSHA 29 CFR 1910.1026, souvent créé par le soudage et le meulage de l'inox.",
     intro:
@@ -1301,7 +1301,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-nickel",
     name: "Poussière de nickel",
     group: "Poussières métalliques",
-    metaTitle: "Le nickel est-il inflammable ? Poussière de nickel et toxicité",
+    metaTitle: "Le nickel est-il inflammable ? Poussière de",
     metaDescription:
       "Le nickel massif ne s'enflamme pas facilement ; la poudre fine est une poussière métallique combustible. Mais le nickel est surtout contrôlé pour sa toxicité — les composés du nickel sont classés cancérogènes par le CIRC.",
     intro:
@@ -1361,7 +1361,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-coton",
     name: "Poussière de coton",
     group: "Poussières textiles",
-    metaTitle: "La poussière de coton est-elle combustible ? Byssinose et charpie",
+    metaTitle: "La poussière de coton est-elle combustible ?",
     metaDescription:
       "La poussière de coton et la charpie sont combustibles, et le coton possède sa propre norme OSHA en raison de la byssinose. Dangers en filature et récupération sécuritaire.",
     intro:
@@ -1422,7 +1422,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-cafe",
     name: "Poussière de café",
     group: "Poussières alimentaires",
-    metaTitle: "Le café est-il inflammable ? Poussière de café et torréfaction",
+    metaTitle: "Le café est-il inflammable ? Poussière de café et",
     metaDescription:
       "Le café torréfié est une matière organique combustible, et la pellicule et les fines de torréfaction sont une poussière combustible. Dangers en torréfaction et récupération sécuritaire.",
     intro:
@@ -1482,7 +1482,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-graphite",
     name: "Poussière de graphite",
     group: "Poussières carbonées",
-    metaTitle: "La poussière de graphite est-elle combustible et conductrice ?",
+    metaTitle: "La poussière de graphite est-elle combustible et",
     metaDescription:
       "Le graphite est à la fois une poussière carbonée combustible du Groupe F et un conducteur électrique. Pourquoi cette combinaison impose des normes d'entretien strictes en fabrication d'électrodes et de piles.",
     intro:
@@ -1542,7 +1542,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-tabac",
     name: "Poussière de tabac",
     group: "Poussières agricoles",
-    metaTitle: "Qu'est-ce que le tabac combustible ? Poussière de tabac en usine",
+    metaTitle: "Qu'est-ce que le tabac combustible ?",
     metaDescription:
       "La poussière et les fines de tabac produites par la coupe, le conditionnement et le mélange sont une poussière combustible. Dangers en usine et récupération sécuritaire.",
     intro:
@@ -1603,7 +1603,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-caoutchouc",
     name: "Poussière de caoutchouc",
     group: "Poussières de plastiques et caoutchouc",
-    metaTitle: "Le caoutchouc est-il inflammable ? Poussière de caoutchouc et meulage",
+    metaTitle: "Le caoutchouc est-il inflammable ? Poussière de",
     metaDescription:
       "Le caoutchouc brûle facilement en produisant une fumée dense et toxique, et la poussière de meulage et de rectification de pneus est une poussière combustible. Dangers et récupération sécuritaire.",
     intro:
@@ -1663,7 +1663,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-coke",
     name: "Poussière de coke",
     group: "Poussières carbonées",
-    metaTitle: "Le coke est-il inflammable ? Poussière de coke et combustion lente",
+    metaTitle: "Le coke est-il inflammable ? Poussière de coke et",
     metaDescription:
       "Le coke est un combustible carboné et sa poussière est combustible, avec une tendance marquée à la combustion lente en profondeur. Dangers et récupération sécuritaire.",
     intro:
@@ -1723,7 +1723,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-noir-de-carbone",
     name: "Poussière de noir de carbone",
     group: "Poussières carbonées",
-    metaTitle: "La poussière de carbone est-elle combustible ? Noir de carbone",
+    metaTitle: "La poussière de carbone est-elle combustible ?",
     metaDescription:
       "Le noir de carbone est une poussière carbonée combustible de Classe II Groupe F, extrêmement fine et difficile à confiner, avec une tendance à la combustion lente.",
     intro:
@@ -1784,7 +1784,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-grain",
     name: "Poussière de grain",
     group: "Poussières agricoles",
-    metaTitle: "La poussière de grain est-elle combustible ? Silos et élévateurs",
+    metaTitle: "La poussière de grain est-elle combustible ?",
     metaDescription:
       "La poussière de grain est combustible — le registre des explosions d'élévateurs a fait de la maîtrise des poussières un sujet réglementé. Dangers, normes et récupération sécuritaire.",
     intro:
@@ -1844,7 +1844,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-beton-et-de-ciment",
     name: "Poussière de béton et de ciment",
     group: "Poussières minérales",
-    metaTitle: "Le ciment est-il inflammable ? Non — le vrai danger est la silice",
+    metaTitle: "Le ciment est-il inflammable ? Non — le vrai",
     metaDescription:
       "Le ciment et le béton ne sont pas combustibles et ne déflagrent pas. Le véritable danger est la silice cristalline respirable, régie par une limite OSHA de 50 µg/m³.",
     intro:
@@ -1904,7 +1904,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-zinc",
     name: "Poussière de zinc",
     group: "Poussières métalliques",
-    metaTitle: "Le zinc est-il inflammable ? Poussière de zinc et fièvre des fondeurs",
+    metaTitle: "Le zinc est-il inflammable ? Poussière de zinc et",
     metaDescription:
       "Le zinc massif ne s'enflamme pas facilement ; la poussière et la poudre de zinc sont des poussières métalliques combustibles réactives. Réaction avec l'eau, fièvre des fondeurs et récupération.",
     intro:
@@ -1965,7 +1965,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-magnesium",
     name: "Poussière de magnésium",
     group: "Poussières métalliques",
-    metaTitle: "Le magnésium est-il inflammable ? Particules de magnésium et Classe D",
+    metaTitle: "Le magnésium est-il inflammable ? Particules de",
     metaDescription:
       "Le magnésium est parmi les métaux structuraux les plus facilement inflammables. Ses particules brûlent à température extrême et l'eau est dangereuse. Récupération sécuritaire et dispositions de Classe D.",
     intro:
@@ -2025,7 +2025,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-plomb",
     name: "Poussière de plomb",
     group: "Poussières métalliques",
-    metaTitle: "La poussière de plomb est-elle dangereuse ? Limite OSHA et contrôle",
+    metaTitle: "La poussière de plomb est-elle dangereuse ?",
     metaDescription:
       "Le plomb est une toxine systémique cumulative régie par la norme OSHA 29 CFR 1910.1025, avec une limite d'exposition de 50 µg/m³. Pourquoi le balayage à sec est interdit et comment la récupération HEPA maîtrise l'exposition.",
     intro:
@@ -2085,7 +2085,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-sucre",
     name: "Poussière de sucre",
     group: "Poussières alimentaires",
-    metaTitle: "La poussière de sucre est-elle explosive ? Dangers et récupération",
+    metaTitle: "La poussière de sucre est-elle explosive ?",
     metaDescription:
       "Le sucre est une poussière organique combustible et le registre des raffineries en témoigne. Comportement, accumulation et récupération sécuritaire par aspirateur antidéflagrant avec filtration HEPA.",
     intro:
@@ -2146,7 +2146,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-cuivre",
     name: "Poussière de cuivre",
     group: "Poussières métalliques",
-    metaTitle: "Le cuivre est-il inflammable ? Poussière de cuivre et récupération",
+    metaTitle: "Le cuivre est-il inflammable ? Poussière de",
     metaDescription:
       "Le cuivre massif n'est pas inflammable ; la poudre fine de cuivre est traitée comme une poussière métallique potentiellement combustible à caractériser par essai. Dangers respiratoires et récupération sécuritaire.",
     intro:
@@ -2206,7 +2206,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-charbon",
     name: "Poussière de charbon",
     group: "Poussières carbonées",
-    metaTitle: "La poussière de charbon est-elle explosive ? Combustion lente et contrôle",
+    metaTitle: "La poussière de charbon est-elle explosive ?",
     metaDescription:
       "La poussière de charbon est une poussière carbonée combustible de Classe II Groupe F, reconnue pour se consumer lentement en profondeur. Dangers, pneumoconiose et récupération sécuritaire.",
     intro:
@@ -2266,7 +2266,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-titane",
     name: "Poussière de titane",
     group: "Poussières métalliques",
-    metaTitle: "Le titane est-il inflammable ? Particules de titane et Classe D",
+    metaTitle: "Le titane est-il inflammable ? Particules de",
     metaDescription:
       "Le titane massif s'enflamme difficilement ; les particules et la poudre de titane s'enflamment facilement et brûlent à température extrême. Pourquoi l'eau et le CO₂ sont inappropriés et comment récupérer les fines.",
     intro:
@@ -2327,7 +2327,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-metallique-combustible",
     name: "Poussière métallique combustible",
     group: "Poussières métalliques",
-    metaTitle: "Poussière métallique combustible — quels métaux brûlent et pourquoi",
+    metaTitle: "Poussière métallique combustible — quels métaux",
     metaDescription:
       "Quels métaux forment une poussière combustible, pourquoi l'eau aggrave un feu de métal, ce que signifie la Classe II Groupe E et comment récupérer les particules fines de meulage et d'usinage.",
     intro:
@@ -2394,7 +2394,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-bois",
     name: "Poussière de bois",
     group: "Poussières de bois",
-    metaTitle: "La poussière de bois est-elle combustible ? Dangers et récupération",
+    metaTitle: "La poussière de bois est-elle combustible ?",
     metaDescription:
       "La poussière de bois est combustible et classée cancérogène pour l'humain par le CIRC. Pourquoi la poussière de sablage est plus dangereuse que les copeaux et comment la récupérer en sécurité.",
     intro:
@@ -2454,7 +2454,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-fer-et-d-acier",
     name: "Poussière de fer et d'acier",
     group: "Poussières métalliques",
-    metaTitle: "La poussière de fer est-elle combustible ? Particules de meulage",
+    metaTitle: "La poussière de fer est-elle combustible ?",
     metaDescription:
       "Une plaque d'acier ne brûle pas, mais la poussière fine de fer et d'acier peut s'enflammer, se consumer lentement et se comporter de façon pyrophorique. Récupération sécuritaire des particules de meulage et de sablage.",
     intro:
@@ -2515,7 +2515,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-cadmium",
     name: "Poussière de cadmium",
     group: "Poussières métalliques",
-    metaTitle: "La poussière de cadmium est-elle dangereuse ? Toxicité et récupération",
+    metaTitle: "La poussière de cadmium est-elle dangereuse ?",
     metaDescription:
       "Le cadmium est un métal lourd cancérogène régi par sa propre norme OSHA. Où la poussière et les fumées de cadmium apparaissent, pourquoi le balayage à sec est interdit et comment la récupération HEPA maîtrise l'exposition.",
     intro:
@@ -2575,7 +2575,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-soufre",
     name: "Poussière de soufre",
     group: "Poussières chimiques",
-    metaTitle: "Le soufre est-il inflammable ? Poussière de soufre et déflagration",
+    metaTitle: "Le soufre est-il inflammable ? Poussière de",
     metaDescription:
       "Le soufre élémentaire est combustible et brûle en produisant du dioxyde de soufre toxique. Pourquoi la poussière de soufre s'enflamme si facilement et comment la récupérer sans créer de source d'inflammation.",
     intro:
@@ -2635,7 +2635,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-silice",
     name: "Poussière de silice",
     group: "Poussières minérales",
-    metaTitle: "La poussière de silice est-elle dangereuse ? Silicose et contrôle",
+    metaTitle: "La poussière de silice est-elle dangereuse ?",
     metaDescription:
       "La silice cristalline respirable cause la silicose, une maladie pulmonaire irréversible. La norme OSHA fixe une limite d'exposition de 50 µg/m³. Pourquoi la silice n'est pas combustible et comment la maîtriser.",
     intro:
@@ -2696,7 +2696,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-d-amidon",
     name: "Poussière d'amidon",
     group: "Poussières alimentaires",
-    metaTitle: "La poussière d'amidon est-elle combustible ? Récupération sécuritaire",
+    metaTitle: "La poussière d'amidon est-elle combustible ?",
     metaDescription:
       "L'amidon en poudre est une poussière organique combustible — la fécule de maïs sert de poussière de référence en laboratoire. Comportement, risques et récupération sécuritaire par aspirateur antidéflagrant avec filtration HEPA.",
     intro:
@@ -2756,7 +2756,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-de-farine",
     name: "Poussière de farine",
     group: "Poussières alimentaires",
-    metaTitle: "La farine est-elle inflammable ? Poussière de farine et explosions",
+    metaTitle: "La farine est-elle inflammable ? Poussière de",
     metaDescription:
       "La farine est une poudre organique combustible : en nuage, elle peut déflagrer. Pourquoi la farine explose, ce que la NFPA 660 exige et comment récupérer la poussière de farine en sécurité.",
     intro:
@@ -2816,7 +2816,7 @@ export const FR_MATERIALS: FrMaterialGuide[] = [
     slug: "poussiere-d-aluminium",
     name: "Poussière d'aluminium",
     group: "Poussières métalliques",
-    metaTitle: "L'aluminium est-il inflammable ? Poussière d'aluminium et Classe D",
+    metaTitle: "L'aluminium est-il inflammable ? Poussière",
     metaDescription:
       "L'aluminium massif s'enflamme difficilement ; la poussière fine d'aluminium est une poussière métallique combustible réactive. Pourquoi l'eau aggrave la situation, ce que signifie le Groupe E et comment récupérer les particules fines.",
     intro:

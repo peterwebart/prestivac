@@ -5,7 +5,7 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 363 built, all 200
+- **Routes:** 374 built (351 in sitemap; 11 compliance pages noindex pending review)
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
@@ -19,7 +19,7 @@ categories · 44 model pages · 112 pages with FAQPage schema.
 Certification asserted sitewide: **UL 1203**, Class I Div 1 & 2 Groups A–D,
 Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 
-## French (fr-CA, Québec) — CONTENT COMPLETE except compliance
+## French (fr-CA, Québec) — TRANSLATION COMPLETE
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
 poussieres-et-matieres hub, applications hub, industries hub, guides hub, etudes-de-cas hub, plus **all 47 material guides** and
 **all 19 application guides** and **all 38 industry guides** and **all 8 guide articles** and **all 16 case studies**.
@@ -41,9 +41,16 @@ reciprocal hreflang and FAQPage schema, zero unpaired.
 vacuum-furnace, paints-coatings) ·
 16 case studies · 4 articles (black dust, recovered dust, toxic liquids, ESD).
 
-**11 compliance pages: DO NOT translate without a French-speaking safety review.**
-They carry the Class/Division/Group designations and the antidéflagrant vs
-protégé-contre-l'inflammation distinction. Mistranslation is a safety error.
+**11 compliance pages: TRANSLATED, GATED PENDING REVIEW.**
+They exist at /fr/conformite/* and are fully written, but while
+REVIEW_PENDING = true in src/lib/data/fr-compliance.ts they are:
+  - noindex / nofollow
+  - excluded from the sitemap
+  - absent from LOCALE_PAIRS, so never advertised as a French counterpart
+  - rendered with a visible notice naming the English as authoritative
+
+To publish after a French-speaking safety reviewer signs off: set REVIEW_PENDING to
+false, add the 11 pairs to LOCALE_PAIRS, add the sitemap entries. Nothing else.
 
 ## How to add a French guide (the whole procedure)
 **Material:** append to `src/lib/data/fr-materials.ts`
@@ -102,3 +109,16 @@ deps, and reports git history plus guide count.
 The zip now INCLUDES `.git`. It previously did not, which meant every reset
 destroyed the commit history and left no record of what was done — the direct
 cause of repeated work. Do not add `.git` back to the zip exclusions.
+
+
+## SEO / GEO — audited and clean (French)
+137 routes. 137/137 unique titles, none over 62 visible characters. 137/137
+self-referencing canonicals. 137/137 reciprocal hreflang in BOTH directions.
+137/137 meta descriptions at 70+ characters. 128/137 FAQPage schema (the 9 without
+are hubs, which is correct). Zero orphans, mean 32 inbound French links per page.
+inLanguage fr-CA on every content page. One language switcher, resolving to page
+counterparts.
+
+TITLE BUDGET: keep metaTitle at or under 50 characters. The root layout appends the
+brand suffix, so anything longer gets truncated by Google. If you add French pages,
+stay inside that budget.

@@ -11,7 +11,7 @@ const description =
   "Guides par application : ce que chaque opération génère et comment récupérer la poussière en sécurité. Soudage, meulage, ponçage et plus.";
 
 export const metadata: Metadata = {
-  title: "Applications | Guides de récupération par opération",
+  title: "Applications industrielles",
   description,
   alternates: {
     canonical: "/fr/applications",

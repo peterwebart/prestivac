@@ -31,7 +31,7 @@ export const FR = {
       "Fabricant d'aspirateurs certifiés pour poussières combustibles et liquides / solvants inflammables",
   },
   home: {
-    metaTitle: "Aspirateurs antidéflagrants | Fabricant certifié UL 1203",
+    metaTitle: "Fabricant d'aspirateurs antidéflagrants",
     metaDescription:
       "PrestiVac fabrique des aspirateurs industriels antidéflagrants certifiés UL 1203 pour poussières combustibles et liquides inflammables. Acier inoxydable massif, filtration absolue HEPA 99,99 %, plus de 200 modèles. Fabriqués aux États-Unis.",
     eyebrow: "Fabricant depuis plus de 40 ans",
@@ -77,7 +77,7 @@ export const FR = {
   },
   explosionProof: {
     slug: "aspirateurs-antideflagrants",
-    metaTitle: "Aspirateurs antidéflagrants | Poussières combustibles | UL 1203",
+    metaTitle: "Aspirateurs antidéflagrants certifiés UL 1203",
     metaDescription:
       "Aspirateurs industriels antidéflagrants certifiés UL 1203 pour poussières combustibles et liquides inflammables : construction conductrice mise à la terre, modèles électriques et pneumatiques, filtration HEPA 99,99 %. Fabriqués aux États-Unis.",
     eyebrow: "Emplacements dangereux",
@@ -116,7 +116,7 @@ export const FR = {
   },
   quote: {
     slug: "demande-de-soumission",
-    metaTitle: "Obtenir une soumission | Aspirateurs antidéflagrants",
+    metaTitle: "Obtenir une soumission",
     metaDescription:
       "Demandez une soumission pour un aspirateur industriel antidéflagrant PrestiVac. Indiquez votre matière, votre classification et vos services, et notre équipe technique recommandera le modèle approprié.",
     eyebrow: "Directement du fabricant",

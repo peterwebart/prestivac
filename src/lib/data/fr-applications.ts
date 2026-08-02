@@ -19,7 +19,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "melange-et-malaxage",
     name: "Mélange et malaxage",
     group: "Manutention de matières",
-    metaTitle: "Mélange et malaxage | Chargement, déchargement et allergènes",
+    metaTitle: "Mélange et malaxage",
     metaDescription:
       "Le mélange génère de la poussière au chargement et au déchargement, et la contamination croisée entre lots est un enjeu distinct du danger d'incendie.",
     intro:
@@ -79,7 +79,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "nettoyage-de-reservoirs",
     name: "Nettoyage de réservoirs",
     group: "Entretien d'installations",
-    metaTitle: "Nettoyage de réservoirs | Espace clos et compatibilité des résidus",
+    metaTitle: "Nettoyage de réservoirs",
     metaDescription:
       "Le nettoyage de réservoirs combine entrée en espace clos et résidus dont la chimie détermine l'équipement. Atmosphère, compatibilité et permis.",
     intro:
@@ -139,7 +139,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "projection-thermique",
     name: "Projection thermique",
     group: "Fabrication avancée",
-    metaTitle: "Projection thermique | Surpulvérisation métallique très fine",
+    metaTitle: "Projection thermique",
     metaDescription:
       "La projection thermique produit une surpulvérisation métallique extrêmement fine, souvent réactive, ainsi que des fumées. Récupération en cabine.",
     intro:
@@ -199,7 +199,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "entretien-d-entrepot",
     name: "Entretien d'entrepôt",
     group: "Entretien d'installations",
-    metaTitle: "Entretien d'entrepôt | Poussière en hauteur et remise en suspension",
+    metaTitle: "Entretien d'entrepôt",
     metaDescription:
       "Dans un entrepôt, la poussière s'accumule en hauteur sur les racks et la circulation des chariots la remet continuellement en suspension.",
     intro:
@@ -260,7 +260,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "ensachage-et-vidage-de-sacs",
     name: "Ensachage et vidage de sacs",
     group: "Manutention de matières",
-    metaTitle: "Ensachage et vidage de sacs | Le point de poussière le plus élevé",
+    metaTitle: "Ensachage et vidage de sacs",
     metaDescription:
       "Le vidage manuel de sacs est souvent le point de génération de poussière le plus important d'une usine. Captation à la source et récupération.",
     intro:
@@ -320,7 +320,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "nettoyage-de-salle-blanche",
     name: "Nettoyage de salle blanche",
     group: "Environnements contrôlés",
-    metaTitle: "Nettoyage de salle blanche | Ce qui sort de l'échappement",
+    metaTitle: "Nettoyage de salle blanche",
     metaDescription:
       "En salle blanche, l'appareil est jugé sur ce qui sort de son échappement autant que sur ce qu'il ramasse. Filtration absolue et équipement dédié.",
     intro:
@@ -380,7 +380,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "entretien-des-convoyeurs",
     name: "Entretien des convoyeurs",
     group: "Entretien d'installations",
-    metaTitle: "Entretien des convoyeurs | Galeries et points de transfert",
+    metaTitle: "Entretien des convoyeurs",
     metaDescription:
       "Les galeries de convoyeurs accumulent de la poussière sur toute leur longueur, avec des entraînements répartis partout. Nettoyage sécuritaire, équipement à l'arrêt.",
     intro:
@@ -440,7 +440,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "remplissage-de-futs",
     name: "Remplissage de fûts",
     group: "Manutention de matières",
-    metaTitle: "Remplissage de fûts | Déplacement d'air et exposition",
+    metaTitle: "Remplissage de fûts",
     metaDescription:
       "Remplir un fût déplace un volume d'air chargé de poudre. Captation au point de remplissage et vidange contenue.",
     intro:
@@ -500,7 +500,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "nettoyage-de-depoussiereur",
     name: "Nettoyage de dépoussiéreur",
     group: "Entretien d'installations",
-    metaTitle: "Nettoyage de dépoussiéreur | L'appareil est plein de la poussière",
+    metaTitle: "Nettoyage de dépoussiéreur",
     metaDescription:
       "Un dépoussiéreur contient concentrée la poussière que toute l'installation produit. Entretien des trémies, manches et plénums en sécurité.",
     intro:
@@ -560,7 +560,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "impression-3d-metal",
     name: "Impression 3D métal",
     group: "Fabrication avancée",
-    metaTitle: "Récupération des poudres d'impression 3D métal | Titane et aluminium",
+    metaTitle: "Récupération des poudres d'impression 3D métal",
     metaDescription:
       "Les poudres métalliques d'impression 3D sont fines, réactives et réutilisables. Récupération, tamisage et manipulation des poudres de titane et d'aluminium.",
     intro:
@@ -621,7 +621,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "usinage-cnc",
     name: "Usinage CNC",
     group: "Travail des métaux",
-    metaTitle: "Récupération des copeaux et brouillard d'huile en usinage CNC",
+    metaTitle: "Copeaux et brouillard d'huile en usinage CNC",
     metaDescription:
       "L'usinage CNC produit des copeaux, des fines métalliques et du liquide de coupe mélangés. Récupération de flux mixtes et ségrégation par métal.",
     intro:
@@ -681,7 +681,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "thermolaquage",
     name: "Thermolaquage",
     group: "Finition de surface",
-    metaTitle: "Récupération de la poudre de thermolaquage | Récupération et réemploi",
+    metaTitle: "Récupération de la poudre de thermolaquage",
     metaDescription:
       "La poudre de thermolaquage est une poussière organique combustible, et la surpulvérisation récupérée proprement peut souvent être réintroduite. Récupération et changements de couleur.",
     intro:
@@ -741,7 +741,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "decapage-abrasif",
     name: "Décapage abrasif",
     group: "Finition de surface",
-    metaTitle: "Récupération après décapage abrasif | Média usé et silice",
+    metaTitle: "Récupération après décapage abrasif",
     metaDescription:
       "Le décapage abrasif produit un mélange de média usé et de substrat retiré, en grand volume. La silice est le danger dominant lorsque le média en contient.",
     intro:
@@ -801,7 +801,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "ebavurage",
     name: "Ébavurage",
     group: "Travail des métaux",
-    metaTitle: "Récupération de la poussière d'ébavurage | Zone respiratoire",
+    metaTitle: "Récupération de la poussière d'ébavurage",
     metaDescription:
       "L'ébavurage produit des fines métalliques directement dans la zone respiratoire de l'opérateur. Captation à la source et récupération sécuritaire.",
     intro:
@@ -861,7 +861,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "nettoyage-de-silo",
     name: "Nettoyage de silo",
     group: "Entretien d'installations",
-    metaTitle: "Nettoyage de silo | Réduire les entrées en espace clos",
+    metaTitle: "Nettoyage de silo",
     metaDescription:
       "Le nettoyage par accès extérieur depuis les trous d'homme rend les entrées en espace clos rares plutôt qu'inutiles. Ce qu'une récupération sous vide peut et ne peut pas faire.",
     intro:
@@ -921,7 +921,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "nettoyage-de-deversements",
     name: "Nettoyage de déversements",
     group: "Entretien d'installations",
-    metaTitle: "Nettoyage de déversements | Compatibilité chimique d'abord",
+    metaTitle: "Nettoyage de déversements",
     metaDescription:
       "Récupérer un déversement est un problème de compatibilité avant d'être un problème d'aspiration. Ce que le liquide fait à l'équipement et à l'opérateur.",
     intro:
@@ -982,7 +982,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "nettoyage-de-soudage",
     name: "Nettoyage après soudage",
     group: "Travail des métaux",
-    metaTitle: "Nettoyage des fumées et scories de soudage | Récupération",
+    metaTitle: "Nettoyage des fumées et scories de soudage",
     metaDescription:
       "Le soudage génère des fumées métalliques respirables, des scories et des particules de meulage. Captation à la source et récupération sécuritaire en atelier de soudage.",
     intro:
@@ -1042,7 +1042,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "poussiere-de-meulage",
     name: "Poussière de meulage",
     group: "Travail des métaux",
-    metaTitle: "Récupération de la poussière de meulage | Étincelles et fines",
+    metaTitle: "Récupération de la poussière de meulage",
     metaDescription:
       "Le meulage produit simultanément des particules fines et des étincelles — le combustible et l'inflammation dans la même opération. Récupération sécuritaire.",
     intro:
@@ -1102,7 +1102,7 @@ export const FR_APPLICATIONS: FrApplicationGuide[] = [
     slug: "poncage",
     name: "Ponçage",
     group: "Finition de surface",
-    metaTitle: "Récupération de la poussière de ponçage | Bois, métal, apprêts",
+    metaTitle: "Récupération de la poussière de ponçage",
     metaDescription:
       "Le ponçage produit la fraction fine qui compte pour le risque de déflagration et pour l'exposition. Captation à la source et récupération sécuritaire.",
     intro:
