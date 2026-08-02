@@ -29,6 +29,7 @@ const FR_NAV = [
   { label: "Poussières et matières", href: "/fr/poussieres-et-matieres" },
   { label: "Applications", href: "/fr/applications" },
   { label: "Industries", href: "/fr/industries" },
+  { label: "Guides", href: "/fr/guides" },
   { label: "À propos", href: "/fr/a-propos" },
 ];
 

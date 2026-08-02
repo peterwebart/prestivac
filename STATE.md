@@ -5,7 +5,7 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 337 built, all 200
+- **Routes:** 342 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
@@ -21,8 +21,8 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
-poussieres-et-matieres hub, applications hub, industries hub, plus **all 47 material guides** and
-**all 19 application guides** and **all 38 industry guides**.
+poussieres-et-matieres hub, applications hub, industries hub, guides hub, plus **all 47 material guides** and
+**all 19 application guides** and **all 38 industry guides** and **4 guide articles**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -39,7 +39,7 @@ reciprocal hreflang and FAQPage schema, zero unpaired.
 ### Remaining to translate
 7 industry guides (ammunition, coal, education, marine, rail,
 vacuum-furnace, paints-coatings) ·
-16 case studies · 8 articles.
+16 case studies · 4 articles (black dust, recovered dust, toxic liquids, ESD).
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**
 They carry the Class/Division/Group designations and the antidéflagrant vs

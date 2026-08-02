@@ -177,6 +177,11 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/industries/rail", fr: "/fr/industries/ferroviaire" },
   { en: "/industries/vacuum-furnace", fr: "/fr/industries/fours-sous-vide" },
   { en: "/industries/paints-coatings", fr: "/fr/industries/peintures-et-revetements" },
+  { en: "/guides", fr: "/fr/guides" },
+  { en: "/guides/vacuum-vs-dust-collector", fr: "/fr/guides/aspirateur-ou-depoussiereur" },
+  { en: "/guides/dust-explosion-basics", fr: "/fr/guides/explosions-de-poussieres" },
+  { en: "/guides/sources-of-ignition", fr: "/fr/guides/sources-d-inflammation" },
+  { en: "/guides/dust-hazard-analysis", fr: "/fr/guides/analyse-des-dangers-lies-aux-poussieres" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */

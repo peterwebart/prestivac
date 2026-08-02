@@ -5,6 +5,7 @@ import { GUIDE_ARTICLES } from "@/lib/data/guides";
 import { HAZARDOUS_LOCATION_TOPICS } from "@/lib/data/hazardous-locations";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { FR_APPLICATIONS } from "@/lib/data/fr-applications";
+import { FR_ARTICLES } from "@/lib/data/fr-articles";
 import { FR_INDUSTRIES } from "@/lib/data/fr-industries";
 import { FR_MATERIALS } from "@/lib/data/fr-materials";
 import { RESOURCES } from "@/lib/data/resources";
@@ -136,6 +137,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: site.url + "/fr/poussieres-et-matieres", lastModified, changeFrequency: "monthly", priority: 0.85 },
     { url: site.url + "/fr/applications", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
     { url: site.url + "/fr/industries", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
+    { url: site.url + "/fr/guides", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
+    ...FR_ARTICLES.map((a) => ({
+      url: site.url + "/fr/guides/" + a.slug,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     ...FR_INDUSTRIES.map((i) => ({
       url: site.url + "/fr/industries/" + i.slug,
       lastModified,
