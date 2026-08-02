@@ -18,6 +18,470 @@ const A = "/fr/applications";
 
 export const FR_INDUSTRIES: FrIndustryGuide[] = [
   {
+    slug: "mines-et-mineraux",
+    name: "Mines et minéraux",
+    group: "Ressources",
+    metaTitle: "Aspirateurs pour mines et traitement des minéraux | Silice",
+    metaDescription:
+      "Le traitement des minéraux combine silice cristalline respirable, volumes élevés et abrasivité extrême. Récupération adaptée.",
+    intro:
+      "Le traitement des minéraux pose un problème d'échelle avant un problème de chimie : les volumes sont élevés, la matière est abrasive, et la silice cristalline respirable est présente dans une grande partie de ce qui est concassé.",
+    facts: [
+      { label: "Danger dominant", value: "Silice cristalline respirable — silicose" },
+      { label: "Limite d'exposition", value: "50 µg/m³ (MPT 8 h) selon la norme OSHA" },
+      { label: "Contrainte physique", value: "Volumes élevés et abrasivité extrême" },
+      { label: "Combustibilité", value: "Variable : nulle pour la plupart des minéraux, réelle pour le charbon" },
+    ],
+    overview: [
+      "La plupart des minéraux ne brûlent pas : leur danger est sanitaire, dominé par la silice. Le charbon et certains minerais sulfurés sont l'exception, et pour eux le danger de combustion s'ajoute au danger d'exposition.",
+      "L'abrasivité détermine ensuite la durée de vie de l'équipement : un appareil non conçu pour du minéral concassé s'use rapidement au niveau des boyaux, des tubes et des surfaces de séparation.",
+    ],
+    risksHeading: "Ce que le traitement des minéraux doit maîtriser",
+    risks: [
+    "Silice cristalline respirable présente dans une grande partie du concassé.",
+    "Volumes élevés à récupérer, dépassant la capacité d'appareils mobiles seuls.",
+    "Abrasivité extrême usant rapidement l'équipement.",
+    "Combustibilité réelle pour le charbon et certains minerais sulfurés.",
+    "Accumulation sur les structures et convoyeurs de manutention.",
+    "Balayage à sec, encore courant et inapproprié là où il y a de la silice.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 %, la silice gouvernant la spécification.",
+    "Construction tolérante à l'abrasion et pièces d'usure remplaçables.",
+    "Grande capacité de collecte ou système centralisé pour le volume.",
+    "Équipement antidéflagrant là où le charbon ou des sulfures sont traités.",
+    "Élimination du balayage à sec et du soufflage à l'air comprimé.",
+    "Fréquences définies pour les structures de convoyage et les points de transfert.",
+    ],
+    faqs: [
+      {
+        question: "Quel est le principal danger en traitement des minéraux ?",
+        answer:
+          "La silice cristalline respirable, présente dans une grande partie de ce qui est concassé. Elle cause la silicose, une maladie pulmonaire irréversible, et la norme OSHA fixe une limite d'exposition de 50 µg/m³ — assez bas pour qu'une poussière visible la dépasse largement.",
+      },
+      {
+        question: "Les poussières minérales sont-elles combustibles ?",
+        answer:
+          "La plupart ne le sont pas : leur danger est entièrement sanitaire. Le charbon et certains minerais sulfurés sont l'exception, et pour eux le danger de combustion s'ajoute à celui d'exposition plutôt que de le remplacer.",
+      },
+      {
+        question: "Pourquoi l'équipement s'use-t-il si vite ?",
+        answer:
+          "Parce que le minéral concassé est extrêmement abrasif : il érode boyaux, tubes et surfaces de séparation. Une construction tolérante à l'abrasion avec des pièces d'usure remplaçables est plus économique à l'usage qu'un appareil générique.",
+      },
+      {
+        question: "Le balayage à sec est-il acceptable ?",
+        answer:
+          "Non, là où il y a de la silice. Il remet en suspension une poussière dont la limite d'exposition est parmi les plus basses, et il reste pourtant courant dans le secteur — c'est le premier changement de pratique à faire.",
+      },
+    ],
+    enPath: "/industries/mining",
+    related: [
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Poussière de charbon", href: `${M}/poussiere-de-charbon` },
+      { label: "Poussière de soufre", href: `${M}/poussiere-de-soufre` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+      { label: "Nettoyage de silo", href: `${A}/nettoyage-de-silo` },
+    ],
+  },
+  {
+    slug: "energie",
+    name: "Énergie",
+    group: "Production d'énergie",
+    metaTitle: "Aspirateurs pour la production d'énergie | Manutention de combustible",
+    metaDescription:
+      "En production d'énergie, les galeries de convoyeurs et les tours de transfert combinent poussière carbonée, confinement et sources d'inflammation.",
+    intro:
+      "En production d'énergie, le danger n'est pas dans la chaudière mais dans la manutention du combustible : galeries de convoyeurs, tours de transfert et broyage réunissent poussière carbonée, confinement et entraînements.",
+    facts: [
+      { label: "Danger dominant", value: "Poussière carbonée combustible — Classe II, Groupe F" },
+      { label: "Comportement distinctif", value: "Combustion lente en profondeur, avec rallumage" },
+      { label: "Zones critiques", value: "Galeries, tours de transfert, broyage, mise en silo" },
+      { label: "Cocombustion", value: "La biomasse ajoute l'auto-échauffement biologique" },
+    ],
+    overview: [
+      "Le registre des explosions en centrale figure parmi les mieux documentés de la sécurité industrielle, et le mécanisme est constant : un événement primaire soulève les accumulations d'une galerie, et l'événement secondaire se propage dans la structure.",
+      "La combustion lente exige un traitement distinct : un incendie qui paraît éteint dans de la poussière accumulée peut brûler à l'intérieur. C'est pourquoi la matière récupérée est sortie du bâtiment plutôt qu'entreposée dans un contenant.",
+    ],
+    risksHeading: "Ce que la production d'énergie doit maîtriser",
+    risks: [
+    "Poussière carbonée combustible du Groupe F, sujette à la combustion lente.",
+    "Galeries de convoyeurs concentrant accumulations, confinement et entraînements.",
+    "Tours de transfert produisant la fraction la plus fine.",
+    "Broyage produisant la matière la plus fine de l'installation.",
+    "Biomasse ajoutant l'auto-échauffement biologique en entreposage.",
+    "Contenants pleins laissés dans les galeries.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant adapté au Groupe F.",
+    "Appareils pneumatiques adaptés au travail continu en galerie.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Retrait de la matière récupérée du bâtiment à la fin de chaque passage.",
+    "Nettoyage équipement arrêté et consigné dans les galeries.",
+    "Fréquences définies par surface, incluant le pourtour des entraînements.",
+    ],
+    faqs: [
+      {
+        question: "Où se concentre le danger dans une centrale ?",
+        answer:
+          "Dans la manutention du combustible plutôt que dans la chaudière : galeries de convoyeurs, tours de transfert et broyage réunissent poussière carbonée fine, confinement et entraînements répartis. C'est la géométrie des événements secondaires les mieux documentés du secteur.",
+      },
+      {
+        question: "Pourquoi la matière récupérée doit-elle sortir du bâtiment ?",
+        answer:
+          "Parce que la poussière carbonée se consume lentement en profondeur : un foyer peut persister dans un contenant sans flamme visible et se rallumer. Un contenant plein concentre en un point le combustible qui était réparti en couche mince.",
+      },
+      {
+        question: "La cocombustion de biomasse change-t-elle quelque chose ?",
+        answer:
+          "Elle ajoute une seconde poussière combustible, plus légère et plus facilement mise en suspension, et la biomasse peut s'auto-échauffer biologiquement en entreposage. Les deux fractions devraient être évaluées plutôt que de supposer que l'évaluation du charbon suffit.",
+      },
+      {
+        question: "Peut-on nettoyer une galerie en marche ?",
+        answer:
+          "Non. Le nettoyage se fait équipement arrêté et consigné : nettoyer autour d'un convoyeur en marche expose l'opérateur à des pièces mobiles pour retirer une poussière qui sera encore là au prochain arrêt planifié.",
+      },
+    ],
+    enPath: "/industries/energy",
+    related: [
+      { label: "Poussière de charbon", href: `${M}/poussiere-de-charbon` },
+      { label: "Poussière de coke", href: `${M}/poussiere-de-coke` },
+      { label: "Poussière de bois", href: `${M}/poussiere-de-bois` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+      { label: "Nettoyage de silo", href: `${A}/nettoyage-de-silo` },
+      { label: "Nettoyage de dépoussiéreur", href: `${A}/nettoyage-de-depoussiereur` },
+    ],
+  },
+  {
+    slug: "petrole-et-gaz",
+    name: "Pétrole et gaz",
+    group: "Procédés",
+    metaTitle: "Aspirateurs pour pétrole et gaz | Zones classifiées et catalyseurs",
+    metaDescription:
+      "En pétrole et gaz, la classification de zone détermine tout, et les catalyseurs, boues et résidus posent des questions de compatibilité distinctes.",
+    intro:
+      "En pétrole et gaz, la classification de zone n'est pas une formalité : elle détermine quel équipement peut entrer, et une grande partie de l'installation est classifiée en Classe I pour les gaz et vapeurs.",
+    facts: [
+      { label: "Classification dominante", value: "Classe I — gaz, vapeurs et liquides inflammables" },
+      { label: "Matières typiques", value: "Catalyseurs, boues, résidus, sable de production" },
+      { label: "Enjeu additionnel", value: "Compatibilité chimique et statut réglementaire des résidus" },
+      { label: "Espaces clos", value: "Réservoirs, colonnes et cuves lors des arrêts" },
+    ],
+    overview: [
+      "Les catalyseurs méritent une mention particulière : certains sont pyrophoriques à l'état usé, d'autres contiennent des métaux régulés, et leur retrait lors d'un arrêt se planifie plutôt qu'il ne s'improvise.",
+      "Les arrêts concentrent aussi le travail en espace clos — réservoirs, colonnes, cuves — avec le processus de permis complet et la compatibilité des résidus à établir avant d'engager l'équipement.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Classification de Classe I sur une grande partie de l'installation.",
+    "Catalyseurs usés parfois pyrophoriques ou contenant des métaux régulés.",
+    "Compatibilité chimique des boues et résidus.",
+    "Travail en espace clos concentré pendant les arrêts.",
+    "Statut réglementaire des résidus contraignant l'élimination.",
+    "Flux mixtes solide-liquide dans les fonds de réservoirs.",
+    ],
+    solutions: [
+    "Équipement correspondant à la classification assignée par votre ingénieur.",
+    "Récupération conçue pour les flux mixtes solide-liquide.",
+    "Compatibilité établie contre le résidu réel avant l'intervention.",
+    "Application intégrale du processus de permis d'espace clos.",
+    "Planification du retrait de catalyseur plutôt qu'improvisation.",
+    "Destination réglementaire des résidus établie à l'avance.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi la classification est-elle centrale ici ?",
+        answer:
+          "Parce qu'une grande partie d'une installation pétrolière ou gazière est classifiée en Classe I pour les gaz, vapeurs et liquides inflammables. La classification détermine quel équipement peut entrer, et elle est assignée par l'ingénieur de l'installation plutôt que déduite de l'apparence de la zone.",
+      },
+      {
+        question: "Les catalyseurs usés posent-ils un danger particulier ?",
+        answer:
+          "Certains sont pyrophoriques à l'état usé, et d'autres contiennent des métaux régulés. Leur retrait lors d'un arrêt se planifie plutôt qu'il ne s'improvise, et la nature du catalyseur détermine l'équipement et l'élimination.",
+      },
+      {
+        question: "Comment gérer les fonds de réservoirs ?",
+        answer:
+          "Par une récupération conçue pour les flux mixtes solide-liquide, ce qui est la situation normale plutôt que l'exception. La compatibilité s'établit contre le résidu réel, et sa destination réglementaire avant le choix du mode de collecte.",
+      },
+      {
+        question: "Les arrêts changent-ils l'exposition ?",
+        answer:
+          "Ils la concentrent : le travail en espace clos, l'ouverture d'équipements et le retrait de résidus se déroulent sur une période courte. Le processus de permis s'applique intégralement, et la planification vaut mieux que la réaction.",
+      },
+    ],
+    enPath: "/industries/oil-gas",
+    related: [
+      { label: "Poussière de soufre", href: `${M}/poussiere-de-soufre` },
+      { label: "Nettoyage de réservoirs", href: `${A}/nettoyage-de-reservoirs` },
+      { label: "Nettoyage de déversements", href: `${A}/nettoyage-de-deversements` },
+      { label: "Nettoyage de dépoussiéreur", href: `${A}/nettoyage-de-depoussiereur` },
+    ],
+  },
+  {
+    slug: "papeteries",
+    name: "Papeteries",
+    group: "Pâtes et papiers",
+    metaTitle: "Aspirateurs pour papeteries | Fibres, poussière et volumes",
+    metaDescription:
+      "Les papeteries combinent fibre de cellulose combustible, volumes élevés et environnements humides puis secs selon la section.",
+    intro:
+      "Une papeterie change de nature selon la section : humide en amont, sèche en aval. C'est la partie sèche — sécherie, bobinage, coupe — qui produit la poussière combustible.",
+    facts: [
+      { label: "Matière", value: "Fibre de cellulose combustible" },
+      { label: "Où la poussière apparaît", value: "Sécherie, bobinage, coupe, refendage" },
+      { label: "Volume", value: "Élevé, avec accumulation rapide en hauteur" },
+      { label: "Facteur aggravant", value: "Chaleur soutenue de la sécherie près de la fibre sèche" },
+    ],
+    overview: [
+      "La sécherie est le point de convergence : elle produit la fibre sèche et fournit une chaleur soutenue à proximité. Les accumulations sur les charpentes, les conduits et au-dessus des machines constituent l'inventaire d'un événement secondaire.",
+      "Le volume est l'autre contrainte : une papeterie génère de la fibre en continu, ce qui rend un système centralisé souvent plus approprié que des appareils mobiles seuls.",
+    ],
+    risksHeading: "Ce qu'une papeterie doit maîtriser",
+    risks: [
+    "Fibre de cellulose combustible produite en section sèche.",
+    "Chaleur soutenue de la sécherie à proximité de fibre sèche.",
+    "Accumulation rapide sur charpentes, conduits et au-dessus des machines.",
+    "Volume continu exigeant une capacité proportionnée.",
+    "Charges statiques dans le transport de fibre sèche.",
+    "Accès difficile en hauteur dans les grandes halles.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé.",
+    "Fréquences définies incluant explicitement les surfaces hautes.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de papeterie est-elle combustible ?",
+        answer:
+          "La fibre de cellulose l'est, et c'est la section sèche — sécherie, bobinage, coupe, refendage — qui la produit. La section humide en amont ne pose pas le même problème, ce qui explique pourquoi le danger se concentre en aval.",
+      },
+      {
+        question: "Pourquoi la sécherie est-elle le point critique ?",
+        answer:
+          "Parce qu'elle réunit les deux conditions : elle produit la fibre sèche et fournit une chaleur soutenue à proximité. Les accumulations sur les charpentes et au-dessus des machines constituent l'inventaire qu'un événement primaire disperserait.",
+      },
+      {
+        question: "Un appareil mobile suffit-il ?",
+        answer:
+          "Rarement, à cause du volume. Une papeterie génère de la fibre en continu, ce qui rend un système centralisé souvent plus approprié, avec des appareils mobiles pour les zones que le réseau n'atteint pas.",
+      },
+      {
+        question: "Où commencer dans une usine existante ?",
+        answer:
+          "Par les surfaces hautes autour de la sécherie et au-dessus des machines, qui portent l'accumulation qui compte, puis par les conduits où la fibre voyage hors de vue.",
+      },
+    ],
+    enPath: "/industries/paper-mills",
+    related: [
+      { label: "Poussière de papier", href: `${M}/poussiere-de-papier` },
+      { label: "Poussière de bois", href: `${M}/poussiere-de-bois` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+      { label: "Nettoyage de dépoussiéreur", href: `${A}/nettoyage-de-depoussiereur` },
+    ],
+  },
+  {
+    slug: "papier-et-emballage",
+    name: "Papier et emballage",
+    group: "Pâtes et papiers",
+    metaTitle: "Aspirateurs pour la conversion et l'emballage | Fibre et amidon",
+    metaDescription:
+      "La conversion produit de la poussière de fibre et, avec les adhésifs à base d'amidon, une seconde fraction plus fine encore.",
+    intro:
+      "La conversion de carton ondulé produit de la poussière à chaque coupe, rainage, refendage et empilage — et lorsque des adhésifs à base d'amidon sont utilisés, une seconde fraction combustible plus fine que la fibre s'y ajoute.",
+    facts: [
+      { label: "Matière 1", value: "Fibre de cellulose issue de la coupe et du refendage" },
+      { label: "Matière 2", value: "Fines d'amidon séché provenant des adhésifs" },
+      { label: "Vitesse", value: "Lignes rapides produisant en continu" },
+      { label: "Où ça compte", value: "Acier en hauteur, dessus de conduits, intérieur des carters" },
+    ],
+    overview: [
+      "L'amidon mérite d'être nommé séparément : il est suffisamment fin pour servir de matière de référence dans les essais d'explosibilité, de sorte qu'une usine de conversion utilisant des adhésifs à base d'amidon devrait faire évaluer les deux fractions plutôt que la fibre seule.",
+      "Les accumulations qui comptent sont au-dessus de la hauteur des yeux et à l'intérieur des carters de machines — les endroits que personne n'inspecte depuis le plancher.",
+    ],
+    risksHeading: "Ce que la conversion doit maîtriser",
+    risks: [
+    "Fibre de cellulose combustible produite à chaque opération mécanique.",
+    "Fines d'amidon séché plus fines encore que la fibre.",
+    "Accumulation en hauteur et dans les carters de machines.",
+    "Lignes rapides produisant en continu.",
+    "Charges statiques dans le travail de matière sèche.",
+    "Pression de production limitant les fenêtres de nettoyage.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé.",
+    "Fréquences définies incluant explicitement les surfaces hautes.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "La poussière de conversion est-elle combustible ?",
+        answer:
+          "Oui, à deux titres. La fibre de cellulose est combustible, et les adhésifs à base d'amidon ajoutent des fines d'amidon séché — une matière suffisamment fine pour servir de référence dans les essais d'explosibilité en laboratoire.",
+      },
+      {
+        question: "Faut-il évaluer les deux fractions ?",
+        answer:
+          "Oui. Une usine de conversion utilisant des adhésifs à base d'amidon devrait faire évaluer la fibre et l'amidon plutôt que la fibre seule, puisque leur comportement diffère et que l'amidon est la plus fine des deux.",
+      },
+      {
+        question: "Où s'accumule la poussière ?",
+        answer:
+          "Au-dessus de la hauteur des yeux — acier, rebords, dessus de conduits — et à l'intérieur des carters de machines. Ce sont les endroits que personne n'inspecte depuis le plancher, et ceux qui alimentent un événement secondaire.",
+      },
+      {
+        question: "Comment nettoyer sans arrêter la production ?",
+        answer:
+          "Par un nettoyage à fréquence définie planifié entre les séries plutôt qu'un arrêt prolongé, avec des contenants à vidange rapide pour que le passage tienne dans la fenêtre disponible.",
+      },
+    ],
+    enPath: "/industries/paper-packaging",
+    related: [
+      { label: "Poussière de papier", href: `${M}/poussiere-de-papier` },
+      { label: "Poussière d'amidon", href: `${M}/poussiere-d-amidon` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+      { label: "Entretien d'entrepôt", href: `${A}/entretien-d-entrepot` },
+    ],
+  },
+  {
+    slug: "plastiques-et-caoutchouc",
+    name: "Plastiques et caoutchouc",
+    group: "Transformation",
+    metaTitle: "Aspirateurs pour plastiques et caoutchouc | Fumée toxique et statique",
+    metaDescription:
+      "Les poussières de polymères et de caoutchouc sont combustibles et produisent une fumée dense et toxique en brûlant.",
+    intro:
+      "Les poussières de polymères et de caoutchouc partagent deux caractéristiques : elles sont combustibles, et elles produisent une fumée dense et toxique en brûlant — ce qui fait d'un incendie de poussière un problème d'atmosphère autant que de feu.",
+    facts: [
+      { label: "Matières", value: "Poussières de polymères et de caoutchouc — Groupe G" },
+      { label: "Danger additionnel", value: "Fumée dense et toxique en cas de combustion" },
+      { label: "Statique", value: "Charges importantes dans les polymères secs" },
+      { label: "Caoutchouc", value: "Rétention de chaleur dans la matière récupérée après meulage" },
+    ],
+    overview: [
+      "La variété des polymères impose de caractériser sa propre matière : la granulométrie, les charges minérales et les additifs ignifuges changent le comportement, et une résine ne se comporte pas comme une autre.",
+      "Le caoutchouc ajoute la rétention de chaleur : de la matière laissée dans un contenant après une opération de meulage conserve la chaleur du procédé, ce qui rend le retrait en fin de quart une mesure utile plutôt qu'une formalité.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Poussières combustibles de polymères et de caoutchouc.",
+    "Fumée dense et toxique en cas de combustion.",
+    "Charges statiques importantes dans les polymères secs.",
+    "Rétention de chaleur dans le caoutchouc récupéré après meulage.",
+    "Comportement variable selon la résine, les charges et les additifs.",
+    "Volume élevé en granulation et en recyclage.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Retrait de la matière récupérée en fin de quart, particulièrement pour le caoutchouc.",
+    "Caractérisation de sa propre résine plutôt que présomption.",
+    "Grande capacité pour la granulation et le recyclage.",
+    "Élimination du soufflage à l'air comprimé.",
+    ],
+    faqs: [
+      {
+        question: "Les poussières de plastique sont-elles combustibles ?",
+        answer:
+          "La plupart le sont : ce sont des poussières organiques relevant du Groupe G comme poussières non conductrices. Elles produisent aussi une fumée dense et toxique en brûlant, de sorte qu'un incendie crée un problème d'atmosphère en plus du feu.",
+      },
+      {
+        question: "Tous les polymères se comportent-ils pareillement ?",
+        answer:
+          "Non, et c'est pourquoi il faut caractériser sa propre matière. La granulométrie, les charges minérales et les additifs ignifuges changent le comportement. L'essai porte sur la poussière réellement produite par votre procédé.",
+      },
+      {
+        question: "Pourquoi sortir la poussière de caoutchouc en fin de quart ?",
+        answer:
+          "Parce qu'elle retient la chaleur du procédé après meulage. Un contenant plein laissé dans l'atelier concentre en un point une matière chaude et combustible — le retrait est un contrôle simple.",
+      },
+      {
+        question: "La statique est-elle un problème particulier ici ?",
+        answer:
+          "Oui : les polymères secs accumulent des charges facilement dans les boyaux et le transport pneumatique. Un circuit conducteur, mis à la terre et équipotentiel n'est pas un raffinement dans ce contexte.",
+      },
+    ],
+    enPath: "/industries/plastics-rubber",
+    related: [
+      { label: "Poussière de plastique", href: `${M}/poussiere-de-plastique` },
+      { label: "Poussière de caoutchouc", href: `${M}/poussiere-de-caoutchouc` },
+      { label: "Poussière de noir de carbone", href: `${M}/poussiere-de-noir-de-carbone` },
+      { label: "Poussière de meulage", href: `${A}/poussiere-de-meulage` },
+      { label: "Mélange et malaxage", href: `${A}/melange-et-malaxage` },
+    ],
+  },
+  {
+    slug: "imprimerie",
+    name: "Imprimerie",
+    group: "Transformation",
+    metaTitle: "Aspirateurs pour l'imprimerie | Poussière de papier, toner et encres",
+    metaDescription:
+      "L'imprimerie combine poussière de papier combustible, toner fin et résidus d'encre. Récupération et propreté de production.",
+    intro:
+      "En imprimerie, la poussière est à la fois un danger et un défaut de production : la même particule qui alimente une accumulation combustible gâche une impression.",
+    facts: [
+      { label: "Matières", value: "Poussière de papier, toner, résidus d'encre et de vernis" },
+      { label: "Toner", value: "Poudre fine de polymère et pigment, combustible" },
+      { label: "Double enjeu", value: "Sécurité et qualité d'impression" },
+      { label: "Où ça compte", value: "Massicots, plieuses, sécheurs, hauteurs" },
+    ],
+    overview: [
+      "La poussière de papier issue de la coupe et du massicotage est combustible, et le toner — poudre fine de polymère et de pigment — l'est aussi tout en étant facilement mis en suspension. Les sécheurs UV et thermiques ajoutent une chaleur soutenue.",
+      "L'enjeu de qualité change la dynamique : dans d'autres secteurs le nettoyage se justifie par la sécurité seule, alors qu'ici il se justifie aussi par le taux de rebut. Cela rend un programme plus facile à faire adopter.",
+    ],
+    risksHeading: "Ce que l'imprimerie doit maîtriser",
+    risks: [
+    "Poussière de papier combustible issue de la coupe et du massicotage.",
+    "Toner combustible et facilement mis en suspension.",
+    "Chaleur soutenue des sécheurs UV et thermiques.",
+    "Accumulation en hauteur et dans les carters de machines.",
+    "Poussière comme défaut de production autant que danger.",
+    "Résidus d'encre et de vernis avec leurs propres compatibilités.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Élimination du soufflage à l'air comprimé.",
+    "Fréquences définies incluant explicitement les surfaces hautes.",
+    "Retrait de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "La poussière d'imprimerie est-elle dangereuse ?",
+        answer:
+          "La poussière de papier issue de la coupe et du massicotage est combustible, et le toner — une poudre fine de polymère et de pigment — l'est aussi tout en étant facilement mis en suspension. Les sécheurs ajoutent une chaleur soutenue à proximité.",
+      },
+      {
+        question: "Le toner pose-t-il un problème particulier ?",
+        answer:
+          "Il est fin, combustible, et se met en suspension facilement, ce qui en fait un problème récurrent en impression et en entretien de copieurs. Une filtration retenue est nécessaire pour éviter de le renvoyer dans l'atelier.",
+      },
+      {
+        question: "Pourquoi le nettoyage est-il plus facile à justifier ici ?",
+        answer:
+          "Parce que la poussière est aussi un défaut de production : la même particule qui alimente une accumulation combustible gâche une impression. Le programme se justifie par le taux de rebut en plus de la sécurité.",
+      },
+      {
+        question: "Où commencer ?",
+        answer:
+          "Par les massicots et les plieuses, qui produisent la fraction fine, puis par les surfaces hautes et l'intérieur des carters, où l'accumulation s'installe hors de vue.",
+      },
+    ],
+    enPath: "/industries/printing",
+    related: [
+      { label: "Poussière de papier", href: `${M}/poussiere-de-papier` },
+      { label: "Poussière de plastique", href: `${M}/poussiere-de-plastique` },
+      { label: "Poussière de noir de carbone", href: `${M}/poussiere-de-noir-de-carbone` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+    ],
+  },
+
+  {
     slug: "automobile",
     name: "Automobile",
     group: "Fabrication",
