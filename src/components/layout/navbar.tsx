@@ -30,6 +30,7 @@ const FR_NAV = [
   { label: "Applications", href: "/fr/applications" },
   { label: "Industries", href: "/fr/industries" },
   { label: "Guides", href: "/fr/guides" },
+  { label: "Études de cas", href: "/fr/etudes-de-cas" },
   { label: "À propos", href: "/fr/a-propos" },
 ];
 

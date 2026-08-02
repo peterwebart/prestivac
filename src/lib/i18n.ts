@@ -186,6 +186,10 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/guides/recovered-dust-disposal-and-reclaim", fr: "/fr/guides/elimination-et-valorisation-des-poussieres" },
   { en: "/guides/toxic-liquid-recovery", fr: "/fr/guides/recuperation-de-liquides-toxiques" },
   { en: "/guides/esd-anti-static-vacuums", fr: "/fr/guides/aspirateurs-antistatiques-et-esd" },
+  { en: "/case-studies", fr: "/fr/etudes-de-cas" },
+  { en: "/case-studies/silica-sand-foundry", fr: "/fr/etudes-de-cas/sable-de-silice-fonderie" },
+  { en: "/case-studies/flour-dust-commercial-bakery", fr: "/fr/etudes-de-cas/poussiere-de-farine-boulangerie" },
+  { en: "/case-studies/aluminum-dust-automotive-machining", fr: "/fr/etudes-de-cas/poussiere-d-aluminium-usinage-automobile" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
