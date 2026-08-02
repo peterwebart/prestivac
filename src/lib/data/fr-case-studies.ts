@@ -39,6 +39,397 @@ function study(raw: Raw): FrCaseStudy {
 
 export const FR_CASE_STUDIES: FrCaseStudy[] = [
   study({
+    slug: "poudre-de-titane-fabrication-additive",
+    name: "Poudre de titane en fabrication additive",
+    group: "Fabrication avancée",
+    metaTitle: "Étude de cas : poudre de titane en fabrication additive",
+    metaDescription:
+      "Scénario représentatif : récupérer une poudre de titane réactive destinée au réemploi dans un atelier de fabrication additive.",
+    intro:
+      "Un atelier de fabrication additive type doit récupérer une poudre qui est à la fois un métal combustible et un consommable ayant une valeur réelle.",
+    facts: [
+      { label: "Type d'installation", value: "Atelier de fabrication additive métal" },
+      { label: "Matière", value: "Poudre de titane à granulométrie contrôlée" },
+      { label: "Danger", value: "Métal combustible réactif — Classe D" },
+      { label: "Contrainte additionnelle", value: "La poudre est destinée au réemploi" },
+    ],
+    overview: [
+      "La granulométrie contrôlée qui rend la poudre imprimable la situe précisément dans la fraction la plus réactive. Le titane s'enflamme facilement sous cette forme, brûle à haute température, et l'eau comme le CO₂ sont inappropriés sur un feu déclaré.",
+      "Le réemploi crée une contrainte qui sert la sécurité : la poudre non fusionnée est récupérée, tamisée et réintroduite, de sorte que la contamination croisée entre alliages détruit sa valeur. La ségrégation stricte est donc à la fois une mesure de sécurité et une mesure de coût — ce qui la rend plus facile à faire respecter.",
+    ],
+    risksHeading: "Ce que le scénario met en évidence",
+    risks: [
+      "Granulométrie contrôlée située dans la fraction la plus réactive.",
+      "Eau et CO₂ inappropriés sur un feu de titane déclaré.",
+      "Accumulation à sec dans les contenants comme mode de défaillance.",
+      "Contamination croisée détruisant la valeur de la poudre.",
+      "Conductivité de la poudre métallique.",
+      "Récupération pouvant elle-même fournir l'énergie d'inflammation.",
+    ],
+    solutions: [
+      "Équipement conducteur, mis à la terre et exempt de sources d'inflammation.",
+      "Séparation par immersion pour garder la poudre récupérée humide.",
+      "Appareils dédiés par matière.",
+      "Ségrégation stricte par alliage.",
+      "Dispositions de Classe D et personnel formé.",
+      "Retrait rapide de la matière récupérée du bâtiment.",
+    ],
+    faqs: [
+      {
+        question: "Cette étude de cas décrit-elle un client réel ?",
+        answer:
+          "Non. C'est un scénario représentatif : il illustre une situation type, sans nom de client, sans donnée chiffrée de résultat et sans citation. Nous préférons illustrer honnêtement une situation plutôt que présenter des chiffres que nous ne pouvons pas étayer.",
+      },
+      {
+        question: "Pourquoi la poudre additive est-elle si réactive ?",
+        answer:
+          "Parce que la granulométrie contrôlée qui la rend imprimable la place dans la fraction la plus réactive. Le titane sous cette forme s'enflamme facilement et brûle à haute température, et l'eau comme le CO₂ sont inappropriés sur un feu déclaré.",
+      },
+      {
+        question: "La ségrégation est-elle une question de sécurité ou de coût ?",
+        answer:
+          "Les deux, et c'est ce qui la rend praticable. Mélanger des poudres réactives crée des conditions non évaluées, et la contamination croisée détruit la valeur de la poudre destinée au réemploi. Un même contrôle sert les deux objectifs.",
+      },
+      {
+        question: "Comment récupérer sans créer le danger ?",
+        answer:
+          "Avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation, et lorsque l'évaluation le justifie, une séparation par immersion qui garde la poudre humide plutôt que de la laisser s'accumuler à sec dans un contenant.",
+      },
+    ],
+    enPath: "/case-studies/titanium-powder-additive-manufacturing",
+    related: [
+      { label: "Poussière de titane", href: `${M}/poussiere-de-titane` },
+      { label: "Fabrication additive", href: `/fr/industries/fabrication-additive` },
+      { label: "Impression 3D métal", href: `${A}/impression-3d-metal` },
+    ],
+  }),
+  study({
+    slug: "poussiere-de-graphite-usine-de-piles",
+    name: "Poussière de graphite en usine de piles",
+    group: "Fabrication avancée",
+    metaTitle: "Étude de cas : poussière de graphite en usine de piles",
+    metaDescription:
+      "Scénario représentatif : maîtriser une poussière de graphite à la fois combustible et conductrice dans une usine de fabrication d'électrodes.",
+    intro:
+      "Une usine de fabrication d'électrodes type manipule du graphite en grande quantité — une poussière qui est combustible et, contrairement à la plupart, électriquement conductrice.",
+    facts: [
+      { label: "Type d'installation", value: "Usine de fabrication d'électrodes de piles" },
+      { label: "Matière", value: "Poudre de graphite en grande quantité" },
+      { label: "Danger 1", value: "Poussière carbonée combustible du Groupe F" },
+      { label: "Danger 2", value: "Conductivité électrique — pontage et court-circuit" },
+    ],
+    overview: [
+      "La conductivité est ce qui rend le graphite exigeant : une couche accumulée dans une armoire électrique ou sur un tableau n'est pas seulement du combustible, c'est un chemin conducteur. Cela explique pourquoi les normes d'entretien sont fixées aussi strictement dans ce secteur, et pourquoi les zones électriques passent en priorité.",
+      "S'y ajoute la combustion lente commune aux poussières carbonées : un foyer profond peut persister dans la matière accumulée sans flamme visible et se rallumer plus tard, ce qui rend le retrait de la matière récupérée du bâtiment nécessaire plutôt que prudent.",
+    ],
+    risksHeading: "Ce que le scénario met en évidence",
+    risks: [
+      "Conductivité pontant des bornes et court-circuitant l'équipement.",
+      "Combustible carboné du Groupe F, sujet à la combustion lente.",
+      "Finesse permettant au graphite de se déposer largement.",
+      "Volume élevé en fabrication d'électrodes.",
+      "Rallumage possible dans la matière récupérée laissée en place.",
+      "Contamination généralisée des surfaces et équipements.",
+    ],
+    solutions: [
+      "Récupération adaptée au Groupe F, conductrice et mise à la terre.",
+      "Filtration absolue HEPA 99,99 % pour la fraction fine.",
+      "Nettoyage prioritaire des armoires, tableaux et chemins de câbles.",
+      "Élimination du soufflage à l'air comprimé.",
+      "Retrait de la matière récupérée à la fin de chaque passage.",
+      "Fréquences définies pour les conduits et surfaces hautes.",
+    ],
+    faqs: [
+      {
+        question: "Cette étude de cas décrit-elle un client réel ?",
+        answer:
+          "Non. C'est un scénario représentatif : il illustre une situation type, sans nom de client, sans donnée chiffrée de résultat et sans citation. Nous préférons illustrer honnêtement une situation plutôt que présenter des chiffres que nous ne pouvons pas étayer.",
+      },
+      {
+        question: "Pourquoi le graphite est-il doublement exigeant ?",
+        answer:
+          "Parce qu'il est combustible et électriquement conducteur. Une couche accumulée dans une armoire électrique est un chemin conducteur en plus d'être du combustible, ce qui ajoute un mode de défaillance que les poussières non conductrices ne présentent pas.",
+      },
+      {
+        question: "Pourquoi nettoyer les zones électriques en priorité ?",
+        answer:
+          "Parce que c'est là que la conductivité compte : une accumulation sur un tableau ou dans une armoire peut ponter des bornes. C'est une priorité de nettoyage différente de celle qu'on appliquerait à une poussière purement combustible.",
+      },
+      {
+        question: "Faut-il sortir la matière récupérée ?",
+        answer:
+          "Oui. Les poussières carbonées se consument lentement en profondeur : un foyer peut persister dans un contenant sans flamme visible puis se rallumer. Le retrait à la fin de chaque passage est le contrôle simple.",
+      },
+    ],
+    enPath: "/case-studies/graphite-dust-ev-battery-plant",
+    related: [
+      { label: "Poussière de graphite", href: `${M}/poussiere-de-graphite` },
+      { label: "Fabrication de piles", href: `/fr/industries/batterie` },
+      { label: "Poussière de lithium", href: `${M}/poussiere-de-lithium` },
+    ],
+  }),
+  study({
+    slug: "poussiere-de-bois-mobilier",
+    name: "Poussière de bois en fabrication de mobilier",
+    group: "Transformation",
+    metaTitle: "Étude de cas : poussière de bois en fabrication de mobilier",
+    metaDescription:
+      "Scénario représentatif : maîtriser un volume élevé de poussière de bois combustible et cancérogène dans un atelier de mobilier.",
+    intro:
+      "Un atelier de mobilier type produit un volume de poussière parmi les plus élevés de tous les secteurs, avec une fraction fine véritablement combustible et une classification cancérogène pour la matière elle-même.",
+    facts: [
+      { label: "Type d'installation", value: "Atelier de fabrication de mobilier" },
+      { label: "Matière", value: "Poussière de bois, fraction fine de ponçage" },
+      { label: "Danger 1", value: "Poussière combustible — NFPA 660" },
+      { label: "Danger 2", value: "Cancérogène pour l'humain selon le CIRC" },
+    ],
+    overview: [
+      "La fraction fine issue du ponçage compte bien davantage que les copeaux : c'est elle qui reste en suspension, voyage et se dépose sur l'acier en hauteur, où elle constitue l'inventaire d'un événement secondaire.",
+      "Le volet sanitaire est régulièrement sous-estimé : la poussière de bois est classée cancérogène pour l'humain, avec des cancers naso-sinusiens documentés, et c'est aussi un irritant et un sensibilisant respiratoire. La filtration retenue compte donc autant que le contrôle des accumulations.",
+    ],
+    risksHeading: "Ce que le scénario met en évidence",
+    risks: [
+      "Fraction fine de ponçage produite en grand volume.",
+      "Classification cancérogène de la poussière de bois.",
+      "Accumulation sur l'acier en hauteur et dans les carters.",
+      "Colmatage rapide d'une filtration sous-dimensionnée.",
+      "Charges statiques dans les conduits.",
+      "Captation à la source nécessaire sur les ponceuses portatives.",
+    ],
+    solutions: [
+      "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+      "Filtration absolue HEPA 99,99 % pour la fraction respirable.",
+      "Grande capacité de collecte ou système centralisé.",
+      "Captation à la source sur les ponceuses.",
+      "Fréquences définies pour surfaces hautes et conduits.",
+      "Élimination du soufflage à l'air comprimé.",
+    ],
+    faqs: [
+      {
+        question: "Cette étude de cas décrit-elle un client réel ?",
+        answer:
+          "Non. C'est un scénario représentatif : il illustre une situation type, sans nom de client, sans donnée chiffrée de résultat et sans citation. Nous préférons illustrer honnêtement une situation plutôt que présenter des chiffres que nous ne pouvons pas étayer.",
+      },
+      {
+        question: "Pourquoi la poussière de ponçage compte-t-elle plus que les copeaux ?",
+        answer:
+          "Parce que la granulométrie détermine le comportement. La fraction fine reste en suspension, voyage et se dépose sur l'acier en hauteur — les copeaux de la même matière ne font aucune de ces choses.",
+      },
+      {
+        question: "La poussière de bois est-elle nocive à respirer ?",
+        answer:
+          "Oui. Elle est classée cancérogène pour l'humain par le CIRC, avec des cancers naso-sinusiens documentés, et c'est aussi un irritant et un sensibilisant respiratoire. C'est le volet le plus souvent sous-estimé dans les ateliers.",
+      },
+      {
+        question: "Un appareil mobile suffit-il ?",
+        answer:
+          "Rarement, à cause du volume. Un atelier de mobilier génère de la poussière en continu, ce qui rend un système centralisé souvent plus approprié, complété par des appareils mobiles pour ce que le réseau n'atteint pas.",
+      },
+    ],
+    enPath: "/case-studies/wood-dust-furniture-manufacturing",
+    related: [
+      { label: "Poussière de bois", href: `${M}/poussiere-de-bois` },
+      { label: "Travail du bois", href: `/fr/industries/travail-du-bois` },
+      { label: "Ponçage", href: `${A}/poncage` },
+    ],
+  }),
+  study({
+    slug: "poudre-de-thermolaquage-finition-automobile",
+    name: "Poudre de thermolaquage en finition automobile",
+    group: "Finition de surface",
+    metaTitle: "Étude de cas : poudre de thermolaquage en finition automobile",
+    metaDescription:
+      "Scénario représentatif : récupérer proprement une surpulvérisation de thermolaquage pour la réintroduire au procédé.",
+    intro:
+      "Une ligne de finition automobile type présente un cas rare : la matière récupérée a une valeur réelle, et la propreté de la collecte détermine si cette valeur est conservée ou détruite.",
+    facts: [
+      { label: "Type d'installation", value: "Ligne de finition et thermolaquage automobile" },
+      { label: "Matière", value: "Surpulvérisation de poudre polymère" },
+      { label: "Danger", value: "Poussière organique combustible du Groupe G" },
+      { label: "Occasion", value: "Surpulvérisation propre souvent réutilisable" },
+    ],
+    overview: [
+      "La poudre est combustible et se charge en électricité statique — le procédé repose précisément sur la charge électrostatique, ce qui rend un circuit de récupération conducteur et mis à la terre nécessaire plutôt qu'optionnel.",
+      "Le réemploi dépend entièrement de la propreté du flux. Une collecte dédiée, séparée du nettoyage de plancher, préserve la valeur ; mélanger les couleurs ou introduire de la poussière de plancher la détruit. C'est un cas où l'entretien ménager devient une récupération de coût.",
+    ],
+    risksHeading: "Ce que le scénario met en évidence",
+    risks: [
+      "Poudre combustible chargée électrostatiquement par le procédé.",
+      "Réemploi conditionnel à la propreté du flux.",
+      "Contamination croisée aux changements de couleur.",
+      "Accumulation dans la cabine, les conduits et alentour.",
+      "Collecte de plancher détruisant la valeur si mélangée.",
+      "Poudre fine facilement mise en suspension.",
+    ],
+    solutions: [
+      "Récupération dédiée par couleur là où le réemploi est visé.",
+      "Équipement conducteur, mis à la terre et équipotentiel.",
+      "Filtration absolue HEPA 99,99 % pour la fraction fine.",
+      "Collecte propre séparée du nettoyage de plancher.",
+      "Nettoyage de cabine à fréquence définie.",
+      "Élimination du soufflage à l'air comprimé.",
+    ],
+    faqs: [
+      {
+        question: "Cette étude de cas décrit-elle un client réel ?",
+        answer:
+          "Non. C'est un scénario représentatif : il illustre une situation type, sans nom de client, sans donnée chiffrée de résultat et sans citation. Nous préférons illustrer honnêtement une situation plutôt que présenter des chiffres que nous ne pouvons pas étayer.",
+      },
+      {
+        question: "La surpulvérisation peut-elle vraiment être réutilisée ?",
+        answer:
+          "Souvent oui, à condition que le flux reste propre. Une collecte dédiée par couleur, séparée du nettoyage de plancher, préserve la valeur ; mélanger les couleurs ou introduire de la poussière de plancher la détruit.",
+      },
+      {
+        question: "Pourquoi la mise à la terre est-elle nécessaire ici ?",
+        answer:
+          "Parce que le procédé de thermolaquage charge délibérément les particules par électrostatique. Un circuit de récupération conducteur et mis à la terre n'est pas un raffinement dans une cabine conçue pour charger de la poudre.",
+      },
+      {
+        question: "Peut-on souffler une cabine à l'air comprimé ?",
+        answer:
+          "Non. Le soufflage disperse une poudre combustible dans tout le bâtiment, détruit toute possibilité de réemploi, et met un nuage en suspension dans un espace conçu pour charger électrostatiquement des particules.",
+      },
+    ],
+    enPath: "/case-studies/coating-powder-automotive-finishing",
+    related: [
+      { label: "Thermolaquage", href: `${A}/thermolaquage` },
+      { label: "Automobile", href: `/fr/industries/automobile` },
+      { label: "Peintures et revêtements", href: `/fr/industries/peintures-et-revetements` },
+    ],
+  }),
+  study({
+    slug: "fines-de-magnesium-composants-automobiles",
+    name: "Fines de magnésium en composants automobiles",
+    group: "Fabrication",
+    metaTitle: "Étude de cas : fines de magnésium en composants automobiles",
+    metaDescription:
+      "Scénario représentatif : récupérer des fines de magnésium, parmi les métaux structuraux les plus facilement inflammables.",
+    intro:
+      "Un atelier usinant des composants en magnésium type manipule le métal structural le plus facilement inflammable, dans un contexte où l'instinct — appliquer de l'eau — est précisément le mauvais geste.",
+    facts: [
+      { label: "Type d'installation", value: "Usinage de composants automobiles en magnésium" },
+      { label: "Matière", value: "Fines de magnésium issues de l'usinage et du meulage" },
+      { label: "Danger", value: "Métal combustible hautement réactif — Classe D" },
+      { label: "Point critique", value: "L'eau est activement dangereuse sur un feu déclaré" },
+    ],
+    overview: [
+      "Le magnésium figure parmi les métaux structuraux les plus facilement inflammables, et ses fines brûlent à température extrême une fois amorcées. L'eau réagit avec le magnésium chaud en libérant de l'hydrogène, ce qui ajoute un second combustible.",
+      "La prévention constitue donc toute la stratégie : aucune accumulation, aucune source d'inflammation, récupération contrôlée, et un personnel qui connaît les dispositions de Classe D avant d'en avoir besoin. L'usinage produit par ailleurs le combustible et, par les étincelles, une source d'inflammation possible dans la même opération.",
+    ],
+    risksHeading: "Ce que le scénario met en évidence",
+    risks: [
+      "Inflammation très facile des fines de magnésium.",
+      "Eau activement dangereuse — réaction libérant de l'hydrogène.",
+      "Usinage produisant combustible et inflammation ensemble.",
+      "Accumulation de chaleur dans les contenants de récupération.",
+      "Mélange avec d'autres métaux créant des conditions non évaluées.",
+      "Nécessité de connaître les dispositions de Classe D à l'avance.",
+    ],
+    solutions: [
+      "Équipement conducteur, mis à la terre et exempt de sources d'inflammation.",
+      "Séparation par immersion pour garder les fines humides.",
+      "Ségrégation stricte du magnésium.",
+      "Élimination du soufflage à l'air comprimé.",
+      "Retrait rapide de la matière récupérée du bâtiment.",
+      "Dispositions de Classe D et formation du personnel.",
+    ],
+    faqs: [
+      {
+        question: "Cette étude de cas décrit-elle un client réel ?",
+        answer:
+          "Non. C'est un scénario représentatif : il illustre une situation type, sans nom de client, sans donnée chiffrée de résultat et sans citation. Nous préférons illustrer honnêtement une situation plutôt que présenter des chiffres que nous ne pouvons pas étayer.",
+      },
+      {
+        question: "Peut-on utiliser de l'eau sur un feu de magnésium ?",
+        answer:
+          "Non — c'est l'un des cas où la réaction instinctive est la plus dommageable. Le magnésium réagit avec l'eau en libérant de l'hydrogène, ce qui ajoute un second combustible à un incendie déjà difficile. Les feux de magnésium sont de Classe D.",
+      },
+      {
+        question: "Pourquoi l'usinage est-il particulièrement à risque ?",
+        answer:
+          "Parce que l'opération fournit à la fois le combustible et, par les étincelles, une source d'inflammation possible. C'est la même dynamique que le meulage, avec un métal beaucoup plus sensible.",
+      },
+      {
+        question: "Comment récupérer les fines de magnésium ?",
+        answer:
+          "Avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation, en gardant le magnésium séparé des autres métaux, et lorsque l'évaluation le justifie, par séparation par immersion qui évite l'accumulation à sec.",
+      },
+    ],
+    enPath: "/case-studies/magnesium-fines-automotive-components",
+    related: [
+      { label: "Poussière de magnésium", href: `${M}/poussiere-de-magnesium` },
+      { label: "Automobile", href: `/fr/industries/automobile` },
+      { label: "Usinage CNC", href: `${A}/usinage-cnc` },
+    ],
+  }),
+  study({
+    slug: "poussiere-de-grain-elevateur",
+    name: "Poussière de grain en élévateur et meunerie",
+    group: "Agroalimentaire",
+    metaTitle: "Étude de cas : poussière de grain en élévateur et meunerie",
+    metaDescription:
+      "Scénario représentatif : maîtriser la poussière de grain aux points de transfert d'un élévateur et d'une meunerie.",
+    intro:
+      "Un élévateur à grains type concentre son danger là où le grain change de direction, dans un secteur où les fréquences de nettoyage figurent dans une réglementation plutôt que dans une norme consensuelle seule.",
+    facts: [
+      { label: "Type d'installation", value: "Élévateur à grains et meunerie" },
+      { label: "Matière", value: "Poussière de grain combustible" },
+      { label: "Normes", value: "NFPA 660 et dispositions OSHA sur la manutention des grains" },
+      { label: "Zones critiques", value: "Fosses, têtes et pieds d'élévateurs, tours, séchoirs" },
+    ],
+    overview: [
+      "Les points où le grain change de direction produisent la fraction la plus fine et la confinent : fosses de réception, têtes et pieds d'élévateurs, tours de transfert et nettoyeurs. Ces points concentrent aussi des entraînements et roulements.",
+      "Les séchoirs ajoutent une chaleur soutenue à proximité de matière fine accumulée, et les silos posent la question de l'entrée en espace clos — où nettoyer depuis les ouvertures rend les entrées rares plutôt qu'inutiles.",
+    ],
+    risksHeading: "Ce que le scénario met en évidence",
+    risks: [
+      "Points de changement de direction produisant et confinant la fraction fine.",
+      "Entraînements et roulements distribués aux mêmes endroits.",
+      "Chaleur soutenue des séchoirs près de matière accumulée.",
+      "Entrée en espace clos dans les silos et cellules.",
+      "Combustion lente possible dans le grain accumulé.",
+      "Fréquences de nettoyage inscrites dans la réglementation.",
+    ],
+    solutions: [
+      "Récupération par aspirateur antidéflagrant conducteur et mis à la terre.",
+      "Appareils pneumatiques adaptés au travail prolongé.",
+      "Filtration absolue HEPA 99,99 % pour la fraction respirable.",
+      "Nettoyage depuis les ouvertures pour réduire la fréquence des entrées.",
+      "Fréquences définies par surface et consignation des passages.",
+      "Application intégrale du permis lorsqu'une entrée est nécessaire.",
+    ],
+    faqs: [
+      {
+        question: "Cette étude de cas décrit-elle un client réel ?",
+        answer:
+          "Non. C'est un scénario représentatif : il illustre une situation type, sans nom de client, sans donnée chiffrée de résultat et sans citation. Nous préférons illustrer honnêtement une situation plutôt que présenter des chiffres que nous ne pouvons pas étayer.",
+      },
+      {
+        question: "Où se concentre le danger dans un élévateur ?",
+        answer:
+          "Là où le grain change de direction : fosses de réception, têtes et pieds d'élévateurs, tours de transfert et nettoyeurs. Ces points produisent la fraction la plus fine, la confinent, et concentrent des entraînements et roulements.",
+      },
+      {
+        question: "Le nettoyage de silo exige-t-il une entrée ?",
+        answer:
+          "Pas toujours. Nettoyer depuis les trous d'homme et les ouvertures rend les entrées rares plutôt qu'inutiles — lorsque la géométrie exige réellement une entrée, le processus complet de permis s'applique exactement comme avant.",
+      },
+      {
+        question: "Pourquoi ce secteur est-il particulièrement réglementé ?",
+        answer:
+          "À cause du registre d'explosions d'élévateurs à grains. C'est l'un des rares secteurs où des fréquences de nettoyage figurent dans une réglementation plutôt que seulement dans une norme consensuelle.",
+      },
+    ],
+    enPath: "/case-studies/grain-dust-elevator-feed-mill",
+    related: [
+      { label: "Poussière de grain", href: `${M}/poussiere-de-grain` },
+      { label: "Agriculture", href: `/fr/industries/agriculture` },
+      { label: "Nettoyage de silo", href: `${A}/nettoyage-de-silo` },
+    ],
+  }),
+
+  study({
     slug: "sable-de-silice-fonderie",
     name: "Sable de silice en fonderie",
     group: "Métaux primaires",

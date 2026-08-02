@@ -190,6 +190,12 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/case-studies/silica-sand-foundry", fr: "/fr/etudes-de-cas/sable-de-silice-fonderie" },
   { en: "/case-studies/flour-dust-commercial-bakery", fr: "/fr/etudes-de-cas/poussiere-de-farine-boulangerie" },
   { en: "/case-studies/aluminum-dust-automotive-machining", fr: "/fr/etudes-de-cas/poussiere-d-aluminium-usinage-automobile" },
+  { en: "/case-studies/titanium-powder-additive-manufacturing", fr: "/fr/etudes-de-cas/poudre-de-titane-fabrication-additive" },
+  { en: "/case-studies/graphite-dust-ev-battery-plant", fr: "/fr/etudes-de-cas/poussiere-de-graphite-usine-de-piles" },
+  { en: "/case-studies/wood-dust-furniture-manufacturing", fr: "/fr/etudes-de-cas/poussiere-de-bois-mobilier" },
+  { en: "/case-studies/coating-powder-automotive-finishing", fr: "/fr/etudes-de-cas/poudre-de-thermolaquage-finition-automobile" },
+  { en: "/case-studies/magnesium-fines-automotive-components", fr: "/fr/etudes-de-cas/fines-de-magnesium-composants-automobiles" },
+  { en: "/case-studies/grain-dust-elevator-feed-mill", fr: "/fr/etudes-de-cas/poussiere-de-grain-elevateur" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
