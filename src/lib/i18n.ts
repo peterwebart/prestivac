@@ -182,6 +182,10 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/guides/dust-explosion-basics", fr: "/fr/guides/explosions-de-poussieres" },
   { en: "/guides/sources-of-ignition", fr: "/fr/guides/sources-d-inflammation" },
   { en: "/guides/dust-hazard-analysis", fr: "/fr/guides/analyse-des-dangers-lies-aux-poussieres" },
+  { en: "/guides/what-is-black-dust", fr: "/fr/guides/qu-est-ce-que-la-poussiere-noire" },
+  { en: "/guides/recovered-dust-disposal-and-reclaim", fr: "/fr/guides/elimination-et-valorisation-des-poussieres" },
+  { en: "/guides/toxic-liquid-recovery", fr: "/fr/guides/recuperation-de-liquides-toxiques" },
+  { en: "/guides/esd-anti-static-vacuums", fr: "/fr/guides/aspirateurs-antistatiques-et-esd" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */

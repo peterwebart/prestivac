@@ -5,7 +5,7 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 342 built, all 200
+- **Routes:** 346 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
@@ -22,7 +22,7 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
 poussieres-et-matieres hub, applications hub, industries hub, guides hub, plus **all 47 material guides** and
-**all 19 application guides** and **all 38 industry guides** and **4 guide articles**.
+**all 19 application guides** and **all 38 industry guides** and **all 8 guide articles**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
