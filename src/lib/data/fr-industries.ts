@@ -18,6 +18,478 @@ const A = "/fr/applications";
 
 export const FR_INDUSTRIES: FrIndustryGuide[] = [
   {
+    slug: "munitions",
+    name: "Munitions",
+    group: "Défense",
+    metaTitle: "Aspirateurs pour la fabrication de munitions | Poussières métalliques",
+    metaDescription:
+      "Cette page traite de la poussière métallique et de l'entretien ménager en usine de munitions. Elle ne fournit aucune indication sur les matières énergétiques.",
+    intro:
+      "Cette page porte sur une partie précise du travail : la poussière métallique et l'entretien ménager dans les ateliers d'usinage d'une installation de munitions. Elle ne traite pas des matières énergétiques.",
+    facts: [
+      { label: "Portée de cette page", value: "Poussière métallique et entretien ménager en atelier d'usinage" },
+      { label: "Hors portée", value: "Poudres propulsives, explosifs et matières énergétiques" },
+      { label: "Matières couvertes", value: "Laiton, acier, plomb, aluminium issus de l'usinage" },
+      { label: "Autorité compétente", value: "Vos spécialistes en matières énergétiques, pour tout le reste" },
+    ],
+    overview: [
+      "L'usinage des douilles et des projectiles produit des poussières métalliques ordinaires : laiton — souvent plombé — acier, aluminium et plomb. Ces matières relèvent des mêmes cadres que dans toute autre usine d'usinage : le plomb sous le 29 CFR 1910.1025, les fines d'aluminium comme métal combustible, et le laiton avec sa teneur en plomb rarement indiquée sur la pièce.",
+      "Pour tout ce qui touche aux poudres propulsives, aux amorces et aux explosifs, nous n'offrons aucune indication et nous ne cherchons pas à en offrir. Ces matières relèvent de spécialistes en matières énergétiques et d'un cadre réglementaire distinct. Adressez-vous à eux.",
+    ],
+    risksHeading: "Ce que cette page couvre",
+    risks: [
+    "Poussière de laiton, souvent plombé, issue de l'usinage des douilles.",
+    "Plomb des projectiles, régi par le 29 CFR 1910.1025.",
+    "Fines d'aluminium combustibles selon les composants usinés.",
+    "Poussière d'acier abrasive et conductrice.",
+    "Composition d'alliage rarement indiquée sur la pièce.",
+    "Entretien ménager des ateliers d'usinage.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 % là où du plomb est présent.",
+    "Collecte scellée et élimination selon le statut réglementaire de la matière.",
+    "Équipement conducteur et mis à la terre pour les fines métalliques.",
+    "Équipement dédié là où la norme sur le plomb s'applique.",
+    "Vérification de la composition des alliages avant usinage.",
+    "Consultation de vos spécialistes en matières énergétiques pour tout le reste.",
+    ],
+    faqs: [
+      {
+        question: "Que couvre exactement cette page ?",
+        answer:
+          "La poussière métallique et l'entretien ménager dans les ateliers d'usinage : laiton, acier, aluminium et plomb issus de la fabrication de douilles et de projectiles. Ce sont les mêmes matières que dans toute autre usine d'usinage, relevant des mêmes cadres réglementaires.",
+      },
+      {
+        question: "Traitez-vous des poudres propulsives et des explosifs ?",
+        answer:
+          "Non. Nous n'offrons aucune indication sur les matières énergétiques — poudres propulsives, amorces, explosifs — et nous ne cherchons pas à en offrir. Ces matières relèvent de spécialistes et d'un cadre réglementaire distinct. Adressez-vous à eux plutôt qu'à un fournisseur d'équipement.",
+      },
+      {
+        question: "Le plomb des projectiles est-il un enjeu ?",
+        answer:
+          "Oui, et il relève du 29 CFR 1910.1025 avec une limite d'exposition de 50 microgrammes par mètre cube. Filtration absolue, collecte scellée, équipement dédié et aucun balayage à sec sont les contrôles attendus, comme dans tout autre atelier travaillant le plomb.",
+      },
+      {
+        question: "Le laiton des douilles contient-il du plomb ?",
+        answer:
+          "Fréquemment : le plomb est ajouté aux laitons de décolletage pour l'usinabilité, et rien dans l'apparence d'une pièce ne l'indique. Vérifier la composition auprès du fournisseur avant d'usiner un stock inconnu est la démarche prudente.",
+      },
+    ],
+    enPath: "/industries/ammunition",
+    related: [
+      { label: "Poussière de laiton et de bronze", href: `${M}/poussiere-de-laiton-et-de-bronze` },
+      { label: "Poussière de plomb", href: `${M}/poussiere-de-plomb` },
+      { label: "Poussière de fer et d'acier", href: `${M}/poussiere-de-fer-et-d-acier` },
+      { label: "Usinage CNC", href: `${A}/usinage-cnc` },
+      { label: "Ébavurage", href: `${A}/ebavurage` },
+    ],
+  },
+  {
+    slug: "industrie-du-charbon",
+    name: "Industrie du charbon",
+    group: "Ressources",
+    metaTitle: "Aspirateurs pour l'industrie du charbon | Groupe F et combustion lente",
+    metaDescription:
+      "Le charbon est une poussière carbonée du Groupe F qui se consume lentement en profondeur. Manutention, préparation et entreposage.",
+    intro:
+      "L'industrie du charbon manipule une poussière dont la caractéristique déterminante n'est pas l'inflammabilité mais la persistance : un foyer profond peut brûler à l'intérieur d'une accumulation sans flamme visible, puis se rallumer.",
+    facts: [
+      { label: "Groupe de poussière", value: "Classe II, Groupe F — poussières carbonées" },
+      { label: "Comportement distinctif", value: "Combustion lente en profondeur, avec rallumage" },
+      { label: "Danger sanitaire", value: "Pneumoconiose des mineurs de charbon" },
+      { label: "Zones critiques", value: "Manutention, préparation, convoyage, entreposage" },
+    ],
+    overview: [
+      "Le registre des explosions en mine et en installation de préparation figure parmi les mieux documentés de la sécurité industrielle, et le mécanisme est constant : un événement primaire soulève les accumulations, et l'événement secondaire se propage.",
+      "La combustion lente change la gestion de la matière récupérée : un contenant plein n'est pas un problème résolu mais un combustible concentré. Le retrait du bâtiment à la fin de chaque passage est le contrôle simple.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Poussière carbonée du Groupe F, sujette à la combustion lente.",
+    "Rallumage possible après qu'un incendie paraît éteint.",
+    "Registre d'explosions documenté en mine et en préparation.",
+    "Pneumoconiose des mineurs de charbon par inhalation chronique.",
+    "Contenants pleins laissés en place, concentrant le combustible.",
+    "Convoyage et transfert produisant la fraction fine.",
+    ],
+    solutions: [
+    "Récupération par aspirateur antidéflagrant adapté au Groupe F.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Retrait de la matière récupérée du bâtiment à la fin de chaque passage.",
+    "Nettoyage équipement arrêté et consigné dans les galeries.",
+    "Fréquences définies pour les transferts et le pourtour des entraînements.",
+    "Vigilance sur les foyers : une accumulation tiède mérite un suivi.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi la poussière de charbon est-elle particulière ?",
+        answer:
+          "Sa caractéristique déterminante est la persistance plutôt que l'inflammabilité : un foyer profond peut brûler à l'intérieur d'une accumulation sans flamme visible, puis se rallumer après qu'un événement paraît résolu. C'est pourquoi une accumulation tiède mérite un suivi plutôt qu'un soulagement.",
+      },
+      {
+        question: "Pourquoi sortir la matière récupérée du bâtiment ?",
+        answer:
+          "Parce qu'un contenant plein n'est pas un problème résolu : il concentre en un point le combustible qui était réparti en couche mince, dans une matière capable d'entretenir un foyer interne.",
+      },
+      {
+        question: "La poussière de charbon a-t-elle un effet sur la santé ?",
+        answer:
+          "Oui. L'inhalation chronique cause la pneumoconiose des mineurs de charbon, une maladie pulmonaire irréversible. Le contrôle de l'exposition accompagne donc le contrôle de l'incendie.",
+      },
+      {
+        question: "Où se concentre le danger ?",
+        answer:
+          "À la manutention, à la préparation et au convoyage : transferts, chutes, têtes et pieds d'élévateurs. Ces points produisent la fraction la plus fine et la confinent, près d'entraînements mécaniques.",
+      },
+    ],
+    enPath: "/industries/coal",
+    related: [
+      { label: "Poussière de charbon", href: `${M}/poussiere-de-charbon` },
+      { label: "Poussière de coke", href: `${M}/poussiere-de-coke` },
+      { label: "Entretien des convoyeurs", href: `${A}/entretien-des-convoyeurs` },
+      { label: "Nettoyage de silo", href: `${A}/nettoyage-de-silo` },
+      { label: "Nettoyage de dépoussiéreur", href: `${A}/nettoyage-de-depoussiereur` },
+    ],
+  },
+  {
+    slug: "education-et-recherche",
+    name: "Éducation et recherche",
+    group: "Institutions",
+    metaTitle: "Aspirateurs pour établissements d'enseignement et laboratoires",
+    metaDescription:
+      "Les ateliers d'enseignement et les laboratoires manipulent une grande variété de matières, souvent inconnues à l'avance et par des opérateurs peu expérimentés.",
+    intro:
+      "Les établissements d'enseignement et de recherche posent un problème que l'industrie n'a pas : une grande variété de matières, souvent manipulées par des personnes peu expérimentées, dans des installations conçues pour la polyvalence plutôt que pour un procédé précis.",
+    facts: [
+      { label: "Difficulté centrale", value: "Variété des matières, souvent inconnues à l'avance" },
+      { label: "Facteur humain", value: "Opérateurs en formation, rotation fréquente" },
+      { label: "Installations", value: "Conçues pour la polyvalence, non pour un procédé" },
+      { label: "Conséquence", value: "Spécifier pour le pire cas plausible et former explicitement" },
+    ],
+    overview: [
+      "Un atelier universitaire peut usiner du cuivre-béryllium, de l'aluminium et de l'inox dans la même semaine, chacun avec des exigences différentes. Un laboratoire de recherche peut manipuler des poudres dont personne dans le bâtiment n'a caractérisé le comportement.",
+      "La formation compte donc autant que l'équipement : une procédure claire sur ce qui peut être aspiré, ce qui ne peut pas l'être, et à qui demander en cas de doute vaut davantage qu'un appareil sophistiqué mal utilisé.",
+    ],
+    risksHeading: "Ce que ces établissements doivent maîtriser",
+    risks: [
+    "Variété des matières, souvent non caractérisées à l'avance.",
+    "Opérateurs en formation, avec rotation fréquente.",
+    "Cuivre-béryllium et autres alliages régulés dans les ateliers.",
+    "Poudres de recherche au comportement inconnu.",
+    "Installations polyvalentes plutôt que dédiées.",
+    "Procédures et formation comptant autant que l'équipement.",
+    ],
+    solutions: [
+    "Spécification couvrant le pire cas plausible des matières manipulées.",
+    "Filtration absolue HEPA 99,99 % pour couvrir les matières régulées.",
+    "Équipement dédié pour les zones manipulant des matières réglementées.",
+    "Procédure écrite : ce qui peut être aspiré, ce qui ne peut pas, qui contacter.",
+    "Vérification de la composition des matières avant usinage.",
+    "Formation explicite des utilisateurs, avec rappel à chaque rotation.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi les établissements d'enseignement sont-ils un cas particulier ?",
+        answer:
+          "Parce qu'ils combinent une grande variété de matières, souvent non caractérisées à l'avance, et des opérateurs en formation avec une rotation fréquente. Un atelier universitaire peut usiner trois alliages très différents dans la même semaine.",
+      },
+      {
+        question: "Comment spécifier sans connaître les matières ?",
+        answer:
+          "En couvrant le pire cas plausible : filtration absolue et équipement conducteur mis à la terre. C'est plus prudent que le strict nécessaire pour un usage moyen, et c'est le prix de la polyvalence.",
+      },
+      {
+        question: "La formation est-elle vraiment aussi importante ?",
+        answer:
+          "Dans ce contexte, oui. Une procédure claire sur ce qui peut être aspiré, ce qui ne peut pas l'être, et à qui demander en cas de doute vaut davantage qu'un appareil sophistiqué mal utilisé par quelqu'un qui ne connaît pas la matière.",
+      },
+      {
+        question: "Quels alliages surprennent le plus souvent ?",
+        answer:
+          "Le cuivre-béryllium, présent dans des ressorts, connecteurs et outils antiétincelles sans mention dans la description de la pièce. Il est régi par sa propre norme OSHA, et un atelier peut l'usiner sans le savoir.",
+      },
+    ],
+    enPath: "/industries/education",
+    related: [
+      { label: "Poussière de béryllium", href: `${M}/poussiere-de-beryllium` },
+      { label: "Poussière métallique combustible", href: `${M}/poussiere-metallique-combustible` },
+      { label: "Poussière de bois", href: `${M}/poussiere-de-bois` },
+      { label: "Usinage CNC", href: `${A}/usinage-cnc` },
+      { label: "Ponçage", href: `${A}/poncage` },
+    ],
+  },
+  {
+    slug: "naval-et-maritime",
+    name: "Naval et maritime",
+    group: "Fabrication lourde",
+    metaTitle: "Aspirateurs pour chantiers navals | Décapage, soudage et espaces clos",
+    metaDescription:
+      "Les chantiers navals combinent décapage abrasif, soudage, revêtements anciens et travail en espace clos dans les compartiments.",
+    intro:
+      "Un chantier naval réunit presque tous les dangers de poussière au même endroit : décapage abrasif à grande échelle, soudage, revêtements anciens contenant parfois du plomb, et travail en espace clos dans les compartiments.",
+    facts: [
+      { label: "Décapage", value: "Média usé mélangé au revêtement retiré — silice possible" },
+      { label: "Revêtements anciens", value: "Plomb possible, transférant son statut au flux récupéré" },
+      { label: "Soudage", value: "Fumées de manganèse, chrome hexavalent sur l'inox" },
+      { label: "Espaces clos", value: "Compartiments, ballasts et citernes, avec permis" },
+    ],
+    overview: [
+      "Le décapage produit le volume : média usé mélangé au revêtement retiré, avec de la silice si le média en contient et du plomb si la peinture en contenait. Le flux récupéré hérite du statut réglementaire de ce qui a été décapé.",
+      "Le travail en compartiment ajoute la dimension espace clos, avec contrôle de l'atmosphère, permis et surveillance — dans une géométrie où la ventilation naturelle est nulle.",
+    ],
+    risksHeading: "Ce qu'un chantier naval doit maîtriser",
+    risks: [
+    "Volume élevé de média usé mélangé aux revêtements retirés.",
+    "Silice si le média en contient, plomb si la peinture en contenait.",
+    "Statut réglementaire du flux hérité de ce qui a été décapé.",
+    "Fumées de soudage : manganèse, chrome hexavalent sur l'inox.",
+    "Travail en espace clos dans les compartiments et citernes.",
+    "Abrasivité extrême usant l'équipement.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 %, silice et plomb gouvernant la spécification.",
+    "Grande capacité de collecte pour le volume de décapage.",
+    "Construction tolérante à l'abrasion et pièces d'usure remplaçables.",
+    "Captation à la source au soudage.",
+    "Application intégrale du processus de permis d'espace clos.",
+    "Vérification du média et du revêtement avant le travail.",
+    ],
+    faqs: [
+      {
+        question: "Quel est le principal enjeu sur un chantier naval ?",
+        answer:
+          "Le volume et la composition du flux de décapage : média usé mélangé au revêtement retiré. Si le média contient de la silice ou la peinture du plomb, le flux récupéré hérite du statut réglementaire correspondant — ce n'est pas du média usé ordinaire.",
+      },
+      {
+        question: "Le travail en compartiment est-il un espace clos ?",
+        answer:
+          "Généralement oui, avec contrôle de l'atmosphère, permis et surveillance. La géométrie d'un compartiment ou d'une citerne offre une ventilation naturelle nulle, ce qui rend le processus complet nécessaire plutôt que formel.",
+      },
+      {
+        question: "Faut-il vérifier les revêtements avant décapage ?",
+        answer:
+          "Oui. La composition du revêtement détermine le statut réglementaire du flux récupéré et les protections requises. Les revêtements anciens peuvent contenir du plomb, régi par sa propre norme.",
+      },
+      {
+        question: "Pourquoi l'équipement s'use-t-il vite ?",
+        answer:
+          "Parce que le média abrasif est conçu pour éroder, et il érode aussi boyaux, tubes et surfaces de séparation. Une construction tolérante à l'abrasion avec des pièces remplaçables est plus économique à l'usage.",
+      },
+    ],
+    enPath: "/industries/marine",
+    related: [
+      { label: "Poussière de silice", href: `${M}/poussiere-de-silice` },
+      { label: "Poussière de plomb", href: `${M}/poussiere-de-plomb` },
+      { label: "Poussière de chrome", href: `${M}/poussiere-de-chrome` },
+      { label: "Décapage abrasif", href: `${A}/decapage-abrasif` },
+      { label: "Nettoyage après soudage", href: `${A}/nettoyage-de-soudage` },
+      { label: "Nettoyage de réservoirs", href: `${A}/nettoyage-de-reservoirs` },
+    ],
+  },
+  {
+    slug: "ferroviaire",
+    name: "Ferroviaire",
+    group: "Fabrication lourde",
+    metaTitle: "Aspirateurs pour l'industrie ferroviaire | Meulage, freins et ateliers",
+    metaDescription:
+      "L'entretien ferroviaire produit de la poussière de meulage, des résidus de freinage et des revêtements anciens à décaper.",
+    intro:
+      "L'entretien ferroviaire combine des ateliers lourds et des interventions sur matériel ancien : meulage et soudage sur structures, décapage de revêtements posés il y a des décennies, et résidus de freinage.",
+    facts: [
+      { label: "Ateliers", value: "Meulage, soudage, usinage sur structures lourdes" },
+      { label: "Décapage", value: "Revêtements anciens, plomb possible" },
+      { label: "Résidus de freinage", value: "Poussière métallique fine et abrasive" },
+      { label: "Espaces", value: "Voitures, citernes et réservoirs lors des révisions" },
+    ],
+    overview: [
+      "Le meulage et le soudage sur structures produisent des fines métalliques conductrices et des fumées dont la composition suit le métal — manganèse dans l'acier, chrome hexavalent sur l'inox.",
+      "Le décapage de matériel ancien pose la question des revêtements : une peinture posée il y a des décennies peut contenir du plomb, et le flux récupéré hérite alors de son statut réglementaire.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Fines métalliques conductrices du meulage et de l'usinage.",
+    "Fumées de soudage : manganèse, chrome hexavalent sur l'inox.",
+    "Revêtements anciens pouvant contenir du plomb.",
+    "Résidus de freinage fins et abrasifs.",
+    "Travail en espace clos dans les citernes et réservoirs.",
+    "Grandes structures compliquant l'accès en hauteur.",
+    ],
+    solutions: [
+    "Filtration absolue HEPA 99,99 % pour les fumées et les revêtements au plomb.",
+    "Captation à la source au soudage et au meulage.",
+    "Construction tolérante à l'abrasion.",
+    "Vérification des revêtements avant décapage de matériel ancien.",
+    "Application du processus de permis d'espace clos le cas échéant.",
+    "Rallonges pour les grandes structures.",
+    ],
+    faqs: [
+      {
+        question: "Quels dangers dominent en atelier ferroviaire ?",
+        answer:
+          "Les fumées de soudage et les fines de meulage : manganèse dans presque tous les aciers, chrome hexavalent sur l'inox, et des fines métalliques conductrices et abrasives. La captation à la source est le contrôle principal.",
+      },
+      {
+        question: "Le matériel ancien pose-t-il un problème particulier ?",
+        answer:
+          "Le décapage de revêtements posés il y a des décennies peut libérer du plomb. Le flux récupéré hérite alors du statut réglementaire du plomb, avec les exigences de collecte scellée et d'élimination correspondantes.",
+      },
+      {
+        question: "Les résidus de freinage sont-ils dangereux ?",
+        answer:
+          "Ce sont des poussières métalliques fines et abrasives. Elles se récupèrent avec un équipement conducteur, mis à la terre et tolérant à l'abrasion, avec une filtration retenue pour la fraction respirable.",
+      },
+      {
+        question: "Le travail en citerne est-il un espace clos ?",
+        answer:
+          "Généralement oui, avec le processus de permis complet : contrôle de l'atmosphère, surveillance et moyens de secours.",
+      },
+    ],
+    enPath: "/industries/rail",
+    related: [
+      { label: "Poussière de fer et d'acier", href: `${M}/poussiere-de-fer-et-d-acier` },
+      { label: "Poussière de plomb", href: `${M}/poussiere-de-plomb` },
+      { label: "Poussière de chrome", href: `${M}/poussiere-de-chrome` },
+      { label: "Nettoyage après soudage", href: `${A}/nettoyage-de-soudage` },
+      { label: "Poussière de meulage", href: `${A}/poussiere-de-meulage` },
+      { label: "Décapage abrasif", href: `${A}/decapage-abrasif` },
+    ],
+  },
+  {
+    slug: "fours-sous-vide",
+    name: "Fours sous vide",
+    group: "Traitement thermique",
+    metaTitle: "Aspirateurs pour fours sous vide | Résidus fins et entretien",
+    metaDescription:
+      "L'entretien des fours sous vide implique des résidus métalliques très fins, parfois réactifs, dans une enceinte confinée.",
+    intro:
+      "L'entretien d'un four sous vide met en présence des résidus métalliques extrêmement fins — condensats, poussières de charge, résidus de traitement — dans une enceinte confinée conçue pour être propre.",
+    facts: [
+      { label: "Résidus", value: "Condensats métalliques et poussières de charge très fins" },
+      { label: "Réactivité", value: "Variable selon les métaux traités — parfois réactive" },
+      { label: "Enceinte", value: "Confinée, avec accès par ouvertures ou entrée" },
+      { label: "Contrainte", value: "La propreté de l'enceinte fait partie du procédé" },
+    ],
+    overview: [
+      "Les condensats métalliques qui se déposent sur les parois et les éléments sont très fins, et leur réactivité dépend entièrement des métaux traités : un four utilisé pour du titane ou de l'aluminium laisse des résidus qu'il faut traiter comme des métaux combustibles.",
+      "La propreté de l'enceinte fait partie du procédé : des résidus accumulés dégazent et compromettent le vide, de sorte que le nettoyage sert la qualité autant que la sécurité.",
+    ],
+    risksHeading: "Ce que l'entretien de fours doit maîtriser",
+    risks: [
+    "Condensats métalliques très fins déposés sur parois et éléments.",
+    "Réactivité dépendant entièrement des métaux traités.",
+    "Enceinte confinée, avec accès parfois en espace clos.",
+    "Résidus dégazant et compromettant le vide.",
+    "Éléments chauffants et isolants fragiles.",
+    "Propreté faisant partie du procédé, non seulement de la sécurité.",
+    ],
+    solutions: [
+    "Équipement conducteur, mis à la terre et exempt de sources d'inflammation.",
+    "Filtration absolue HEPA 99,99 % pour les condensats très fins.",
+    "Ségrégation selon les métaux traités dans le four.",
+    "Dispositions de Classe D si des métaux réactifs sont traités.",
+    "Application du processus de permis d'espace clos le cas échéant.",
+    "Outils adaptés pour ne pas endommager éléments et isolants.",
+    ],
+    faqs: [
+      {
+        question: "Quels résidus trouve-t-on dans un four sous vide ?",
+        answer:
+          "Des condensats métalliques et des poussières de charge extrêmement fins, déposés sur les parois et les éléments. Leur réactivité dépend entièrement des métaux traités : un four utilisé pour du titane ou de l'aluminium laisse des résidus à traiter comme des métaux combustibles.",
+      },
+      {
+        question: "Pourquoi la propreté fait-elle partie du procédé ?",
+        answer:
+          "Parce que les résidus accumulés dégazent et compromettent le vide. Le nettoyage sert donc la qualité du traitement autant que la sécurité, ce qui le rend plus facile à justifier.",
+      },
+      {
+        question: "L'accès à un four est-il un espace clos ?",
+        answer:
+          "Selon la géométrie et le mode d'accès, il peut l'être, avec le processus de permis correspondant. La consignation précède dans tous les cas toute intervention.",
+      },
+      {
+        question: "Faut-il ségréger les résidus ?",
+        answer:
+          "Selon les métaux traités, oui : mélanger des résidus de métaux différents crée des conditions non évaluées, particulièrement lorsque des métaux réactifs sont impliqués.",
+      },
+    ],
+    enPath: "/industries/vacuum-furnace",
+    related: [
+      { label: "Poussière de titane", href: `${M}/poussiere-de-titane` },
+      { label: "Poussière métallique combustible", href: `${M}/poussiere-metallique-combustible` },
+      { label: "Poussière de graphite", href: `${M}/poussiere-de-graphite` },
+      { label: "Nettoyage de réservoirs", href: `${A}/nettoyage-de-reservoirs` },
+    ],
+  },
+  {
+    slug: "peintures-et-revetements",
+    name: "Peintures et revêtements",
+    group: "Transformation",
+    metaTitle: "Aspirateurs pour peintures et revêtements | Poudres et pigments",
+    metaDescription:
+      "La fabrication de peintures et revêtements combine poudres combustibles, pigments contenant parfois des métaux régulés, et solvants inflammables.",
+    intro:
+      "La fabrication de peintures et de revêtements réunit trois régimes : des poudres combustibles, des pigments dont certains contiennent des métaux régulés, et des solvants inflammables créant des zones classifiées.",
+    facts: [
+      { label: "Poudres", value: "Charges, résines et pigments — souvent combustibles" },
+      { label: "Pigments", value: "Certains contenant des métaux régulés" },
+      { label: "Solvants", value: "Inflammables, créant des zones de Classe I" },
+      { label: "Conséquence", value: "Trois régimes dans la même installation" },
+    ],
+    overview: [
+      "Le broyage et le mélange de poudres produisent la fraction fine, et les charges organiques sont combustibles. Certains pigments contiennent du plomb, du chrome ou du cadmium, régis par leurs propres normes avec des limites d'exposition basses.",
+      "Les zones utilisant des solvants inflammables sont classifiées en Classe I, où l'équipement doit correspondre à la classification assignée. Comme pour le cannabis, un appareil convenant à une zone poudre ne convient pas nécessairement à une zone solvant.",
+    ],
+    risksHeading: "Ce que le secteur doit maîtriser",
+    risks: [
+    "Poudres combustibles issues du broyage et du mélange.",
+    "Pigments contenant parfois plomb, chrome ou cadmium.",
+    "Solvants inflammables créant des zones de Classe I.",
+    "Trois régimes d'équipement dans la même installation.",
+    "Contamination croisée entre teintes et formulations.",
+    "Charges statiques dans le travail de poudres sèches.",
+    ],
+    solutions: [
+    "Équipement correspondant à la classification assignée, zone par zone.",
+    "Filtration absolue HEPA 99,99 % là où des pigments régulés sont manipulés.",
+    "Récupération conductrice et mise à la terre pour les poudres sèches.",
+    "Vérification de la composition des pigments avant introduction.",
+    "Récupération dédiée par formulation là où la contamination croisée est un enjeu.",
+    "Collecte scellée pour les pigments à métaux régulés.",
+    ],
+    faqs: [
+      {
+        question: "Quels sont les trois régimes ?",
+        answer:
+          "Les poudres combustibles issues du broyage et du mélange, les pigments dont certains contiennent des métaux régulés, et les solvants inflammables créant des zones classifiées en Classe I. Ils coexistent dans la même installation et appellent des équipements différents.",
+      },
+      {
+        question: "Les pigments posent-ils un danger particulier ?",
+        answer:
+          "Certains contiennent du plomb, du chrome ou du cadmium, régis par leurs propres normes avec des limites d'exposition basses. Vérifier la composition avant d'introduire une nouvelle formulation est la démarche prudente.",
+      },
+      {
+        question: "Un appareil peut-il servir dans toute l'usine ?",
+        answer:
+          "Rarement. Un appareil convenant à une zone poudre ne convient pas nécessairement à une zone solvant classifiée en Classe I. L'équipement se choisit zone par zone selon la classification assignée par votre ingénieur.",
+      },
+      {
+        question: "Comment gérer la contamination entre teintes ?",
+        answer:
+          "Par une récupération dédiée par formulation là où l'enjeu existe, et un nettoyage documenté entre séries — la même discipline que celle qu'exige une analyse des dangers liés aux poussières.",
+      },
+    ],
+    enPath: "/industries/paints-coatings",
+    related: [
+      { label: "Poussière de plomb", href: `${M}/poussiere-de-plomb` },
+      { label: "Poussière de chrome", href: `${M}/poussiere-de-chrome` },
+      { label: "Poussière de cadmium", href: `${M}/poussiere-de-cadmium` },
+      { label: "Thermolaquage", href: `${A}/thermolaquage` },
+      { label: "Mélange et malaxage", href: `${A}/melange-et-malaxage` },
+      { label: "Nettoyage de déversements", href: `${A}/nettoyage-de-deversements` },
+    ],
+  },
+
+  {
     slug: "desamiantage-et-decontamination",
     name: "Désamiantage et décontamination",
     group: "Environnement",
