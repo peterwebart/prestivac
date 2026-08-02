@@ -5,7 +5,7 @@ If you are an assistant picking this up after a container reset: run
 `bash bin/recover.sh`, then read this file, then `git log --oneline`.
 
 ## Last verified
-- **Routes:** 294 built, all 200
+- **Routes:** 298 built, all 200
 - **Build / lint / typecheck:** clean
 - **Container resets survived:** history is now preserved in the zip (see Recovery)
 
@@ -21,7 +21,7 @@ Class II Div 1 & 2 Groups E–G, NRTL. Zero CSA references remain.
 ## French (fr-CA, Québec) — IN PROGRESS
 Live: home, aspirateurs-antideflagrants, demande-de-soumission, merci, a-propos,
 poussieres-et-matieres hub, applications hub, plus **all 47 material guides** and
-**15 application guides**.
+**all 19 application guides**.
 
 Conversion path is complete in French: French form (19/19 fields), French
 confirmation page with reference number, locale-aware navbar, language switcher
@@ -31,9 +31,12 @@ resolving page counterparts, reciprocal hreflang via `LOCALE_PAIRS`.
 All 47 English material guides have a French counterpart, verified 47/47 for
 reciprocal hreflang and FAQPage schema, with zero unpaired English guides.
 
+### Application guides — COMPLETE
+All 19 English application guides have a French counterpart, verified 19/19 for
+reciprocal hreflang and FAQPage schema, zero unpaired.
+
 ### Remaining to translate
-4 application guides (mixing-blending, tank-cleaning, thermal-spray,
-warehouse-housekeeping) · 38 industry guides ·
+38 industry guides ·
 16 case studies · 8 articles.
 
 **11 compliance pages: DO NOT translate without a French-speaking safety review.**

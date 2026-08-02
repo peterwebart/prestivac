@@ -16,6 +16,247 @@ export type FrApplicationGuide = FrMaterialGuide;
 
 export const FR_APPLICATIONS: FrApplicationGuide[] = [
   {
+    slug: "melange-et-malaxage",
+    name: "Mélange et malaxage",
+    group: "Manutention de matières",
+    metaTitle: "Mélange et malaxage | Chargement, déchargement et allergènes",
+    metaDescription:
+      "Le mélange génère de la poussière au chargement et au déchargement, et la contamination croisée entre lots est un enjeu distinct du danger d'incendie.",
+    intro:
+      "Le mélangeur lui-même est rarement le problème : ce sont le chargement et le déchargement qui génèrent la poussière, aux deux moments où la matière est ouverte à l'atmosphère.",
+    facts: [
+      { label: "Ce que l'opération génère", value: "Nuages au chargement et au déchargement" },
+      { label: "Points critiques", value: "Ouverture du mélangeur, versement, transfert vers l'aval" },
+      { label: "Enjeu distinct", value: "Contamination croisée entre lots et allergènes" },
+      { label: "Facteur additionnel", value: "Charges statiques dans le mélange de poudres sèches" },
+    ],
+    overview: [
+      "Le mélange de poudres sèches génère aussi des charges statiques importantes : la friction entre particules dans un mélangeur en rotation est un mécanisme de charge efficace, et le confinement du mélangeur complète le tableau.",
+      "S'ajoute un enjeu qui n'est pas un danger d'incendie mais qui gouverne tout autant les procédures : la contamination croisée entre lots. En alimentaire, la gestion des allergènes impose un nettoyage documenté entre séries ; en pharmaceutique, la contamination croisée est un enjeu de conformité.",
+    ],
+    risksHeading: "Ce qui compte au mélange",
+    risks: [
+    "Chargement et déchargement comme points de génération, non le mélange lui-même.",
+    "Charges statiques générées par la friction entre particules.",
+    "Confinement du mélangeur complétant les conditions d'une déflagration.",
+    "Contamination croisée entre lots, distincte du danger d'incendie.",
+    "Allergènes en alimentaire, imposant un nettoyage documenté entre séries.",
+    "Résidus dans les zones mortes du mélangeur.",
+    ],
+    solutions: [
+    "Captation aux points de chargement et de déchargement.",
+    "Équipement conducteur, mis à la terre et équipotentiel pour les poudres sèches.",
+    "Filtration absolue HEPA 99,99 % pour les poudres fines ou réglementées.",
+    "Récupération dédiée par produit là où la contamination croisée est un enjeu.",
+    "Nettoyage documenté entre séries, servant allergènes et conformité.",
+    "Élimination du soufflage à l'air comprimé, qui redistribue les résidus.",
+    ],
+    faqs: [
+      {
+        question: "Où la poussière est-elle générée au mélange ?",
+        answer:
+          "Au chargement et au déchargement, non dans le mélangeur lui-même. Ce sont les deux moments où la matière est ouverte à l'atmosphère, et la captation doit donc être placée là plutôt qu'autour de la cuve.",
+      },
+      {
+        question: "Le mélange génère-t-il de l'électricité statique ?",
+        answer:
+          "Oui, et efficacement : la friction entre particules dans un mélangeur en rotation est un mécanisme de charge, et le confinement de la cuve complète les conditions. Un circuit de récupération conducteur et mis à la terre est approprié pour les poudres sèches.",
+      },
+      {
+        question: "Comment gérer la contamination croisée entre lots ?",
+        answer:
+          "Par une récupération dédiée par produit là où l'enjeu existe, et un nettoyage documenté entre séries. Ce n'est pas un danger d'incendie, mais en alimentaire la gestion des allergènes et en pharmaceutique la conformité l'imposent tout autant.",
+      },
+      {
+        question: "Peut-on souffler un mélangeur à l'air comprimé ?",
+        answer:
+          "Non. Le soufflage redistribue les résidus dans le local et dans les zones mortes plutôt que de les retirer, ce qui aggrave à la fois le risque de contamination croisée et l'accumulation combustible.",
+      },
+    ],
+    enPath: "/applications/mixing-blending",
+  },
+  {
+    slug: "nettoyage-de-reservoirs",
+    name: "Nettoyage de réservoirs",
+    group: "Entretien d'installations",
+    metaTitle: "Nettoyage de réservoirs | Espace clos et compatibilité des résidus",
+    metaDescription:
+      "Le nettoyage de réservoirs combine entrée en espace clos et résidus dont la chimie détermine l'équipement. Atmosphère, compatibilité et permis.",
+    intro:
+      "Le nettoyage de réservoirs pose deux questions avant toute question d'équipement : l'atmosphère à l'intérieur, et la chimie de ce qui reste au fond.",
+    facts: [
+      { label: "Ce que l'opération implique", value: "Retrait de résidus, boues et dépôts intérieurs" },
+      { label: "Enjeu 1", value: "Entrée en espace clos, avec processus de permis complet" },
+      { label: "Enjeu 2", value: "Chimie des résidus déterminant la compatibilité de l'équipement" },
+      { label: "Atmosphère", value: "Potentiellement appauvrie en oxygène ou chargée en vapeurs" },
+    ],
+    overview: [
+      "L'entrée en espace clos s'applique intégralement : contrôle de l'atmosphère, surveillance, permis, moyens de secours. Réduire la fréquence des entrées par un nettoyage depuis les ouvertures est un gain réel, mais lorsque l'entrée est nécessaire le processus complet s'applique exactement comme avant.",
+      "La chimie des résidus détermine ensuite l'équipement : les acides, solvants et produits de procédé attaquent joints, boyaux et surfaces de cuve à des vitesses différentes, et un résidu de solvant inflammable ajoute une exigence de classification à ce qui semblait un simple travail de nettoyage.",
+    ],
+    risksHeading: "Ce qui compte au nettoyage de réservoirs",
+    risks: [
+    "Entrée en espace clos avec processus de permis intégral.",
+    "Atmosphère potentiellement appauvrie en oxygène ou chargée en vapeurs.",
+    "Chimie des résidus déterminant la compatibilité de l'équipement.",
+    "Résidus de solvants inflammables imposant une exigence de classification.",
+    "Boues et dépôts mixtes solide-liquide compliquant la récupération.",
+    "Vidange du matériel récupéré comme moment d'exposition.",
+    ],
+    solutions: [
+    "Application intégrale du processus de permis d'espace clos lorsque l'entrée est nécessaire.",
+    "Nettoyage depuis les ouvertures là où la géométrie le permet, pour réduire la fréquence des entrées.",
+    "Compatibilité établie contre le résidu réel, avec sa concentration et sa température.",
+    "Récupération conçue pour les flux mixtes solide-liquide.",
+    "Équipement conducteur et mis à la terre là où des solvants inflammables sont présents.",
+    "Destination réglementaire du résidu établie avant le choix de la collecte.",
+    ],
+    faqs: [
+      {
+        question: "Le nettoyage de réservoirs est-il un travail en espace clos ?",
+        answer:
+          "Lorsque l'entrée est nécessaire, oui, et le processus de permis s'applique intégralement : contrôle de l'atmosphère, surveillance, permis et moyens de secours. Nettoyer depuis les ouvertures là où la géométrie le permet réduit la fréquence des entrées, ce qui est un gain réel — mais cela ne dispense jamais du processus lorsque l'entrée a lieu.",
+      },
+      {
+        question: "La chimie des résidus change-t-elle l'équipement ?",
+        answer:
+          "Entièrement. Les acides, solvants et produits de procédé attaquent joints, boyaux et surfaces de cuve à des vitesses différentes, et la compatibilité s'établit contre le résidu réel — avec sa concentration et sa température — plutôt que contre une catégorie générale.",
+      },
+      {
+        question: "Un résidu de solvant change-t-il la classification ?",
+        answer:
+          "Il peut l'imposer. Un résidu de solvant inflammable dans un réservoir ajoute une exigence de classification à ce qui semblait un simple travail de nettoyage, et l'équipement doit correspondre à la classification assignée par l'ingénieur de l'installation.",
+      },
+      {
+        question: "Comment gérer les boues et dépôts ?",
+        answer:
+          "Par une récupération conçue pour les flux mixtes solide-liquide, ce qui est la situation normale plutôt que l'exception dans un fond de réservoir. La destination réglementaire du résidu s'établit avant de choisir le mode de collecte.",
+      },
+    ],
+    enPath: "/applications/tank-cleaning",
+  },
+  {
+    slug: "projection-thermique",
+    name: "Projection thermique",
+    group: "Fabrication avancée",
+    metaTitle: "Projection thermique | Surpulvérisation métallique très fine",
+    metaDescription:
+      "La projection thermique produit une surpulvérisation métallique extrêmement fine, souvent réactive, ainsi que des fumées. Récupération en cabine.",
+    intro:
+      "La projection thermique produit une surpulvérisation métallique dont la finesse est le problème : les particules qui n'atteignent pas la pièce sont plus fines que la poudre d'alimentation, et elles se déposent partout dans la cabine.",
+    facts: [
+      { label: "Ce que l'opération génère", value: "Surpulvérisation métallique très fine et fumées" },
+      { label: "Particularité", value: "Les particules non déposées sont plus fines que la poudre d'alimentation" },
+      { label: "Réactivité", value: "Selon l'alliage : aluminium, zinc et autres métaux réactifs" },
+      { label: "Classe d'incendie", value: "Classe D pour les poudres métalliques réactives" },
+    ],
+    overview: [
+      "La composition suit le consommable : les projections d'aluminium et de zinc produisent des fines réactives, et le zinc ajoute la question des fumées d'oxyde de zinc. Les carbures produisent de la poussière contenant du cobalt.",
+      "La cabine concentre tout cela. Une accumulation de surpulvérisation métallique fine dans une cabine de projection réunit un combustible réactif, un confinement, et un procédé qui fonctionne à très haute température quelques mètres plus loin.",
+    ],
+    risksHeading: "Ce qui compte en projection thermique",
+    risks: [
+    "Surpulvérisation plus fine que la poudre d'alimentation, donc plus réactive.",
+    "Fines d'aluminium et de zinc réactives, de Classe D.",
+    "Fumées d'oxyde de zinc lors des projections de zinc.",
+    "Poussière contenant du cobalt lors des projections de carbures.",
+    "Accumulation concentrée dans la cabine, près d'un procédé à haute température.",
+    "Conductivité des poussières métalliques.",
+    ],
+    solutions: [
+    "Équipement de récupération conducteur, mis à la terre et exempt de sources d'inflammation.",
+    "Séparation par immersion pour les fines réactives, gardées humides.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction respirable.",
+    "Nettoyage de cabine à fréquence définie, sans laisser l'accumulation s'installer.",
+    "Ségrégation par consommable, sans mélange des fines réactives.",
+    "Dispositions de Classe D et personnel formé.",
+    ],
+    faqs: [
+      {
+        question: "La surpulvérisation de projection thermique est-elle dangereuse ?",
+        answer:
+          "Sa finesse est le problème : les particules qui n'atteignent pas la pièce sont plus fines que la poudre d'alimentation, donc plus réactives. Selon le consommable, ce sont des fines d'aluminium ou de zinc, qui sont des métaux combustibles de Classe D où l'eau est inappropriée.",
+      },
+      {
+        question: "La projection de zinc pose-t-elle un danger particulier ?",
+        answer:
+          "Elle ajoute les fumées d'oxyde de zinc, cause classique de la fièvre des fondeurs, à la question des fines réactives. C'est un problème d'exposition distinct de la combustibilité, et la captation à la source y répond.",
+      },
+      {
+        question: "Pourquoi la cabine est-elle le point critique ?",
+        answer:
+          "Parce qu'elle concentre tout : une accumulation de surpulvérisation métallique fine dans un espace confiné, à quelques mètres d'un procédé fonctionnant à très haute température. Le contrôle des accumulations en cabine est donc la mesure principale.",
+      },
+      {
+        question: "Comment récupérer la surpulvérisation ?",
+        answer:
+          "Avec un équipement conducteur, mis à la terre et exempt de sources d'inflammation, et lorsque l'évaluation le justifie, une séparation par immersion qui garde les fines réactives humides plutôt que de les laisser s'accumuler à sec.",
+      },
+    ],
+    enPath: "/applications/thermal-spray",
+  },
+  {
+    slug: "entretien-d-entrepot",
+    name: "Entretien d'entrepôt",
+    group: "Entretien d'installations",
+    metaTitle: "Entretien d'entrepôt | Poussière en hauteur et remise en suspension",
+    metaDescription:
+      "Dans un entrepôt, la poussière s'accumule en hauteur sur les racks et la circulation des chariots la remet continuellement en suspension.",
+    intro:
+      "Un entrepôt pose un problème que les zones de procédé n'ont pas : la poussière n'y est presque jamais générée, elle y est apportée et redistribuée — et elle s'accumule là où personne ne regarde, en haut des racks.",
+    facts: [
+      { label: "Ce qui s'accumule", value: "Poussière apportée depuis les zones de procédé et l'extérieur" },
+      { label: "Où", value: "En hauteur sur les racks, les poutres et les luminaires" },
+      { label: "Ce qui la remet en suspension", value: "La circulation des chariots élévateurs" },
+      { label: "Pourquoi c'est négligé", value: "La poussière n'est pas générée sur place" },
+    ],
+    overview: [
+      "La circulation des chariots élévateurs est le moteur : chaque passage remet en suspension la poussière déposée au sol et la redistribue en hauteur. C'est un cycle qui alimente continuellement les surfaces élevées.",
+      "Si l'entrepôt jouxte une zone de procédé produisant une poussière combustible, cette poussière migre et s'accumule sur les racks — où elle constitue exactement l'inventaire qu'un événement primaire disperserait, dans un bâtiment généralement dépourvu de protection contre les explosions.",
+    ],
+    risksHeading: "Ce qui compte dans un entrepôt",
+    risks: [
+    "Accumulation en hauteur sur racks, poutres et luminaires, hors de vue.",
+    "Remise en suspension continue par la circulation des chariots.",
+    "Migration de poussière combustible depuis les zones de procédé adjacentes.",
+    "Bâtiment généralement dépourvu de protection contre les explosions.",
+    "Accès en hauteur difficile, nécessitant de la portée ou des nacelles.",
+    "Négligence due à l'absence de génération sur place.",
+    ],
+    solutions: [
+    "Récupération avec rallonges pour atteindre le haut des racks et les poutres.",
+    "Aspirateur conducteur et mis à la terre là où la poussière migrante est combustible.",
+    "Filtration absolue HEPA 99,99 % pour retenir la fraction fine.",
+    "Nettoyage des allées de circulation, pour couper le cycle de remise en suspension.",
+    "Fréquences définies incluant explicitement les surfaces hautes.",
+    "Élimination du soufflage à l'air comprimé, qui alimente directement le cycle.",
+    ],
+    faqs: [
+      {
+        question: "Pourquoi un entrepôt accumule-t-il de la poussière ?",
+        answer:
+          "Parce qu'elle y est apportée plutôt que générée : elle migre depuis les zones de procédé adjacentes et de l'extérieur, puis la circulation des chariots élévateurs la remet continuellement en suspension et la redistribue en hauteur. C'est un cycle qui alimente les surfaces élevées sans qu'aucune opération poussiéreuse n'ait lieu sur place.",
+      },
+      {
+        question: "La poussière d'entrepôt est-elle un danger réel ?",
+        answer:
+          "Si elle migre depuis une zone produisant une poussière combustible, oui : elle s'accumule sur les racks et les poutres, ce qui constitue exactement l'inventaire qu'un événement primaire disperserait — dans un bâtiment généralement dépourvu de protection contre les explosions.",
+      },
+      {
+        question: "Par où commencer ?",
+        answer:
+          "Par le haut des racks, les poutres et les luminaires, qui portent l'accumulation qui compte, puis par les allées de circulation, pour couper le cycle de remise en suspension à sa source.",
+      },
+      {
+        question: "Le soufflage à l'air comprimé est-il utile en entrepôt ?",
+        answer:
+          "Il est particulièrement contre-productif : il alimente directement le cycle en projetant la poussière du sol vers les surfaces hautes, c'est-à-dire précisément là où elle pose le plus de problème.",
+      },
+    ],
+    enPath: "/applications/warehouse-housekeeping",
+  },
+
+  {
     slug: "ensachage-et-vidage-de-sacs",
     name: "Ensachage et vidage de sacs",
     group: "Manutention de matières",

@@ -134,6 +134,10 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
   { en: "/applications/drum-filling", fr: "/fr/applications/remplissage-de-futs" },
   { en: "/applications/dust-collector-cleaning", fr: "/fr/applications/nettoyage-de-depoussiereur" },
   { en: "/applications/metal-3d-printing", fr: "/fr/applications/impression-3d-metal" },
+  { en: "/applications/mixing-blending", fr: "/fr/applications/melange-et-malaxage" },
+  { en: "/applications/tank-cleaning", fr: "/fr/applications/nettoyage-de-reservoirs" },
+  { en: "/applications/thermal-spray", fr: "/fr/applications/projection-thermique" },
+  { en: "/applications/warehouse-housekeeping", fr: "/fr/applications/entretien-d-entrepot" },
 ];
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
