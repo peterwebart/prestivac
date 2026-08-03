@@ -279,7 +279,7 @@ export default function CombustibleDustPage() {
               </h3>
               <p className="mt-2.5 text-[13.5px]/[1.7] text-white/75">
                 PrestiVac manufactures industrial vacuums — explosion-proof, HEPA, air-operated, wet
-                and dry, central systems and custom-engineered units. We do not manufacture dust
+                and dry, central systems and custom-built units. We do not manufacture dust
                 collectors. If you need ducted source capture with explosion protection, that is a
                 collection-system specialist&rsquo;s field and we would rather point you there than
                 sell you the wrong half of a solution. If you are not certain which you need,

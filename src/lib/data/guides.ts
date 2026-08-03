@@ -353,7 +353,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  callout: {
  heading: "Being straight about what we make",
  body: [
- "PrestiVac manufactures industrial vacuums — explosion-proof, HEPA, air-operated, wet and dry, central systems and custom-engineered units. We do not manufacture dust collectors, and we would rather tell you that than sell you the wrong half of a solution.",
+ "PrestiVac manufactures industrial vacuums — explosion-proof, HEPA, air-operated, wet and dry, central systems and custom-built units. We do not manufacture dust collectors, and we would rather tell you that than sell you the wrong half of a solution.",
  "If your problem is accumulation, spills, machine cleanout or classified-area housekeeping, that is what we build for. If you need ducted source capture with explosion protection, you want a collection-system specialist — and the two purchases coexist perfectly well.",
  ],
  },

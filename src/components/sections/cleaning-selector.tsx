@@ -36,7 +36,7 @@ const OPTIONS = [
     label: "Metal Dust",
     icon: Magnet,
     headline: "Immersion separation systems",
-    copy: "Safely recover aluminum, titanium, magnesium and other reactive metal fines with grounded, spark-free recovery engineered for your process.",
+    copy: "Safely recover aluminum, titanium, magnesium and other reactive metal fines with grounded, spark-free recovery built for your process.",
   },
   {
     id: "pharmaceutical",

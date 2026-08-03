@@ -174,7 +174,7 @@ export default function SupportPage() {
             <p className="mt-3.5 text-[14px]/[1.75] text-white/70">
               PrestiVac Inc. designs and builds industrial vacuum systems at its head office and
               production facility in Dover, Delaware. The range covers explosion-proof, HEPA,
-              air-operated, wet and dry, central and custom-engineered units, with more than 200
+              air-operated, wet and dry, central and custom-built units, with more than 200
               versions built to order across a combined 25 years of experience.
             </p>
             <p className="mt-3.5 text-[14px]/[1.75] text-white/70">

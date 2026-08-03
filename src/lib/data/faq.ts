@@ -50,7 +50,7 @@ export const FAQ: FaqItem[] = [
  category: "selection",
  question: "Do you supply dust collectors?",
  answer:
- "No. We manufacture industrial vacuums — explosion-proof, HEPA, air-operated, wet and dry, central systems and custom-engineered units. A dust collector is a different machine: high air volume at low suction, capturing dust at the source through fixed ducting. A vacuum is lower volume at high suction, removing what has already settled. Most dust programmes need both, and we would rather point you to a collection-system specialist for that half than sell you the wrong equipment.",
+ "No. We manufacture industrial vacuums — explosion-proof, HEPA, air-operated, wet and dry, central systems and custom-built units. A dust collector is a different machine: high air volume at low suction, capturing dust at the source through fixed ducting. A vacuum is lower volume at high suction, removing what has already settled. Most dust programmes need both, and we would rather point you to a collection-system specialist for that half than sell you the wrong equipment.",
  related: [
  { label: "Vacuum vs dust collector", href: "/guides/vacuum-vs-dust-collector" },
  { label: "Combustible dust vacuums", href: "/combustible-dust" },

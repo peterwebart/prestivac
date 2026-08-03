@@ -72,7 +72,7 @@ const RECOVERY_OPTIONS: {
     id: "liquids",
     label: "Liquids or wet material",
     answer: {
-      label: "Wet-capable configurations — engineering confirmation",
+      label: "Wet-capable configurations — confirmation required",
       detail:
         "Wet-capable setups exist across the lineup, and flammable-liquid areas point to air-operated recovery with zero electrical components.",
       seriesId: "avx",
@@ -198,7 +198,7 @@ export function ProductCatalog() {
               href="/get-a-quote"
               className="mt-3 inline-flex items-center gap-1.5 text-[11.5px] font-bold uppercase tracking-[0.08em] text-brand-400 transition-colors hover:text-brand-500"
             >
-              Confirm with an engineer — specs on request
+              Confirm with your engineer — specs on request
               <ArrowRight aria-hidden className="size-3.5" />
             </a>
           </div>
@@ -303,7 +303,7 @@ export function ProductCatalog() {
           No model names match &ldquo;{query}&rdquo;. Series and configurations
           not shown here are quoted directly —{" "}
           <a href="/get-a-quote" className="font-bold text-brand-400">
-            ask an engineer
+            demandez-nous
           </a>
           .
         </p>

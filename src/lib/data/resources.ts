@@ -27,7 +27,7 @@ export const RESOURCES: Resource[] = [
  body: [
  "An explosion-proof vacuum is engineered so that nothing in the recovery path can become an ignition source. That means conductive, grounded and bonded construction from the hose tip through the canister to the chassis, non-sparking contact materials, filtration that keeps fine particulate away from the power unit, and a drive selected for the environment — dust-ignition-protected electrics where permitted, or fully air-operated units with no electrical components at all.",
  "The requirement usually surfaces in two places: a Dust Hazard Analysis that identifies combustible dust in your process, or an area classification (Class II, Division 1 or 2 in North America; ATEX Zones 20–22 in the EU) that governs every piece of equipment used there. A standard shop vacuum fails on both counts — its motor sparks by design and its plastic hose generates static charge exactly where dust concentration is highest.",
- "Specification starts from the material and the classification, then works outward: wet or dry recovery, duty cycle, filtration level, portability. PrestiVac engineers systems against those inputs and provides the documentation your compliance file needs — certifications and listings vary by model and configuration, so request the paperwork for your specific application.",
+ "Specification starts from the material and the classification, then works outward: wet or dry recovery, duty cycle, filtration level, portability. PrestiVac builds systems against those inputs and provides the documentation your compliance file needs — certifications and listings vary by model and configuration, so request the paperwork for your specific application.",
  ],
  },
  {

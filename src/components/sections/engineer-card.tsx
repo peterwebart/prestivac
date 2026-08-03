@@ -20,7 +20,7 @@ export function EngineerCard() {
         <div className="relative aspect-[16/8] sm:aspect-auto sm:h-full">
           <Image
             src="/images/engineers.jpg"
-            alt="Two PrestiVac engineers reviewing a system specification on a tablet"
+            alt="PrestiVac technical team reviewing a vacuum specification on a tablet"
             fill
             sizes="(min-width: 640px) 200px, 100vw"
             className="object-cover"

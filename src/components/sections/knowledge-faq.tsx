@@ -166,7 +166,7 @@ export function KnowledgeFaq() {
         {filtered.length === 0 ? (
           <p className="mt-8 max-w-xl rounded-xl bg-white/[0.04] p-5 text-[13.5px]/[1.65] text-white/60 ring-1 ring-white/10">
             Nothing matches that search — try a broader term, or{" "}
-            <a href="/get-a-quote" className="font-semibold text-brand-400">ask an engineer directly</a>.
+            <a href="/get-a-quote" className="font-semibold text-brand-400">demandez-nous directly</a>.
           </p>
         ) : (
           <div className="mt-8 grid gap-5 lg:grid-cols-[340px_minmax(0,1fr)]">

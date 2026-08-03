@@ -230,18 +230,11 @@ export function Navbar() {
               {other.label}
             </Link>
             <Button asChild size="sm" className="hidden sm:inline-flex">
-              <a href="/get-a-quote">
+              <a href={isFr ? `/fr/${FR.quote.slug}` : "/get-a-quote"}>
                 {isFr ? FR.nav.quote : "Get a Quote"}
                 <ArrowRight aria-hidden className="size-3.5" />
               </a>
             </Button>
-            <span
-              aria-label="Language: English"
-              className="hidden items-center gap-1 text-[12px] font-semibold text-white/80 xl:flex"
-            >
-              EN
-              <ChevronDown aria-hidden className="size-3 opacity-70" />
-            </span>
             <button
               type="button"
               aria-label="Open menu"

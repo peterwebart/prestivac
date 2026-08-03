@@ -122,3 +122,17 @@ counterparts.
 TITLE BUDGET: keep metaTitle at or under 50 characters. The root layout appends the
 brand suffix, so anything longer gets truncated by Google. If you add French pages,
 stay inside that budget.
+
+## Footer and language switcher — settled
+The footer is a CLIENT component (src/components/layout/footer.tsx) reading
+usePathname, with French link sets, headings, aria-labels and contact copy. French
+footer links point only at routes that exist in French. Do not revert it to a
+server component without replacing the locale detection.
+
+ONE language switcher, in the navbar, resolving to the page counterpart. A
+decorative non-functional 'EN' selector left over from the original design used to
+sit beside it and read as a second switcher — it has been removed. Do not
+reintroduce it.
+
+The header CTA and the footer CTA both point at /fr/demande-de-soumission on French
+routes.
