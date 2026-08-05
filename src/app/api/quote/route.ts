@@ -1,13 +1,15 @@
 import { NextResponse } from "next/server";
 
+import { resendConfigured, sendAcknowledgement, sendNotification } from "@/lib/email";
+
 /**
  * Quote request endpoint.
  *
- * Quote requests are delivered to info@prestivac.com.
+ * Quote requests are delivered to prestivac@gmail.com.
  *
  * Two delivery paths, in priority order:
  *   1. QUOTE_WEBHOOK_URL — any HTTPS endpoint (CRM intake, Zapier, Make, n8n)
- *      configured to forward to info@prestivac.com. Preferred, because it is
+ *      configured to forward to prestivac@gmail.com. Preferred, because it is
  *      trackable as a conversion.
  *   2. Mail fallback — if no webhook is configured the form composes a
  *      pre-filled message to info@prestivac.com containing every field and the
@@ -42,6 +44,8 @@ function isValid(body: Partial<QuotePayload>): body is QuotePayload {
   );
 }
 
+const LABELS: Record<string, string> = {"name": "Name", "company": "Company", "email": "Email", "phone": "Phone", "address": "Address", "cityState": "City / State", "zip": "ZIP", "products": "Products to vacuum", "explosive": "Explosive atmosphere", "toxic": "Toxic material", "classification": "Area classification", "operation": "Operation", "capacity": "Capacity", "compressedAir": "Compressed air", "voltage": "Voltage", "filtration": "Filtration", "hose": "Hose", "accessories": "Accessories", "additional": "Additional detail", "source": "Submitted from"};
+
 export async function POST(request: Request) {
   let body: Partial<QuotePayload>;
   try {
@@ -57,6 +61,39 @@ export async function POST(request: Request) {
     );
   }
 
+  // Delivery path 1 — Resend. Preferred: it sends real email, needs no third-party
+  // automation, and lets us acknowledge to the customer as well.
+  if (resendConfigured()) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { name, email, reference: _ref, ...rest } = body;
+    // The form always supplies a reference. Fall back to a server-side one rather
+    // than sending an unidentifiable enquiry if a client ever omits it.
+    const reference = body.reference?.trim() || `PV-Q-${new Date().toISOString().slice(0,10).replace(/-/g,"")}-SRV`;
+    const result = await sendNotification({
+      kind: "Quote request",
+      reference,
+      fields: { name, email, ...rest },
+      labels: LABELS,
+      replyTo: email,
+    });
+
+    if (!result.ok) {
+      return NextResponse.json(
+        { ok: false, configured: true, error: result.message },
+        { status: 502 },
+      );
+    }
+
+    // Best effort — the enquiry has already been delivered, so a failed
+    // acknowledgement must not fail the submission.
+    if (email) {
+      const ack = await sendAcknowledgement({ to: email, name, reference, kind: "Quote request" });
+      if (!ack.ok) console.warn("Acknowledgement email failed:", ack.message);
+    }
+
+    return NextResponse.json({ ok: true, reference });
+  }
+
   const webhook = process.env.QUOTE_WEBHOOK_URL;
   if (!webhook) {
     return NextResponse.json(
@@ -65,7 +102,7 @@ export async function POST(request: Request) {
         configured: false,
         error: "delivery_not_configured",
         message:
-          "Webhook delivery is not configured; the form falls back to emailing info@prestivac.com. Set QUOTE_WEBHOOK_URL to enable tracked delivery.",
+          "Webhook delivery is not configured; the form falls back to emailing prestivac@gmail.com. Set QUOTE_WEBHOOK_URL to enable tracked delivery.",
       },
       { status: 503 },
     );

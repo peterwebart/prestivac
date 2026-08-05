@@ -222,3 +222,88 @@ Both forms fire generate_lead on webhook AND mail_fallback paths, with a `delive
 field so you can see which path is actually being used.
 
 Setup instructions: docs/WEBHOOKS.md
+
+## Email delivery — Resend is the primary path
+Delivery precedence in both API routes:
+  1. Resend        RESEND_API_KEY set              -> real email, both directions
+  2. Webhook       QUOTE_/CONTACT_WEBHOOK_URL set  -> POST the payload
+  3. Mail fallback nothing set                     -> pre-filled draft, 503
+
+RESEND_API_KEY alone is a complete setup. RESEND_FROM defaults to
+noreply@<site.domain>, RESEND_TO defaults to site.email.
+
+Resend sends TWO emails per submission: a notification to PrestiVac with every field
+and reply_to set to the customer, and an acknowledgement to the customer carrying
+their reference in writing. The acknowledgement is best-effort — it cannot fail the
+submission, because the enquiry has already been delivered.
+
+VERIFIED BEHAVIOUR (all three paths tested):
+  nothing set        -> 503 configured:false, form falls back to mail draft
+  invalid Resend key -> 502 configured:true "Resend returned 403." (surfaced, not
+                        swallowed — a form reporting success on a bounced email is
+                        the failure mode this avoids)
+  webhook only       -> uses the webhook; contact falls back to QUOTE_WEBHOOK_URL
+
+Setup guides: docs/RESEND.md (recommended), docs/WEBHOOKS.md (alternative)
+
+TESTING NOTE for future sessions: `(VAR=x nohup pnpm start &)` does NOT pass the
+variable through the subshell. Export inside a script instead, or you will conclude
+the env vars are broken when they are not. I made exactly that mistake here.
+
+## Google Tag Manager — GTM-KGJFZGS
+In src/app/layout.tsx, so it lands on all 215 routes:
+  loader   next/script strategy="beforeInteractive" inside <head>
+  noscript raw <noscript><iframe> as the first element in <body>
+
+strategy MATTERS. "afterInteractive" (the usual Next.js recommendation) injects only
+after hydration, so the loader is ABSENT from the server HTML and never runs for a
+visitor who does not hydrate. "beforeInteractive" renders it into the server head,
+which is what Google asks for. Do not change it back.
+
+Container id is NEXT_PUBLIC_GTM_ID, defaulting to GTM-KGJFZGS. Set a different value
+for the cloned domain; set it empty locally to keep dev traffic out of analytics.
+
+Verified 215/215: loader in head, exactly one loader, exactly one noscript iframe,
+iframe 73 chars after the opening body tag, all routes 200, titles unique.
+
+GTM receives TWO custom events, not one:
+  quote     from /get-a-quote
+  contact   from /contact
+Both fire on both delivery paths, carrying form, reference, source and delivery.
+In GA4 create custom events named `quote` and `contact` and mark EACH a conversion,
+then import both into Google Ads. Two events rather than one generate_lead so the
+two lead types can be valued and bid on separately — a quote request is not worth
+the same as a general enquiry.
+
+## Verification gotchas — four times my harness was wrong, not the code
+Recorded so a future session does not repeat them:
+1. hreflang "broken" — React renders hrefLang with a capital L; my regex matched
+   lowercase. Also the dev server had been killed between calls.
+2. Solution finder "105 problems" — I invented option values (">4", "1-15") instead
+   of reading them from FINDER_STEPS ("over4", "5"/"10"/"15").
+3. Env vars "not reaching the routes" — `(VAR=x nohup pnpm start &)` does not pass
+   the variable through the subshell. Export inside a script instead.
+4. GTM "double-firing on every page" — Next.js serialises the React tree into a
+   self.__next_f hydration payload, so markup legitimately appears twice in raw HTML.
+   Strip `<script>self.__next_f.push(...)</script>` before counting DOM nodes.
+
+The common thread: I wrote assertions against what I expected the output to look
+like rather than what the framework actually emits. Check the artifact, and when a
+check fires, confirm the harness before believing the finding.
+
+ALSO: the local server dies between chained bash calls fairly often. Run
+start-and-verify inside a single script (see the pattern in git history) rather than
+across separate calls, or you will read an empty result as a failure.
+
+## Two email addresses, deliberately separate
+  site.email      info@prestivac.com    PUBLIC — footer, contact page, schema,
+                                        acknowledgement signature, reply_to
+  site.formsEmail prestivac@gmail.com   DELIVERY — where submissions actually land
+
+Form delivery uses formsEmail: the Resend recipient default and the mailto fallback
+in both forms. Everything a visitor SEES still shows info@prestivac.com, and the
+gmail inbox is never exposed in the rendered HTML (verified).
+
+Override the delivery address at runtime with RESEND_TO. Changing site.email would
+change what the site displays everywhere, which is a different decision — do not
+conflate them.

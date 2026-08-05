@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+import { resendConfigured, sendAcknowledgement, sendNotification } from "@/lib/email";
+
 /**
  * Contact enquiry endpoint.
  *
@@ -8,7 +10,7 @@ import { NextResponse } from "next/server";
  *
  * Two delivery paths, in priority order:
  *   1. CONTACT_WEBHOOK_URL — any HTTPS endpoint (CRM intake, Zapier, Make, n8n)
- *      forwarding to info@prestivac.com. Preferred, because it is trackable.
+ *      forwarding to prestivac@gmail.com. Preferred, because it is trackable.
  *      If CONTACT_WEBHOOK_URL is unset, QUOTE_WEBHOOK_URL is used instead, so
  *      configuring ONE endpoint makes both forms deliver. The payload carries
  *      `form: "contact"` so a single endpoint can still route by type.
@@ -33,6 +35,8 @@ export type ContactPayload = {
 
 const REQUIRED: (keyof ContactPayload)[] = ["name", "email", "message", "reference"];
 
+const LABELS: Record<string, string> = {"name": "Name", "email": "Email", "company": "Company", "phone": "Phone", "subject": "Subject", "message": "Message", "source": "Submitted from"};
+
 export async function POST(request: Request) {
   let payload: ContactPayload;
   try {
@@ -49,6 +53,35 @@ export async function POST(request: Request) {
     );
   }
 
+  // Delivery path 1 — Resend. Preferred: it sends real email, needs no third-party
+  // automation, and lets us acknowledge to the customer as well.
+  if (resendConfigured()) {
+    const { reference, name, email, ...rest } = payload;
+    const result = await sendNotification({
+      kind: "Contact enquiry",
+      reference,
+      fields: { name, email, ...rest },
+      labels: LABELS,
+      replyTo: email,
+    });
+
+    if (!result.ok) {
+      return NextResponse.json(
+        { ok: false, configured: true, error: result.message },
+        { status: 502 },
+      );
+    }
+
+    // Best effort — the enquiry has already been delivered, so a failed
+    // acknowledgement must not fail the submission.
+    if (email) {
+      const ack = await sendAcknowledgement({ to: email, name, reference, kind: "Contact enquiry" });
+      if (!ack.ok) console.warn("Acknowledgement email failed:", ack.message);
+    }
+
+    return NextResponse.json({ ok: true, reference });
+  }
+
   const webhook = process.env.CONTACT_WEBHOOK_URL || process.env.QUOTE_WEBHOOK_URL;
 
   if (!webhook) {
@@ -57,7 +90,7 @@ export async function POST(request: Request) {
         ok: false,
         configured: false,
         error:
-          "Webhook delivery is not configured; the form falls back to emailing info@prestivac.com. Set CONTACT_WEBHOOK_URL (or QUOTE_WEBHOOK_URL) to enable tracked delivery.",
+          "Webhook delivery is not configured; the form falls back to emailing prestivac@gmail.com. Set CONTACT_WEBHOOK_URL (or QUOTE_WEBHOOK_URL) to enable tracked delivery.",
       },
       { status: 503 },
     );

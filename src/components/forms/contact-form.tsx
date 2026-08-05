@@ -61,7 +61,7 @@ export function ContactForm({ source = "contact" }: { source?: string }) {
     const subject = form.subject
       ? `${form.subject} — ${ref}`
       : `Enquiry — ${ref}`;
-    return `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+    return `mailto:${site.formsEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
   };
 
   const handleSubmit = async () => {

@@ -40,7 +40,7 @@ and its six fields.
 
 1. Create a new Zap/Scenario with a **Webhooks → Catch Hook** trigger.
 2. Copy the URL it gives you.
-3. Add an action: **Email → Send Outbound Email** to `info@prestivac.com`.
+3. Add an action: **Email → Send Outbound Email** to `prestivac@gmail.com`.
    - Subject: use `reference` and `form`, e.g. `New {{form}} — {{reference}}`
    - Body: map the fields you want; include `reference` first.
 4. Paste the URL into `QUOTE_WEBHOOK_URL` in Coolify and redeploy.
@@ -84,7 +84,7 @@ Same call against `/api/contact` with `{"name","email","message","reference"}`.
 ## Why there is a mail fallback
 
 If no webhook is configured, the form does **not** silently fail. It composes a
-pre-filled email to `info@prestivac.com` containing every field and the reference,
+pre-filled email to `prestivac@gmail.com` containing every field and the reference,
 and then still sends the visitor to the confirmation page. A form that appears to
 submit and discards the enquiry is worse than no form at all.
 
@@ -93,12 +93,12 @@ untracked as conversions and depend on the visitor's mail client opening.
 
 ## Conversion tracking
 
-Both forms push a `generate_lead` event to `window.dataLayer` on every successful
+Both forms push a `quote` / `contact` event to `window.dataLayer` on every successful
 submission, on **both** delivery paths:
 
 ```json
 {
-  "event": "generate_lead",
+  "event": "quote",
   "form": "quote",
   "source": "get-a-quote",
   "reference": "PV-Q-20260805-K3F9",
@@ -108,7 +108,7 @@ submission, on **both** delivery paths:
 
 To count these as conversions:
 
-1. **GA4** — create a custom event named `generate_lead` and mark it a conversion.
+1. **GA4** — create custom events named `quote` and `contact`, and mark each a conversion.
 2. **Google Ads** — import that GA4 conversion, or trigger on the same event name
    in Google Tag Manager.
 

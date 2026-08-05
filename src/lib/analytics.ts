@@ -7,13 +7,16 @@
  * configured.
  *
  * Wire-up on the Google side:
- *  - GA4: create a custom event named `generate_lead` and mark it a conversion.
- *  - Google Ads: import that GA4 conversion, or add a GTM trigger on the same
- *    event name.
+ *  - GA4: create custom events named `quote` and `contact`, and mark each a
+ *    conversion. Two separate events rather than one `generate_lead`, so quote
+ *    requests and general enquiries can be valued and optimised separately —
+ *    they are not worth the same to the business.
+ *  - Google Ads: import both GA4 conversions, or add GTM triggers on the two
+ *    event names.
  *  - The payload carries `source` (which page produced the lead), `reference`
- *    (PV-YYYYMMDD-XXXX, matching the customer's confirmation) and `delivery`
- *    ("webhook" or "mail_fallback") so you can see whether the endpoint is
- *    actually receiving submissions.
+ *    (PV-Q-YYYYMMDD-XXXX or PV-C-..., matching the customer's confirmation) and
+ *    `delivery` ("webhook" or "mail_fallback") so you can tell from analytics
+ *    whether delivery is actually working or quietly falling back.
  */
 
 type DataLayerEvent = Record<string, unknown> & { event: string };
@@ -39,9 +42,8 @@ export function trackQuoteSubmitted(args: {
   source: string;
   reference: string;
   delivery: "webhook" | "mail_fallback";
-  locale: "en" | "fr";
 }): void {
-  trackEvent("generate_lead", { ...args, form: "quote" });
+  trackEvent("quote", { ...args, form: "quote" });
 }
 
 /** Fired when a contact enquiry is successfully handed off. */
@@ -50,5 +52,5 @@ export function trackContactSubmitted(args: {
   reference: string;
   delivery: "webhook" | "mail_fallback";
 }): void {
-  trackEvent("generate_lead", { ...args, form: "contact" });
+  trackEvent("contact", { ...args, form: "contact" });
 }

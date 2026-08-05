@@ -123,7 +123,6 @@ export function QuoteForm({
           source,
           reference: ref,
           delivery: "webhook",
-          locale: fr ? "fr" : "en",
         });
         router.push(`${fr ? "/fr/merci" : "/thank-you/quote"}?ref=${encodeURIComponent(ref)}`);
         return;
@@ -133,7 +132,7 @@ export function QuoteForm({
       );
       lines.push("", `(Submitted from ${source})`);
       setMailHref(
-        `mailto:${site.email}?subject=${encodeURIComponent(
+        `mailto:${site.formsEmail}?subject=${encodeURIComponent(
           `Quote request ${ref} — ` + (payload.company || payload.name),
         )}&body=${encodeURIComponent(lines.join("\n"))}`,
       );
@@ -141,7 +140,6 @@ export function QuoteForm({
         source,
         reference: ref,
         delivery: "mail_fallback",
-        locale: fr ? "fr" : "en",
       });
       setStatus("fallback");
     } catch {
