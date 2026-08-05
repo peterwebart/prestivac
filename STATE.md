@@ -136,3 +136,32 @@ reintroduce it.
 
 The header CTA and the footer CTA both point at /fr/demande-de-soumission on French
 routes.
+
+## French REMOVED from this site (preserved for a separate domain)
+This site is now English-only, USA-positioned. The French translation was NOT
+deleted — it is intact and restorable:
+
+  preserved/app-fr/          all 18 French route files, moved out of src/app so
+                             Next.js does not route them
+  src/lib/data/fr*.ts        all 7 French data files, untouched
+                             (137 pages of content: 47 materials, 19 applications,
+                             38 industries, 8 articles, 16 case studies,
+                             11 compliance, conversion path)
+  LOCALE_PAIRS in i18n.ts    all 137 EN/FR mappings retained
+
+TO RESTORE ON THE NEW DOMAIN:
+  1. git mv preserved/app-fr src/app/fr
+  2. set fr-CA enabled: true in src/lib/i18n.ts
+  3. re-add the French sitemap entries (see git history for commit 4c8695e)
+  4. re-add the navbar switcher and French nav (same commit)
+  5. re-add the footer French link sets (same commit)
+Everything needed is in git history at or before 4c8695e.
+
+WHY pairedAlternates is gated: with only one locale enabled it returns undefined,
+so English pages emit NO hreflang. Pointing at a French counterpart that does not
+exist on this domain would be worse than saying nothing.
+
+USA-ONLY: zero Canada references remain. The Royal Canadian Mint entry was removed
+from the client wall per instruction — the logo file is still at
+public/images/clients/client-36.png, so restoring it is one line in clients.ts if
+that was meant as positioning language only rather than the client list.

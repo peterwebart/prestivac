@@ -5,50 +5,20 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { FR } from "@/lib/data/fr";
 import { NAV_MENUS } from "@/lib/data/nav-menus";
 import { EASE_OUT } from "@/lib/motion";
-import { LOCALE_PAIRS } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const topLevelLink =
   "group flex items-center gap-1 text-[13px] font-medium text-white/75 transition-colors hover:text-white";
 
-/** Routes that exist in French. Kept short and explicit rather than mirroring the
- * English information architecture, because only part of the site is translated —
- * a French visitor should not be offered links that land them in English. */
-const FR_NAV = [
-  { label: "Aspirateurs antidéflagrants", href: "/fr/aspirateurs-antideflagrants" },
-  { label: "Poussières et matières", href: "/fr/poussieres-et-matieres" },
-  { label: "Applications", href: "/fr/applications" },
-  { label: "Industries", href: "/fr/industries" },
-  { label: "Guides", href: "/fr/guides" },
-  { label: "Études de cas", href: "/fr/etudes-de-cas" },
-  { label: "À propos", href: "/fr/a-propos" },
-];
-
-/** Counterpart page in the other language, falling back to that locale's home. */
-function counterpart(pathname: string): { href: string; label: string } {
-  const isFr = pathname === "/fr" || pathname.startsWith("/fr/");
-  if (isFr) {
-    const pair = LOCALE_PAIRS.find((p) => p.fr === pathname);
-    return { href: pair ? pair.en : "/", label: "English" };
-  }
-  const pair = LOCALE_PAIRS.find((p) => p.en === pathname);
-  return { href: pair ? pair.fr : "/fr", label: "Français" };
-}
-
 export function Navbar() {
-  const pathname = usePathname() ?? "/";
-  const isFr = pathname === "/fr" || pathname.startsWith("/fr/");
-  const other = counterpart(pathname);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -75,8 +45,8 @@ export function Navbar() {
         <Container className="flex h-16 items-center justify-between gap-6">
           {/* Logo lockup — tagline is live text for accessibility and SEO */}
           <Link
-            href={isFr ? "/fr" : "/"}
-            aria-label={isFr ? "PrestiVac — accueil" : "PrestiVac — home"}
+            href="/"
+            aria-label="PrestiVac — home"
             className="flex shrink-0 flex-col"
           >
             <Image
@@ -95,19 +65,7 @@ export function Navbar() {
               {site.lockupTagline}
             </span>
           </Link>
-          {isFr ? (
-            <nav aria-label="Navigation" className="hidden items-center gap-1 lg:flex">
-              {FR_NAV.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded-lg px-3 py-2 text-[13px] font-semibold text-white/80 transition-colors hover:bg-white/[0.06] hover:text-white"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          ) : (
+
 
           <NavigationMenu.Root aria-label="Main" className="hidden xl:block">
             <NavigationMenu.List className="flex items-center gap-6">
@@ -219,19 +177,11 @@ export function Navbar() {
               })}
             </NavigationMenu.List>
           </NavigationMenu.Root>
-          )}
 
           <div className="flex items-center gap-4">
-            <Link
-              href={other.href}
-              hrefLang={other.label === "Français" ? "fr-CA" : "en-US"}
-              className="hidden rounded-lg border border-white/15 px-3 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-white/70 transition-colors hover:text-white sm:inline-flex"
-            >
-              {other.label}
-            </Link>
             <Button asChild size="sm" className="hidden sm:inline-flex">
-              <a href={isFr ? `/fr/${FR.quote.slug}` : "/get-a-quote"}>
-                {isFr ? FR.nav.quote : "Get a Quote"}
+              <a href="/get-a-quote">
+                Get a Quote
                 <ArrowRight aria-hidden className="size-3.5" />
               </a>
             </Button>

@@ -4,11 +4,6 @@ import { CASE_STUDY_LIBRARY } from "@/lib/data/case-study-library";
 import { GUIDE_ARTICLES } from "@/lib/data/guides";
 import { HAZARDOUS_LOCATION_TOPICS } from "@/lib/data/hazardous-locations";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
-import { FR_APPLICATIONS } from "@/lib/data/fr-applications";
-import { FR_ARTICLES } from "@/lib/data/fr-articles";
-import { FR_CASE_STUDIES } from "@/lib/data/fr-case-studies";
-import { FR_INDUSTRIES } from "@/lib/data/fr-industries";
-import { FR_MATERIALS } from "@/lib/data/fr-materials";
 import { RESOURCES } from "@/lib/data/resources";
 import { ALL_MODELS } from "@/lib/data/product-models";
 import { site } from "@/lib/site";
@@ -131,45 +126,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: site.url + "/faq", lastModified, changeFrequency: "monthly", priority: 0.75 },
     { url: site.url + "/support", lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: site.url + "/get-a-quote", lastModified, changeFrequency: "monthly", priority: 0.95 },
-    { url: site.url + "/fr", lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: site.url + "/fr/aspirateurs-antideflagrants", lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: site.url + "/fr/demande-de-soumission", lastModified, changeFrequency: "monthly", priority: 0.85 },
-    { url: site.url + "/fr/a-propos", lastModified, changeFrequency: "monthly", priority: 0.7 },
-    { url: site.url + "/fr/poussieres-et-matieres", lastModified, changeFrequency: "monthly", priority: 0.85 },
-    { url: site.url + "/fr/applications", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
-    { url: site.url + "/fr/industries", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
-    { url: site.url + "/fr/guides", lastModified, changeFrequency: "monthly" as const, priority: 0.85 },
-    { url: site.url + "/fr/etudes-de-cas", lastModified, changeFrequency: "monthly" as const, priority: 0.8 },
-    ...FR_CASE_STUDIES.map((c) => ({
-      url: site.url + "/fr/etudes-de-cas/" + c.slug,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
-    })),
-    ...FR_ARTICLES.map((a) => ({
-      url: site.url + "/fr/guides/" + a.slug,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    ...FR_INDUSTRIES.map((i) => ({
-      url: site.url + "/fr/industries/" + i.slug,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    ...FR_APPLICATIONS.map((a) => ({
-      url: site.url + "/fr/applications/" + a.slug,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    ...FR_MATERIALS.map((m) => ({
-      url: site.url + "/fr/poussieres-et-matieres/" + m.slug,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
     { url: site.url + "/hazardous-locations", lastModified, changeFrequency: "monthly", priority: 0.85 },
     { url: site.url + "/hazardous-location-vacuums", lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: site.url + "/combustible-dust", lastModified, changeFrequency: "monthly", priority: 0.9 },

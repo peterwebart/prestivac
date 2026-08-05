@@ -42,7 +42,6 @@ export const CLIENT_LOGOS: ClientLogo[] = [
  { file: "client-33.png", name: "VA Health Care" },
  { file: "client-34.png", name: "RJ Reynolds" },
  { file: "client-35.png", name: "Rolls-Royce" },
- { file: "client-36.png", name: "Royal Canadian Mint" },
  { file: "client-37.png", name: "Tarkett" },
  { file: "client-38.png", name: "Tilray" },
  { file: "client-39.png", name: "Toyota" },

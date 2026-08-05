@@ -36,7 +36,9 @@ export type Locale = {
 
 export const LOCALES: Locale[] = [
   { code: "en-US", label: "English", prefix: "", enabled: true },
-  { code: "fr-CA", label: "Français", prefix: "/fr", enabled: true },
+  // Disabled: French has been removed from THIS site. The translation is
+  // preserved for a separate domain — see the restore notes in STATE.md.
+  { code: "fr-CA", label: "Français", prefix: "/fr", enabled: false },
 ];
 
 export const DEFAULT_LOCALE = LOCALES[0];
@@ -207,6 +209,10 @@ export const LOCALE_PAIRS: { en: string; fr: string }[] = [
 
 /** Reciprocal hreflang map for an English path, or undefined if untranslated. */
 export function pairedAlternates(enPath: string): Record<string, string> | undefined {
+  // While only one locale is enabled, emit no hreflang at all. Pointing at a
+  // French counterpart that no longer exists on this domain would be worse than
+  // saying nothing.
+  if (IS_SINGLE_LOCALE) return undefined;
   const pair = LOCALE_PAIRS.find((p) => p.en === enPath);
   if (!pair) return undefined;
   return { "en-US": pair.en, "fr-CA": pair.fr };

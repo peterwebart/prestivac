@@ -1,14 +1,9 @@
-"use client";
-
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import { buttonVariants } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { FR } from "@/lib/data/fr";
-import { FR_ARTICLES } from "@/lib/data/fr-articles";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { RESOURCES } from "@/lib/data/resources";
 import { site } from "@/lib/site";
@@ -29,40 +24,10 @@ const COMPANY_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-/**
- * French footer links. Only routes that exist in French — a French visitor should
- * not be offered footer links that land them back in English.
- */
-const FR_COMPANY_LINKS = [
-  { label: "À propos", href: "/fr/a-propos" },
-  { label: "Obtenir une soumission", href: "/fr/demande-de-soumission" },
-  { label: "Applications", href: "/fr/applications" },
-  { label: "Industries", href: "/fr/industries" },
-  { label: "Poussières et matières", href: "/fr/poussieres-et-matieres" },
-  { label: "Guides", href: "/fr/guides" },
-  { label: "Études de cas", href: "/fr/etudes-de-cas" },
-];
-
-const FR_HEADINGS = {
-  products: "Aspirateurs",
-  resources: "Guides",
-  company: "Entreprise",
-  contact: "Nous joindre",
-};
-
 const linkClass =
   "text-[13px]/[1.5] text-white/65 transition-colors hover:text-white";
 
 export function Footer() {
-  const pathname = usePathname() ?? "/";
-  const isFr = pathname === "/fr" || pathname.startsWith("/fr/");
-
-  // French product entry points and guide list, drawn from the translated data.
-  const frProducts = [
-    { name: "Aspirateurs antidéflagrants", slug: FR.explosionProof.slug },
-  ];
-  const frGuides = FR_ARTICLES.slice(0, 6);
-
   return (
     <footer
       id="contact"
@@ -86,66 +51,50 @@ export function Footer() {
             </p>
           </div>
 
-          <nav aria-label={isFr ? FR_HEADINGS.products : "Products"}>
+          <nav aria-label="Products">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/50">
-              {isFr ? FR_HEADINGS.products : "Products"}
+              Products
             </p>
             <ul className="mt-4 space-y-2.5">
-              {isFr
-                ? frProducts.map((p) => (
-                    <li key={p.slug}>
-                      <Link href={`/fr/${p.slug}`} className={linkClass}>
-                        {p.name}
-                      </Link>
-                    </li>
-                  ))
-                : PRODUCT_CATEGORIES.slice(0, 6).map((category) => (
-                    <li key={category.slug}>
-                      <Link href={"/products/" + category.slug} className={linkClass}>
-                        {category.name}
-                      </Link>
-                    </li>
-                  ))}
+              {PRODUCT_CATEGORIES.slice(0, 6).map((category) => (
+                <li key={category.slug}>
+                  <Link href={"/products/" + category.slug} className={linkClass}>
+                    {category.name}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link
-                  href={isFr ? "/fr/poussieres-et-matieres" : "/products"}
+                  href="/products"
                   className={cn(linkClass, "font-semibold text-brand-400 hover:text-brand-500")}
                 >
-                  {isFr ? "Poussières et matières \u2192" : "All products \u2192"}
+                  All products &rarr;
                 </Link>
               </li>
             </ul>
           </nav>
 
-          <nav aria-label={isFr ? FR_HEADINGS.resources : "Resources"}>
+          <nav aria-label="Resources">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/50">
-              {isFr ? FR_HEADINGS.resources : "Resources"}
+              Resources
             </p>
             <ul className="mt-4 space-y-2.5">
-              {isFr
-                ? frGuides.map((a) => (
-                    <li key={a.slug}>
-                      <Link href={`/fr/guides/${a.slug}`} className={linkClass}>
-                        {a.name}
-                      </Link>
-                    </li>
-                  ))
-                : RESOURCES.map((resource) => (
-                    <li key={resource.slug}>
-                      <Link href={"/resources/" + resource.slug} className={linkClass}>
-                        {resource.title}
-                      </Link>
-                    </li>
-                  ))}
+              {RESOURCES.map((resource) => (
+                <li key={resource.slug}>
+                  <Link href={"/resources/" + resource.slug} className={linkClass}>
+                    {resource.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
 
-          <nav aria-label={isFr ? FR_HEADINGS.company : "Explore"}>
+          <nav aria-label="Explore">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/50">
-              {isFr ? FR_HEADINGS.company : "Explore"}
+              Explore
             </p>
             <ul className="mt-4 space-y-2.5">
-              {(isFr ? FR_COMPANY_LINKS : COMPANY_LINKS).map((item) => (
+              {COMPANY_LINKS.map((item) => (
                 <li key={item.label}>
                   {item.href.startsWith("#") ? (
                     <a href={item.href} className={linkClass}>
@@ -163,18 +112,17 @@ export function Footer() {
 
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/50">
-              {isFr ? FR_HEADINGS.contact : "Get a Quote"}
+              Get a Quote
             </p>
             <p className="mt-4 max-w-xs text-[13.5px]/[1.65] text-white/60">
-              {isFr
-                ? "Dites-nous ce que vous devez aspirer et où. Notre équipe technique recommandera le modèle PrestiVac approprié \u2014 ou le construira sur mesure."
-                : "Tell us what you need to vacuum and where. Our technical team will recommend the right PrestiVac model \u2014 or build one to suit."}
+              Tell us what you need to vacuum and where. Our technical team will
+              recommend the right PrestiVac model &mdash; or build one to suit.
             </p>
             <Link
-              href={isFr ? `/fr/${FR.quote.slug}` : "/get-a-quote"}
+              href="/get-a-quote"
               className={cn(buttonVariants({ size: "md" }), "mt-5")}
             >
-              {isFr ? FR.nav.quote : "Get a Quote"}
+              Get a Quote
               <ArrowRight aria-hidden className="size-3.5" />
             </Link>
             <address className="mt-5 space-y-1.5 text-[12.5px] not-italic text-white/55">
