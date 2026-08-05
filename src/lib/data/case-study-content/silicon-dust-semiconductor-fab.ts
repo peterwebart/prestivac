@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const siliconDustSemiconductorFab: CaseStudy = {
  slug: "silicon-dust-semiconductor-fab",
- title: "Dual-Hazard Dust Control in a Semiconductor & Advanced-Packaging Fab",
+ title: "Dual-Hazard Dust Control in a Semiconductor &",
  subtitle:
  "How a representative advanced-electronics manufacturer runs housekeeping where the clean floor hides two hazard classes at once — toxic dopant, etch and CMP residues that are not combustible, and genuinely combustible dust the 'high-tech means inert' assumption misses: fine silicon from wafer grinding and the reactive-metal powder that advanced packaging brought onto the fab floor.",
  date: "2026-07-19",
@@ -169,7 +169,7 @@ export const siliconDustSemiconductorFab: CaseStudy = {
  cluster: ["electronics", "cleanrooms", "metal-3d-printing", "silica-dust"],
  },
  seo: {
- metaTitle: "Semiconductor Fab Dual-Hazard Dust Control — Representative Case Study",
+ metaTitle: "Semiconductor Fab Dual-Hazard Dust Control",
  metaDescription:
  "A representative semiconductor and advanced-packaging fab controls two dust hazards at once — toxic dopant, etch and CMP residues and genuinely combustible silicon and reactive-metal AM powder — with separated, HEPA-retained, ESD-safe recovery.",
  keywords: [

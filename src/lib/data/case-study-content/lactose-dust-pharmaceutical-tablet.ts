@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const lactoseDustPharmaceuticalTablet: CaseStudy = {
  slug: "lactose-dust-pharmaceutical-tablet",
- title: "Containing Combustible Excipient Dust in a Pharmaceutical Tablet Plant",
+ title: "Containing Combustible Excipient Dust in a",
  subtitle:
  "How a representative North American contract manufacturer brought lactose and blend dust under control in its compression suites — satisfying explosion safety, exposure limits and cleaning validation with one recovery architecture.",
  date: "2026-07-15",
@@ -182,7 +182,7 @@ export const lactoseDustPharmaceuticalTablet: CaseStudy = {
  cluster: ["Pharmaceutical", "Combustible Organic Dust", "Tablet Production", "HEPA Explosion-Proof Vacuums"],
  },
  seo: {
- metaTitle: "Combustible Excipient Dust in Tablet Manufacturing | Case Study",
+ metaTitle: "Combustible Excipient Dust in Tablet Manufacturing",
  metaDescription:
  "Representative case study: how a pharmaceutical CDMO controls combustible lactose and blend dust in compression suites with explosion-proof HEPA vacuums and a central system under NFPA 660.",
  keywords: [

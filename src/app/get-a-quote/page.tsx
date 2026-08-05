@@ -12,7 +12,7 @@ const description =
   "Get a quote on a PrestiVac explosion proof industrial vacuum cleaner. Tell us your material, classification and utilities and our technical team will recommend the right model.";
 
 export const metadata: Metadata = {
-  title: "Get a Quote | Explosion Proof Industrial Vacuum Cleaners",
+  title: "Get a Quote",
   description,
   alternates: { canonical: "/get-a-quote", languages: pairedAlternates("/get-a-quote") },
   openGraph: { url: "/get-a-quote", title: "Get a Quote", description },

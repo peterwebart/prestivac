@@ -8,7 +8,7 @@ export const cleanroomVacuumingGuide: ApplicationGuideData = {
  titleAccent: "Vacuuming",
  categoryCrumb: { label: "General Maintenance", anchor: "general-maintenance" },
  seo: {
- title: "Cleanroom Vacuums — HEPA & ULPA Filtered Controlled-Area Cleaning",
+ title: "Cleanroom Vacuums — HEPA & ULPA Filtered",
  description:
  "Vacuuming inside a controlled environment without adding to the particle count. HEPA and ULPA filtration, non-shedding construction, ESD considerations and containment for pharmaceutical and semiconductor cleanrooms.",
  },

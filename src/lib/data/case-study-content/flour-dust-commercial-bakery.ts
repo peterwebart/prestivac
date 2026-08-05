@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const flourDustCommercialBakery: CaseStudy = {
  slug: "flour-dust-commercial-bakery",
- title: "Controlling Flour Dust in a High-Volume Commercial Bakery",
+ title: "Controlling Flour Dust in a High-Volume",
  subtitle:
  "How a representative national baked-goods producer replaced brooms and blowdown around its bulk flour handling and mixing lines with explosion-proof vacuum recovery — and turned housekeeping into a scheduled, inspectable program.",
  date: "2026-07-15",
@@ -184,7 +184,7 @@ export const flourDustCommercialBakery: CaseStudy = {
  cluster: ["Food Processing", "Combustible Organic Dust", "Bulk Flour Handling", "Explosion-Proof Vacuums"],
  },
  seo: {
- metaTitle: "Flour Dust Control in a Commercial Bakery | Case Study",
+ metaTitle: "Flour Dust Control in a Commercial Bakery",
  metaDescription:
  "Representative case study: how a high-volume bakery controls combustible flour dust with explosion-proof HEPA vacuums, wet/dry units and a DHA-aligned elevated-surface program under NFPA 660/61.",
  keywords: [

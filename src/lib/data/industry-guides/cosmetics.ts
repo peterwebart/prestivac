@@ -7,7 +7,7 @@ export const cosmeticsGuide: IndustryGuideData = {
  name: "Cosmetics & Personal Care",
  titleAccent: "cosmetics & personal care",
  seo: {
- title: "How to Safely Recover Cosmetic & Personal-Care Powders?",
+ title: "How to Safely Recover Cosmetic & Personal-Care",
  description:
  "Loose powders, talc, pigments, mica and pressed-powder overspray behave like any fine organic dust — combustible fractions, GMP contamination control, and pigment cross-contamination all at once. HEPA-retained recovery for cosmetics manufacturing and compounding.",
  },

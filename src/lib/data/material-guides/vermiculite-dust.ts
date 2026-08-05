@@ -7,7 +7,7 @@ export const vermiculiteDustGuide: MaterialGuideData = {
  name: "Vermiculite",
  groupCrumb: { label: "Other Combustible Dusts", anchor: "misc-dusts" },
  seo: {
- title: "Vermiculite Insulation & Asbestos Risk — Safe Handling and Recovery",
+ title: "Vermiculite Insulation & Asbestos Risk — Safe",
  description:
  "Vermiculite itself is a non-combustible mineral. The hazard is that much loose-fill vermiculite insulation is contaminated with asbestos. Why you should not disturb it, how it is tested, and where HEPA recovery fits in licensed abatement.",
  },

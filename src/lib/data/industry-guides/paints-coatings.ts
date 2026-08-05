@@ -7,7 +7,7 @@ export const paintsCoatingsGuide: IndustryGuideData = {
  name: "Paints & Coatings",
  titleAccent: "paints & coatings",
  seo: {
- title: "How to Safely Recover Dust in Paint & Coatings Manufacturing?",
+ title: "How to Safely Recover Dust in Paint & Coatings",
  description:
  "Paint and coatings manufacturing runs two hazards side by side — fine combustible pigment and resin powders on the dry side, and flammable solvents (Class I atmospheres) on the wet side. Powder-coating production adds combustible thermoset powder. Recovery is matched to whichever hazard the area presents.",
  },

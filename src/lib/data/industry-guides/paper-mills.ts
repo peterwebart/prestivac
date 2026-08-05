@@ -7,7 +7,7 @@ export const paperMillsGuide: IndustryGuideData = {
  name: "Paper Mills & Converting",
  titleAccent: "paper mills & converting",
  seo: {
- title: "How to Safely Recover Dust in Paper Mills & Converting?",
+ title: "How to Safely Recover Dust in Paper Mills &",
  description:
  "Cellulose is combustible, and converting turns it into dust — slitting, sheeting, winding and folding shed fine paper dust continuously, with tissue converting the dustiest of all. Paper dust is a combustible particulate solid under NFPA 660, joined by mineral coating and filler dust. HEPA-retained recovery keeps accumulation in check.",
  },

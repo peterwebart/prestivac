@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const zincWhiskerDataCenter: CaseStudy = {
  slug: "zinc-whisker-data-center",
- title: "Managing Zinc Whiskers & Subfloor Dust in a Data Center",
+ title: "Managing Zinc Whiskers & Subfloor Dust in a Data",
  subtitle:
  "How a representative colocation facility runs housekeeping where dust is measured in failures, not fires — conductive zinc whiskers freed by raised-floor work, a subfloor plenum that feeds every server intake, and cleaning that happens around a live load that never shuts down.",
  date: "2026-07-18",
@@ -163,7 +163,7 @@ export const zincWhiskerDataCenter: CaseStudy = {
  cluster: ["data-centers", "concrete-cement-dust", "silica-dust"],
  },
  seo: {
- metaTitle: "Data Center Zinc Whisker & Subfloor Dust Control — Representative Case Study",
+ metaTitle: "Data Center Zinc Whisker & Subfloor Dust Control",
  metaDescription:
  "A representative colocation facility manages conductive zinc whiskers and subfloor plenum dust where dust is measured in failures, not fires — capture at tile disturbance, plenum air-path hygiene, and HEPA recovery around a live load.",
  keywords: [

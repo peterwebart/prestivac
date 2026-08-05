@@ -7,7 +7,7 @@ export const cadmiumDustGuide: MaterialGuideData = {
  name: "Cadmium Dust",
  groupCrumb: { label: "Metal Dusts", anchor: "metal-dusts" },
  seo: {
- title: "Cadmium Dust & Fume — Toxicity, Exposure Control & Safe Recovery",
+ title: "Cadmium Dust & Fume — Toxicity, Exposure Control",
  description:
  "Cadmium is a carcinogenic heavy metal regulated under its own OSHA standard. Where cadmium dust and fume arise, why dry sweeping and compressed air are prohibited practice, and how HEPA vacuum recovery controls exposure.",
  },

@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const silicaSandFoundry: CaseStudy = {
  slug: "silica-sand-foundry",
- title: "Controlling Silica Sand & Reactive-Metal Dust in a Foundry",
+ title: "Controlling Silica Sand & Reactive-Metal Dust in",
  subtitle:
  "How a representative jobbing foundry runs housekeeping on the oldest dust hazard and the hottest floor at once — silica sand keyed to the exposure standards while shakeout concentrates the respirable fraction, and reactive-metal casting cells carry their own combustible-dust rules on the same shop floor.",
  date: "2026-07-18",
@@ -163,7 +163,7 @@ export const silicaSandFoundry: CaseStudy = {
  cluster: ["foundry", "silica-dust", "aluminum-dust", "metalworking"],
  },
  seo: {
- metaTitle: "Foundry Silica & Reactive-Metal Dust Control — Representative Case Study",
+ metaTitle: "Foundry Silica & Reactive-Metal Dust Control",
  metaDescription:
  "A representative foundry runs two dust programs on one floor: respirable crystalline silica under OSHA 1910.1053 and reactive-metal fines under the combustible-metal framework. Shakeout, reclamation and dedicated aluminum-cell recovery.",
  keywords: [

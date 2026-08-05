@@ -27,7 +27,7 @@ export const site = {
   /** Short descriptor for the header lockup, where width is at a premium. */
   lockupTagline: "Explosion Proof Vacuum Manufacturer",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://prestivac.com",
-  title: "PrestiVac | Explosion Proof Industrial Vacuum Cleaner Manufacturer",
+  title: "Explosion Proof Industrial Vacuum Manufacturer",
   description:
     "Manufacturer of certified vacuum cleaners for combustible dusts and flammable liquids and solvents. UL 1203 certified explosion-proof and dust-ignition-proof electrical vacuum cleaners for Hazardous (Classified) Locations. Solid stainless steel, 200+ models, made in the USA.",
   /** Confirmed public contact details for PrestiVac USA Inc. */

@@ -11,7 +11,7 @@ const description =
   "Vacuums for classified areas — Class I and Class II, Divisions 1 and 2. Work out which rating your area needs, see what our certificate covers, and have an engineer confirm the specification.";
 
 export const metadata: Metadata = {
-  title: "Hazardous Location Vacuums | Class I & II, Div 1 & 2",
+  title: "Hazardous Location Vacuums",
   description,
   alternates: { canonical: "/hazardous-location-vacuums" },
   openGraph: { url: "/hazardous-location-vacuums", title: "Hazardous Location Vacuums", description },

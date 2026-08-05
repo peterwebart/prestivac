@@ -7,7 +7,7 @@ export const cleanroomsGuide: IndustryGuideData = {
  name: "Cleanrooms & Controlled Environments",
  titleAccent: "cleanrooms & controlled environments",
  seo: {
- title: "How to Safely Recover Dust in Cleanrooms & Controlled Environments?",
+ title: "How to Safely Recover Dust in Cleanrooms &",
  description:
  "In a cleanroom the particle count is the product spec — recovery equipment must be part of the cleanliness system, not a contaminant in it. ISO 14644 class discipline, HEPA/ULPA exhaust validated cleaner than the room, and wipe-down protocols across pharma, semiconductor and medical-device suites.",
  },

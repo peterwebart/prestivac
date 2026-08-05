@@ -7,7 +7,7 @@ export const constructionMaterialsGuide: IndustryGuideData = {
  name: "Construction Materials",
  titleAccent: "construction materials",
  seo: {
- title: "How to Safely Recover Dust in Construction Materials Manufacturing?",
+ title: "How to Safely Recover Dust in Construction",
  description:
  "The industry that makes what buildings are made of — cement, concrete products, gypsum board and brick — where the defining hazard, like glass and ceramics, is respirable crystalline silica rather than deflagration. From raw grinding to product cutting, HEPA-retained, exposure-controlled recovery is the priority.",
  },

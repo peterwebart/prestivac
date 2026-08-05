@@ -7,7 +7,7 @@ export const miningGuide: IndustryGuideData = {
  name: "Mining & Minerals",
  titleAccent: "mining & minerals",
  seo: {
- title: "How to Safely Recover Dust in Mining & Mineral Processing?",
+ title: "How to Safely Recover Dust in Mining & Mineral",
  description:
  "The original dust industry — where dust is measured by the ton and the same fugitive cloud is both an explosion risk and, at the respirable scale, a slow-motion health catastrophe. Silica-bearing minerals, explosive coal and sulfides, and massive-tonnage handling, controlled at the source in processing facilities.",
  },

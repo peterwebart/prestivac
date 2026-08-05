@@ -7,7 +7,7 @@ export const hydrogenGuide: IndustryGuideData = {
  name: "Hydrogen & Fuel Cells",
  titleAccent: "hydrogen & fuel cells",
  seo: {
- title: "How to Safely Recover Dust in Hydrogen & Fuel-Cell Manufacturing?",
+ title: "How to Safely Recover Dust in Hydrogen &",
  description:
  "The energy-transition industry where the product itself is a Class I, Group B flammable gas — and building the equipment to make and use it involves fine catalyst, carbon and metal powders. In flammable-gas areas the conservative default is air-operated, zero-electrical recovery; the manufacturing dusts are captured HEPA-retained.",
  },

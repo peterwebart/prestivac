@@ -10,7 +10,7 @@ const description =
   "Answers on explosion proof vacuums, combustible dust, hazardous-location classification, filtration and equipment selection — from the engineers who build the systems.";
 
 export const metadata: Metadata = {
-  title: "FAQ | Explosion Proof Vacuums & Combustible Dust Questions",
+  title: "FAQ",
   description,
   alternates: { canonical: "/faq" },
   openGraph: { url: "/faq", title: "FAQ", description },

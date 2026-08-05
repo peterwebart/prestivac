@@ -7,7 +7,7 @@ export const textileGuide: IndustryGuideData = {
  name: "Textiles & Fibers",
  titleAccent: "textiles & fibers",
  seo: {
- title: "How to Safely Recover Dust in Textile & Fiber Manufacturing?",
+ title: "How to Safely Recover Dust in Textile & Fiber",
  description:
  "Textile lint carries two hazards at once — accumulated fiber dust is combustible and prone to lint fires and deflagration, while cotton dust causes byssinosis, a recognized occupational respiratory disease under OSHA's cotton dust standard. Synthetic fibers add combustible-plastic behavior. HEPA-retained recovery serves both.",
  },

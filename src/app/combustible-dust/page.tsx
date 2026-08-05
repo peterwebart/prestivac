@@ -10,7 +10,7 @@ const description =
   "Housekeeping equipment that meets combustible-dust requirements. Explosion-proof, HEPA filtered and matched to your material — find your dust group and the recovery approach that suits it.";
 
 export const metadata: Metadata = {
-  title: "Combustible Dust Vacuums | NFPA-Aligned Housekeeping",
+  title: "Combustible Dust Vacuums",
   description,
   alternates: { canonical: "/combustible-dust" },
   openGraph: { url: "/combustible-dust", title: "Combustible Dust Vacuums", description },

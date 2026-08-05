@@ -7,7 +7,7 @@ export const biotechGuide: IndustryGuideData = {
  name: "Biotechnology & Bioprocessing",
  titleAccent: "biotechnology & bioprocessing",
  seo: {
- title: "How to Safely Recover Dust in Biotechnology & Bioprocessing?",
+ title: "How to Safely Recover Dust in Biotechnology &",
  description:
  "Bioprocessing is mostly liquid, but dry powder enters at media prep and leaves at lyophilization — combustible dried biologics and media, biosafety containment, and cleanroom fill-finish all in one flow. HEPA-retained recovery for biotech manufacturing.",
  },

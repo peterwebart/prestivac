@@ -7,7 +7,7 @@ export const paperPackagingGuide: IndustryGuideData = {
  name: "Paper & Packaging",
  titleAccent: "paper & packaging",
  seo: {
- title: "How to Safely Recover Dust in Paper & Packaging Converting?",
+ title: "How to Safely Recover Dust in Paper & Packaging",
  description:
  "Converting board and film into boxes, cartons and flexible packaging is a high-volume dust industry — combustible cardboard and paperboard dust from die-cutting and folding, joined by the starch adhesive corrugators use. Distinct from paper production; here the dust comes from converting at speed. HEPA-retained recovery.",
  },

@@ -7,7 +7,7 @@ export const calciumDustGuide: MaterialGuideData = {
  name: "Calcium Dust",
  groupCrumb: { label: "Metal Dusts", anchor: "metal-dusts" },
  seo: {
- title: "Is Calcium Flammable? Calcium Metal vs Calcium Compounds",
+ title: "Is Calcium Flammable? Calcium Metal vs Calcium",
  description:
  "Calcium metal is a water-reactive combustible metal; calcium carbonate and lime are not. Why the distinction decides everything about handling, and how reactive calcium fines are recovered safely.",
  },

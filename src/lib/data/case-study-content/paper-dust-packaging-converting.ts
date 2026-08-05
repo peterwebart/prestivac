@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const paperDustPackagingConverting: CaseStudy = {
   slug: "paper-dust-packaging-converting",
-  title: "Controlling Paper and Corrugated Dust in a Packaging Converting Plant",
+  title: "Controlling Paper and Corrugated Dust in a",
   subtitle:
     "A representative scenario: how a high-speed corrugated converting operation brought fibre dust under control without slowing the lines.",
   date: "2026-02-18",
@@ -150,7 +150,7 @@ export const paperDustPackagingConverting: CaseStudy = {
     cluster: ["combustible dust", "paper dust", "packaging", "converting"],
   },
   seo: {
-    metaTitle: "Paper & Corrugated Dust Control in Packaging Converting",
+    metaTitle: "Paper & Corrugated Dust Control in Packaging",
     metaDescription:
       "How a corrugated converting plant controls combustible paper and starch adhesive dust with UL 1203 certified explosion proof vacuums and HEPA 99.99% filtration, replacing compressed-air blowdown.",
     keywords: ["paper dust", "corrugated dust", "packaging plant housekeeping", "combustible dust vacuum", "explosion proof vacuum"],

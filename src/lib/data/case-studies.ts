@@ -24,7 +24,7 @@ export const CASE_STUDIES: CaseStudy[] = [
  industry: "Automotive",
  material: "Aluminum dust",
  href: "/case-studies/aluminum-dust-automotive-machining",
- title: "Reducing aluminum dust hazards in an automotive plant",
+ title: "Reducing aluminum dust hazards in an automotive",
  challenge:
  "Sanding and machining lines generated fine aluminum dust — a reactive metal governed by NFPA 484 — that accumulated on beams, equipment and floors between shifts.",
  solution:
@@ -41,7 +41,7 @@ export const CASE_STUDIES: CaseStudy[] = [
  industry: "Food Processing",
  material: "Flour & sugar dust",
  href: "/case-studies/flour-dust-commercial-bakery",
- title: "Combustible flour dust control in a bakery facility",
+ title: "Combustible flour dust control in a bakery",
  challenge:
  "Fugitive flour and sugar dust settled across mixing and packaging areas — a combustible organic dust load with allergen cross-contact concerns on top.",
  solution:
@@ -58,7 +58,7 @@ export const CASE_STUDIES: CaseStudy[] = [
  industry: "Pharmaceutical",
  material: "Potent compounds",
  href: "/case-studies/lactose-dust-pharmaceutical-tablet",
- title: "Containing potent compound powders in production suites",
+ title: "Containing potent compound powders in production",
  challenge:
  "API and excipient powders demanded containment during cleaning — operator exposure and cross-contamination risks ruled out conventional equipment.",
  solution:

@@ -7,7 +7,7 @@ export const vacuumFurnaceGuide: IndustryGuideData = {
  name: "Vacuum Furnace & Heat Treatment",
  titleAccent: "vacuum furnace & heat treatment",
  seo: {
- title: "How to Safely Recover Dust in Vacuum Furnace & Heat Treatment?",
+ title: "How to Safely Recover Dust in Vacuum Furnace &",
  description:
  "The furnace itself is lined with combustible dust — vacuum-furnace hot zones use graphite insulation, elements and fixtures, so maintenance and cleanout generate conductive, combustible graphite dust in confined spaces. Add metal condensate, braze and sintering powders. Rated, bonded, HEPA-retained recovery.",
  },

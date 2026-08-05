@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const magnesiumFinesAutomotiveComponents: CaseStudy = {
  slug: "magnesium-fines-automotive-components",
- title: "Controlling Magnesium Fines in an Automotive Components Plant",
+ title: "Controlling Magnesium Fines in an Automotive",
  subtitle:
  "How a representative die casting and machining operation handles the most ignition-sensitive of the structural metals — where wetting controls ignition, hydrogen evolution demands venting, and nothing tolerates improvisation.",
  date: "2026-07-15",
@@ -182,7 +182,7 @@ export const magnesiumFinesAutomotiveComponents: CaseStudy = {
  cluster: ["Automotive", "Combustible Reactive Metal Dust", "Magnesium Die Casting & Machining", "Explosion-Proof Immersion Vacuums"],
  },
  seo: {
- metaTitle: "Magnesium Fines Control in Automotive Components | Case Study",
+ metaTitle: "Magnesium Fines Control in Automotive Components",
  metaDescription:
  "Representative case study: how a die casting and machining plant handles magnesium — vented wet collection, air-operated explosion-proof vacuums and the never-airtight rule under NFPA 660/484.",
  keywords: [

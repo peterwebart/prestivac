@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const coatingPowderAutomotiveFinishing: CaseStudy = {
  slug: "coating-powder-automotive-finishing",
- title: "Controlling Coating Powder in an Automotive Finishing Operation",
+ title: "Controlling Coating Powder in an Automotive",
  subtitle:
  "How a representative automotive components finisher brought fugitive coating powder and color-change cleanout under control — grounded recovery in a process that charges combustible polymer dust on purpose.",
  date: "2026-07-15",
@@ -182,7 +182,7 @@ export const coatingPowderAutomotiveFinishing: CaseStudy = {
  cluster: ["Automotive", "Combustible Polymer Dust", "Powder Coating", "Explosion-Proof HEPA Vacuums"],
  },
  seo: {
- metaTitle: "Coating Powder Control in Automotive Finishing | Case Study",
+ metaTitle: "Coating Powder Control in Automotive Finishing",
  metaDescription:
  "Representative case study: how an automotive finishing plant controls combustible coating powder — grounded explosion-proof HEPA recovery, color-change methods and stream separation under NFPA 33/660.",
  keywords: [

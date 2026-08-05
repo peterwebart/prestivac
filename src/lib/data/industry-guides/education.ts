@@ -7,7 +7,7 @@ export const educationGuide: IndustryGuideData = {
  name: "Schools & Universities",
  titleAccent: "schools & universities",
  seo: {
- title: "How to Safely Recover Dust in School & University Facilities?",
+ title: "How to Safely Recover Dust in School & University",
  description:
  "Campus dust hazards hide in plain sight — wood dust in shop classes, metal fines in machining and makerspaces, chemical and specialty dusts in research labs. One institution runs many small industrial environments, each with its own recovery rule.",
  },

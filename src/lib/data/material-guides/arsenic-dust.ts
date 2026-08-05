@@ -7,7 +7,7 @@ export const arsenicDustGuide: MaterialGuideData = {
  name: "Arsenic Dust",
  groupCrumb: { label: "Metal Dusts", anchor: "metal-dusts" },
  seo: {
- title: "Arsenic Metal & Dust — Toxicity, Regulation & Safe Recovery",
+ title: "Arsenic Metal & Dust — Toxicity, Regulation &",
  description:
  "Inorganic arsenic is a regulated human carcinogen with its own OSHA standard. Where arsenic dust arises in smelting, semiconductor and treated-wood work, and why HEPA vacuum recovery replaces dry cleaning.",
  },

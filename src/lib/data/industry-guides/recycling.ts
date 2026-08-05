@@ -7,7 +7,7 @@ export const recyclingGuide: IndustryGuideData = {
  name: "Recycling & Waste Processing",
  titleAccent: "recycling & waste processing",
  seo: {
- title: "How to Safely Recover Dust in Recycling & Waste Processing?",
+ title: "How to Safely Recover Dust in Recycling & Waste",
  description:
  "Recycling's defining hazard is uncertainty — the stream is whatever came in, so the dust may hold combustible metals, lithium cells prone to thermal runaway, self-charging plastic fines and toxic residues at once. Safe recovery starts from a simple rule: characterize the stream, or handle it as worst-case.",
  },

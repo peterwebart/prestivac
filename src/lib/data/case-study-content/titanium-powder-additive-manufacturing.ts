@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const titaniumPowderAdditiveManufacturing: CaseStudy = {
  slug: "titanium-powder-additive-manufacturing",
- title: "Recovering Titanium Powder in a Metal Additive Manufacturing Facility",
+ title: "Recovering Titanium Powder in a Metal Additive",
  subtitle:
  "How a representative aerospace-focused AM producer made powder handling safe and economical at once — air-operated explosion-proof vacuums with immersion separation for one of the most reactive dusts in manufacturing.",
  date: "2026-07-15",
@@ -183,7 +183,7 @@ export const titaniumPowderAdditiveManufacturing: CaseStudy = {
  cluster: ["Additive Manufacturing", "Combustible Metal Dust", "Powder Bed Fusion", "Explosion-Proof Immersion Vacuums"],
  },
  seo: {
- metaTitle: "Titanium Powder Recovery in Additive Manufacturing | Case Study",
+ metaTitle: "Titanium Powder Recovery in Additive Manufacturing",
  metaDescription:
  "Representative case study: how a metal AM facility recovers reactive titanium powder and chamber condensate with air-operated explosion-proof vacuums and immersion separation under NFPA 660/484.",
  keywords: [

@@ -7,7 +7,7 @@ export const combustibleMetalDustGuide: MaterialGuideData = {
  name: "Combustible Metal Dust",
  groupCrumb: { label: "Metal Dusts", anchor: "metal-dusts" },
  seo: {
- title: "Combustible Metal Dust — Which Metals Burn & How to Recover Them",
+ title: "Combustible Metal Dust — Which Metals Burn & How",
  description:
  "Which metals form combustible dust, why water is the wrong response, what Class II Group E means, and how metallic dust from grinding, machining and additive manufacturing should be recovered.",
  },

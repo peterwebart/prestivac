@@ -7,7 +7,7 @@ export const berylliumDustGuide: MaterialGuideData = {
  name: "Beryllium Dust",
  groupCrumb: { label: "Metal Dusts", anchor: "metal-dusts" },
  seo: {
- title: "Is Beryllium Toxic? Beryllium Dust Hazards & Safe Recovery",
+ title: "Is Beryllium Toxic? Beryllium Dust Hazards & Safe",
  description:
  "Beryllium is acutely hazardous at extremely low airborne concentrations and has its own OSHA standard. Chronic beryllium disease, sensitisation, where exposure arises, and why HEPA recovery replaces sweeping entirely.",
  },

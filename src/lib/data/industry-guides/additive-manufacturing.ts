@@ -7,7 +7,7 @@ export const additiveManufacturingGuide: IndustryGuideData = {
  name: "Additive Manufacturing",
  titleAccent: "additive manufacturing",
  seo: {
- title: "How to Safely Recover Powder in Additive Manufacturing?",
+ title: "How to Safely Recover Powder in Additive",
  description:
  "The one industry built on handling, by design, the exact material combustible-dust standards were written to control — loose reactive-metal and polymer powder as feedstock. From loading to depowdering to sieving and reuse, the whole workflow is powder handling, and the powder is fuel. Dedicated, grounded, HEPA-retained recovery.",
  },

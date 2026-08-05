@@ -27,10 +27,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-i-division-1",
  name: "Class I, Division 1",
- title: "Class I, Division 1: flammable gas and vapour, present in normal operation",
+ title: "Class I, Division 1: flammable gas and vapour",
  eyebrow: "Classification reference",
  seo: {
- title: "Class I Division 1 Explained — Definition, Groups & Equipment",
+ title: "Class I Division 1 Explained — Definition, Groups",
  description:
  "What Class I, Division 1 means: flammable gases or vapours present in ignitible concentrations under normal operating conditions. Groups A–D, temperature codes, and how it drives vacuum equipment selection.",
  },
@@ -105,10 +105,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-i-division-2",
  name: "Class I, Division 2",
- title: "Class I, Division 2: flammable vapour contained in normal operation",
+ title: "Class I, Division 2: flammable vapour contained",
  eyebrow: "Classification reference",
  seo: {
- title: "Class I Division 2 Definition — What It Means & Equipment Rules",
+ title: "Class I Division 2 Definition — What It Means &",
  description:
  "Class I, Division 2 explained: flammable gases or vapours handled in closed systems and present only under abnormal conditions. Definition, how it differs from Division 1, and what it means for vacuum equipment.",
  },
@@ -177,10 +177,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-ii-division-1",
  name: "Class II, Division 1",
- title: "Class II, Division 1: combustible dust airborne in normal operation",
+ title: "Class II, Division 1: combustible dust airborne",
  eyebrow: "Classification reference",
  seo: {
- title: "Class II Division 1 Explained — Combustible Dust Locations",
+ title: "Class II Division 1 Explained — Combustible Dust",
  description:
  "Class II, Division 1 covers locations where combustible dust is in the air under normal operating conditions in ignitible quantities. Definition, Groups E, F and G, and what it means for dust-ignitionproof vacuum equipment.",
  },
@@ -256,10 +256,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-ii-division-2",
  name: "Class II, Division 2",
- title: "Class II, Division 2: combustible dust present, but not normally airborne",
+ title: "Class II, Division 2: combustible dust present",
  eyebrow: "Classification reference",
  seo: {
- title: "Class II Division 2 Explained — Definition & Dust Equipment Rules",
+ title: "Class II Division 2 Explained — Definition & Dust",
  description:
  "Class II, Division 2 covers locations where combustible dust is not normally in suspension but accumulations are present. Definition, how it differs from Division 1, Group G considerations and equipment implications.",
  },
@@ -328,10 +328,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-i-division-1-vs-division-2",
  name: "Class I Div 1 vs Div 2",
- title: "Class I, Division 1 vs Division 2: what actually changes",
+ title: "Class I, Division 1 vs Division 2: what actually",
  eyebrow: "Comparison",
  seo: {
- title: "Class 1 Div 1 vs Div 2 — Differences Explained Side by Side",
+ title: "Class 1 Div 1 vs Div 2 — Differences Explained",
  description:
  "Class I Division 1 vs Division 2 compared: when the flammable atmosphere is expected, what each classification assumes about failure, and how the difference changes equipment selection.",
  },
@@ -428,10 +428,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-ii-division-1-vs-division-2",
  name: "Class II Div 1 vs Div 2",
- title: "Class II, Division 1 vs Division 2: dust in the air, or dust on the beams",
+ title: "Class II, Division 1 vs Division 2: dust in the",
  eyebrow: "Comparison",
  seo: {
- title: "Class 2 Div 1 vs Div 2 — Combustible Dust Divisions Compared",
+ title: "Class 2 Div 1 vs Div 2 — Combustible Dust",
  description:
  "Class II Division 1 vs Division 2 compared for combustible dust: airborne in normal operation versus accumulation with abnormal-condition clouds, plus Group E conductive dust and equipment implications.",
  },
@@ -528,10 +528,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-ii-groups-e-f-g",
  name: "Class II Groups E, F & G",
- title: "Class II Groups E, F and G: how dusts are grouped, and why it matters",
+ title: "Class II Groups E, F and G: how dusts are",
  eyebrow: "Classification reference",
  seo: {
- title: "Class II Group E, F & G Dusts — Vacuum Cleaner Requirements",
+ title: "Class II Group E, F & G Dusts — Vacuum Cleaner",
  description:
  "Class II dust Groups explained: Group E combustible metal dust, Group F carbonaceous dust, Group G non-conductive dusts like flour and wood. What each group means for vacuum cleaner selection and certification.",
  },
@@ -605,10 +605,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "intrinsically-safe-vacuums",
  name: "Intrinsic safety",
- title: "Intrinsically safe vacuums: what the term means, and what to ask for",
+ title: "Intrinsically safe vacuums: what the term means",
  eyebrow: "Protection concepts",
  seo: {
- title: "Intrinsically Safe Vacuum Cleaners — What the Term Really Means",
+ title: "Intrinsically Safe Vacuums Explained",
  description:
  "Intrinsic safety is an energy-limiting protection concept for electrical circuits. What it means for industrial vacuums, why air-operated units answer the question differently, and which documents to request.",
  },
@@ -684,10 +684,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "atex-vs-north-american",
  name: "ATEX vs North American",
- title: "ATEX and the North American scheme: two systems, not two names",
+ title: "ATEX and the North American scheme: two systems",
  eyebrow: "Jurisdictions",
  seo: {
- title: "ATEX vs Class/Division — Hazardous Area Schemes Compared",
+ title: "ATEX vs Class/Division — Hazardous Area Schemes",
  description:
  "ATEX Zones 20–22 versus North American Class II Divisions: how the two hazardous-area frameworks differ, why certifications are not interchangeable, and what documentation to request for your jurisdiction.",
  },
@@ -755,10 +755,10 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "combustible-dust-classification",
  name: "Combustible dust classification",
- title: "Combustible dust classification: what OSHA and NFPA actually require",
+ title: "Combustible dust classification: what OSHA and",
  eyebrow: "Standards",
  seo: {
- title: "Combustible Dust Classification — OSHA & NFPA 660 Requirements",
+ title: "Combustible Dust Classification — OSHA & NFPA 660",
  description:
  "How combustible dust is classified and regulated: why there is no single OSHA combustible dust standard, how the National Emphasis Program and General Duty Clause apply, and what NFPA 660 consolidated.",
  },

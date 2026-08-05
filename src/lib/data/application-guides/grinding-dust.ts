@@ -8,7 +8,7 @@ export const grindingDustGuide: ApplicationGuideData = {
  titleAccent: "Recovery",
  categoryCrumb: { label: "Metalworking & Machining", anchor: "metalworking-machining" },
  seo: {
- title: "Grinding Dust Recovery — Metal Fines, Sparks & Safe Collection",
+ title: "Grinding Dust Recovery — Metal Fines, Sparks &",
  description:
  "Grinding produces respirable metal fines and sparks from the same operation. How grinding dust behaves, why abrasive and metal fractions mix, and how to recover it without creating an ignition source.",
  },

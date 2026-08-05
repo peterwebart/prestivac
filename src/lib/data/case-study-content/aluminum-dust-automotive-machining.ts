@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const aluminumDustAutomotiveMachining: CaseStudy = {
  slug: "aluminum-dust-automotive-machining",
- title: "Reducing Aluminum Dust Hazards in an Automotive Machining Plant",
+ title: "Reducing Aluminum Dust Hazards in an Automotive",
  subtitle:
  "How a representative North American automotive manufacturer brought combustible aluminum fines under control with grounded, air-operated explosion-proof vacuum recovery and immersion separation.",
  date: "2026-07-13",
@@ -184,7 +184,7 @@ export const aluminumDustAutomotiveMachining: CaseStudy = {
  cluster: ["Automotive", "Combustible Metal Dust", "CNC Machining", "Explosion-Proof Vacuums"],
  },
  seo: {
- metaTitle: "Aluminum Dust Hazards in Automotive Machining | Case Study",
+ metaTitle: "Aluminum Dust Hazards in Automotive Machining",
  metaDescription:
  "Representative case study: how an automotive machining plant controls combustible aluminum fines with grounded, air-operated explosion-proof vacuums and immersion separation under NFPA 660/484.",
  keywords: [

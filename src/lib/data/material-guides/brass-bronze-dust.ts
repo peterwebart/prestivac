@@ -7,7 +7,7 @@ export const brassBronzeDustGuide: MaterialGuideData = {
  name: "Brass & Bronze Dust",
  groupCrumb: { label: "Metal Dusts", anchor: "metal-dusts" },
  seo: {
- title: "Is Brass Toxic? Brass & Bronze Dust Hazards and Recovery",
+ title: "Is Brass Toxic? Brass & Bronze Dust Hazards",
  description:
  "Brass and bronze are copper alloys, and the hazard lives in what they are alloyed with — zinc fume, lead in leaded brass, and fine metal dust from machining. What to control and how to recover it safely.",
  },

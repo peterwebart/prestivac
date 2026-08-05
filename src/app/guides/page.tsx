@@ -12,7 +12,7 @@ const description =
   "Plain explanations of the fundamentals — how dust explosions work, what ignites them, what a Dust Hazard Analysis involves, and how industrial vacuums differ from dust collectors.";
 
 export const metadata: Metadata = {
-  title: "Guides — Combustible Dust Fundamentals & Equipment Selection",
+  title: "Guides — Combustible Dust Fundamentals &",
   description,
   alternates: { canonical: "/guides" },
   openGraph: { url: "/guides", title: "Guides", description },

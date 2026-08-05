@@ -7,7 +7,7 @@ export const medicalDevicesGuide: IndustryGuideData = {
  name: "Medical Device Manufacturing",
  titleAccent: "medical device manufacturing",
  seo: {
- title: "How to Safely Recover Dust in Medical Device Manufacturing?",
+ title: "How to Safely Recover Dust in Medical Device",
  description:
  "Medical device manufacturing puts two disciplines in one room — machining implant-grade reactive metals like titanium and cobalt-chromium generates combustible metal fines, while the parts must stay contamination-free for biocompatibility. Recovery has to be combustible-metal-rated and cleanroom-clean at once.",
  },

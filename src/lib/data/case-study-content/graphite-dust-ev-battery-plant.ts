@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const graphiteDustBatteryPlant: CaseStudy = {
  slug: "graphite-dust-ev-battery-plant",
- title: "Controlling Electrode Dust in an EV Battery Cell Plant",
+ title: "Controlling Electrode Dust in an EV Battery Cell",
  subtitle:
  "How a representative North American cell manufacturer manages graphite and electrode dust across mixing rooms, slitting lines and dry-room assembly — where the dust is combustible, conductive and exposure-limited all at once.",
  date: "2026-07-15",
@@ -188,7 +188,7 @@ export const graphiteDustBatteryPlant: CaseStudy = {
  cluster: ["Battery Manufacturing", "Conductive Carbon Dust", "Electrode Production", "HEPA Explosion-Proof Vacuums"],
  },
  seo: {
- metaTitle: "Electrode Dust Control in an EV Battery Plant | Case Study",
+ metaTitle: "Electrode Dust Control in an EV Battery Plant",
  metaDescription:
  "Representative case study: how an EV battery cell plant manages combustible, conductive graphite and electrode dust with explosion-proof HEPA vacuums and a continuous-duty central system under NFPA 660.",
  keywords: [

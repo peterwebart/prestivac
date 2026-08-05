@@ -7,7 +7,7 @@ export const dataCentersGuide: IndustryGuideData = {
  name: "Data Centers",
  titleAccent: "data centers",
  seo: {
- title: "How to Safely Recover Dust in Highly Sensitive Environments?",
+ title: "How to Safely Recover Dust in Highly Sensitive",
  description:
  "In a data center, dust is measured in failures, not fires — zinc whiskers from raised-floor hardware, subfloor plenums that feed every server intake, and construction migration into rooms that cannot absorb it. HEPA recovery under live-load protocols.",
  },

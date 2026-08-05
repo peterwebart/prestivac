@@ -7,7 +7,7 @@ export const starchDustGuide: MaterialGuideData = {
  name: "Starch Dust",
  groupCrumb: { label: "Food Dusts", anchor: "food-dusts" },
  seo: {
- title: "Is Starch Dust Combustible? Safe Starch Powder Recovery",
+ title: "Is Starch Dust Combustible? Safe Starch Powder",
  description:
  "Starch powder is a combustible organic dust — cornstarch is the reference dust laboratories calibrate against. How starch dust behaves, why it is so easily suspended, and how to recover it safely with explosion-proof, HEPA-filtered equipment.",
  },

@@ -16,11 +16,11 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "what-is-black-dust",
  name: "What is black dust?",
- title: "Black dust in industrial settings: what it usually is, and why it matters",
+ title: "Black dust in industrial settings: what it",
  eyebrow: "Identification",
  minutes: 7,
  seo: {
- title: "What Is Black Dust? Industrial Sources and How to Handle It",
+ title: "What Is Black Dust? Industrial Sources",
  description:
  "Black dust in a plant is usually carbon black, coal or coke, graphite, toner, iron oxide or rubber — each with different hazards. How to identify what you have and why the answer changes the cleanup method.",
  },
@@ -110,11 +110,11 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "recovered-dust-disposal-and-reclaim",
  name: "Recovered dust: reclaim or dispose?",
- title: "What to do with recovered dust — reclaim, recycle or dispose",
+ title: "What to do with recovered dust — reclaim, recycle",
  eyebrow: "Operations",
  minutes: 6,
  seo: {
- title: "Recovered Dust Disposal & Reclaim — What Happens After Recovery",
+ title: "Recovered Dust Disposal & Reclaim — What Happens",
  description:
  "Collected dust is not finished business. When material can be reclaimed, when it is regulated waste, and why a full container standing in the plant is its own hazard.",
  },
@@ -193,7 +193,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  eyebrow: "Equipment selection",
  minutes: 6,
  seo: {
- title: "Toxic Liquid Recovery — Chemical Spills, Coolant and Slurry",
+ title: "Toxic Liquid Recovery — Chemical Spills, Coolant",
  description:
  "Recovering hazardous liquids is a compatibility problem before it is a suction problem. How chemistry, containment and disposal shape the specification for wet recovery.",
  },
@@ -266,11 +266,11 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "vacuum-vs-dust-collector",
  name: "Vacuum vs dust collector",
- title: "Industrial vacuum or dust collector? They solve different halves of the problem",
+ title: "Industrial vacuum or dust collector? They solve",
  eyebrow: "Equipment comparison",
  minutes: 7,
  seo: {
- title: "Industrial Vacuum vs Dust Collector — Which Do You Need?",
+ title: "Industrial Vacuum vs Dust Collector — Which Do",
  description:
  "Dust collectors capture dust at the source; industrial vacuums remove what has already settled. How high-volume/low-vacuum differs from low-volume/high-vacuum, and why a complete dust programme needs both.",
  },
@@ -390,11 +390,11 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "sources-of-ignition",
  name: "Sources of ignition",
- title: "Sources of ignition in dust handling: the list worth auditing",
+ title: "Sources of ignition in dust handling: the list",
  eyebrow: "Fundamentals",
  minutes: 8,
  seo: {
- title: "Sources of Ignition for Combustible Dust — The Full List",
+ title: "Sources of Ignition for Combustible Dust",
  description:
  "Mechanical sparks, hot surfaces, static discharge, electrical arcs, hot work, self-heating and smouldering — the ignition sources that matter in dust handling, and how each is controlled.",
  },
@@ -483,11 +483,11 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "dust-explosion-basics",
  name: "Dust explosion basics",
- title: "How dust explosions actually work — and why the second one does the damage",
+ title: "How dust explosions actually work — and why the",
  eyebrow: "Fundamentals",
  minutes: 7,
  seo: {
- title: "How Dust Explosions Happen — Primary, Secondary & the Dust Pentagon",
+ title: "How Dust Explosions Happen — Primary, Secondary &",
  description:
  "The five conditions a dust deflagration needs, why particle size changes everything, and why the secondary explosion — fed by accumulated dust — is what destroys buildings.",
  },
@@ -566,7 +566,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  eyebrow: "Compliance",
  minutes: 7,
  seo: {
- title: "Dust Hazard Analysis (DHA) — What It Is and What It Requires",
+ title: "Dust Hazard Analysis (DHA) — What It Is and What",
  description:
  "The Dust Hazard Analysis is the centrepiece of NFPA's combustible dust requirements. What a DHA covers, who performs it, what it produces, and how housekeeping frequencies come out of it.",
  },
@@ -648,11 +648,11 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "esd-anti-static-vacuums",
  name: "ESD & anti-static vacuums",
- title: "Anti-static and ESD-safe vacuums: two different problems, one piece of equipment",
+ title: "Anti-static and ESD-safe vacuums: two different",
  eyebrow: "Equipment selection",
  minutes: 6,
  seo: {
- title: "ESD Safe & Anti-Static Vacuum Cleaners — What the Terms Mean",
+ title: "ESD Safe vs Anti-Static Vacuums",
  description:
  "Anti-static construction prevents static discharge igniting dust; ESD-safe protects sensitive electronics from damage. Two different goals, and why knowing which you need changes the specification.",
  },

@@ -85,7 +85,7 @@ const CATEGORY_META: Record<
   "esd-static-free-vacuums": {
     seriesIds: ["ex1", "evx"],
     faqCategories: ["explosion-safety", "selection"],
-    metaTitle: "ESD Static Free Vacuum Cleaners | Anti-Static Industrial Vacuums",
+    metaTitle: "ESD Static Free Vacuum Cleaners",
     metaDescription:
       "ESD static free industrial vacuum cleaners built with static dissipating housings, filters, hoses and tools — for combustible dust areas and ESD-sensitive electronics work.",
     selection: [
@@ -98,7 +98,7 @@ const CATEGORY_META: Record<
   "cleanroom-vacuums": {
     seriesIds: ["ex1"],
     faqCategories: ["selection", "applications"],
-    metaTitle: "Cleanroom Vacuum Cleaners | HEPA & ULPA Controlled-Area Vacuums",
+    metaTitle: "Cleanroom Vacuum Cleaners",
     metaDescription:
       "Cleanroom vacuum cleaners with HEPA and ULPA absolute filtration, smooth wipeable stainless construction and contained collection — for controlled environments where the exhaust matters.",
     selection: [
@@ -111,7 +111,7 @@ const CATEGORY_META: Record<
   "pharmaceutical-vacuums": {
     seriesIds: ["ex1"],
     faqCategories: ["selection", "applications"],
-    metaTitle: "Pharmaceutical Vacuum Cleaners | Containment & HEPA Filtration",
+    metaTitle: "Pharmaceutical Vacuum Cleaners",
     metaDescription:
       "Pharmaceutical vacuum cleaners for active ingredients, excipients and potent compounds — HEPA absolute filtration, sealed collection and wash-down friendly stainless construction.",
     selection: [
@@ -166,7 +166,7 @@ const CATEGORY_META: Record<
       "This comes up because the price difference is real and the reasoning is rarely spelled out. A standard shop vacuum brings three problems into a dust area at once: a brushed universal motor that sparks as a matter of normal operation, a plastic hose that accumulates static charge as dry dust moves through it with no path to ground, and filtration that returns the finest fraction to the room.",
       "It is a construction argument rather than a quality one. A rated unit is conductive, grounded and bonded from hose tip to container, with a drive suitable for the classification and filtration that retains what it captures. Modifying a consumer machine does not address any of the three, because each is inherent to how it was built.",
     ],
-    metaTitle: "Explosion Proof Vacuums | Combustible Dust Vacuum Cleaners",
+    metaTitle: "Explosion Proof Vacuums",
     metaDescription:
       "PrestiVac manufactures UL 1203 certified explosion proof vacuum cleaners for combustible dust and flammable liquids — solid stainless steel, HEPA 99.99% absolute filtration, electric and air-operated. Class I & II, Divisions 1 & 2. Made in the USA.",
     selection: [
@@ -225,7 +225,7 @@ const CATEGORY_META: Record<
     seriesIds: ["avx"],
     faqCategories: ["explosion-safety", "selection"],
     powerComparison: ELECTRIC_VS_AIR,
-    metaTitle: "Pneumatic Vacuums | Air Operated Industrial Vacuum Cleaners",
+    metaTitle: "Pneumatic Vacuums",
     metaDescription:
       "Air operated pneumatic industrial vacuums with no electrical components — compressed-air driven recovery for classified areas and continuous duty. Explosion-proof construction options from PrestiVac.",
     selection: [
@@ -254,7 +254,7 @@ const CATEGORY_META: Record<
   "industrial-vacuums": {
     seriesIds: ["av-ev"],
     faqCategories: ["selection", "operation"],
-    metaTitle: "Industrial Vacuums | Heavy-Duty Industrial Vacuum Cleaners",
+    metaTitle: "Industrial Vacuums",
     metaDescription:
       "Heavy-duty industrial vacuums in stainless steel for continuous production housekeeping — abrasive debris, high volumes and long duty cycles. Manufactured in the USA by PrestiVac.",
     selection: [
@@ -283,7 +283,7 @@ const CATEGORY_META: Record<
   "central-vacuum-systems": {
     seriesIds: [],
     faqCategories: ["selection", "operation"],
-    metaTitle: "Central Vacuum Systems | Industrial Central Vacuum Installations",
+    metaTitle: "Central Vacuum Systems",
     metaDescription:
       "Engineered industrial central vacuum systems — a remote power unit and separator serving inlet drops across the plant, with material consolidated at a single discharge point. Designed and built by PrestiVac.",
     selection: [
@@ -312,7 +312,7 @@ const CATEGORY_META: Record<
   "wet-dry-systems": {
     seriesIds: [],
     faqCategories: ["selection", "applications"],
-    metaTitle: "Wet & Dry Industrial Vacuums | Liquid and Slurry Recovery",
+    metaTitle: "Wet & Dry Industrial Vacuums",
     metaDescription:
       "Wet and dry industrial vacuum systems for liquid, slurry and coolant recovery alongside dry debris — including options for reactive materials that must be kept wet. From PrestiVac.",
     selection: [
@@ -341,7 +341,7 @@ const CATEGORY_META: Record<
   "custom-engineered-systems": {
     seriesIds: [],
     faqCategories: ["selection"],
-    metaTitle: "Custom Engineered Vacuum Systems | Built to Your Application",
+    metaTitle: "Custom Engineered Vacuum Systems",
     metaDescription:
       "Custom-built industrial vacuum systems built to the application — configuration, filtration and integration designed around your material, classification and layout. Designed and manufactured in the USA.",
     selection: [

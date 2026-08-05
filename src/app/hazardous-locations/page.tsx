@@ -12,7 +12,7 @@ const description =
   "Class I and Class II, Divisions 1 and 2, dust Groups E, F and G, temperature codes, intrinsic safety and ATEX — the hazardous-location framework explained, and what each part means when you specify vacuum recovery equipment.";
 
 export const metadata: Metadata = {
-  title: "Hazardous Location Classification — Class I & II, Divisions & Groups",
+  title: "Hazardous Location Classification — Class I & II",
   description,
   alternates: { canonical: "/hazardous-locations" },
   openGraph: { url: "/hazardous-locations", title: "Hazardous Locations", description },

@@ -8,7 +8,7 @@ export const conveyorHousekeepingGuide: ApplicationGuideData = {
  titleAccent: "Vacuum Solutions",
  categoryCrumb: { label: "General Industrial Maintenance", anchor: "general-maintenance" },
  seo: {
- title: "Conveyor & Transfer-Point Housekeeping Vacuum Solutions",
+ title: "Conveyor & Transfer-Point Housekeeping Vacuum",
  description:
  "Industrial vacuum recovery for conveyor runs and transfer points — the distributed fugitive dust that accumulates along belts, under structures and at every chute and junction, kept below the layer depths combustible-dust housekeeping standards target.",
  },

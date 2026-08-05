@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const berylliumDustNationalLaboratory: CaseStudy = {
   slug: "beryllium-dust-national-laboratory",
-  title: "Regulated Metal Dust Control in a Government Research Laboratory",
+  title: "Regulated Metal Dust Control in a Government",
   subtitle:
     "A representative scenario: containing beryllium and other regulated metal dusts across a machining and materials research facility.",
   date: "2026-03-19",
@@ -151,7 +151,7 @@ export const berylliumDustNationalLaboratory: CaseStudy = {
     cluster: ["beryllium", "regulated metal dust", "research laboratory", "HEPA recovery"],
   },
   seo: {
-    metaTitle: "Beryllium & Regulated Metal Dust Control in a Research Laboratory",
+    metaTitle: "Beryllium Dust Control in a Research Lab",
     metaDescription:
       "How a government research facility contains beryllium and regulated metal dust with dedicated HEPA 99.99% filtered recovery, sealed disposal and documented cleaning under OSHA 1910.1024.",
     keywords: ["beryllium dust", "regulated metal dust", "HEPA vacuum", "research laboratory housekeeping", "OSHA 1910.1024"],

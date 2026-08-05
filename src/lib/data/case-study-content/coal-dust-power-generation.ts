@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const coalDustPowerGeneration: CaseStudy = {
   slug: "coal-dust-power-generation",
-  title: "Coal and Biomass Dust Housekeeping at a Power Generation Facility",
+  title: "Coal and Biomass Dust Housekeeping at a Power",
   subtitle:
     "A representative scenario: controlling carbonaceous dust and its tendency to smoulder across a fuel handling and boiler house operation.",
   date: "2026-03-04",
@@ -150,7 +150,7 @@ export const coalDustPowerGeneration: CaseStudy = {
     cluster: ["combustible dust", "coal dust", "biomass", "power generation"],
   },
   seo: {
-    metaTitle: "Coal & Biomass Dust Control at a Power Generation Facility",
+    metaTitle: "Coal & Biomass Dust Control at a Power Generation",
     metaDescription:
       "How a generating station controls combustible coal, coke and biomass fuel dust across conveyor galleries and milling areas with UL 1203 certified explosion proof vacuums and HEPA 99.99% filtration.",
     keywords: ["coal dust", "biomass dust", "power plant housekeeping", "combustible dust vacuum", "explosion proof vacuum"],

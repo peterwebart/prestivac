@@ -7,7 +7,7 @@ export const glassCeramicsGuide: IndustryGuideData = {
  name: "Glass & Ceramics",
  titleAccent: "glass & ceramics",
  seo: {
- title: "How to Safely Recover Dust in Glass & Ceramics Manufacturing?",
+ title: "How to Safely Recover Dust in Glass & Ceramics",
  description:
  "The industry where the dust rarely burns but reliably harms — glass and ceramics are made of silica and minerals, so the defining hazard is respirable crystalline silica, not deflagration. Batch prep, glazing and finishing of fired ware generate respirable silica, recovered HEPA-retained and exposure-controlled first.",
  },

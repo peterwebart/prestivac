@@ -7,7 +7,7 @@ export const electronicsGuide: IndustryGuideData = {
  name: "Semiconductor & Electronics",
  titleAccent: "semiconductor & electronics",
  seo: {
- title: "How to Recover Toxic & Chemical Hazards Found in Electronics?",
+ title: "Electronics Dust & ESD Vacuum Recovery",
  description:
  "Electronics manufacturing hides two hazard classes behind a clean-looking fab: toxic and chemical exposures — arsenic, heavy metals, solder and etch residues — and combustible dusts most people never associate with chips, from silicon to the metal 3D-printed components feeding advanced packaging.",
  },

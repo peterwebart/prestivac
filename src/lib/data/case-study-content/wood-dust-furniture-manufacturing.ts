@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const woodDustFurnitureManufacturing: CaseStudy = {
  slug: "wood-dust-furniture-manufacturing",
- title: "Managing Wood Dust in a Furniture Manufacturing Plant",
+ title: "Managing Wood Dust in a Furniture Manufacturing",
  subtitle:
  "How a representative national furniture manufacturer closed the gap its dust collection system was never designed to cover — the fugitive fine fraction on structure, equipment and overhead steel.",
  date: "2026-07-15",
@@ -183,7 +183,7 @@ export const woodDustFurnitureManufacturing: CaseStudy = {
  cluster: ["Wood Industry", "Combustible Wood Dust", "CNC Routing & Sanding", "Explosion-Proof HEPA Vacuums"],
  },
  seo: {
- metaTitle: "Wood Dust Control in Furniture Manufacturing | Case Study",
+ metaTitle: "Wood Dust Control in Furniture Manufacturing",
  metaDescription:
  "Representative case study: how a furniture plant controls fugitive combustible wood dust with explosion-proof HEPA vacuums, elevated-surface routines and hot-work coordination under NFPA 660/664.",
  keywords: [

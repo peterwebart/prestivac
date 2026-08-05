@@ -165,3 +165,19 @@ USA-ONLY: zero Canada references remain. The Royal Canadian Mint entry was remov
 from the client wall per instruction — the logo file is still at
 public/images/clients/client-36.png, so restoring it is one line in clients.ts if
 that was meant as positioning language only rather than the client list.
+
+## SEO / GEO — English site audited clean (post-French-removal)
+214 routes. 214/214 unique titles, all <= 62 visible characters, none truncated
+mid-phrase. 214/214 canonicals, 214/214 meta descriptions at 70+ characters,
+214/214 Open Graph titles, 214/214 exactly one h1. 115/214 FAQPage schema (hubs and
+listing pages correctly excluded). Zero orphans, mean 33 inbound links per page.
+robots.txt cites the sitemap. Zero French links, zero Canada references.
+
+TITLE BUDGET: metaTitle at or under 50 characters. The layout appends the brand
+suffix. 121 English titles were over budget and have been shortened by dropping
+trailing qualifier segments; seven that had been cut mid-phrase were rewritten as
+complete phrases.
+
+Dead code: nothing in the live app imports the preserved French data. Verified no
+French strings reach the client bundle. preserved/ is excluded from tsconfig, so it
+is neither type-checked nor built.

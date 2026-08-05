@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const sulfurDustSpecialtyChemicalPlant: CaseStudy = {
  slug: "sulfur-dust-specialty-chemical-plant",
- title: "Controlling Sulfur Dust in a Specialty Chemical Compounding Plant",
+ title: "Controlling Sulfur Dust in a Specialty Chemical",
  subtitle:
  "How a representative chemical compounder runs housekeeping around the most ignition-sensitive common industrial dust — grounding verified before anything else moves, air-operated recovery with zero electrical components, and a disposal path that respects what burning sulfur becomes.",
  date: "2026-07-17",
@@ -183,7 +183,7 @@ export const sulfurDustSpecialtyChemicalPlant: CaseStudy = {
  cluster: ["Chemical Processing", "Combustible Sulfur Dust", "Static Control", "Explosion-Proof Vacuums"],
  },
  seo: {
- metaTitle: "Sulfur Dust Control in Chemical Processing | Case Study",
+ metaTitle: "Sulfur Dust Control in Chemical Processing",
  metaDescription:
  "Representative case study: managing sulfur dust — the most ignition-sensitive common industrial dust — with verified grounding, air-operated explosion-proof HEPA recovery and SO2-aware disposal under NFPA 660/655.",
  keywords: [

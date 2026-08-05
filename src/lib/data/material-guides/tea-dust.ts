@@ -7,7 +7,7 @@ export const teaDustGuide: MaterialGuideData = {
  name: "Tea Dust",
  groupCrumb: { label: "Food Dusts", anchor: "food-dusts" },
  seo: {
- title: "Tea Dust — Combustibility, Respiratory Hazards & Safe Recovery",
+ title: "Tea Dust — Combustibility, Respiratory Hazards &",
  description:
  "Tea dust and fannings are a combustible organic dust with a documented respiratory dimension. Where they accumulate in blending, sifting and packing, and how explosion-proof HEPA recovery controls both hazards.",
  },

@@ -7,7 +7,7 @@ export const maltDustGuide: MaterialGuideData = {
  name: "Malt Dust",
  groupCrumb: { label: "Agricultural Dusts", anchor: "agricultural-dusts" },
  seo: {
- title: "Malt Dust — Combustibility, Respiratory Hazards & Safe Recovery",
+ title: "Malt Dust — Combustibility, Respiratory Hazards &",
  description:
  "Malt dust is a combustible grain-derived dust with a respiratory dimension of its own. Where it accumulates in malting, brewing and distilling, and how explosion-proof vacuum recovery controls it.",
  },

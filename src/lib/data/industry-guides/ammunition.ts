@@ -7,7 +7,7 @@ export const ammunitionGuide: IndustryGuideData = {
  name: "Ammunition & Firearms",
  titleAccent: "ammunition & firearms",
  seo: {
- title: "Ammunition & Firearms Manufacturing Vacuum Solutions",
+ title: "Ammunition & Firearms Manufacturing Vacuum",
  description:
  "Vacuum programs for the machining, casing and range sides of ammunition and firearms facilities — brass chips, machining swarf and range lead. Primer and propellant areas run under explosive-materials rules (NFPA 495, ATF), a hard boundary this page respects.",
  },

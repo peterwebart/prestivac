@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const grainDustElevatorFeedMill: CaseStudy = {
  slug: "grain-dust-elevator-feed-mill",
- title: "Managing Grain Dust in a Grain Elevator & Feed Mill Operation",
+ title: "Managing Grain Dust in a Grain Elevator & Feed",
  subtitle:
  "How a representative grain cooperative runs housekeeping in the industry that wrote the rules — priority areas on the 1/8-inch action level, elevator legs treated as the initiation points they historically are, and bins cleaned without climbing in.",
  date: "2026-07-15",
@@ -183,7 +183,7 @@ export const grainDustElevatorFeedMill: CaseStudy = {
  cluster: ["Agriculture", "Combustible Grain Dust", "Elevator & Feed Mill Handling", "Explosion-Proof Vacuums"],
  },
  seo: {
- metaTitle: "Grain Dust Control in Elevators & Feed Mills | Case Study",
+ metaTitle: "Grain Dust Control in Elevators & Feed Mills",
  metaDescription:
  "Representative case study: how a grain cooperative manages combustible grain dust — priority areas on OSHA 1910.272's 1/8-inch action level, elevator-leg protection and reach-first bin cleaning under NFPA 660/61.",
  keywords: [
