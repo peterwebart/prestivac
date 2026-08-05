@@ -43,3 +43,12 @@ export function trackQuoteSubmitted(args: {
 }): void {
   trackEvent("generate_lead", { ...args, form: "quote" });
 }
+
+/** Fired when a contact enquiry is successfully handed off. */
+export function trackContactSubmitted(args: {
+  source: string;
+  reference: string;
+  delivery: "webhook" | "mail_fallback";
+}): void {
+  trackEvent("generate_lead", { ...args, form: "contact" });
+}

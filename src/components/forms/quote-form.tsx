@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import { trackQuoteSubmitted } from "@/lib/analytics";
+import { makeReference } from "@/lib/reference";
 import { site } from "@/lib/site";
 
 const CLASSIFICATIONS = ["Ordinary Location", "Division I", "Division II", "Not sure — please advise"];
@@ -53,19 +54,6 @@ const FR_LABELS = {
   errorTail: "ou nous téléphoner.",
 };
 
-/** Human-quotable reference: PV-YYYYMMDD-XXXX. Generated client-side so the same
- * reference reaches PrestiVac and the customer whether the request is delivered
- * by webhook or by the mail fallback. */
-function makeReference(): string {
-  const now = new Date();
-  const date = [
-    now.getFullYear(),
-    String(now.getMonth() + 1).padStart(2, "0"),
-    String(now.getDate()).padStart(2, "0"),
-  ].join("");
-  const suffix = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `PV-${date}-${suffix}`;
-}
 
 type Status = "idle" | "sending" | "sent" | "fallback" | "error";
 
@@ -115,7 +103,7 @@ export function QuoteForm({
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const ref = makeReference();
+    const ref = makeReference("Q");
     setReference(ref);
     const payload: Record<string, string> = { source, reference: ref };
     for (const key of Object.keys(FIELD_LABELS)) {

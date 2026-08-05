@@ -11,7 +11,13 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default function ContactThankYouPage() {
+export default async function ContactThankYouPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ ref?: string }>;
+}) {
+  const { ref } = await searchParams;
+
   return (
     <section className="bg-graphite-950 pb-20 pt-28 lg:pt-32">
       <Container>
@@ -25,6 +31,21 @@ export default function ContactThankYouPage() {
           <p className="mt-4 text-[15px]/[1.7] text-white/70">
             We have received your message and will reply shortly.
           </p>
+
+          {ref && (
+            <div className="mt-8 rounded-2xl border border-brand-500/30 bg-brand-500/[0.07] p-6">
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/50">
+                Your reference number
+              </p>
+              <p className="mt-2 font-display text-[26px] font-extrabold tracking-[0.04em] text-white sm:text-[30px]">
+                {ref}
+              </p>
+              <p className="mt-3 text-[12.5px]/[1.6] text-white/60">
+                Please quote this reference if you contact us about this enquiry. Keep it for your
+                records &mdash; it is the fastest way for us to find your message.
+              </p>
+            </div>
+          )}
 
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <a

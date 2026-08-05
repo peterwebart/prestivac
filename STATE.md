@@ -201,3 +201,24 @@ non-combustible material, modest capacity and short duty, an AV or EV unit may b
 the honest and cheaper recommendation. Worth deciding whether always-explosion-proof
 is intentional, because over-specifying costs the customer money and may lose a sale
 to a competitor who asks the better question.
+
+## Forms — both wired, both reference-numbered
+Two forms, identical delivery model:
+
+  /get-a-quote   19 fields   QUOTE_WEBHOOK_URL     ref PV-Q-YYYYMMDD-XXXX
+  /contact        6 fields   CONTACT_WEBHOOK_URL   ref PV-C-YYYYMMDD-XXXX
+
+CONTACT_WEBHOOK_URL falls back to QUOTE_WEBHOOK_URL, so configuring ONE endpoint
+makes both forms deliver. Payloads carry form: "quote" | "contact" for routing.
+
+Both confirmation pages display the reference and are noindex:
+  /thank-you/quote?ref=...     /thank-you/contact?ref=...
+
+References are generated CLIENT-side (src/lib/reference.ts) so the same reference
+reaches PrestiVac and the customer on both delivery paths. Server-side generation
+would leave mail-fallback submissions with no reference to quote.
+
+Both forms fire generate_lead on webhook AND mail_fallback paths, with a `delivery`
+field so you can see which path is actually being used.
+
+Setup instructions: docs/WEBHOOKS.md

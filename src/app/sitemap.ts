@@ -125,6 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: site.url + "/about", lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: site.url + "/faq", lastModified, changeFrequency: "monthly", priority: 0.75 },
     { url: site.url + "/support", lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: site.url + "/contact", lastModified, changeFrequency: "yearly" as const, priority: 0.7 },
     { url: site.url + "/get-a-quote", lastModified, changeFrequency: "monthly", priority: 0.95 },
     { url: site.url + "/hazardous-locations", lastModified, changeFrequency: "monthly", priority: 0.85 },
     { url: site.url + "/hazardous-location-vacuums", lastModified, changeFrequency: "monthly", priority: 0.9 },
