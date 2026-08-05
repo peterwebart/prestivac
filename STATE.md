@@ -181,3 +181,23 @@ complete phrases.
 Dead code: nothing in the live app imports the preserved French data. Verified no
 French strings reach the client bundle. preserved/ is excluded from tsconfig, so it
 is neither type-checked nor built.
+
+## Solution finder — verified exhaustively
+294 distinct reachable answer paths were enumerated and run through recommend():
+
+  paths returning zero models ..... 0   (no dead ends)
+  paths offering the CDV note ..... 105
+  CDV note on a wrong branch ...... 0   (only long-duty non-metal, as designed)
+  long-duty non-metal missing it .. 0
+  families ever recommended ....... EX1, AVX, EVX
+
+The CDV branch degrades gracefully: it returns 5 real models AND the note, so a
+visitor on that path gets a usable answer today rather than an empty result. Adding
+the CDV models will improve the answer, not unblock it.
+
+OPEN QUESTION FOR THE CLIENT: the finder never recommends the AV or EV families —
+every path lands on the explosion-proof family (EX1, AVX, EVX). If a customer has a
+non-combustible material, modest capacity and short duty, an AV or EV unit may be
+the honest and cheaper recommendation. Worth deciding whether always-explosion-proof
+is intentional, because over-specifying costs the customer money and may lose a sale
+to a competitor who asks the better question.
