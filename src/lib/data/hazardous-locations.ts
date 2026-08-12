@@ -1,14 +1,20 @@
 import type { HazardousLocationTopic } from "@/components/templates/hazardous-location";
 
+import { NFPA_TOPICS } from "@/lib/data/hazloc-nfpa";
+import { REGULATORY_TOPICS } from "@/lib/data/hazloc-regulatory";
+import { UL1203_SCOPE_SUMMARY } from "@/lib/data/certification";
+import { UL1203_TOPIC } from "@/lib/data/hazloc-ul1203";
+
 /**
  * Hazardous-location reference content.
  *
  * Integrity rules for this file:
  * - The classification framework described here is the published North American
  * scheme (NEC Article 500 series / CEC Section 18). It is explanatory only.
- * - Certification asserted: UL 1203 explosion-proof and dust-ignition-proof
- * No. covering the EX1 HEPA line (Class I Gp. D; Class II Gps. E, F, G;
- * Temp. Code T3C; scope "Dry Vacuum Cleaner, Model Ex 1-xx HEPA").
+ * - Certification asserted: CSA Certificate 70122393, assessed against UL 1203
+ * (5th Edition). TWO scopes — EX1 HEPA line: Class I Gp. D, Class II Gps. E,
+ * F, G, T3C. EV EX HEPA line: Class II Div. 2 Gps. F and G ONLY. Never merge
+ * them. See lib/data/certification.ts, the single source of truth.
  * - ATEX, UL and intrinsic-safety approvals are NOT claimed. Where those schemes
  * are described, the copy explains the concept and directs the reader to request
  * the documents applicable to their jurisdiction and configuration.
@@ -17,13 +23,12 @@ import type { HazardousLocationTopic } from "@/components/templates/hazardous-lo
  * edition before being relied on for design.
  */
 
-const CSA_NOTE =
- "PrestiVac explosion proof vacuum cleaners are UL 1203 certified explosion-proof and dust-ignition-proof electrical vacuum cleaners for use in Hazardous (Classified) Locations: Class I, Divisions 1 & 2, Groups A, B, C & D (gases, vapors or liquids) and Class II, Divisions 1 & 2, Groups E, F & G (combustible dusts). All units are built and tested to NRTL standards.";
+const CSA_NOTE = UL1203_SCOPE_SUMMARY;
 
 const CLASSIFICATION_DISCLAIMER =
  "Classification is assigned by your own electrical or process engineer and accepted by the authority having jurisdiction. Bring that classification to the equipment conversation rather than working backwards from a product.";
 
-export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
+const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-i-division-1",
  name: "Class I, Division 1",
@@ -328,7 +333,7 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-i-division-1-vs-division-2",
  name: "Class I Div 1 vs Div 2",
- title: "Class I, Division 1 vs Division 2: what actually",
+ title: "Class I, Division 1 vs Division 2: what actually differs",
  eyebrow: "Comparison",
  seo: {
  title: "Class 1 Div 1 vs Div 2 — Differences Explained",
@@ -428,7 +433,7 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-ii-division-1-vs-division-2",
  name: "Class II Div 1 vs Div 2",
- title: "Class II, Division 1 vs Division 2: dust in the",
+ title: "Class II, Division 1 vs Division 2: dust in the air or on the surfaces",
  eyebrow: "Comparison",
  seo: {
  title: "Class 2 Div 1 vs Div 2 — Combustible Dust",
@@ -528,7 +533,7 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "class-ii-groups-e-f-g",
  name: "Class II Groups E, F & G",
- title: "Class II Groups E, F and G: how dusts are",
+ title: "Class II Groups E, F and G: how dusts are grouped",
  eyebrow: "Classification reference",
  seo: {
  title: "Class II Group E, F & G Dusts — Vacuum Cleaner",
@@ -684,7 +689,7 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "atex-vs-north-american",
  name: "ATEX vs North American",
- title: "ATEX and the North American scheme: two systems",
+ title: "ATEX and the North American scheme: two systems, not one",
  eyebrow: "Jurisdictions",
  seo: {
  title: "ATEX vs Class/Division — Hazardous Area Schemes",
@@ -717,7 +722,7 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  heading: "What PrestiVac can state",
  body: [
- "Our certification is North American. The EX1 HEPA line is UL 1203 Certified under UL 1203 certification, naming Class I, Group D; Class II, Groups E, F and G; Temperature Code T3C, with the scope described as \u201cDry Vacuum Cleaner, Model Ex 1-xx HEPA.\u201d",
+ "Our certification is North American — CSA Certificate 70122393, assessed against UL 1203 (5th Edition). The EX1 HEPA line is covered for Class I, Gp. D; Class II, Gps. E, F and G; Temp. Code T3C. The EV EX HEPA line is covered for Class II, Div. 2, Gps. F and G only. We do not claim ATEX or IECEx approval.",
  "We do not claim ATEX certification. If you are specifying for a European site or any jurisdiction outside our certificate's coverage, tell us the requirement and we will tell you precisely what documentation applies to the configuration rather than implying an equivalence that does not exist.",
  ],
  },
@@ -755,7 +760,7 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  {
  slug: "combustible-dust-classification",
  name: "Combustible dust classification",
- title: "Combustible dust classification: what OSHA and",
+ title: "Combustible dust classification: what OSHA and NFPA actually require",
  eyebrow: "Standards",
  seo: {
  title: "Combustible Dust Classification — OSHA & NFPA 660",
@@ -831,6 +836,17 @@ export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
  { label: "Dusts & materials directory", href: "/materials" },
  ],
  },
+];
+
+/**
+ * Published topics: classification pages plus the standards pages.
+ * Routes, sitemap and the index all derive from this array.
+ */
+export const HAZARDOUS_LOCATION_TOPICS: HazardousLocationTopic[] = [
+ ...CLASSIFICATION_TOPICS,
+ UL1203_TOPIC,
+ ...NFPA_TOPICS,
+ ...REGULATORY_TOPICS,
 ];
 
 export function getHazardousLocationTopic(slug: string) {

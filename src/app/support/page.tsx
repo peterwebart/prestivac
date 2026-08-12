@@ -175,13 +175,15 @@ export default function SupportPage() {
               PrestiVac Inc. designs and builds industrial vacuum systems at its head office and
               production facility in Dover, Delaware. The range covers explosion-proof, HEPA,
               air-operated, wet and dry, central and custom-built units, with more than 200
-              versions built to order across a combined 25 years of experience.
+              versions built to order across more than 40 years of experience.
             </p>
             <p className="mt-3.5 text-[14px]/[1.75] text-white/70">
-              Equipment is built to recognised NRTL standards, and the EX1 HEPA line is UL 1203 Certified
-              under UL 1203 certification — Class I, Group D; Class II, Groups E, F
-              and G; Temperature Code T3C. Certification coverage varies by line and configuration,
-              and we will send the documents that apply to the unit you are asking about.
+              Our listing is CSA Certificate 70122393, assessed against UL 1203 (5th Edition). It
+              carries two scopes: the EX1 HEPA line is covered for Class I, Gp.&nbsp;D; Class II,
+              Gps.&nbsp;E, F and G; Temp. Code T3C. The EV EX HEPA line is covered for Class II,
+              Div.&nbsp;2, Gps.&nbsp;F and G only — no Class I, and no Group&nbsp;E metal dusts. Not
+              every model is included, and we will send the documents that apply to the unit you are
+              asking about.
             </p>
             <div className="mt-6 flex flex-wrap gap-2.5 text-[12px]">
               <Link href="/about" className="rounded-full bg-white/[0.06] px-3.5 py-1.5 font-semibold text-white/70 ring-1 ring-white/10 transition-colors hover:text-white">

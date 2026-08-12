@@ -2,6 +2,29 @@ import { FileText } from "lucide-react";
 
 import { FACTORY_LINES, BROCHURE_CORPUS_SIZE } from "@/lib/data/factory-lines";
 
+/**
+ * Brochure-derived certification claims are HELD until verified.
+ *
+ * The `cert` strings in factory-lines.ts were extracted automatically from the
+ * brochure corpus and mapped at LINE level, not per model. Several conflict
+ * with the CSA UL 1203 scope confirmed by the technical department in
+ * August 2026 (see src/lib/data/certification.ts):
+ *
+ * - The AVX (air-operated) block claims "Class I, Division 1, Groups A, B, C
+ * and D T6" under NEC/NFPA 70. The confirmed UL 1203 listing covers Class I
+ * Group D only, at Temperature Code T3C, and covers electric models only —
+ * the technical department confirmed AVX is not within it.
+ * - The AVX and EVX blocks carry ATEX/IECEx-style markings ("II 2 GD c IIC
+ * T6", "EPL Db and EPL Gb"). These belong to a different certification
+ * scheme that was not covered by the technical department's answers. They
+ * may well be legitimate, which is why they are held rather than deleted.
+ *
+ * Publishing a Groups A–D claim beside a corrected Group D claim would put two
+ * contradictory safety statements on the same site. Set this to true only once
+ * each claim is confirmed against the issuing certificate.
+ */
+const BROCHURE_CERT_CLAIMS_VERIFIED = false;
+
 const SERIES_DISPLAY: Record<string, string> = {
   avx: "AVX Series — air-operated explosion-proof",
   evx: "EVX Series — electric explosion-proof",
@@ -54,7 +77,7 @@ export function FactoryLineSpecs() {
               </span>
             </div>
 
-            {line.cert.length > 0 && (
+            {BROCHURE_CERT_CLAIMS_VERIFIED && line.cert.length > 0 && (
               <ul className="mt-3 space-y-1.5">
                 {line.cert.map((c) => (
                   <li key={c} className="rounded-lg bg-brand-500/[0.08] px-3 py-2 text-[11.5px]/[1.55] font-semibold text-brand-200 ring-1 ring-brand-500/25">

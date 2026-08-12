@@ -7,7 +7,7 @@ import { subpageJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 const description =
-  "Contact PrestiVac USA Inc. about explosion-proof and HEPA industrial vacuums. Tell us your material and area classification and we will answer properly first time.";
+  "Contact PrestiVac Inc. about explosion-proof and HEPA industrial vacuums. Tell us your material and area classification and we will answer properly first time.";
 
 export const metadata: Metadata = {
   title: "Contact PrestiVac",

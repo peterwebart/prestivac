@@ -1,5 +1,10 @@
 import type { GuideArticle } from "@/components/templates/guide-article";
 
+import { UL1203_EQUIPMENT_NOTE } from "@/lib/data/certification";
+import { COMPARISON_GUIDES } from "@/lib/data/guides-comparison";
+import { RECOVERED_GUIDES } from "@/lib/data/guides-recovered";
+import { SELECTION_GUIDES } from "@/lib/data/guides-selection";
+
 /**
  * Standalone explainer articles.
  *
@@ -12,11 +17,11 @@ import type { GuideArticle } from "@/components/templates/guide-article";
  * - Certification referenced: UL 1203 (explosion proof lines).
  */
 
-export const GUIDE_ARTICLES: GuideArticle[] = [
+export const EXPLAINER_GUIDES: GuideArticle[] = [
  {
  slug: "what-is-black-dust",
  name: "What is black dust?",
- title: "Black dust in industrial settings: what it",
+ title: "Black dust in industrial settings: what it is and why it matters",
  eyebrow: "Identification",
  minutes: 7,
  seo: {
@@ -110,7 +115,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "recovered-dust-disposal-and-reclaim",
  name: "Recovered dust: reclaim or dispose?",
- title: "What to do with recovered dust — reclaim, recycle",
+ title: "What to do with recovered dust — reclaim, recycle or dispose",
  eyebrow: "Operations",
  minutes: 6,
  seo: {
@@ -266,7 +271,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "vacuum-vs-dust-collector",
  name: "Vacuum vs dust collector",
- title: "Industrial vacuum or dust collector? They solve",
+ title: "Industrial vacuum or dust collector? They solve different problems",
  eyebrow: "Equipment comparison",
  minutes: 7,
  seo: {
@@ -390,7 +395,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "sources-of-ignition",
  name: "Sources of ignition",
- title: "Sources of ignition in dust handling: the list",
+ title: "Sources of ignition in dust handling: the list that matters",
  eyebrow: "Fundamentals",
  minutes: 8,
  seo: {
@@ -483,7 +488,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "dust-explosion-basics",
  name: "Dust explosion basics",
- title: "How dust explosions actually work — and why the",
+ title: "How dust explosions actually work — and why the second one destroys buildings",
  eyebrow: "Fundamentals",
  minutes: 7,
  seo: {
@@ -648,7 +653,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  {
  slug: "esd-anti-static-vacuums",
  name: "ESD & anti-static vacuums",
- title: "Anti-static and ESD-safe vacuums: two different",
+ title: "Anti-static and ESD-safe vacuums: two different goals",
  eyebrow: "Equipment selection",
  minutes: 6,
  seo: {
@@ -690,7 +695,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  heading: "What to specify",
  body: [
  "State the material, the area classification if one applies, and whether the concern is ignition, component protection or both. Ask about the whole accessory chain rather than the unit alone — hose, wand, tools and the bonding between them, since the path to ground is only as good as its weakest link. Ask what the filtration is tested to if exhaust quality matters.",
- "PrestiVac's EX1 HEPA line is UL 1203 Certified under UL 1203 certification for Class I, Group D and Class II, Groups E, F and G at Temperature Code T3C. Coverage varies by line and configuration, so ask us for the documents applicable to the unit you are specifying rather than assuming a family-wide claim.",
+ UL1203_EQUIPMENT_NOTE,
  ],
  },
  ],
@@ -724,6 +729,18 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
  { label: "HEPA vacuums", href: "/products/hepa-vacuums" },
  ],
  },
+];
+
+/**
+ * Public guide collection. Explainers first, then comparison and selection
+ * guides. Routes, sitemap, nav menus and the index page all derive from this
+ * array, so adding a guide to any source file publishes it everywhere.
+ */
+export const GUIDE_ARTICLES: GuideArticle[] = [
+  ...EXPLAINER_GUIDES,
+  ...COMPARISON_GUIDES,
+  ...SELECTION_GUIDES,
+  ...RECOVERED_GUIDES,
 ];
 
 export function getGuideArticle(slug: string) {

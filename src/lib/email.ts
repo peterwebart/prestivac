@@ -15,14 +15,21 @@ import { site } from "@/lib/site";
  *                    "onboarding@resend.dev" while testing.
  *   RESEND_TO        optional. Where enquiries are delivered.
  *                    Defaults to site.formsEmail (prestivac@gmail.com).
- *                    Comma-separate for several recipients.
+ *                    Comma-separate for several recipients; note this REPLACES
+ *                    the default rather than adding to it.
+ *                    Onward distribution is handled by forwarding rules on that
+ *                    mailbox, not here.
  *
  * Anything unverified in Resend will be rejected by their API with a 4xx, which
  * this surfaces rather than swallowing — a form that reports success while the
  * email bounced is the failure mode worth avoiding.
  */
 
-const RESEND_ENDPOINT = "https://api.resend.com/emails";
+/**
+ * Overridable only so delivery can be exercised against a local mock in
+ * testing. Unset in every real environment, which uses Resend directly.
+ */
+const RESEND_ENDPOINT = process.env.RESEND_ENDPOINT || "https://api.resend.com/emails";
 
 export function resendConfigured(): boolean {
   return Boolean(process.env.RESEND_API_KEY);

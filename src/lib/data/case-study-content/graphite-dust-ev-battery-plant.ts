@@ -156,7 +156,7 @@ export const graphiteDustBatteryPlant: CaseStudy = {
  ],
  relatedIndustries: [
  { label: "Battery Manufacturing — industry deep dive", href: "/industries/battery" },
- { label: "Automotive", href: "/#automotive" },
+ { label: "Automotive", href: "/industries/automotive" },
  { label: "Electronics & Semiconductors", href: "/industries#electronics" },
  { label: "Recycling", href: "/industries#recycling" },
  ],

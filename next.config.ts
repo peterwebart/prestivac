@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+import { LEGACY_REDIRECTS } from "./src/lib/redirects";
+
 /**
  * App-level security headers. TLS/HSTS termination is handled by the
  * reverse proxy (Coolify/Traefik) per the infrastructure contract.
@@ -27,40 +29,14 @@ const nextConfig: NextConfig = {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
   /**
-   * Campaign landing-page aliases.
+   * Legacy URL redirects.
    *
-   * The Google Ads briefs specify short root URLs. Where an equivalent page
-   * already exists, we redirect rather than duplicate — two pages targeting the
-   * same intent would cannibalise each other. Ad final URLs handle a 301 fine.
+   * Campaign aliases plus the full map built from the Search Console
+   * "Not found (404)" report. See src/lib/redirects.ts for the strategy and
+   * per-URL reasoning.
    */
   async redirects() {
-    return [
-      {
-        source: "/explosion-proof-vacuums",
-        destination: "/products/explosion-proof-vacuums",
-        permanent: true,
-      },
-      {
-        source: "/air-operated-vacuums",
-        destination: "/products/pneumatic-vacuums",
-        permanent: true,
-      },
-      {
-        source: "/powder-coating-dust-recovery",
-        destination: "/applications/powder-coating",
-        permanent: true,
-      },
-      {
-        source: "/metal-dust-recovery",
-        destination: "/materials/combustible-metal-dust",
-        permanent: true,
-      },
-      {
-        source: "/compliance",
-        destination: "/hazardous-locations",
-        permanent: true,
-      },
-    ];
+    return LEGACY_REDIRECTS;
   },
 };
 

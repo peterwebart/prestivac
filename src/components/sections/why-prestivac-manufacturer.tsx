@@ -21,11 +21,16 @@ const PILLARS = [
   },
 ];
 
-/** Classification ratings as supplied by PrestiVac. */
+/**
+ * Certified classification scope, quoted from CSA Certificate 70122393.
+ * TWO scopes — do not merge them. Class I is Group D only, and the EV line has
+ * no Class I coverage at all, Division 2 only, and no Group E.
+ * See src/lib/data/certification.ts.
+ */
 const RATINGS = [
-  "Class I, Divisions 1 & 2, Groups A, B, C & D (gases, vapors or liquids)",
-  "Class II, Divisions 1 & 2, Groups E, F & G (combustible dusts)",
-  "Dust Ignition Protected",
+  "EX1 HEPA line — Class I, Gp. D; Class II, Gps. E, F & G; Temp. Code T3C",
+  "EV EX HEPA line — Class II, Div. 2, Gps. F & G",
+  "CSA Certificate 70122393",
 ];
 
 export function WhyPrestivacManufacturer() {

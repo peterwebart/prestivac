@@ -150,9 +150,9 @@ export const magnesiumFinesAutomotiveComponents: CaseStudy = {
  },
  ],
  relatedIndustries: [
- { label: "Automotive", href: "/#automotive" },
- { label: "Aerospace", href: "/#aerospace" },
- { label: "Metalworking", href: "/#metalworking" },
+ { label: "Automotive", href: "/industries/automotive" },
+ { label: "Aerospace", href: "/industries/aerospace" },
+ { label: "Metalworking", href: "/industries/metalworking" },
  ],
  relatedProducts: [
  "explosion-proof-vacuums",

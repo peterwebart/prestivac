@@ -1,3 +1,5 @@
+import { isUL1203Certified } from "@/lib/data/certification";
+
 /**
  * Real PrestiVac model lineup from client-supplied product photography.
  * Model names are reproduced verbatim from the client's files; configuration
@@ -43,16 +45,18 @@ export const MODEL_LINEUP: ModelSeries[] = [
  categoryHref: "/products/explosion-proof-vacuums",
  models: [
  { name: "EVX-5 EX RCT IS HEPA", image: "/images/products/models/evx-5-ex-rct-is-hepa.jpg", tags: ["EX", "HEPA", "RCT", "IS"] },
+ /* Photography pending — currently uses the nearest 5-gal EVX variant image. */
+ { name: "EVX-5 EX HEPA", image: "/images/products/models/evx-5-ex-hepa.jpg", tags: ["EX", "HEPA"] },
  { name: "EVX-5-10 EX HEPA", image: "/images/products/models/evx-5-10-ex-hepa.jpg", tags: ["EX", "HEPA"] },
  { name: "EVX-5-10 EX MR HEPA", image: "/images/products/models/evx-5-10-ex-mr-hepa.jpg", tags: ["EX", "HEPA", "MR"] },
- { name: "EVX-10 EX", image: "/images/products/models/evx-10-ex.jpg", tags: ["EX"] },
+ { name: "EVX-10 EX HEPA", image: "/images/products/models/evx-10-ex.jpg", tags: ["EX", "HEPA"] },
  { name: "EVX-10 EX RCT HEPA", image: "/images/products/models/evx-10-ex-rct-hepa.jpg", tags: ["EX", "HEPA", "RCT"] },
  { name: "EVX-15 EX", image: "/images/products/models/evx-15-ex.jpg", tags: ["EX"] },
  { name: "EVX-15 EX HEPA", image: "/images/products/models/evx-15-ex-hepa.jpg", tags: ["EX", "HEPA"] },
  { name: "EVX-15 EX MR HEPA", image: "/images/products/models/evx-15-ex-mr-hepa.jpg", tags: ["EX", "HEPA", "MR"] },
  { name: "EVX-20 EX RCT HEPA", image: "/images/products/models/evx-20-ex-rct-hepa.jpg", tags: ["EX", "HEPA", "RCT"] },
  { name: "EVX-25 EX RCT HEPA", image: "/images/products/models/evx-25-ex-rct-hepa.jpg", tags: ["EX", "HEPA", "RCT"] },
- { name: "EVX-55", image: "/images/products/models/evx-55.jpg", tags: [] },
+ { name: "EVX-55 EX HEPA", image: "/images/products/models/evx-55.jpg", tags: ["EX", "HEPA"] },
  ],
  },
  {
@@ -62,6 +66,8 @@ export const MODEL_LINEUP: ModelSeries[] = [
  categoryHref: "/products/hepa-vacuums",
  models: [
  { name: "EX1-5 RCT IS HEPA", image: "/images/products/models/ex1-5-rct-is-hepa.jpg", tags: ["HEPA", "RCT", "IS"] },
+ /* Photography pending — currently uses the nearest 5-gal EX1 variant image. */
+ { name: "EX1-5 HEPA", image: "/images/products/models/ex1-5-hepa.jpg", tags: ["HEPA"] },
  { name: "EX1-5-10 MR HEPA", image: "/images/products/models/ex1-5-10-mr-hepa.jpg", tags: ["HEPA", "MR"] },
  { name: "EX1-10 HEPA", image: "/images/products/models/ex1-10-hepa.jpg", tags: ["HEPA"] },
  { name: "EX1-15 HEPA", image: "/images/products/models/ex1-15-hepa.jpg", tags: ["HEPA"] },
@@ -70,7 +76,7 @@ export const MODEL_LINEUP: ModelSeries[] = [
  { name: "EX1-15 RCT HEPA", image: "/images/products/models/ex1-15-rct-hepa.jpg", tags: ["HEPA", "RCT"] },
  { name: "EX1-20 RCT HEPA", image: "/images/products/models/ex1-20-rct-hepa.jpg", tags: ["HEPA", "RCT"] },
  { name: "EX1-25 RCT HEPA", image: "/images/products/models/ex1-25-rct-hepa.jpg", tags: ["HEPA", "RCT"] },
- { name: "EX1-55", image: "/images/products/models/ex1-55.jpg", tags: [] },
+ { name: "EX1-55 HEPA", image: "/images/products/models/ex1-55.jpg", tags: ["HEPA"] },
  ],
  },
  {
@@ -113,7 +119,11 @@ export type FlatModel = ProductModel & {
  seriesName: string;
  seriesBlurb: string;
  categoryHref: string;
- /** Only the EX1 line falls under UL 1203 certification (Ex 1-xx HEPA scope). */
+ /**
+ * UL 1203 certification status, resolved per MODEL from the confirmed
+ * certified list in certification.ts. Previously derived from series id,
+ * which incorrectly flagged the air-operated AVX line and every EVX model.
+ */
  csaCertified: boolean;
 };
 
@@ -125,7 +135,7 @@ export const ALL_MODELS: FlatModel[] = MODEL_LINEUP.flatMap((series) =>
  seriesName: series.name,
  seriesBlurb: series.blurb,
  categoryHref: series.categoryHref,
- csaCertified: ["ex1", "evx", "avx"].includes(series.id),
+ csaCertified: isUL1203Certified(model.name),
  })),
 );
 

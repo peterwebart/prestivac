@@ -62,10 +62,81 @@ export const FAQ: FaqItem[] = [
  category: "standards",
  question: "Which of your vacuums are certified, and for what?",
  answer:
- "The EX1 HEPA line is UL 1203 Certified under UL 1203 certification, covering Class I, Group D; Class II, Groups E, F and G; Temperature Code T3C, with the scope described as \"Dry Vacuum Cleaner, Model Ex 1-xx HEPA.\" Coverage varies by line and configuration, so the honest answer for any specific unit is to read it off the certificate — ask us for the documents that apply to the configuration you are specifying and to your jurisdiction. We do not claim ATEX or intrinsic-safety approvals.",
+ "Our listing is CSA Certificate 70122393, assessed against UL 1203 (5th Edition). It carries two scopes, and they are not interchangeable. The EX1 HEPA drum-type line is covered for Class I, Gp. D; Class II, Gps. E, F and G; Temp. Code T3C. The EV EX HEPA line is covered for Class II, Div. 2, Gps. F and G only — no Class I, Division 2 rather than Division 1, and no Group E, which is the conductive metal-dust group. Commercial indoor use only. Each model page states which scope applies. The air-operated AVX line holds no NRTL certificate at all. We do not claim ATEX or intrinsic-safety approvals.",
  related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
  { label: "Hazardous location vacuums", href: "/hazardous-location-vacuums" },
  { label: "ATEX vs North American", href: "/hazardous-locations/atex-vs-north-american" },
+ ],
+ },
+ {
+ id: "ul1203-class-i-groups",
+ category: "standards",
+ question: "Does your UL 1203 listing cover Class I Groups A, B and C?",
+ answer:
+ "No. Class I is Group D only — propane, methane and most common hydrocarbons and industrial solvents. Groups A, B and C cover acetylene, hydrogen and ethylene and are not within our listing. Note also that Class I coverage applies to the EX1 HEPA line only; the EV EX HEPA line has no Class I coverage at all, and is limited to Class II, Division 2, Groups F and G.",
+ related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+ { label: "Class II Groups E, F & G", href: "/hazardous-locations/class-ii-groups-e-f-g" },
+ ],
+ },
+ {
+ id: "metal-dust-which-line",
+ category: "standards",
+ question: "Which line is certified for metal dust?",
+ answer:
+ "The EX1 HEPA line. Its scope includes Class II, Groups E, F and G, and Group E is the conductive metal-dust group. The EV EX HEPA line is covered for Groups F and G only, so it does not carry Group E coverage — which matters directly in metalworking, aerospace, foundry and battery applications where the dust is frequently Group E. If you are specifying for aluminium, titanium, magnesium or other metal dust, ask us to confirm the line and scope against your area classification before ordering.",
+ related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+ { label: "Class II Groups E, F & G", href: "/hazardous-locations/class-ii-groups-e-f-g" },
+ { label: "Combustible metal dust", href: "/materials/combustible-metal-dust" },
+ { label: "NFPA 484", href: "/hazardous-locations/nfpa-484" },
+ ],
+ },
+ {
+ id: "division-1-which-line",
+ category: "standards",
+ question: "Which line can be used in a Division 1 area?",
+ answer:
+ "That depends on the line and on your area classification. The EX1 HEPA line is listed under explosion-proof and dust-ignition-proof enclosure standards. The EV EX HEPA line is listed as nonincendive equipment for Class II, Division 2 — it is not a Division 1 listing. Because Division 1 means the hazardous atmosphere is expected in normal operation, this distinction is not a technicality. Confirm the classification with your engineer and let us match the line to it.",
+ related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+ { label: "Class II, Division 1", href: "/hazardous-locations/class-ii-division-1" },
+ { label: "NFPA 70 / NEC", href: "/hazardous-locations/nfpa-70-nec" },
+ ],
+ },
+ {
+ id: "ul1203-own-hoses-tools",
+ category: "standards",
+ question: "Can I use my own hoses and tools with a certified vacuum?",
+ answer:
+ "Not while keeping the unit in its certified configuration. The listing covers the vacuum together with PrestiVac-supplied hoses and tools, and static-dissipating hose and filters are required. Fitting a hose from general stores or a tool borrowed from another machine takes the unit outside the scope of its listing without anything visibly changing — which is why this tends to happen in service rather than at purchase.",
+ related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+ { label: "Accessories", href: "/products/accessories" },
+ ],
+ },
+ {
+ id: "pneumatic-not-ul1203",
+ category: "standards",
+ question: "Why are the air-operated units not UL 1203 certified?",
+ answer:
+ "Because UL 1203 is a standard for explosion-proof and dust-ignition-proof electrical equipment, and the AVX line has no electrical components anywhere on the unit. It is a question of scope rather than a shortfall: enclosing an electrical ignition source and removing it entirely are two routes to the same objective, and a standard written for the first does not apply to the second.",
+ related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+ { label: "Electric vs pneumatic", href: "/guides/electric-vs-pneumatic-vacuums" },
+ { label: "Pneumatic Vacuums", href: "/products/pneumatic-vacuums" },
+ ],
+ },
+ {
+ id: "ul1203-grounding",
+ category: "operation",
+ question: "How must a certified vacuum be grounded?",
+ answer:
+ "Grounded and bonded in accordance with the National Electrical Code, Article 250. Static-dissipating hose and filters are part of the required configuration. The practical point is that the path has to be continuous from the tool through the hose to the container — a grounded machine with a non-conductive hose attached leaves the charge generated in the hose with nowhere to go, and the machine will keep working normally without anyone noticing.",
+ related: [
+ { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+ { label: "Sources of ignition", href: "/guides/sources-of-ignition" },
  ],
  },
  {

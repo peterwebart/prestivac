@@ -31,9 +31,9 @@ export const graphiteDustGuide: MaterialGuideData = {
  ],
  industries: [
  { label: "Battery Manufacturing", href: "/industries/battery" },
- { label: "Automotive & EV", href: "/#automotive" },
+ { label: "Automotive & EV", href: "/industries/automotive" },
  { label: "Electronics & Semiconductors", href: "/industries#electronics" },
- { label: "Metalworking & Foundries", href: "/#metalworking" },
+ { label: "Metalworking & Foundries", href: "/industries/metalworking" },
  { label: "Recycling", href: "/industries#recycling" },
  { label: "Mining & Minerals", href: "/industries#mining" },
  ],

@@ -150,10 +150,10 @@ export const titaniumPowderAdditiveManufacturing: CaseStudy = {
  },
  ],
  relatedIndustries: [
- { label: "Additive Manufacturing", href: "/#additive-manufacturing" },
- { label: "Aerospace", href: "/#aerospace" },
+ { label: "Additive Manufacturing", href: "/industries/additive-manufacturing" },
+ { label: "Aerospace", href: "/industries/aerospace" },
  { label: "Medical Devices", href: "/industries#medical-devices" },
- { label: "Automotive", href: "/#automotive" },
+ { label: "Automotive", href: "/industries/automotive" },
  ],
  relatedProducts: [
  "explosion-proof-vacuums",

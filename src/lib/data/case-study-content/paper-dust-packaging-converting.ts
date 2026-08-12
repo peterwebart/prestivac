@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const paperDustPackagingConverting: CaseStudy = {
   slug: "paper-dust-packaging-converting",
-  title: "Controlling Paper and Corrugated Dust in a",
+  title: "Controlling Paper and Corrugated Dust in a Converting Plant",
   subtitle:
     "A representative scenario: how a high-speed corrugated converting operation brought fibre dust under control without slowing the lines.",
   date: "2026-02-18",

@@ -17,11 +17,12 @@ const navItems: NavItem[] = [
   { label: "Resources", href: "/resources", hasMenu: true },
   { label: "About", href: "/about" },
   { label: "Get a Quote", href: "/get-a-quote", mobileOnly: true },
+  { label: "Contact", href: "/contact", mobileOnly: true },
 ];
 
 export const site = {
   name: "PrestiVac",
-  legalName: "PrestiVac USA Inc.",
+  legalName: "PrestiVac Inc.",
   /** Bare domain, used to build the default Resend sending address. */
   domain: "prestivac.com",
   /** Long-form positioning line — used in metadata and marketing copy. */
@@ -32,12 +33,16 @@ export const site = {
   title: "Explosion Proof Industrial Vacuum Manufacturer",
   description:
     "Manufacturer of certified vacuum cleaners for combustible dusts and flammable liquids and solvents. UL 1203 certified explosion-proof and dust-ignition-proof electrical vacuum cleaners for Hazardous (Classified) Locations. Solid stainless steel, 200+ models, made in the USA.",
-  /** Confirmed public contact details for PrestiVac USA Inc. */
+  /** Confirmed public contact details for PrestiVac Inc. */
   email: "info@prestivac.com",
   /**
    * Where form submissions are DELIVERED. Deliberately separate from `email`,
    * which is the address displayed publicly in the footer, on the contact page and
    * in schema. Changing one should not silently change the other.
+   *
+   * Single inbox by design: PrestiVac forwards from here to whoever needs a copy,
+   * so routing is managed in the mailbox rather than in this codebase. Do not add
+   * recipients here — add a forwarding rule in Gmail instead.
    *
    * Overridable at runtime by RESEND_TO for Resend delivery.
    */

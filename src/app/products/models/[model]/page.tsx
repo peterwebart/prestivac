@@ -7,6 +7,11 @@ import { notFound } from "next/navigation";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import {
+  UL1203,
+  UL1203_CONDITIONS,
+  scopeForModel,
+} from "@/lib/data/certification";
 import { ALL_MODELS, findModelBySlug, seriesModels } from "@/lib/data/product-models";
 import { subpageJsonLd } from "@/lib/schema";
 
@@ -73,9 +78,9 @@ export default async function ProductModelPage({
     {
       label: "Certification",
       value: model.csaCertified
-        ? "UL 1203 Certified — UL 1203"
+        ? `${UL1203.standard} (${UL1203.edition}) — ${UL1203.issuer} cert. ${UL1203.certificateNumber}`
         : model.tags.includes("EX")
-          ? "Explosion-proof construction"
+          ? "Explosion-proof construction — not within the UL 1203 listing"
           : "See datasheet",
     },
   ];
@@ -218,31 +223,46 @@ export default async function ProductModelPage({
               </p>
             </div>
 
-            {/* UL 1203 certification — explosion proof lines */}
+            {/* UL 1203 certification — derived from certification.ts */}
             {model.csaCertified ? (
               <div className="rounded-2xl border border-brand-500/30 bg-brand-500/[0.07] p-6">
                 <div className="flex items-center gap-2.5">
                   <ShieldCheck aria-hidden className="size-5 text-brand-400" strokeWidth={1.8} />
-                  <h2 className="font-display text-[16px] font-extrabold text-white">UL 1203 Certified</h2>
+                  <h2 className="font-display text-[16px] font-extrabold text-white">
+                    {UL1203.standard} Certified
+                  </h2>
                 </div>
                 <p className="mt-3 text-[13.5px]/[1.65] text-white/75">
-                  Our explosion proof vacuum cleaners are UL 1203 certified for use in Hazardous (Classified) Locations.
+                  This model is listed by {UL1203.issuer} to {UL1203.standard}{" "}
+                  ({UL1203.edition}) for use in Hazardous (Classified) Locations.
                 </p>
                 <ul className="mt-4 space-y-2">
-                  {[
-                    "Class I, Group D",
-                    "Class II, Groups E, F, G",
-                    "Temperature Code T3C",
-                  ].map((line) => (
+                  {(scopeForModel(model.name)?.lines ?? []).map((line: string) => (
                     <li key={line} className="flex items-center gap-2 text-[13px] text-white/80">
                       <Check aria-hidden className="size-4 text-brand-400" />
                       {line}
                     </li>
                   ))}
                 </ul>
+                <div className="mt-5 border-t border-white/10 pt-4">
+                  <p className="text-[12px] font-bold uppercase tracking-[0.14em] text-brand-300">
+                    Conditions of the certified configuration
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {UL1203_CONDITIONS.map((condition) => (
+                      <li key={condition.title} className="text-[12.5px]/[1.6] text-white/70">
+                        <span className="font-semibold text-white/85">{condition.title}:</span>{" "}
+                        {condition.detail}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <p className="mt-4 text-[11.5px]/[1.55] text-white/45">
-                  Hazardous-location suitability follows the certificate scope; confirm the
-                  configuration against the datasheet for your area classification.
+                  Certificate {UL1203.certificateNumber} (Master Contract {UL1203.masterContract}),
+                  scope &ldquo;{scopeForModel(model.name)?.certificateWording}&rdquo;.{" "}
+                  {UL1203.useLimitation} The listing does not extend beyond the scope above —
+                  suitability for your application still depends on the material and on the area
+                  classification assigned by your engineer.
                 </p>
               </div>
             ) : (

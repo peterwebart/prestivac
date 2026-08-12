@@ -30,10 +30,10 @@ export const titaniumDustGuide: MaterialGuideData = {
  "What sets titanium apart is what happens if prevention fails: burning titanium is a Class D metal fire that water and standard agents can intensify. The engineering answer is to make burning impossible by state change — air-operated recovery with no electrical ignition sources, a verified grounding path against static, and immersion separation that wets fines the moment they enter the system.",
  ],
  industries: [
- { label: "Additive Manufacturing", href: "/#additive-manufacturing" },
- { label: "Aerospace", href: "/#aerospace" },
+ { label: "Additive Manufacturing", href: "/industries/additive-manufacturing" },
+ { label: "Aerospace", href: "/industries/aerospace" },
  { label: "Medical Devices", href: "/industries#medical-devices" },
- { label: "Automotive", href: "/#automotive" },
+ { label: "Automotive", href: "/industries/automotive" },
  { label: "CNC Machining", href: "/applications/cnc-machining" },
  { label: "Metal 3D Printing", href: "/applications/metal-3d-printing" },
  { label: "Surface Finishing", href: "/applications#metalworking-machining" },

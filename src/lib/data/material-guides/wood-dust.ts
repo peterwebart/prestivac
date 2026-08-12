@@ -30,7 +30,7 @@ export const woodDustGuide: MaterialGuideData = {
  "Wood dust adds a health dimension most combustible dusts don't carry: it is classified as a human carcinogen (IARC Group 1), which makes capture-at-source with HEPA-retained exhaust an exposure control as much as a fire-safety one. Sweeping and blowdown — the traditional shop reflexes — fail both tests at once, resuspending the finest fraction at breathing height.",
  ],
  industries: [
- { label: "Woodworking", href: "/#woodworking" },
+ { label: "Woodworking", href: "/industries/woodworking" },
  { label: "Furniture & Cabinet Shops", href: "/applications#woodworking" },
  { label: "Sawmills", href: "/applications#woodworking" },
  { label: "Paper & Packaging", href: "/industries#paper-packaging" },

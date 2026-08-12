@@ -151,10 +151,10 @@ export const aluminumDustAutomotiveMachining: CaseStudy = {
  },
  ],
  relatedIndustries: [
- { label: "Automotive", href: "/#automotive" },
- { label: "Aerospace", href: "/#aerospace" },
- { label: "Metalworking", href: "/#metalworking" },
- { label: "Additive Manufacturing", href: "/#additive-manufacturing" },
+ { label: "Automotive", href: "/industries/automotive" },
+ { label: "Aerospace", href: "/industries/aerospace" },
+ { label: "Metalworking", href: "/industries/metalworking" },
+ { label: "Additive Manufacturing", href: "/industries/additive-manufacturing" },
  ],
  relatedProducts: [
  "explosion-proof-vacuums",

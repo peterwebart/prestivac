@@ -303,7 +303,7 @@ export function ProductCatalog() {
           No model names match &ldquo;{query}&rdquo;. Series and configurations
           not shown here are quoted directly —{" "}
           <a href="/get-a-quote" className="font-bold text-brand-400">
-            demandez-nous
+            ask us
           </a>
           .
         </p>

@@ -11,7 +11,7 @@ import { pairedAlternates } from "@/lib/i18n";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "PrestiVac USA Inc. is a national leader in industrial vacuum systems with over 35 years of experience — high quality solid stainless steel construction, powerful suction, efficient filtration and 200+ models. Privately owned and operated, designed and manufactured in the USA.";
+  "PrestiVac Inc. is a national leader in industrial vacuum systems with over 40 years of experience — high quality solid stainless steel construction, powerful suction, efficient filtration and 200+ models. Privately owned and operated, designed and manufactured in the USA.";
 
 export const metadata: Metadata = {
   title: "About",
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <Reveal delay={0.1}>
               <div className="space-y-5 text-[15px]/[1.8] text-steel-600">
                 <p>
-                  With its owners and staff having over 35 years of experience,
+                  With its owners and staff having over 40 years of experience,
                   PrestiVac is a leader in the national market, maintaining the
                   status of &ldquo;best in class&rdquo; by committing to
                   excellence. We provide the finest safety practices in the work
@@ -91,7 +91,7 @@ export default function AboutPage() {
                   who will be using it.
                 </p>
                 <p>
-                  PrestiVac USA Inc. is privately owned and operated. All design
+                  PrestiVac Inc. is privately owned and operated. All design
                   and manufacturing is done at our head office and production
                   facility situated in Dover, DE. Our manufacturing facility
                   allows us to offer the highest quality standards and enables us

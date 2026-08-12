@@ -40,7 +40,7 @@ account. Switch to your own domain for real traffic.
 |---|---|---|
 | `RESEND_API_KEY` | **yes** | the `re_...` key from step 1 |
 | `RESEND_FROM` | no | `PrestiVac Website <noreply@prestivac.com>` — must be on the verified domain. Defaults to `noreply@prestivac.com` |
-| `RESEND_TO` | no | where enquiries go. Defaults to `prestivac@gmail.com`. Comma-separate for several recipients |
+| `RESEND_TO` | no | where enquiries go. Defaults to `prestivac@gmail.com`. Setting this **replaces** the default rather than adding to it. Onward distribution is handled by forwarding on that mailbox |
 
 Setting `RESEND_API_KEY` alone is enough — the other two have sensible defaults.
 

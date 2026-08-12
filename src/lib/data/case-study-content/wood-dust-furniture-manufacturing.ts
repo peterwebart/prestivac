@@ -151,7 +151,7 @@ export const woodDustFurnitureManufacturing: CaseStudy = {
  },
  ],
  relatedIndustries: [
- { label: "Woodworking", href: "/#woodworking" },
+ { label: "Woodworking", href: "/industries/woodworking" },
  { label: "Paper & Packaging", href: "/industries#paper-packaging" },
  { label: "Biomass & Energy", href: "/industries#energy" },
  ],

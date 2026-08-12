@@ -21,7 +21,7 @@ const COMPANY_LINKS = [
   { label: "Guides", href: "/guides" },
   { label: "Support & Manuals", href: "/support" },
   { label: "Standards & Compliance", href: "/hazardous-locations" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const linkClass =

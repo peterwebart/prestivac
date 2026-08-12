@@ -437,10 +437,10 @@ export default function HazardousLocationVacuumsPage() {
             <dl className="mt-5 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl bg-graphite-950/50 p-5 ring-1 ring-white/10">
                 <dt className="text-[11px] font-bold uppercase tracking-[0.12em] text-white/45">
-                  Certifying body &amp; reference
+                  Standard &amp; certifying body
                 </dt>
                 <dd className="mt-1.5 text-[13.5px] font-semibold text-white">
-                  UL 1203 — Underwriters Laboratories
+                  UL 1203 (5th Edition) — listed by CSA
                 </dd>
               </div>
               <div className="rounded-xl bg-graphite-950/50 p-5 ring-1 ring-white/10">
@@ -448,13 +448,12 @@ export default function HazardousLocationVacuumsPage() {
                   Models covered (scope)
                 </dt>
                 <dd className="mt-1.5 text-[13.5px] font-semibold text-white">
-                  &ldquo;Dry Vacuum Cleaner, Model Ex 1-xx HEPA&rdquo; — the EX1 line
-                  ({ex1.length} models)
+                  EX1 HEPA line and EV EX HEPA line ({ex1.length} models, two scopes)
                 </dd>
               </div>
             </dl>
             <ul className="mt-5 grid gap-2.5 sm:grid-cols-3">
-              {["Class I, Group D", "Class II, Groups E, F, G", "Temperature Code T3C"].map((item) => (
+              {["EX1 line — Class I, Gp. D; Cl. II, Gps. E, F & G; T3C", "EV EX HEPA line — Cl. II, Div. 2, Gps. F & G", "CSA Certificate 70122393"].map((item) => (
                 <li key={item} className="flex items-center gap-2 rounded-lg bg-graphite-950/50 px-4 py-3 text-[13px] text-white/85 ring-1 ring-white/10">
                   <Check aria-hidden className="size-4 shrink-0 text-brand-400" />
                   {item}

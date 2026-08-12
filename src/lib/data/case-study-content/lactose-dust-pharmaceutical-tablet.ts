@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/data/case-study-types";
 
 export const lactoseDustPharmaceuticalTablet: CaseStudy = {
  slug: "lactose-dust-pharmaceutical-tablet",
- title: "Containing Combustible Excipient Dust in a",
+ title: "Containing Combustible Excipient Dust in a Tablet Facility",
  subtitle:
  "How a representative North American contract manufacturer brought lactose and blend dust under control in its compression suites — satisfying explosion safety, exposure limits and cleaning validation with one recovery architecture.",
  date: "2026-07-15",
@@ -151,8 +151,8 @@ export const lactoseDustPharmaceuticalTablet: CaseStudy = {
  ],
  relatedIndustries: [
  { label: "Pharmaceutical — industry deep dive", href: "/industries/pharmaceutical" },
- { label: "Food Processing", href: "/#food-processing" },
- { label: "Chemical", href: "/#chemical" },
+ { label: "Food Processing", href: "/industries/food-beverage" },
+ { label: "Chemical", href: "/industries/chemical" },
  ],
  relatedProducts: [
  "hepa-vacuums",

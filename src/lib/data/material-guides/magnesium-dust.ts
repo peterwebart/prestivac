@@ -30,9 +30,9 @@ export const magnesiumDustGuide: MaterialGuideData = {
  "Collection adds a wrinkle unique among the metals in this library: wetting is how ignition is controlled — wet-type collection is the established practice for magnesium fines under NFPA 484 — but wet magnesium evolves hydrogen. The engineered answer holds both facts at once: fines are wetted on entry to prevent a dry, ignitable accumulation, and everything downstream is vented, promptly handled and never sealed airtight. Dedicated, grounded, air-operated equipment closes the ignition side of the specification.",
  ],
  industries: [
- { label: "Automotive", href: "/#automotive" },
- { label: "Aerospace", href: "/#aerospace" },
- { label: "Metal Fabrication", href: "/#metalworking" },
+ { label: "Automotive", href: "/industries/automotive" },
+ { label: "Aerospace", href: "/industries/aerospace" },
+ { label: "Metal Fabrication", href: "/industries/metalworking" },
  { label: "CNC Machining", href: "/applications/cnc-machining" },
  { label: "Die Casting", href: "/applications#metalworking-machining" },
  { label: "Surface Finishing", href: "/applications#metalworking-machining" },

@@ -197,7 +197,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "applications"],
     metaTitle: "HEPA Vacuums | Industrial HEPA Vacuum Cleaners",
     metaDescription:
-      "Industrial HEPA vacuums for fine and hazardous dust — 99.99% filtration at 0.3 µm for pharmaceutical powders, silica, lead and abatement work. The PrestiVac EX1 HEPA line is UL 1203 Certified.",
+      "Industrial HEPA vacuums for fine and hazardous dust — 99.99% filtration at 0.3 µm for pharmaceutical powders, silica, lead and abatement work. Certified models are listed by CSA to UL 1203.",
     selection: [
       {
         title: "Confirm the filtration requirement",
@@ -554,10 +554,11 @@ export default async function ProductCategoryPage({
             </div>
             {hasCertifiedLine ? (
               <p className="mt-3 max-w-3xl text-[13.5px]/[1.7] text-white/75">
-                The PrestiVac EX1 HEPA line is UL 1203 Certified under Certificate of Compliance
-                No.  — Class I, Group D; Class II, Groups E, F, G; Temperature Code T3C,
-                scope &ldquo;Dry Vacuum Cleaner, Model Ex 1-xx HEPA.&rdquo; Confirm the specific
-                configuration against the datasheet for your area classification.
+                Certified models are covered by CSA Certificate 70122393, assessed against UL 1203
+                (5th Edition). Scope differs by line: the EX1 HEPA line carries Class I, Gp.&nbsp;D;
+                Class II, Gps.&nbsp;E, F and G; Temp. Code T3C. The EV EX HEPA line carries Class II,
+                Div.&nbsp;2, Gps.&nbsp;F and G only. Each model page states which scope applies to
+                that unit.
               </p>
             ) : (
               <p className="mt-3 max-w-3xl text-[13.5px]/[1.7] text-white/75">

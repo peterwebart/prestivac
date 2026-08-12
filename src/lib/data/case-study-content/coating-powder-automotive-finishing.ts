@@ -150,9 +150,9 @@ export const coatingPowderAutomotiveFinishing: CaseStudy = {
  },
  ],
  relatedIndustries: [
- { label: "Automotive", href: "/#automotive" },
+ { label: "Automotive", href: "/industries/automotive" },
  { label: "Paints & Coatings", href: "/industries#paints-coatings" },
- { label: "Metalworking", href: "/#metalworking" },
+ { label: "Metalworking", href: "/industries/metalworking" },
  ],
  relatedProducts: [
  "explosion-proof-vacuums",

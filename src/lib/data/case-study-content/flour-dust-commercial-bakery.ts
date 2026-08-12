@@ -152,7 +152,7 @@ export const flourDustCommercialBakery: CaseStudy = {
  ],
  relatedIndustries: [
  { label: "Food & Beverage — industry deep dive", href: "/industries/food-beverage" },
- { label: "Food Processing", href: "/#food-processing" },
+ { label: "Food Processing", href: "/industries/food-beverage" },
  { label: "Agriculture", href: "/industries#agriculture" },
  { label: "Pharmaceutical", href: "/industries/pharmaceutical" },
  ],
