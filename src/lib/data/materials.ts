@@ -182,6 +182,237 @@ export type FeaturedMaterial = {
 /** Materials with dedicated deep-dive pages. */
 export const FEATURED_MATERIALS: FeaturedMaterial[] = [
  {
+  slug: "milk-powder",
+  name: "Milk Powder",
+  group: "Food Dusts",
+  blurb:
+   "Spray-dried dairy powder whose fat content makes deposits sticky and supports self-heating.",
+ },
+ {
+  slug: "whey-powder",
+  name: "Whey Powder",
+  group: "Food Dusts",
+  blurb:
+   "A hygroscopic protein powder that cakes deceptively, then breaks back into fines when disturbed.",
+ },
+ {
+  slug: "egg-powder",
+  name: "Egg Powder",
+  group: "Food Dusts",
+  blurb:
+   "A protein dust where dispersal is a pathogen and allergen event as well as a fire risk.",
+ },
+ {
+  slug: "spice-dust",
+  name: "Spice Dust",
+  group: "Food Dusts",
+  blurb:
+   "Ground spice with volatile oil content that adds a flammable vapour dimension in enclosed mills.",
+ },
+ {
+  slug: "garlic-powder",
+  name: "Garlic Powder",
+  group: "Food Dusts",
+  blurb:
+   "Strongly hygroscopic dehydrated powder that cakes hard and travels far from the mill.",
+ },
+ {
+  slug: "onion-powder",
+  name: "Onion Powder",
+  group: "Food Dusts",
+  blurb:
+   "Sugar content makes deposits tacky and hygroscopic, so accumulation resists ordinary cleaning.",
+ },
+ {
+  slug: "cinnamon-dust",
+  name: "Cinnamon Dust",
+  group: "Food Dusts",
+  blurb:
+   "High volatile oil content produces adherent deposits and a possible vapour component in mills.",
+ },
+ {
+  slug: "pepper-dust",
+  name: "Pepper Dust",
+  group: "Food Dusts",
+  blurb:
+   "A combustible dust and potent respiratory irritant, so dispersal is an immediate exposure event.",
+ },
+ {
+  slug: "paprika-dust",
+  name: "Paprika Dust",
+  group: "Food Dusts",
+  blurb:
+   "Tacky, intensely staining fines whose visible deposits map where every other dust is settling.",
+ },
+ {
+  slug: "protein-powder",
+  name: "Protein Powder",
+  group: "Food Dusts",
+  blurb:
+   "High-throughput blending and tote dumping put large volumes of very fine powder into the air.",
+ },
+ {
+  slug: "soy-protein",
+  name: "Soy Protein",
+  group: "Food Dusts",
+  blurb:
+   "A very fine isolate that is a combustible dust and a major allergen at the same time.",
+ },
+ {
+  slug: "pea-protein",
+  name: "Pea Protein",
+  group: "Food Dusts",
+  blurb:
+   "Air classification concentrates an extremely fine fraction that settles building-wide.",
+ },
+ {
+  slug: "gelatin-powder",
+  name: "Gelatin Powder",
+  group: "Food Dusts",
+  blurb:
+   "Gels on contact with water, so wet cleanup produces an adhesive mass rather than removing it.",
+ },
+ {
+  slug: "activated-carbon",
+  name: "Activated Carbon",
+  group: "Chemical Dusts",
+  blurb:
+   "A Group F dust that self-heats, depletes oxygen and carries whatever it adsorbed.",
+ },
+ {
+  slug: "pigment-dust",
+  name: "Pigment Dust",
+  group: "Chemical Dusts",
+  blurb:
+   "Two hazards in one category — combustible organics, and inorganics carrying heavy metals.",
+ },
+ {
+  slug: "dye-powder",
+  name: "Dye Powder",
+  group: "Chemical Dusts",
+  blurb:
+   "A combustible dust and recognised respiratory sensitiser, where routine airborne load is the risk.",
+ },
+ {
+  slug: "fertilizer-dust",
+  name: "Fertilizer Dust",
+  group: "Chemical Dusts",
+  blurb:
+   "Spans combustible organics, inert minerals and strong oxidisers — identification governs everything.",
+ },
+ {
+  slug: "urea-dust",
+  name: "Urea Dust",
+  group: "Chemical Dusts",
+  blurb:
+   "Cakes into hard deposits and releases ammonia on thermal decomposition.",
+ },
+ {
+  slug: "corrugated-paper-dust",
+  name: "Corrugated Paper Dust",
+  group: "Paper & Textile Dusts",
+  blurb:
+   "Cellulose fibre plus combustible starch adhesive fines, accumulating on overhead steel.",
+ },
+ {
+  slug: "textile-fibers",
+  name: "Textile Fibers",
+  group: "Paper & Textile Dusts",
+  blurb:
+   "Class III ignitible fibers rather than Class II dust — a different classification entirely.",
+ },
+ {
+  slug: "conductive-carbon",
+  name: "Conductive Carbon",
+  group: "Battery Manufacturing Dusts",
+  blurb:
+   "A Group F carbonaceous dust that also conducts, so deposits can short equipment.",
+ },
+ {
+  slug: "battery-black-mass",
+  name: "Battery Black Mass",
+  group: "Battery Manufacturing Dusts",
+  blurb:
+   "Conductive, toxic, possibly water-reactive, and may retain residual stored charge.",
+ },
+ {
+  slug: "phosphate-dust",
+  name: "Phosphate Dust",
+  group: "Mining & Mineral Dusts",
+  blurb:
+   "Largely non-combustible; the real hazard is respirable silica, not deflagration.",
+ },
+ {
+  slug: "potash-dust",
+  name: "Potash Dust",
+  group: "Mining & Mineral Dusts",
+  blurb:
+   "Non-combustible but corrosive, irritant and hygroscopic enough to cake hard on everything.",
+ },
+ {
+  slug: "metal-additive-manufacturing-powder",
+  name: "Metal AM Powder",
+  group: "Additive Manufacturing Powders",
+  blurb:
+   "Group E conductive metal powder, frequently reactive, and valuable enough that method affects reuse.",
+ },
+ {
+  slug: "biomass-dust",
+  name: "Biomass Dust",
+  group: "Biomass & Renewable Energy Dusts",
+  blurb:
+   "Variable feedstock with a documented self-heating record in silos and stockpiles.",
+ },
+ {
+  slug: "pellet-dust",
+  name: "Pellet Dust",
+  group: "Biomass & Renewable Energy Dusts",
+  blurb:
+   "Attrition creates fines at every transfer, drier and finer than the original feedstock.",
+ },
+ {
+  slug: "sawdust",
+  name: "Sawdust",
+  group: "Biomass & Renewable Energy Dusts",
+  blurb:
+   "The invisible fine fraction overhead matters, not the visible shavings on the floor.",
+ },
+ {
+  slug: "agricultural-biomass-dust",
+  name: "Agricultural Biomass Dust",
+  group: "Biomass & Renewable Energy Dusts",
+  blurb:
+   "Crop residue carrying crystalline silica and mould spores alongside the combustible fraction.",
+ },
+ {
+  slug: "wax-powder",
+  name: "Wax Powder",
+  group: "Other Combustible Dusts",
+  blurb:
+   "Low melting point means deposits soften on warm surfaces and frictional heat melts material.",
+ },
+ {
+  slug: "soap-powder",
+  name: "Soap Powder",
+  group: "Other Combustible Dusts",
+  blurb:
+   "Alkaline, hygroscopic, and turns any wetted spill into a slippery film rather than removing it.",
+ },
+ {
+  slug: "detergent-powder",
+  name: "Detergent Powder",
+  group: "Other Combustible Dusts",
+  blurb:
+   "Combustible surfactants plus enzyme sensitisers and, in some formulations, oxidising bleach.",
+ },
+ {
+  slug: "cosmetic-powder",
+  name: "Cosmetic Powder",
+  group: "Other Combustible Dusts",
+  blurb:
+   "Extremely fine grades where contamination control usually drives the equipment decision.",
+ },
+ {
  slug: "vermiculite-dust",
  name: "Vermiculite",
  group: "Other Combustible Dusts",
