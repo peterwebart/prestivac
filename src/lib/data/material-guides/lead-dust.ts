@@ -9,7 +9,7 @@ export const leadDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Lead Dust?",
  description:
- "Lead-bearing dusts aren't a combustion story — the ledger is toxicological, with OSHA's own lead standards, a 50 µg/m³ exposure limit, and the RRP rule that names HEPA vacuums by requirement. Renovation, battery recycling, foundry alloys and firing ranges.",
+ "Lead-bearing dusts aren't a combustion story — the ledger is toxicological, with OSHA's own lead standards, a 50 µg/m³ exposure limit.",
  },
  heroIntro:
  "Built for the metal whose dust follows workers home — a toxicological ledger with its own federal standards, an exposure limit with a number attached, a renovation rule that requires HEPA vacuums by name, and a documented pathway that puts families in the exposure plan whether it's written down or not.",

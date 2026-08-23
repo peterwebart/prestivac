@@ -9,7 +9,7 @@ export const calciumDustGuide: MaterialGuideData = {
  seo: {
  title: "Is Calcium Flammable? Calcium Metal vs Calcium",
  description:
- "Calcium metal is a water-reactive combustible metal; calcium carbonate and lime are not. Why the distinction decides everything about handling, and how reactive calcium fines are recovered safely.",
+ "Calcium metal is a water-reactive combustible metal; calcium carbonate and lime are not. Why the distinction decides everything about handling.",
  },
  heroIntro:
  "Built for a material whose name covers two completely different hazards. Calcium metal is a reactive combustible metal that liberates hydrogen on contact with water. Calcium carbonate — limestone, chalk, ground marble — is an inert mineral that does not burn at all. Getting the two confused is the most consequential mistake in this entry.",

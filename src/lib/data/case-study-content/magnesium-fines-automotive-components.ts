@@ -184,7 +184,7 @@ export const magnesiumFinesAutomotiveComponents: CaseStudy = {
  seo: {
  metaTitle: "Magnesium Fines Control in Automotive Components",
  metaDescription:
- "Representative case study: how a die casting and machining plant handles magnesium — vented wet collection, air-operated explosion-proof vacuums and the never-airtight rule under NFPA 660/484.",
+ "Representative case study: how a die casting and machining plant handles magnesium — vented wet collection.",
  keywords: [
  "magnesium dust vacuum",
  "magnesium swarf handling",

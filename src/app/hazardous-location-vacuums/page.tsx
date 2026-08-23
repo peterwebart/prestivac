@@ -8,7 +8,7 @@ import { subpageJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 const description =
-  "Vacuums for classified areas — Class I and Class II, Divisions 1 and 2. Work out which rating your area needs, see what our certificate covers, and have an engineer confirm the specification.";
+  "Vacuums for classified areas — Class I and Class II, Divisions 1 and 2. Work out which rating your area needs, see what our certificate covers.";
 
 export const metadata: Metadata = {
   title: "Hazardous Location Vacuums",

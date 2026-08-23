@@ -9,7 +9,7 @@ export const corkDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Cork Dust?",
  description:
- "Cork dust surprises people twice — it is a genuinely combustible natural dust, and moldy cork dust is associated with suberosis, a hypersensitivity pneumonitis known as cork worker's lung. Cutting, grinding and sanding cork for stoppers, flooring and insulation generates it. Grounded, HEPA-retained recovery for both hazards.",
+ "Cork dust surprises people twice — it is a genuinely combustible natural dust, and moldy cork dust is associated with suberosis.",
  },
  heroIntro:
  "The wine-stopper material that surprises people twice. Cork is tree bark, and its dust is a genuinely combustible natural dust — but it carries a second, less obvious hazard: moldy cork dust is associated with suberosis, a hypersensitivity pneumonitis long known as cork worker's lung. Cutting, grinding and sanding cork for stoppers, flooring and insulation generates it, and recovery addresses both the combustion and the respiratory side.",

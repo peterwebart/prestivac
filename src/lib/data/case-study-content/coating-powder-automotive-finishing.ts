@@ -184,7 +184,7 @@ export const coatingPowderAutomotiveFinishing: CaseStudy = {
  seo: {
  metaTitle: "Coating Powder Control in Automotive Finishing",
  metaDescription:
- "Representative case study: how an automotive finishing plant controls combustible coating powder — grounded explosion-proof HEPA recovery, color-change methods and stream separation under NFPA 33/660.",
+ "Representative case study: how an automotive finishing plant controls combustible coating powder — grounded explosion-proof HEPA recovery.",
  keywords: [
  "powder coating dust collection",
  "coating powder combustible dust",

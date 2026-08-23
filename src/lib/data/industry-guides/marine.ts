@@ -9,7 +9,7 @@ export const marineGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Marine &",
  description:
- "Shipyard dust is dominated by two things — abrasive blasting, which produces huge volumes of spent media mixed with coating debris, and legacy coatings on older vessels that carry lead and heavy metals. Add welding fume, fiberglass composite dust and confined-space work. HEPA-retained, sealed recovery for a toxic-and-respirable mix.",
+ "Shipyard dust is dominated by two things — abrasive blasting, which produces huge volumes of spent media mixed with coating debris.",
  },
  heroIntro:
  "Heavy industry at outdoor scale, where the signature dust hazards are abrasive blasting and legacy coatings — surface preparation produces enormous volumes of spent media mixed with paint debris, and older vessels carry lead-based and heavy-metal coatings that blasting and grinding liberate as toxic dust. Welding fume, fiberglass composite dust and confined-space work round out a demanding recovery picture.",

@@ -10,7 +10,7 @@ export const metal3dPrintingGuide: ApplicationGuideData = {
  seo: {
  title: "Metal 3D Printing Powder Recovery",
  description:
- "Explosion-proof vacuum solutions for metal 3D printing: safe recovery of reactive AM powders and chamber condensate across powder bed fusion, sieving and machine turnaround.",
+ "Explosion-proof vacuum solutions for metal 3D printing: safe recovery of reactive AM powders and chamber condensate across powder bed fusion.",
  },
  tagline: "Safe. Contained. Economical.",
  heroIntro:

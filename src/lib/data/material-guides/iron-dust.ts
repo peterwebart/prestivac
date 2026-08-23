@@ -9,7 +9,7 @@ export const ironDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Iron & Steel Dust?",
  description:
- "The metal dust that is everywhere and most often dismissed — fine iron and steel dust is combustible, can be pyrophoric, and deflagrates under the right conditions, even though bulk steel looks inert. Less energetic than aluminum or titanium, but real. Grounded, rated, HEPA-retained recovery, governed by testing.",
+ "The metal dust that is everywhere and most often dismissed — fine iron and steel dust is combustible, can be pyrophoric.",
  },
  heroIntro:
  "The metal dust that is everywhere and most often underestimated — because a bar of steel is so obviously inert, it surprises people that fine iron and steel dust is combustible, can be pyrophoric, and deflagrates under the right conditions. It is less energetic than aluminum or titanium, but it is real, and it is generated in nearly every machine shop, foundry and fabrication floor there is.",

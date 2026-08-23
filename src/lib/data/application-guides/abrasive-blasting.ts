@@ -10,7 +10,7 @@ export const abrasiveBlastingGuide: ApplicationGuideData = {
  seo: {
  title: "Abrasive Blasting Vacuum Solutions",
  description:
- "Industrial vacuum recovery for abrasive blasting — spent media separated from the coating debris it stripped, with HEPA retention for lead, heavy-metal and silica-bearing fractions, and reclaim of reusable abrasive.",
+ "Industrial vacuum recovery for abrasive blasting — spent media separated from the coating debris it stripped, with HEPA retention for lead.",
  },
  tagline: "Blasting makes two dusts: the coating you removed and the media you used.",
  heroIntro:

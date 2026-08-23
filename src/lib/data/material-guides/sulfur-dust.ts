@@ -9,7 +9,7 @@ export const sulfurDustGuide: MaterialGuideData = {
  seo: {
  title: "Sulfur Dust Vacuum Solutions",
  description:
- "Sulfur has the lowest ignition energy of any common industrial dust and its own legacy NFPA standard (655, now in NFPA 660). How sulfur fines are safely collected: verified grounding, air-operated explosion-proof recovery, SO2-aware disposal.",
+ "Sulfur has the lowest ignition energy of any common industrial dust and its own legacy NFPA standard (655, now in NFPA 660).",
  },
  heroIntro:
  "Built for the most ignition-sensitive common industrial dust — where a static discharge too weak to feel can be enough, grounding leads the program rather than appearing in it, and even the disposal path is designed around what sulfur becomes when it burns.",

@@ -9,7 +9,7 @@ export const concreteCementDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Concrete & Cement Dust?",
  description:
- "Concrete and cement dust don't explode — the hazards are caustic chemistry, respirable crystalline silica where concrete meets abrasive tools, and sheer volume. HEPA-retained recovery aligned with OSHA's silica standards, from kiln floor to slab grinding.",
+ "Concrete and cement dust don't explode — the hazards are caustic chemistry, respirable crystalline silica where concrete meets abrasive tools.",
  },
  heroIntro:
  "Built for the honest inert page — there is no explosion story to sell here. The hazards are caustic wet cement, the respirable crystalline silica that concrete cutting and grinding release, and volumes that bury any broom-based program.",

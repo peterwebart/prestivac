@@ -9,7 +9,7 @@ export const conductiveCarbonGuide: MaterialGuideData = {
  seo: {
   title: "Conductive Carbon — Group F Dust Control",
   description:
-   "Conductive carbon additives used in battery electrodes are carbonaceous Group F dusts that are also electrically conductive, so accumulation shorts equipment as well as feeding fire.",
+   "Conductive carbon additives used in battery electrodes are carbonaceous Group F dusts that are also electrically conductive.",
  },
  heroIntro:
   "Built for electrode manufacturing, where the additive that makes the cell work is a carbonaceous dust that also conducts. Conductive carbon blacks and graphite additives are extremely fine, they travel, and where they settle they can bridge electrical equipment.",

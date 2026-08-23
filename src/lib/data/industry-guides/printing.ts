@@ -9,7 +9,7 @@ export const printingGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Commercial Printing?",
  description:
- "The pressroom generates three combustible fine powders — paper dust from cutting, trimming and folding; starch-based anti-set-off spray powder in offset printing; and fine toner in digital printing. Each is a combustible dust that accumulates on presses and structures. HEPA-retained recovery keeps them in check.",
+ "The pressroom generates three combustible powders: paper dust from cutting and folding, starch anti-set-off spray, and fine toner from digital printing.",
  },
  heroIntro:
  "The industry where combustible dust hides behind an ordinary pressroom — paper dust from cutting, trimming and folding is one source, but offset printing adds a starch-based anti-set-off spray powder that coats the shop, and digital printing adds fine toner. All three are combustible fine powders, and all three accumulate on presses and structures unless captured.",

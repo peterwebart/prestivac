@@ -190,7 +190,7 @@ export const graphiteDustBatteryPlant: CaseStudy = {
  seo: {
  metaTitle: "Electrode Dust Control in an EV Battery Plant",
  metaDescription:
- "Representative case study: how an EV battery cell plant manages combustible, conductive graphite and electrode dust with explosion-proof HEPA vacuums and a continuous-duty central system under NFPA 660.",
+ "How an EV battery cell plant manages combustible, conductive graphite and electrode dust with explosion-proof HEPA vacuums and a continuous-duty system.",
  keywords: [
  "battery manufacturing dust control",
  "graphite dust vacuum",

@@ -9,7 +9,7 @@ export const cobaltDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Cobalt Dust?",
  description:
- "Cobalt is a combustible metal dust, but its health hazard leads — a recognized carcinogen and potent sensitizer, and the cause of hard-metal lung disease where it is bound with tungsten carbide. Exposure control drives the recovery program, and HEPA-retained capture serves both the health and the combustion case.",
+ "Cobalt is a combustible metal dust, but its health hazard leads — a recognized carcinogen and potent sensitizer.",
  },
  heroIntro:
  "The metal where the health hazard leads the conversation — cobalt is a recognized carcinogen and a potent sensitizer, and in combination with tungsten carbide it causes hard-metal lung disease. It is also a combustible metal dust. That pairing makes exposure control the driver here, with grounded, HEPA-retained recovery serving the health case and the combustion case at the same time.",

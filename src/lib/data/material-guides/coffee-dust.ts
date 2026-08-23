@@ -9,7 +9,7 @@ export const coffeeDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Coffee Dust?",
  description:
- "Roasteries run two dust streams — chaff freed at the roaster that accumulates in exhaust paths against heat, and fine combustible grounds at grinders and packaging. Scheduled chaff removal, explosion-proof HEPA recovery, and cooled-material discipline.",
+ "Roasteries run two dust streams — chaff freed at the roaster that accumulates in exhaust paths against heat.",
  },
  heroIntro:
  "Built for the roastery — where chaff freed at the roaster travels the exhaust path and accumulates against heat, grinders shed fine combustible dust all shift, and enclosed bean storage adds an off-gassing consideration to every entry plan.",

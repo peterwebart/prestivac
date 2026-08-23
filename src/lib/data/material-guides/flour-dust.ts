@@ -9,7 +9,7 @@ export const flourDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Flour Dust?",
  description:
- "Flour is the archetypal combustible dust — documented since the 19th-century mill disasters — and a major food allergen in the same material. Explosion-proof HEPA recovery, allergen-aware disposal and oven-perimeter discipline under NFPA 61 / 660 practice.",
+ "Flour is the archetypal combustible dust — documented since the 19th-century mill disasters — and a major food allergen in the same material.",
  },
  heroIntro:
  "Built for the dust that taught industry the lesson — flour's explosive potential has been documented since the great mill disasters of the nineteenth century, and modern plants add a second duty: the same fines are a major food allergen, so containment serves safety and sanitation at once.",

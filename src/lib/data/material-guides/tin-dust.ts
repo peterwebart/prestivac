@@ -9,7 +9,7 @@ export const tinDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Tin Dust?",
  description:
- "Tin is comparatively mild — low in toxicity and less ignition-prone than the reactive metals — but it is rarely encountered pure. In solder work it travels with lead (toxic in legacy solder) and flux fume (a respiratory irritant), and tin fines are still a combustible metal to test. The companions usually drive the controls.",
+ "Tin is comparatively mild — low in toxicity and less ignition-prone than the reactive metals — but it is rarely encountered pure.",
  },
  heroIntro:
  "The mild metal that travels with worse company. Tin itself is comparatively low in toxicity and less ignition-prone than the reactive metals — but it is rarely found pure. In solder and tinning work it arrives with lead, still present in legacy solder and the real hazard there, and with flux fume that irritates the airways. Tin fines are a combustible metal to test, and the companions usually set the controls.",

@@ -10,7 +10,7 @@ export const siloCleaningGuide: ApplicationGuideData = {
  seo: {
  title: "Silo & Bin Cleaning Vacuum Solutions",
  description:
- "Explosion-proof vacuum recovery for silo and bin interiors, decks and boot pits — reach-first cleaning from manways that turns confined-space entry into the permitted exception, with HEPA retention and sealed disposal.",
+ "Explosion-proof vacuum recovery for silo and bin interiors — reach-first cleaning from manways that makes confined-space entry the exception, not the norm.",
  },
  tagline: "Reach first. Enter last. Document everything.",
  heroIntro:

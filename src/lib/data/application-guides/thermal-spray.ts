@@ -10,7 +10,7 @@ export const thermalSprayGuide: ApplicationGuideData = {
  seo: {
  title: "Thermal Spray & Coating Vacuum Solutions",
  description:
- "Industrial vacuum recovery for thermal spray — plasma, HVOF, arc and flame spray — where reactive-metal feedstock and the overspray that never adheres are both combustible powders. Grounded, rated recovery reclaims valuable feedstock and keeps the booth clean.",
+ "Vacuum recovery for plasma, HVOF, arc and flame spray, where reactive-metal feedstock and non-adhering overspray are both combustible powders.",
  },
  tagline: "Not all of it lands — and what doesn't is combustible powder.",
  heroIntro:

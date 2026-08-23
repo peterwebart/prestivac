@@ -70,6 +70,42 @@ const SECTIONS = [
 ];
 
 /** Shared renderer for all material deep-dive pages. */
+
+/**
+ * Selection guides that genuinely apply to a given material.
+ *
+ * Added because the buying guides — the highest commercial-intent pages on the
+ * site — had exactly ONE inbound link each, from /guides. The 137 content pages
+ * were written before those guides existed, so their `related` arrays could not
+ * reference them.
+ *
+ * Chosen by what the page actually is, not appended everywhere: a reader on a
+ * combustible material page needs the combustible-dust selection guide; a
+ * reader on a non-combustible one (potash, phosphate) does not, and gets the
+ * sizing guide instead. Nothing is linked that would not help.
+ */
+function selectionGuidesFor(data: MaterialGuideData): { label: string; href: string }[] {
+  const existing = new Set(data.related.map((r) => r.href));
+  const out: { label: string; href: string }[] = [];
+  const add = (label: string, href: string) => {
+    if (!existing.has(href) && !out.some((o) => o.href === href)) out.push({ label, href });
+  };
+
+  const facts = data.facts.map((f) => f.value.toLowerCase()).join(" ");
+  const combustible = facts.includes("combustible");
+  const groupE = facts.includes("group e") || facts.includes("metal");
+
+  if (combustible) {
+    add("How to choose a combustible dust vacuum", "/guides/how-to-choose-a-combustible-dust-vacuum");
+    add("Types of combustible dust", "/guides/types-of-combustible-dust");
+  }
+  if (groupE) {
+    add("How to choose an explosion-proof vacuum", "/guides/how-to-choose-an-explosion-proof-vacuum");
+  }
+  add("How to size an industrial vacuum", "/guides/how-to-size-an-industrial-vacuum");
+  return out.slice(0, 3);
+}
+
 export function MaterialGuide({ data }: { data: MaterialGuideData }) {
   const study = data.studySlug ? getCaseStudy(data.studySlug) : undefined;
   const url = `${site.url}/materials/${data.slug}`;
@@ -329,6 +365,20 @@ export function MaterialGuide({ data }: { data: MaterialGuideData }) {
               <aside className="self-start">
                 <h2 className="font-display text-[15px] font-extrabold uppercase text-white">Related materials &amp; resources</h2>
                 <ul className="mt-3 space-y-2">
+                  {selectionGuidesFor(data).map((resource) => (
+                    <li key={resource.href}>
+                      <Link
+                        href={resource.href}
+                        className="group inline-flex items-center gap-1.5 text-[13px] font-semibold text-brand-400 transition-colors hover:text-brand-500"
+                      >
+                        {resource.label}
+                        <ArrowRight
+                          aria-hidden
+                          className="size-3.5 transition-transform group-hover:translate-x-1"
+                        />
+                      </Link>
+                    </li>
+                  ))}
                   {data.related.map((resource) => (
                     <li key={resource.href}>
                       <Link

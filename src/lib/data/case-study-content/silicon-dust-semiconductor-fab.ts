@@ -171,7 +171,7 @@ export const siliconDustSemiconductorFab: CaseStudy = {
  seo: {
  metaTitle: "Semiconductor Fab Dual-Hazard Dust Control",
  metaDescription:
- "A representative semiconductor and advanced-packaging fab controls two dust hazards at once — toxic dopant, etch and CMP residues and genuinely combustible silicon and reactive-metal AM powder — with separated, HEPA-retained, ESD-safe recovery.",
+ "A representative semiconductor and advanced-packaging fab controls two dust hazards at once — toxic dopant.",
  keywords: [
  "semiconductor dust control",
  "combustible silicon dust",

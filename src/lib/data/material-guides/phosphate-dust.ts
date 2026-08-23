@@ -9,7 +9,7 @@ export const phosphateDustGuide: MaterialGuideData = {
  seo: {
   title: "Phosphate Dust — Mineral Dust Control",
   description:
-   "Phosphate rock dust is largely non-combustible, and its real hazards are silica content and respiratory exposure. Elemental phosphorus is an entirely different material.",
+   "Phosphate rock dust is largely non-combustible, and its real hazards are silica content and respiratory exposure.",
  },
  heroIntro:
   "Built for phosphate rock handling, where the honest answer is that the dust is not primarily a combustion hazard. Phosphate rock dust is a mineral dust whose significance is respiratory — including possible crystalline silica content — rather than explosive.",

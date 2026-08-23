@@ -9,7 +9,7 @@ export const wheyPowderGuide: MaterialGuideData = {
  seo: {
   title: "Whey Powder — Combustible Dust Control",
   description:
-   "Whey powder is a fine hygroscopic protein dust that cakes as it picks up moisture and suspends readily when disturbed. Where it accumulates in dairy processing and how explosion-proof HEPA recovery controls it.",
+   "Whey powder is a fine hygroscopic protein dust that cakes as it picks up moisture and suspends readily when disturbed.",
  },
  heroIntro:
   "Built for a powder that changes character with the humidity in the room. Whey is fine, light and hygroscopic — it draws moisture, cakes on surfaces, then breaks back into an airborne fraction the moment something disturbs it, which makes accumulation easy to underestimate.",
@@ -46,27 +46,27 @@ export const wheyPowderGuide: MaterialGuideData = {
  "Allergen and sanitation overlap: dairy protein residues are a cross-contact concern, so cleaning has to satisfy both records.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery specified for a powder that cakes between shifts and re-suspends when disturbed.",
+ "Contact tooling for crusted deposits, since caked whey does not respond to suction alone.",
+ "HEPA-filtered collection retaining a very fine protein fraction rather than exhausting it.",
+ "Dedicated units or accessory sets per line where dairy allergen segregation applies.",
+ "Grounded, bonded conductive hose across milling, sifting and pneumatic transfer.",
+ "Scheduled overhead recovery, because light fines settle well above the working area.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Find the fines, not the spills", detail: "Milling and sifting generate the fraction that matters; visible spills at the bagger do not." },
+ { step: "Survey by location, not appearance", detail: "Hygroscopic caking makes deposits look stable. Base the survey on where powder reaches, not on what looks loose." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for drying, milling and conveying areas." },
+ { step: "Include crust removal in the tooling", detail: "Caked deposits need mechanical contact. A suction-only kit will leave the accumulation in place." },
+ { step: "Fix humidity into the plan", detail: "Caking rate tracks ambient humidity, so intervals that hold in winter may not hold in summer." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Treat caked deposits as fuel inventory, not as a settled crust.",
+ "Prioritise milling and sifting enclosures over floor area.",
+ "Schedule overhead recovery on structure and duct tops, where the light fraction lands.",
+ "Segregate equipment or accessories where dairy allergen cross-contact matters.",
+ "Check hose and tool continuity rather than assuming the machine ground is enough.",
+ "Revisit intervals seasonally, because humidity changes the caking rate.",
  ],
  faqs: [
  {

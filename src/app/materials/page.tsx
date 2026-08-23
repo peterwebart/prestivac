@@ -11,7 +11,7 @@ import { pairedAlternates } from "@/lib/i18n";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "The combustible dust and materials directory: metal dusts, wood, food, pharmaceutical, chemical, battery and additive manufacturing powders — and how each is safely recovered.";
+  "The combustible dust and materials directory: metal dusts, wood, food, pharmaceutical, chemical, battery and additive manufacturing powders.";
 
 export const metadata: Metadata = {
   title: "Dusts & Materials",

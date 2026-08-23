@@ -9,7 +9,7 @@ export const medicalDevicesGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Medical Device",
  description:
- "Medical device manufacturing puts two disciplines in one room — machining implant-grade reactive metals like titanium and cobalt-chromium generates combustible metal fines, while the parts must stay contamination-free for biocompatibility. Recovery has to be combustible-metal-rated and cleanroom-clean at once.",
+ "Machining implant-grade titanium and cobalt-chromium generates combustible metal fines, while the parts must stay contamination-free for biocompatibility.",
  },
  heroIntro:
  "The floor where a combustible-metal machine shop and a cleanroom occupy the same room — implant-grade titanium, cobalt-chromium and nitinol are machined into devices that must then stay contamination-free for biocompatibility, so recovery has to satisfy two normally-separate disciplines at once: rated for reactive-metal fines, and clean enough for a controlled environment.",

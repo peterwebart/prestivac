@@ -9,7 +9,7 @@ export const ammunitionGuide: IndustryGuideData = {
  seo: {
  title: "Ammunition & Firearms Manufacturing Vacuum",
  description:
- "Vacuum programs for the machining, casing and range sides of ammunition and firearms facilities — brass chips, machining swarf and range lead. Primer and propellant areas run under explosive-materials rules (NFPA 495, ATF), a hard boundary this page respects.",
+ "Vacuum programs for the machining, casing and range sides of ammunition and firearms facilities — brass chips, machining swarf and range lead.",
  },
  heroIntro:
  "Two safety cultures share one campus here — precision machining's rules on one side, explosive-materials law on the other. This program serves the machining, casing and range sides; primer and propellant areas run under NFPA 495 and ATF frameworks with equipment and methods specified to those rules, a boundary this page draws in ink.",

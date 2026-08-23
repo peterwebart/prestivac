@@ -9,7 +9,7 @@ export const railGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Rail Manufacturing",
  description:
- "Rail is a maintenance-heavy industry where the dust comes from friction and from the past — brake and wheel/rail wear produce continuous metal dust, traction sand adds respirable silica, and refurbishing decades-old rolling stock liberates legacy lead-based coating dust. A mix of metal, toxic and respirable fractions, recovered HEPA-retained.",
+ "Rail is a maintenance-heavy industry where the dust comes from friction and from the past — brake and wheel/rail wear produce continuous metal dust.",
  },
  heroIntro:
  "A maintenance-heavy industry where the dust comes from two places — friction and the past. Brake and wheel/rail wear generate a continuous metal-dust stream distinctive to rail, traction sand adds respirable silica, and refurbishing decades-old rolling stock liberates legacy lead-based coatings. The result is a mix of metal, toxic and respirable fractions that recovery has to handle together.",

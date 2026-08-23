@@ -9,7 +9,7 @@ export const activatedCarbonGuide: MaterialGuideData = {
  seo: {
   title: "Activated Carbon — Self-Heating & Recovery",
   description:
-   "Activated carbon is a carbonaceous Group F dust with a documented self-heating and oxygen-depletion record, and its adsorbed load can be more hazardous than the carbon itself.",
+   "Activated carbon is a carbonaceous Group F dust with a documented self-heating and oxygen-depletion record.",
  },
  heroIntro:
   "Built for a material whose hazards mostly come from what it has already adsorbed. Activated carbon is a carbonaceous dust in its own right, it self-heats in bulk, it depletes oxygen in enclosed spaces, and a spent bed carries whatever it was installed to capture.",

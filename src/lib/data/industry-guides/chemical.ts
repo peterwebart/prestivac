@@ -17,7 +17,7 @@ export const chemicalGuide: IndustryGuideData = {
  seo: {
  title: "Chemical Processing Vacuum Solutions",
  description:
- "Industrial vacuum solutions for chemical plants: explosion-proof recovery for organic powders, resins and intermediates where combustibility, reactivity and exposure limits arrive in the same material — built to NFPA 660 practice in classified areas.",
+ "Industrial vacuum solutions for chemical plants: explosion-proof recovery for organic powders, resins and intermediates where combustibility.",
  },
  heroIntro:
  "Chemical dusts rarely carry one hazard at a time — the same powder can be combustible, toxic and reactive, and it's often handled where solvent vapors share the air. The SDS and the Dust Hazard Analysis decide together, and the recovery equipment has to satisfy the area classification before it satisfies anything else.",

@@ -1,13 +1,13 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, ChevronDown, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 import { Button } from "@/components/ui/button";
-import { site } from "@/lib/site";
+import { NAVIGATION } from "@/lib/data/navigation";
 
 type MobileNavProps = {
   open: boolean;
@@ -110,29 +110,51 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
             </div>
 
             <nav aria-label="Mobile" className="flex-1 overflow-y-auto px-6 py-2">
+              {/*
+                Driven by the same NAVIGATION config as the desktop megamenu and
+                the footer site index, so mobile reaches the whole graph rather
+                than only the seven top-level hubs it used to show.
+
+                Native <details> disclosure: keyboard operable and screen-reader
+                announced without any ARIA of our own, and it collapses without
+                removing the links from the DOM inside the open dialog.
+              */}
               <ul>
-                {site.nav.map((item) => {
-                  const linkClass =
-                    "block border-b border-white/5 py-3.5 text-[15px] font-medium text-white/85 transition-colors hover:text-white";
-                  return (
-                    <li key={item.label}>
-                      {item.href.startsWith("#") ? (
-                        <a href={item.href} onClick={onClose} className={linkClass}>
-                          {item.label}
-                        </a>
-                      ) : (
-                        <Link
-                          href={item.href}
-                         
-                          onClick={onClose}
-                          className={linkClass}
-                        >
-                          {item.label}
-                        </Link>
-                      )}
-                    </li>
-                  );
-                })}
+                {NAVIGATION.map((section) => (
+                  <li key={section.label} className="border-b border-white/5">
+                    <details className="group">
+                      <summary className="flex cursor-pointer list-none items-center justify-between py-3.5 text-[15px] font-semibold text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-400 [&::-webkit-details-marker]:hidden">
+                        {section.label}
+                        <ChevronDown
+                          aria-hidden
+                          className="size-4 text-white/45 transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+                        />
+                      </summary>
+                      <ul className="pb-3 pl-3">
+                        <li>
+                          <Link
+                            href={section.href}
+                            onClick={onClose}
+                            className="block py-2 text-[14px] font-semibold text-brand-300 transition-colors hover:text-brand-200"
+                          >
+                            All {section.label.toLowerCase()}
+                          </Link>
+                        </li>
+                        {section.links.map((link) => (
+                          <li key={link.href}>
+                            <Link
+                              href={link.href}
+                              onClick={onClose}
+                              className="block py-2 text-[14px] text-white/70 transition-colors hover:text-white"
+                            >
+                              {link.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  </li>
+                ))}
               </ul>
             </nav>
 

@@ -9,7 +9,7 @@ export const copperDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Copper Dust?",
  description:
- "Copper is among the least ignition-prone metal dusts — many samples test non-explosible, and testing governs. The real ledgers: conductive contamination on live equipment, exposure limits, and recycling's hybrid streams where benign copper rides with combustible insulation fines.",
+ "Copper is among the least ignition-prone metal dusts — many samples test non-explosible, and testing governs.",
  },
  heroIntro:
  "Built for the conductor's dust — a metal that resists ignition better than almost any other, which is exactly why its hazards hide elsewhere: conductive fines tracking across live equipment, occupational limits on the fume side, and recycling streams where the copper tests benign while the insulation fines riding with it do not.",

@@ -9,7 +9,7 @@ export const leatherDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Leather Dust?",
  description:
- "Leather buffing and finishing dust is a combustible organic dust with a chemical twist — chrome-tanned leather, the majority, carries chromium (mainly trivalent Cr(III), with hexavalent Cr(VI) a recognized contaminant concern). HEPA-retained recovery serves both the combustion and the exposure side; tanning method sets the chemistry.",
+ "Leather buffing and finishing dust is a combustible organic dust with a chemical twist — chrome-tanned leather, the majority.",
  },
  heroIntro:
  "A combustible organic dust that carries a chemical passenger. Buffing, sanding and finishing leather generates a fine combustible dust — but most leather is chrome-tanned, so that dust carries chromium, predominantly the trivalent form used in tanning, with hexavalent chromium a recognized contaminant concern. The tanning method sets the chemistry, and HEPA-retained recovery covers both the combustion and the exposure side.",

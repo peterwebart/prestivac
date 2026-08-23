@@ -9,7 +9,7 @@ export const constructionMaterialsGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Construction",
  description:
- "The industry that makes what buildings are made of — cement, concrete products, gypsum board and brick — where the defining hazard, like glass and ceramics, is respirable crystalline silica rather than deflagration. From raw grinding to product cutting, HEPA-retained, exposure-controlled recovery is the priority.",
+ "The industry that makes what buildings are made of — cement, concrete products, gypsum board and brick — where the defining hazard, like glass and ceramics.",
  },
  heroIntro:
  "The industry that manufactures what buildings are made of — cement, ready-mix and precast concrete, gypsum board and brick — and whose defining hazard is a slow one: respirable crystalline silica, present from raw grinding through to the cutting of finished products. Like glass and ceramics, this is a health-first recovery problem, where HEPA-retained, exposure-controlled capture matters more than deflagration protection.",

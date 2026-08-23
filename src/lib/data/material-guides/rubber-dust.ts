@@ -9,7 +9,7 @@ export const rubberDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Rubber Dust?",
  description:
- "Rubber dust is a combustible dust that carries a passenger — carbon black. Because tire and rubber compounds are heavily loaded with carbon black, one of the most readily ignitable dusts, rubber dust from grinding, buffing and crumb-rubber recycling inherits that ignition sensitivity. Grounded, rated, HEPA-retained recovery, tested for the compound.",
+ "Rubber dust is a combustible dust that carries a passenger — carbon black. Because tire and rubber compounds are heavily loaded with carbon black.",
  },
  heroIntro:
  "A combustible dust that carries a passenger. Rubber dust from grinding, buffing and recycling is combustible on its own, but tire and rubber compounds are heavily loaded with carbon black — one of the most readily ignitable dusts there is — so rubber dust inherits that ignition sensitivity. Recovery treats it accordingly: grounded, rated and HEPA-retained, matched to the specific compound.",

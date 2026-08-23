@@ -17,7 +17,7 @@ export const aerospaceGuide: IndustryGuideData = {
  seo: {
  title: "Aerospace Manufacturing Vacuum Solutions",
  description:
- "Industrial vacuum solutions for aerospace: explosion-proof recovery for titanium and aluminum machining fines, conductive composite dust and additive manufacturing powders — built to NFPA 484 / 660 practice in a certification-grade environment.",
+ "Industrial vacuum solutions for aerospace: explosion-proof recovery for titanium and aluminum machining fines.",
  },
  heroIntro:
  "Aerospace machines the two most demanding structural metals — titanium and aluminum — alongside conductive composite dust and additive manufacturing powders, inside the most documentation-heavy quality culture in industry. The dust program and the FOD program are the same discipline pointed at different consequences.",

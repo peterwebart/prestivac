@@ -10,7 +10,7 @@ export const tankCleaningGuide: ApplicationGuideData = {
  seo: {
  title: "Tank & Vessel Cleaning Vacuum Solutions",
  description:
- "Industrial vacuum recovery for cleaning tanks, reactors and process vessels — wet sludge and dry residue removed reach-first to minimize confined-space entry, with rated equipment for flammable residue and sealed handling for chemical and toxic material.",
+ "Industrial vacuum recovery for cleaning tanks, reactors and process vessels — wet sludge and dry residue removed reach-first to minimize confined-space entry.",
  },
  tagline: "The vessel remembers what it held.",
  heroIntro:

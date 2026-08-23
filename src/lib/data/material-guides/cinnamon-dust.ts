@@ -9,7 +9,7 @@ export const cinnamonDustGuide: MaterialGuideData = {
  seo: {
   title: "Cinnamon Dust — Combustible Dust Control",
   description:
-   "Ground cinnamon is a fine combustible organic dust carrying volatile oil content. Where it accumulates in grinding and blending, and how explosion-proof HEPA recovery controls it.",
+   "Ground cinnamon is a fine combustible organic dust carrying volatile oil content. Where it accumulates in grinding and blending.",
  },
  heroIntro:
   "Built for grinding rooms handling a bark that is milled specifically to a fine powder. Cinnamon carries significant volatile oil content, which makes deposits adherent on warm surfaces and adds a flammable vapour dimension inside enclosed grinding equipment.",
@@ -46,27 +46,27 @@ export const cinnamonDustGuide: MaterialGuideData = {
  "Cross-contact control: strong aromatics carry into adjacent products, so redistribution is a quality failure as well as a safety one.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery for bark milling, where fine production is the purpose of the operation.",
+ "A vapour assessment for enclosed mills, given the volatile oil fraction.",
+ "Contact tooling for oil-bearing deposits that adhere to warm mill housings.",
+ "HEPA-filtered collection so aromatic fines are removed rather than carried to adjacent lines.",
+ "Grounded, bonded conductive path through milling, sifting and filling.",
+ "Dedicated tooling per product family to protect against aroma carryover.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Begin at the mill housing", detail: "Grinding bark to a fine powder concentrates both the finest fraction and the adherent oil content." },
+ { step: "Settle the vapour question", detail: "Volatile oil inside enclosed equipment may be a Class I consideration rather than a Class II one." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for grinding areas." },
+ { step: "Specify for sticky fines", detail: "Oil-bearing deposits need contact tooling; suction alone leaves a residue." },
+ { step: "Include the surrounding structure", detail: "Light aromatic fines settle on high steel well outside the grinding room." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Clean mill housings on a defined interval rather than when deposits become visible.",
+ "Have the enclosed-equipment vapour question answered explicitly.",
+ "Extend overhead recovery beyond the grinding room.",
+ "Avoid compressed air near open product entirely.",
+ "Keep dedicated tooling per product family.",
+ "Verify the conductive path from tool to container.",
  ],
  faqs: [
  {

@@ -25,7 +25,7 @@ export const SELECTION_GUIDES: GuideArticle[] = [
     seo: {
       title: "How to Choose an Explosion Proof Vacuum",
       description:
-        "The specification sequence that avoids expensive mistakes: identify the material, establish the area classification, then select construction, power source and filtration — in that order.",
+        "The specification sequence that avoids expensive mistakes: identify the material, establish the area classification, then select construction.",
     },
     heroIntro:
       "Most specification problems come from doing this in the wrong order — starting with a product category, or with a budget, and working backwards to justify it. The sequence below works because each step constrains the next. Get the first two right and the rest becomes a short conversation; get them wrong and nothing downstream can rescue it.",
@@ -126,7 +126,7 @@ export const SELECTION_GUIDES: GuideArticle[] = [
     seo: {
       title: "How to Choose a Combustible Dust Vacuum",
       description:
-        "What changes when the dust is combustible: removing ignition sources from the collection path, controlling static, preventing a dispersed cloud inside the machine, and handling what has been collected.",
+        "What changes when the dust is combustible: removing ignition sources from the collection path, controlling static.",
     },
     heroIntro:
       "Combustible dust changes the specification because the machine itself becomes part of the hazard analysis. A vacuum takes settled material and deliberately disperses it into a moving airstream inside a confined enclosure — which is precisely the arrangement that dust safety exists to prevent. Everything about a properly specified unit is aimed at making that safe.",
@@ -220,7 +220,7 @@ export const SELECTION_GUIDES: GuideArticle[] = [
     seo: {
       title: "How to Size an Industrial Vacuum System",
       description:
-        "Airflow and vacuum pressure do different jobs and trade against each other. How material density, hose length, duty cycle and capacity combine into a specification that performs on the floor.",
+        "Airflow and vacuum pressure do different jobs and trade against each other. How material density, hose length.",
     },
     heroIntro:
       "Sizing goes wrong in two directions, and undersizing is not the more common one. Machines are regularly specified with more capability than the application needs, in configurations that cost airflow where airflow was the thing that mattered. Understanding what each parameter actually does makes the trade-offs visible.",

@@ -9,7 +9,7 @@ export const graphiteDustGuide: MaterialGuideData = {
  seo: {
  title: "Graphite Dust Vacuum Solutions",
  description:
- "Graphite dust is combustible and electrically conductive — a dual hazard. How it's safely collected: grounded explosion-proof HEPA vacuums and scheduled electrical-room recovery under NFPA 652 / 660.",
+ "Graphite dust is combustible and electrically conductive — a dual hazard. How it is safely collected with grounded explosion-proof HEPA vacuums.",
  },
  heroIntro:
  "Engineered to safely collect a dust that fights on two fronts — combustible carbon fines that are also electrically conductive, threatening the plant's electrical infrastructure and its safety case with the same accumulation.",

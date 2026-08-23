@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { FAQ, type FaqCategory } from "@/lib/data/faq";
 import { INDUSTRY_DIRECTORY, type IndustryEntry } from "@/lib/data/industries-directory";
+import { GUIDE_ARTICLES } from "@/lib/data/guides";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { pairedAlternates } from "@/lib/i18n";
 import { ALL_MODELS } from "@/lib/data/product-models";
@@ -87,7 +88,7 @@ const CATEGORY_META: Record<
     faqCategories: ["explosion-safety", "selection"],
     metaTitle: "ESD Static Free Vacuum Cleaners",
     metaDescription:
-      "ESD static free industrial vacuum cleaners built with static dissipating housings, filters, hoses and tools — for combustible dust areas and ESD-sensitive electronics work.",
+      "ESD static free industrial vacuum cleaners built with static dissipating housings, filters, hoses and tools.",
     selection: [
       { title: "Decide which risk you are managing", detail: "Preventing a discharge from igniting combustible dust and protecting sensitive components from electrostatic damage are different requirements. Many facilities need both — say so and we will specify for both." },
       { title: "The whole chain must dissipate", detail: "Housings, filters, hoses and tools all form part of the path to ground. A conductive unit at the end of an ordinary plastic hose has a gap in the middle of its protection." },
@@ -100,7 +101,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "applications"],
     metaTitle: "Cleanroom Vacuum Cleaners",
     metaDescription:
-      "Cleanroom vacuum cleaners with HEPA and ULPA absolute filtration, smooth wipeable stainless construction and contained collection — for controlled environments where the exhaust matters.",
+      "Cleanroom vacuum cleaners with HEPA and ULPA absolute filtration, smooth wipeable stainless construction and contained collection.",
     selection: [
       { title: "Start from the room classification", detail: "The classification sets the filtration requirement. Ask what a filter is tested to rather than what it is called." },
       { title: "Decide HEPA or ULPA", detail: "HEPA absolute filtration covers most controlled areas; ULPA extends further where the environment demands it." },
@@ -113,7 +114,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "applications"],
     metaTitle: "Pharmaceutical Vacuum Cleaners",
     metaDescription:
-      "Pharmaceutical vacuum cleaners for active ingredients, excipients and potent compounds — HEPA absolute filtration, sealed collection and wash-down friendly stainless construction.",
+      "Pharmaceutical vacuum cleaners for active ingredients, excipients and potent compounds — HEPA absolute filtration.",
     selection: [
       { title: "Work from the exposure requirement", detail: "Potent compounds and regulated substances set the containment standard. The occupational exposure limit drives the specification, not the other way round." },
       { title: "Plan the disposal step", detail: "The container change is often the highest-exposure moment in the cycle. Sealed liners and a defined route out matter as much as suction." },
@@ -168,7 +169,7 @@ const CATEGORY_META: Record<
     ],
     metaTitle: "Explosion Proof Vacuums",
     metaDescription:
-      "PrestiVac manufactures UL 1203 certified explosion proof vacuum cleaners for combustible dust and flammable liquids — solid stainless steel, HEPA 99.99% absolute filtration, electric and air-operated. Class I & II, Divisions 1 & 2. Made in the USA.",
+      "PrestiVac manufactures UL 1203 certified explosion proof vacuum cleaners for combustible dust and flammable liquids — solid stainless steel.",
     selection: [
       {
         title: "Start with the area classification",
@@ -197,7 +198,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "applications"],
     metaTitle: "HEPA Vacuums | Industrial HEPA Vacuum Cleaners",
     metaDescription:
-      "Industrial HEPA vacuums for fine and hazardous dust — 99.99% filtration at 0.3 µm for pharmaceutical powders, silica, lead and abatement work. Certified models are listed by CSA to UL 1203.",
+      "Industrial HEPA vacuums for fine and hazardous dust — 99.99% filtration at 0.3 µm for pharmaceutical powders, silica, lead and abatement work.",
     selection: [
       {
         title: "Confirm the filtration requirement",
@@ -227,7 +228,7 @@ const CATEGORY_META: Record<
     powerComparison: ELECTRIC_VS_AIR,
     metaTitle: "Pneumatic Vacuums",
     metaDescription:
-      "Air operated pneumatic industrial vacuums with no electrical components — compressed-air driven recovery for classified areas and continuous duty. Explosion-proof construction options from PrestiVac.",
+      "Air operated pneumatic industrial vacuums with no electrical components — compressed-air driven recovery for classified areas and continuous duty.",
     selection: [
       {
         title: "Verify your compressed air supply",
@@ -256,7 +257,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "operation"],
     metaTitle: "Industrial Vacuums",
     metaDescription:
-      "Heavy-duty industrial vacuums in stainless steel for continuous production housekeeping — abrasive debris, high volumes and long duty cycles. Manufactured in the USA by PrestiVac.",
+      "Heavy-duty industrial vacuums in stainless steel for continuous production housekeeping — abrasive debris, high volumes and long duty cycles.",
     selection: [
       {
         title: "Be honest about duty cycle",
@@ -285,7 +286,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "operation"],
     metaTitle: "Central Vacuum Systems",
     metaDescription:
-      "Engineered industrial central vacuum systems — a remote power unit and separator serving inlet drops across the plant, with material consolidated at a single discharge point. Designed and built by PrestiVac.",
+      "Engineered industrial central vacuum systems — a remote power unit and separator serving inlet drops across the plant.",
     selection: [
       {
         title: "Count simultaneous operators",
@@ -314,7 +315,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection", "applications"],
     metaTitle: "Wet & Dry Industrial Vacuums",
     metaDescription:
-      "Wet and dry industrial vacuum systems for liquid, slurry and coolant recovery alongside dry debris — including options for reactive materials that must be kept wet. From PrestiVac.",
+      "Wet and dry industrial vacuum systems for liquid, slurry and coolant recovery alongside dry debris — including options for reactive materials that must be kept wet.",
     selection: [
       {
         title: "Separate liquid from solid duty",
@@ -343,7 +344,7 @@ const CATEGORY_META: Record<
     faqCategories: ["selection"],
     metaTitle: "Custom Engineered Vacuum Systems",
     metaDescription:
-      "Custom-built industrial vacuum systems built to the application — configuration, filtration and integration designed around your material, classification and layout. Designed and manufactured in the USA.",
+      "Custom-built industrial vacuum systems built to the application — configuration, filtration and integration designed around your material.",
     selection: [
       {
         title: "Bring the constraints, not a part number",
@@ -398,6 +399,77 @@ const CATEGORY_META: Record<
   },
 };
 
+
+/**
+ * Guides that genuinely bear on each product category. Chosen per category so a
+ * HEPA page does not lead with a metal-dust guide; slugs are resolved against
+ * GUIDE_ARTICLES at render, so a renamed guide drops out rather than 404ing.
+ */
+const CATEGORY_GUIDES: Record<string, string[]> = {
+  "explosion-proof-vacuums": [
+    "how-to-choose-an-explosion-proof-vacuum",
+    "explosion-proof-vs-dust-ignition-proof",
+    "grounding-and-bonding",
+    "electric-vs-pneumatic-vacuums",
+    "vacuum-for-metal-dust",
+    "types-of-combustible-dust",
+  ],
+  "hepa-vacuums": [
+    "how-to-select-hepa-filtration",
+    "hepa-vs-ulpa-filtration",
+    "vacuum-for-pharmaceutical-powders",
+    "recovered-dust-disposal-and-reclaim",
+  ],
+  "pneumatic-vacuums": [
+    "electric-vs-pneumatic-vacuums",
+    "how-to-choose-an-explosion-proof-vacuum",
+    "grounding-and-bonding",
+    "sources-of-ignition",
+  ],
+  "industrial-vacuums": [
+    "how-to-select-an-industrial-vacuum",
+    "how-to-size-an-industrial-vacuum",
+    "industrial-vs-shop-vacuums",
+    "vacuum-vs-dust-collector",
+  ],
+  "esd-static-free-vacuums": [
+    "esd-anti-static-vacuums",
+    "grounding-and-bonding",
+    "sources-of-ignition",
+  ],
+  "cleanroom-vacuums": [
+    "how-to-select-hepa-filtration",
+    "vacuum-for-pharmaceutical-powders",
+    "hepa-vs-ulpa-filtration",
+  ],
+  "pharmaceutical-vacuums": [
+    "vacuum-for-pharmaceutical-powders",
+    "how-to-select-hepa-filtration",
+    "hepa-vs-ulpa-filtration",
+  ],
+  "wet-dry-systems": [
+    "wet-vs-dry-recovery",
+    "flammable-liquid-recovery",
+    "toxic-liquid-recovery",
+  ],
+  "central-vacuum-systems": [
+    "portable-vs-central-vacuum-systems",
+    "how-to-size-an-industrial-vacuum",
+    "how-to-select-an-industrial-vacuum",
+  ],
+  "custom-engineered-systems": [
+    "how-to-select-an-industrial-vacuum",
+    "how-to-choose-an-explosion-proof-vacuum",
+    "how-to-size-an-industrial-vacuum",
+  ],
+  accessories: [
+    "selecting-hoses-and-accessories",
+    "grounding-and-bonding",
+    "how-to-select-hepa-filtration",
+    "industrial-vacuum-maintenance",
+  ],
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -432,6 +504,10 @@ export default async function ProductCategoryPage({
   const category = PRODUCT_CATEGORIES.find((c) => c.slug === slug);
   const meta = CATEGORY_META[slug];
   if (!category || !meta) notFound();
+
+  const guideCluster = (CATEGORY_GUIDES[category.slug] ?? [])
+    .map((guideSlug) => GUIDE_ARTICLES.find((g) => g.slug === guideSlug))
+    .filter((g): g is (typeof GUIDE_ARTICLES)[number] => Boolean(g));
 
   const models = ALL_MODELS.filter((m) => meta.seriesIds.includes(m.seriesId));
   const hasCertifiedLine = models.some((m) => m.csaCertified);
@@ -851,6 +927,55 @@ export default async function ProductCategoryPage({
       </section>
 
       {/* Primary conversion action */}
+      {/*
+        Pillar -> cluster linking.
+
+        The commercial category page is the primary destination for its keyword;
+        the guides carry the informational intent. Linking down to them from here
+        (and back from each guide's `related`) is what makes the two reinforce
+        each other rather than compete. Chosen per category rather than a fixed
+        list, so a HEPA category does not lead with a metal-dust guide.
+      */}
+      {guideCluster.length ? (
+        <section
+          aria-labelledby="cluster-heading"
+          className="border-t border-white/10 bg-graphite-900 py-14 lg:py-16"
+        >
+          <Container>
+            <h2
+              id="cluster-heading"
+              className="font-display text-[22px] font-extrabold text-white sm:text-[26px]"
+            >
+              Selecting equipment for this application
+            </h2>
+            <p className="mt-3 max-w-3xl text-[14px]/[1.7] text-white/65">
+              Written for engineers specifying recovery equipment. Each guide covers how the
+              decision is actually made rather than which product to buy.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {guideCluster.map((guide) => (
+                <Link
+                  key={guide.slug}
+                  href={`/guides/${guide.slug}`}
+                  className="rounded-2xl bg-white/[0.04] p-5 ring-1 ring-white/10 transition-all duration-300 hover:ring-brand-500/40 motion-safe:hover:-translate-y-0.5"
+                >
+                  <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] text-brand-400">
+                    {guide.eyebrow}
+                  </p>
+                  <h3 className="mt-2 font-display text-[15px]/[1.3] font-extrabold text-white">
+                    {guide.name}
+                  </h3>
+                  <p className="mt-2 text-[12.5px]/[1.6] text-white/60">{guide.seo.description}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-[12px] font-bold text-brand-300">
+                    Read <ArrowRight aria-hidden className="size-3" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </Container>
+        </section>
+      ) : null}
+
       <section id="quote" className="scroll-mt-24 border-t border-white/10 bg-graphite-950 py-14 lg:py-16">
         <Container>
           <div className="mx-auto max-w-3xl">

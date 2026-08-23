@@ -9,7 +9,7 @@ export const paperDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Paper & Pulp Dust?",
  description:
- "Paper and pulp dust is combustible cellulose — a particulate solid under NFPA 660 that deflagrates like any fine organic dust, and a fibrous one that mats, clings and clogs. Generated wherever paper is converted, printed or packaged, it is recovered grounded and HEPA-retained, with frequent housekeeping the core control.",
+ "Paper and pulp dust is combustible cellulose — a particulate solid under NFPA 660 that deflagrates like any fine organic dust, and a fibrous one that mats.",
  },
  heroIntro:
  "The familiar material that becomes a combustible dust the moment it is worked — paper and pulp dust is cellulose, and cellulose burns. As a fine dust it is a combustible particulate solid that deflagrates like flour or wood, and as a fibrous one it mats, clings and clogs. It turns up wherever paper is converted, printed or packaged, and the control is consistent: grounded, HEPA-retained recovery and frequent housekeeping.",

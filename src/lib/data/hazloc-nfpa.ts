@@ -33,7 +33,7 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "NFPA 660 — Consolidated Combustible Dust",
       description:
-        "NFPA 660 brings the separate combustible dust standards into one document. What it consolidated, why the change was made, and how to work out which requirements apply to your facility.",
+        "NFPA 660 brings the separate combustible dust standards into one document. What it consolidated, why the change was made.",
     },
     heroIntro:
       "For years the combustible dust requirements lived across half a dozen NFPA documents — a fundamentals standard, several industry-specific ones, and a separate standard for metals. Facilities handling more than one material had to reconcile them. NFPA 660 consolidates that set into a single standard with a common core and commodity-specific chapters.",
@@ -99,6 +99,8 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 654", href: "/hazardous-locations/nfpa-654" },
+      { label: "OSHA & combustible dust", href: "/hazardous-locations/osha-combustible-dust" },
       { label: "Dust hazard analysis", href: "/guides/dust-hazard-analysis" },
       { label: "NFPA 652", href: "/hazardous-locations/nfpa-652" },
       { label: "NFPA 484", href: "/hazardous-locations/nfpa-484" },
@@ -115,7 +117,7 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "NFPA 652 — Combustible Dust Fundamentals",
       description:
-        "NFPA 652 established the common baseline for combustible dust across industries, including the dust hazard analysis requirement. What it covered and how it now sits within NFPA 660.",
+        "NFPA 652 established the common baseline for combustible dust across industries, including the dust hazard analysis requirement.",
     },
     heroIntro:
       "NFPA 652 was the fundamentals standard — the document that established a common baseline across every industry handling combustible dust, sitting above the industry-specific standards rather than replacing them. Its most consequential contribution was making the dust hazard analysis an explicit, formal requirement rather than an implied good practice.",
@@ -174,6 +176,8 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 654", href: "/hazardous-locations/nfpa-654" },
+      { label: "NFPA 484", href: "/hazardous-locations/nfpa-484" },
       { label: "Dust hazard analysis", href: "/guides/dust-hazard-analysis" },
       { label: "NFPA 660", href: "/hazardous-locations/nfpa-660" },
       { label: "How dust explosions work", href: "/guides/dust-explosion-basics" },
@@ -189,7 +193,7 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "NFPA 654 — Combustible Particulate Solids",
       description:
-        "NFPA 654 addressed fire and dust explosion prevention where combustible particulate solids are manufactured, processed or handled. What it covered and how it relates to NFPA 660.",
+        "NFPA 654 addressed fire and dust explosion prevention where combustible particulate solids are manufactured, processed or handled.",
     },
     heroIntro:
       "NFPA 654 was the general-industry standard for combustible particulate solids — the document that applied where a facility manufactured, processed, blended, conveyed or handled combustible dusts that did not fall under one of the more specific standards. In practice it covered a very large share of manufacturing.",
@@ -248,6 +252,8 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 652", href: "/hazardous-locations/nfpa-652" },
+      { label: "The cost of a dust explosion", href: "/guides/cost-of-a-dust-explosion" },
       { label: "NFPA 660", href: "/hazardous-locations/nfpa-660" },
       { label: "How dust explosions work", href: "/guides/dust-explosion-basics" },
       { label: "Sources of ignition", href: "/guides/sources-of-ignition" },
@@ -263,7 +269,7 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "NFPA 484 — Combustible Metals Standard",
       description:
-        "Combustible metal dusts behave differently from organic dusts — including reacting with water. Why metals were governed separately, and what that means for recovery equipment.",
+        "Combustible metal dusts behave differently from organic dusts — including reacting with water. Why metals were governed separately.",
     },
     heroIntro:
       "Combustible metals were governed by their own standard for a straightforward reason: they behave differently from organic dusts in ways that change both prevention and response. The most consequential difference is that some react with water, which means the instinctive response to a fire can make it substantially worse.",
@@ -331,6 +337,8 @@ export const NFPA_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 70 / NEC", href: "/hazardous-locations/nfpa-70-nec" },
+      { label: "Metal AM powder", href: "/materials/metal-additive-manufacturing-powder" },
       { label: "Combustible metal dust", href: "/materials/combustible-metal-dust" },
       { label: "Class II Groups E, F & G", href: "/hazardous-locations/class-ii-groups-e-f-g" },
       { label: "Aluminum dust", href: "/materials/aluminum-dust" },

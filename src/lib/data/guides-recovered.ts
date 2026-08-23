@@ -27,7 +27,7 @@ export const RECOVERED_GUIDES: GuideArticle[] = [
     seo: {
       title: "Types of Combustible Dust Explained",
       description:
-        "Metal, organic, carbonaceous, plastic and chemical dusts behave differently and are grouped differently. How the families divide, what changes between them, and why the group on a certificate matters.",
+        "Metal, organic, carbonaceous, plastic and chemical dusts behave differently and are grouped differently. How the families divide, what changes between them.",
     },
     heroIntro:
       "Combustible dust is not one hazard. The families behave differently enough that the response to a metal dust fire can be actively dangerous applied to an organic one, and the equipment appropriate to a non-conductive dust may be inadequate for a conductive one. Getting the family right is the step that everything downstream depends on.",
@@ -140,7 +140,7 @@ export const RECOVERED_GUIDES: GuideArticle[] = [
     seo: {
       title: "The Real Cost of a Dust Explosion",
       description:
-        "The equipment loss is rarely the largest number. Business interruption, regulatory consequence, insurance response and the human cost of a combustible dust incident — and how they compare to prevention.",
+        "The equipment loss is rarely the largest number. Business interruption, regulatory consequence, insurance response and the human cost of a combustible dust incident.",
     },
     heroIntro:
       "Housekeeping equipment competes for budget against things with an obvious return, and it usually loses until something happens. The argument for it is easier to make when the full cost of an incident is on the table rather than just the replacement value of what burned — because the replacement value is almost never the largest number.",
@@ -241,7 +241,7 @@ export const RECOVERED_GUIDES: GuideArticle[] = [
     seo: {
       title: "Flammable Liquid & Solvent Recovery",
       description:
-        "Recovering ethanol, fuels and solvents differs from toxic liquid recovery. Vapour rather than liquid is the hazard, which changes the classification, the static requirement and the equipment.",
+        "Recovering ethanol, fuels and solvents differs from toxic liquid recovery. Vapour rather than liquid is the hazard, which changes the classification.",
     },
     heroIntro:
       "Recovering a flammable liquid is a different problem from recovering a toxic one, and the difference is not severity — it is which phase carries the hazard. With a flammable liquid the vapour above it is what ignites, and vapour goes where the liquid does not. That single fact reshapes the classification, the equipment and the procedure.",

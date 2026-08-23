@@ -9,7 +9,7 @@ export const woodDustGuide: MaterialGuideData = {
  seo: {
  title: "Wood Dust Vacuum Solutions",
  description:
- "Wood dust is a classic combustible dust and a recognized carcinogen. How the fugitive fraction is safely collected: grounded explosion-proof HEPA vacuums under NFPA 664 / 660.",
+ "Wood dust is a classic combustible dust and a recognized carcinogen. How the fugitive fraction is safely collected with explosion-proof HEPA vacuums.",
  },
  heroIntro:
  "Built for the dust your machine collection system doesn't catch — the fugitive fine fraction that settles on structure and equipment, fuels secondary explosions, and carries the exposure risk wood dust is classified for.",

@@ -7,7 +7,7 @@ import { subpageJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 const description =
-  "Housekeeping equipment that meets combustible-dust requirements. Explosion-proof, HEPA filtered and matched to your material — find your dust group and the recovery approach that suits it.";
+  "Housekeeping equipment that meets combustible-dust requirements. Explosion-proof, HEPA filtered and matched to your material.";
 
 export const metadata: Metadata = {
   title: "Combustible Dust Vacuums",

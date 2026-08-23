@@ -9,7 +9,7 @@ export const cocoaDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Cocoa Dust?",
  description:
- "Cocoa sheds a dust stream at every step — shell fines at winnowing, powder at grinding and pressing — and its fat content makes deposits cling to warm equipment. Explosion-proof HEPA recovery with allergen-aware disposal for chocolate and confectionery plants.",
+ "Cocoa sheds a dust stream at every step — shell fines at winnowing, powder at grinding and pressing — and its fat content makes deposits cling to warm equipment.",
  },
  heroIntro:
  "Built for the confectionery floor — cocoa sheds its own dust stream at every process step, the residual fat makes deposits cling and layer on warm equipment, and the milk powder handled beside it means the same recovery pass carries allergen duty too.",

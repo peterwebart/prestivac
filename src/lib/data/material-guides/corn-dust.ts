@@ -9,7 +9,7 @@ export const cornDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Corn Dust?",
  description:
- "Corn spans the grain standard's world and the starch world — elevator housekeeping under OSHA 1910.272 on one end, cornstarch fine enough to serve as the laboratory reference dust on the other. Explosion-proof recovery across elevators, mills and ethanol plants.",
+ "Corn spans the grain standard's world and the starch world — elevator housekeeping under OSHA 1910.272 on one end.",
  },
  heroIntro:
  "Built for the crop that spans the whole hazard range — whole-kernel elevators governed by the grain standard on one end, cornstarch so consistent that laboratories use it as a reference dust on the other, with milling floors and ethanol plants in between.",

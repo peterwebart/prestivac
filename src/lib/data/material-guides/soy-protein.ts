@@ -9,7 +9,7 @@ export const soyProteinGuide: MaterialGuideData = {
  seo: {
   title: "Soy Protein Dust — Combustible Dust Control",
   description:
-   "Soy protein isolate and concentrate are fine combustible organic dusts and major allergens. Where they accumulate in processing and blending, and how to recover them safely.",
+   "Soy protein isolate and concentrate are fine combustible organic dusts and major allergens. Where they accumulate in processing and blending.",
  },
  heroIntro:
   "Built for soy processing and blending operations handling a powder that is a combustible dust and a major allergen at the same time. Soy protein isolate is very fine, suspends readily, and carries a cross-contact requirement that shapes the whole cleaning programme.",
@@ -46,27 +46,27 @@ export const soyProteinGuide: MaterialGuideData = {
  "Static in dry handling: dry powder through chutes and pneumatic lines accumulates charge, so a bonded conductive path matters throughout.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Retained-filtration recovery so a major allergen is removed from the building rather than relocated.",
+ "Dedicated units or accessory sets per line, with a documented cleaning pass between products.",
+ "Explosion-proof construction across drying, milling and blending where isolate fines are produced.",
+ "Source capture at tote and sack dumping, the largest repeated release point.",
+ "Grounded, bonded conductive path through dry handling and pneumatic transfer.",
+ "Overhead recovery across the area, since isolate grades travel on minimal air movement.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Let allergen policy lead", detail: "Dispersal is the failure mode here. Segregation should drive the equipment plan rather than be retrofitted to it." },
+ { step: "Identify the grade", detail: "Isolates are among the finest powders in a food plant and behave accordingly." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for drying, milling and blending areas." },
+ { step: "Fix the dump station", detail: "Manual dumping releases the most material in the shortest time." },
+ { step: "Document the cleaning pass", detail: "Between-product cleaning is a labelling control, so it needs a record, not just a routine." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Never sweep or blow down — with a major allergen that is a cross-contact event.",
+ "Keep dedicated units or accessory sets per line.",
+ "Record each between-product cleaning pass.",
+ "Prioritise the dump station and the overhead above it.",
+ "Verify the conductive path from tool to container.",
+ "Empty into sealed disposal outside the production area.",
  ],
  faqs: [
  {

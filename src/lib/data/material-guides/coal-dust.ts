@@ -9,7 +9,7 @@ export const coalDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Coal Dust?",
  description:
- "Coal dust is the oldest documented dust-explosion hazard — investigated since the 1840s. Explosion-proof recovery for the surface world: conveyor galleries, transfer towers, tripper decks and bunker floors, with self-heating discipline and cooled-material rules.",
+ "Coal dust is the oldest documented dust-explosion hazard — investigated since the 1840s. Explosion-proof recovery for the surface world: conveyor galleries.",
  },
  heroIntro:
  "Built for the dust that started the whole record — coal's explosibility has been investigated since the 1840s, and the modern surface plant still runs its classic geography: galleries, transfer towers, tripper decks and bunker floors where float dust settles high above ignition-rich equipment.",

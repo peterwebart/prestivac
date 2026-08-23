@@ -9,7 +9,7 @@ export const textileFibersGuide: MaterialGuideData = {
  seo: {
   title: "Textile Fibers — Class III Flyings & Lint",
   description:
-   "Textile lint and flyings are classified as Class III ignitible fibers rather than Class II dust, which changes the equipment question. How lint accumulates and how to control it.",
+   "Textile lint and flyings are classified as Class III ignitible fibers rather than Class II dust, which changes the equipment question.",
  },
  heroIntro:
   "Built for spinning, weaving and finishing areas where the accumulation is lint and flyings rather than powder. This is the one material family in the directory that is Class III rather than Class II — a distinction that changes how the area is classified and what equipment applies.",

@@ -9,7 +9,7 @@ export const zincDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Zinc Dust?",
  description:
- "Fine zinc is a combustible metal dust — and its signature twist is chemistry: zinc reacts with moisture and acids to release flammable hydrogen, so 'just wet it down' trades a dust hazard for a gas hazard, and damp collected zinc can evolve hydrogen in a sealed drum. Dry, grounded, HEPA-retained recovery.",
+ "Fine zinc is a combustible metal dust — and its signature twist is chemistry: zinc reacts with moisture and acids to release flammable hydrogen.",
  },
  heroIntro:
  "Built for the metal that fights water — fine zinc is a combustible metal dust like its aluminum and magnesium cousins, but its defining nuance is chemical: zinc reacts with moisture, and more vigorously with acids, to liberate flammable hydrogen gas. So a wet cleanup can trade a dust hazard for a gas hazard, and damp collected zinc sealed in a drum can quietly build hydrogen. It is recovered dry, grounded, and stored with that chemistry in mind.",

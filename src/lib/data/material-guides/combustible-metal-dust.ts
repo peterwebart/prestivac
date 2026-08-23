@@ -9,7 +9,7 @@ export const combustibleMetalDustGuide: MaterialGuideData = {
  seo: {
  title: "Combustible Metal Dust — Which Metals Burn & How",
  description:
- "Which metals form combustible dust, why water is the wrong response, what Class II Group E means, and how metallic dust from grinding, machining and additive manufacturing should be recovered.",
+ "Which metals form combustible dust, why water is the wrong response, what Class II Group E means, and how metallic dust from grinding.",
  },
  heroIntro:
  "The overview page for metallic dust. Solid metal is inert to handle; the same metal reduced to fines is a different material with different rules — one where water can make a fire worse, where conductivity matters as much as combustibility, and where the recovery method is part of the safety case.",

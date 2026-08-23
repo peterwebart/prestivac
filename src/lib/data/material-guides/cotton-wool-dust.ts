@@ -9,7 +9,7 @@ export const cottonWoolDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Cotton & Wool Dust?",
  description:
- "Cotton dust carries its own OSHA standard — 1910.1043, the byssinosis rule — and ignitable fibers define their own hazardous-location class. HEPA-retained recovery for card rooms, overheads and motor housings, where lint fires flash across surfaces.",
+ "Cotton dust carries its own OSHA standard — 1910.1043, the byssinosis rule — and ignitable fibers define their own hazardous-location class.",
  },
  heroIntro:
  "Built for the mill's two hazards in one material — a respirable fine fraction serious enough to earn cotton its own OSHA standard, and a fiber fraction whose flash-fire behavior gave ignitable flyings their own hazardous-location class.",

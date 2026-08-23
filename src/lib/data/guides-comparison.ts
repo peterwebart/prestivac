@@ -15,6 +15,113 @@ import type { GuideArticle } from "@/components/templates/guide-article";
  */
 export const COMPARISON_GUIDES: GuideArticle[] = [
   {
+    slug: "explosion-proof-vs-standard-industrial-vacuum",
+    name: "Explosion proof vs standard industrial",
+    title: "Explosion proof or standard industrial vacuum?",
+    eyebrow: "Equipment selection",
+    minutes: 7,
+    seo: {
+      title: "Explosion Proof vs Standard Industrial",
+      description:
+        "Both are heavy-duty industrial machines. What separates them is whether the construction addresses ignition sources — and whether your area classification requires that.",
+    },
+    heroIntro:
+      "This is a different question from whether to use a shop vacuum, and it gets confused with it constantly. A standard industrial vacuum is already a serious machine: stainless construction, continuous duty, absolute filtration. What it does not do is address the ignition sources inside it, and whether that matters is decided by your area classification rather than by how demanding the job feels.",
+    keyPoints: [
+      "Both are industrial-grade; the difference is ignition-source control",
+      "Classification decides the requirement, not duty or material volume",
+      "A standard unit can carry HEPA and still be wrong for a classified area",
+      "Certification covers a specific model and a named scope",
+    ],
+    sections: [
+      {
+        heading: "What they have in common",
+        body: [
+          "A standard industrial vacuum and an explosion-proof one share most of their engineering. Both are built for sustained duty rather than intermittent use, both are commonly stainless steel with smooth internals that do not trap material, both can carry absolute filtration, and both are designed so a full container can be removed and emptied without dispersing what is inside.",
+          "This is why the comparison is genuinely difficult from a datasheet. The visible specification overlaps almost entirely. What differs is not performance but whether the construction has been designed and assessed so that the unit cannot ignite the atmosphere it operates in.",
+        ],
+      },
+      {
+        heading: "What actually differs",
+        body: [
+          "A standard industrial vacuum contains ordinary electrical components: a motor, switching, wiring. In an unclassified area that is entirely appropriate, because there is nothing present to ignite. The equipment is not deficient; it is built for a different environment.",
+          "An explosion-proof unit either encloses those components so an internal ignition cannot propagate, or removes them entirely in the case of an air-operated machine. Which of those two routes applies changes the maintenance regime and the utility requirement, but both address the same question the standard unit does not.",
+        ],
+      },
+      {
+        heading: "Classification decides, not intuition",
+        body: [
+          "The requirement follows from the area classification assigned by your own electrical or process engineer and accepted by the authority having jurisdiction. It does not follow from how dusty the operation is, how large the volumes are, or how hard the unit will work.",
+          "That produces two failure modes in opposite directions. Facilities specify explosion-proof equipment for unclassified areas because the material sounds hazardous, paying for protection the area does not require. And facilities specify standard equipment for classified areas because the housekeeping task felt routine. The second is the dangerous one, and it usually comes from nobody having asked what the classification is.",
+        ],
+      },
+      {
+        heading: "HEPA is not the same question",
+        body: [
+          "Absolute filtration and hazardous-location suitability are independent properties, and conflating them is common. Filtration governs what leaves the machine — an exposure and housekeeping concern. Hazardous-location construction governs whether the machine can ignite the atmosphere around it.",
+          "A standard industrial vacuum with HEPA filtration is an excellent tool for fine toxic dust in an unclassified area, and it remains unsuitable for a classified one. A unit may need both properties, and a specification that names only one has answered half the question.",
+        ],
+      },
+      {
+        heading: "Reading the certification",
+        body: [
+          "Where a unit is certified, the certificate names a specific model and a defined scope: the classes, divisions, groups and temperature code. It means nothing outside that scope, and two similar-looking models in the same catalogue can carry different scopes.",
+          "So the useful comparison is not 'explosion proof or not'. It is whether the scope on the certificate for the specific model covers the classification of your specific area — which is a documented fact rather than a category.",
+        ],
+      },
+    ],
+    comparison: {
+      heading: "Side by side",
+      columns: ["Standard industrial", "Explosion proof"],
+      rows: [
+        { aspect: "Build quality", left: "Industrial — stainless, continuous duty", right: "Industrial — stainless, continuous duty" },
+        { aspect: "Absolute filtration", left: "Available", right: "Available" },
+        { aspect: "Ignition sources", left: "Ordinary motor and switching present", right: "Enclosed, or removed entirely on air-operated units" },
+        { aspect: "Suitable area", left: "Unclassified", right: "Per the scope named on the certificate" },
+        { aspect: "What decides it", left: "Area classification", right: "Area classification" },
+        { aspect: "Maintenance", left: "Filtration, hoses, seals", right: "Adds enclosure integrity and the grounding path" },
+      ],
+    },
+    callout: {
+      heading: "Ask the classification question first",
+      body: [
+        "If the area is classified, a standard industrial vacuum is not eligible regardless of how well it is built. If it is not classified, explosion-proof construction is protection you are paying for and do not need.",
+        "The classification is assigned by your own engineer. Bring it, with the material, and the specification takes minutes.",
+      ],
+    },
+    faqs: [
+      {
+        question: "Our material is combustible — do we automatically need explosion-proof?",
+        answer:
+          "Not automatically. Combustibility is one input; the area classification is the other, and it is assigned by your own electrical or process engineer. Many facilities handle combustible material in areas that are not classified, and the requirement follows the classification.",
+      },
+      {
+        question: "Is a standard industrial vacuum with HEPA good enough?",
+        answer:
+          "For fine or toxic dust in an unclassified area, often yes. HEPA governs what leaves the machine; it says nothing about whether the machine can ignite the atmosphere around it. In a classified area the filtration does not address the requirement.",
+      },
+      {
+        question: "Can we upgrade a standard unit to be explosion proof?",
+        answer:
+          "No. Certification covers a specific model in a specific configuration as assessed. A unit modified in the field is not the equipment that was certified, and there is no upgrade path that produces a listing.",
+      },
+      {
+        question: "How do we tell which models are certified?",
+        answer:
+          "From the certificate, which names the models and the scope. Two similar-looking models in the same series can carry different scopes, so each model page states its own rather than leaving it to be inferred.",
+      },
+    ],
+    related: [
+      { label: "Explosion Proof Vacuums", href: "/products/explosion-proof-vacuums" },
+      { label: "Industrial Vacuums", href: "/products/industrial-vacuums" },
+      { label: "Choosing an explosion-proof vacuum", href: "/guides/how-to-choose-an-explosion-proof-vacuum" },
+      { label: "Industrial vs shop vacuums", href: "/guides/industrial-vs-shop-vacuums" },
+      { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
+      { label: "Get a quote", href: "/get-a-quote" },
+    ],
+  },
+
+  {
     slug: "electric-vs-pneumatic-vacuums",
     name: "Electric vs pneumatic",
     title: "Electric or pneumatic? The first real decision",
@@ -23,7 +130,7 @@ export const COMPARISON_GUIDES: GuideArticle[] = [
     seo: {
       title: "Electric vs Pneumatic Industrial Vacuums",
       description:
-        "Air-operated and electric industrial vacuums solve the same recovery problem by different routes. How compressed air availability, duty cycle, ignition path and running cost decide which one belongs in your plant.",
+        "Air-operated and electric industrial vacuums solve the same recovery problem by different routes. How compressed air availability, duty cycle.",
     },
     heroIntro:
       "This is usually the first question worth settling, because it changes everything downstream — where the unit can go, what utility it needs, how it is maintained, and how the ignition-source argument is made. Neither is inherently the safer choice. They remove the electrical risk in different ways, and the right answer depends on what your facility can actually supply.",
@@ -129,7 +236,7 @@ export const COMPARISON_GUIDES: GuideArticle[] = [
     seo: {
       title: "Explosion Proof vs Dust Ignition Proof",
       description:
-        "The two terms describe protection against different hazards — flammable gas and vapour versus combustible dust. Why equipment suited to one is not automatically suited to the other, and what to check on the nameplate.",
+        "The two terms describe protection against different hazards — flammable gas and vapour versus combustible dust.",
     },
     heroIntro:
       "These phrases are used interchangeably in purchasing conversations far more often than they should be. They describe two different protection concepts, developed for two different hazards, and equipment carrying one does not automatically carry the other. Getting this wrong is one of the more common ways the right-looking equipment ends up in the wrong room.",
@@ -223,7 +330,7 @@ export const COMPARISON_GUIDES: GuideArticle[] = [
     seo: {
       title: "HEPA vs ULPA Filtration for Industrial Vacuums",
       description:
-        "Both are absolute filters; they differ in retention at the most penetrating particle size. When ULPA is genuinely warranted, when HEPA is the right answer, and why filter area matters as much as filter grade.",
+        "Both are absolute filters; they differ in retention at the most penetrating particle size. When ULPA is genuinely warranted, when HEPA is the right answer.",
     },
     heroIntro:
       "Both HEPA and ULPA are absolute filters — they retain a defined proportion of particles at their rated size rather than merely slowing them down. The difference between them is smaller than most specifications assume, and it is frequently not the part of the filtration decision that matters most.",
@@ -317,7 +424,7 @@ export const COMPARISON_GUIDES: GuideArticle[] = [
     seo: {
       title: "Industrial vs Shop Vacuums — What Changes",
       description:
-        "Construction, filtration, duty cycle and ignition sources all differ. Why a general-purpose shop vacuum is the wrong tool for combustible dust, fine powder and continuous industrial recovery.",
+        "Construction, filtration, duty cycle and ignition sources all differ. Why a general-purpose shop vacuum is the wrong tool for combustible dust.",
     },
     heroIntro:
       "The question comes up constantly, usually phrased as whether the vacuum already in the maintenance cupboard will do. For sweeping up offcuts in a non-classified area it very often will. For fine dust, for combustible material, or for anything approaching continuous duty, the differences stop being about quality and start being about whether the machine is the right kind of thing at all.",
@@ -411,7 +518,7 @@ export const COMPARISON_GUIDES: GuideArticle[] = [
     seo: {
       title: "Portable vs Central Industrial Vacuum Systems",
       description:
-        "Portable units follow the work; central systems put permanent inlets where cleaning happens. How cleaning frequency, plant layout, material volume and classified areas decide which architecture fits.",
+        "Portable units follow the work; central systems put permanent inlets where cleaning happens. How cleaning frequency, plant layout.",
     },
     heroIntro:
       "This is an architecture decision rather than a product decision, and it is usually settled by how often cleaning happens and where. A plant that cleans a handful of machines between runs has a different problem from one where housekeeping is continuous across a large floor, and the equipment that suits each is genuinely different.",
@@ -505,7 +612,7 @@ export const COMPARISON_GUIDES: GuideArticle[] = [
     seo: {
       title: "Wet vs Dry Industrial Vacuum Recovery",
       description:
-        "Recovering liquid is a different engineering problem from recovering dust. Where combined wet/dry units fit, where they do not, and why mixing recovered wet and dry material can create a hazard of its own.",
+        "Recovering liquid is a different engineering problem from recovering dust. Where combined wet/dry units fit.",
     },
     heroIntro:
       "Liquid and dust are recovered by the same basic principle and almost nothing else in common. Filtration behaves differently, the container has to deal with weight and sloshing rather than dispersion, and the material itself may react. Combined units exist and are genuinely useful — but the combination has boundaries worth understanding before specifying one.",

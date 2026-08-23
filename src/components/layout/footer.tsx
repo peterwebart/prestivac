@@ -4,23 +4,32 @@ import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { NAVIGATION } from "@/lib/data/navigation";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { RESOURCES } from "@/lib/data/resources";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
+/**
+ * Compact hub column. The full crawlable navigation graph is the site index
+ * rendered below, driven by NAVIGATION — see src/lib/data/navigation.ts for why
+ * the footer carries it rather than the Radix megamenu.
+ */
 const COMPANY_LINKS = [
   { label: "About", href: "/about" },
   { label: "Get a Quote", href: "/get-a-quote" },
+  { label: "All Products", href: "/products" },
   { label: "Applications", href: "/applications" },
   { label: "Industries", href: "/industries" },
   { label: "Dusts & Materials", href: "/materials" },
   { label: "Combustible Dust Vacuums", href: "/combustible-dust" },
   { label: "Hazardous Location Vacuums", href: "/hazardous-location-vacuums" },
+  { label: "Standards & Compliance", href: "/hazardous-locations" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Guides", href: "/guides" },
+  { label: "Knowledge Center", href: "/resources" },
+  { label: "FAQ", href: "/faq" },
   { label: "Support & Manuals", href: "/support" },
-  { label: "Standards & Compliance", href: "/hazardous-locations" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -147,6 +156,47 @@ export function Footer() {
             </address>
           </div>
         </div>
+
+        {/*
+          Site index — the crawlable navigation graph.
+
+          This is where the important navigation destinations exist as real
+          anchors in the server-rendered HTML of every page. It is driven by the
+          same NAVIGATION config as the desktop megamenu and the mobile nav, so
+          no URL is maintained twice, and it is visible rather than hidden.
+        */}
+        <nav aria-label="Site index" className="mt-14 border-t border-white/10 pt-10">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {NAVIGATION.map((section) => (
+              <div key={section.label}>
+                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/50">
+                  <Link href={section.href} className="transition-colors hover:text-white">
+                    {section.label}
+                  </Link>
+                </p>
+                <ul className="mt-4 space-y-2">
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link href={link.href} className={linkClass}>
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                  {/* Featured destinations belong here too, or they would exist
+                      only inside the client-rendered mega panel. */}
+                  {section.featured &&
+                  !section.links.some((l) => l.href === section.featured?.href) ? (
+                    <li>
+                      <Link href={section.featured.href} className={linkClass}>
+                        {section.featured.label}
+                      </Link>
+                    </li>
+                  ) : null}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </nav>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-[12px] text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>

@@ -9,7 +9,7 @@ export const oilGasGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust & Residue in Oil & Gas",
  description:
- "The industry that made 'explosion-proof' a household word — but here the defining hazard is the flammable atmosphere itself. Refineries are Class I hazardous locations where gases and vapors set the classification; the dust that matters is catalyst fines, petroleum coke and spent media, recovered with equipment rated for the atmosphere.",
+ "The industry that made 'explosion-proof' a household word — but here the defining hazard is the flammable atmosphere itself.",
  },
  heroIntro:
  "The industry that made the phrase 'explosion-proof' a household word — and the one where the classification comes from the atmosphere, not the dust. Refineries and petrochemical plants are Class I hazardous locations, where flammable gases and vapors set the requirement and recovery equipment must be rated for that atmosphere. The dust that matters here is narrower and specific: catalyst fines, petroleum coke and spent media.",

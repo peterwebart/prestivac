@@ -10,7 +10,7 @@ export const drumFillingGuide: ApplicationGuideData = {
  seo: {
  title: "Drum & Container Filling Vacuum Solutions",
  description:
- "Industrial vacuum recovery for filling drums, pails and IBCs with powder — capturing the displacement dust pushed out as a rigid container fills, grounded for combustible powder and HEPA-retained for chemical and hazardous materials.",
+ "Industrial vacuum recovery for filling drums, pails and IBCs with powder — capturing the displacement dust pushed out as a rigid container fills.",
  },
  tagline: "As the container fills, the air it holds has to go somewhere — and it takes dust with it.",
  heroIntro:

@@ -9,7 +9,7 @@ export const recyclingGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Recycling & Waste",
  description:
- "Recycling's defining hazard is uncertainty — the stream is whatever came in, so the dust may hold combustible metals, lithium cells prone to thermal runaway, self-charging plastic fines and toxic residues at once. Safe recovery starts from a simple rule: characterize the stream, or handle it as worst-case.",
+ "Recycling's defining hazard is uncertainty — the stream is whatever came in, so the dust may hold combustible metals, lithium cells prone to thermal runaway.",
  },
  heroIntro:
  "The one industry whose defining hazard is not knowing what's in the stream — a recycling feed is whatever arrived, so the dust it sheds can hold combustible metals, lithium cells that can enter thermal runaway, insulating plastic fines that charge themselves, and toxic residues, often all at once. Everything here follows one rule: characterize the stream, or treat it as worst-case.",

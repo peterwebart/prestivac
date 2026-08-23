@@ -182,6 +182,13 @@ export type FeaturedMaterial = {
 /** Materials with dedicated deep-dive pages. */
 export const FEATURED_MATERIALS: FeaturedMaterial[] = [
  {
+  slug: "mercury",
+  name: "Mercury",
+  group: "Other Combustible Dusts",
+  blurb:
+   "A liquid metal that vaporises at room temperature — an ordinary vacuum atomises a spill into a building-wide exposure.",
+ },
+ {
   slug: "milk-powder",
   name: "Milk Powder",
   group: "Food Dusts",

@@ -9,7 +9,7 @@ export const cannabisGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Cannabis & Hemp",
  description:
- "A fast-growing industry meeting a hazard the established ones learned the hard way — cannabis and hemp dust is a combustible agricultural dust, and grinding, milling, trimming and trichome handling generate fine combustible powder. Extraction adds flammable-solvent (Class I) considerations. Grounded, rated, HEPA-retained recovery.",
+ "A fast-growing industry meeting a hazard the established ones learned the hard way — cannabis and hemp dust is a combustible agricultural dust, and grinding.",
  },
  heroIntro:
  "A young, fast-growing industry meeting a hazard the established ones learned the hard way — cannabis and hemp dust is a combustible agricultural dust, no different in physics from grain or flour. Grinding, milling, trimming and especially trichome and kief handling generate fine combustible powder, while extraction adds flammable-solvent considerations. The safety discipline is the mature one; the industry is simply newer to it.",

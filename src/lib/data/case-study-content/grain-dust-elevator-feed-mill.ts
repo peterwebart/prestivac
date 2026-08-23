@@ -185,7 +185,7 @@ export const grainDustElevatorFeedMill: CaseStudy = {
  seo: {
  metaTitle: "Grain Dust Control in Elevators & Feed Mills",
  metaDescription:
- "Representative case study: how a grain cooperative manages combustible grain dust — priority areas on OSHA 1910.272's 1/8-inch action level, elevator-leg protection and reach-first bin cleaning under NFPA 660/61.",
+ "Representative case study: how a grain cooperative manages combustible grain dust — priority areas on OSHA 1910.272's 1/8-inch action level.",
  keywords: [
  "grain dust collection",
  "grain elevator housekeeping",

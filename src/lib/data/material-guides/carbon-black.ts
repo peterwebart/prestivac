@@ -9,7 +9,7 @@ export const carbonBlackGuide: MaterialGuideData = {
  seo: {
  title: "Carbon Black Vacuum Solutions",
  description:
- "Carbon black's dust cloud is comparatively hard to ignite — the distinctive hazard is bulk smoldering and deep-seated fires in collected material, plus ultrafine particles that defeat ordinary filtration. Engineered recovery under NFPA 660 practice.",
+ "Carbon black's dust cloud is comparatively hard to ignite — the distinctive hazard is bulk smoldering and deep-seated fires in collected material.",
  },
  heroIntro:
  "Built for a material that inverts the usual risk picture — the cloud is comparatively hard to ignite, but the collected bulk can smolder from within, the ultrafine particles defeat ordinary filtration, and many grades conduct electricity well enough to earn graphite-level discipline around electronics.",

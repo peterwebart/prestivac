@@ -10,7 +10,7 @@ export const baggingDumpingGuide: ApplicationGuideData = {
  seo: {
  title: "Bagging & Dumping Vacuum Solutions",
  description:
- "Industrial vacuum recovery for bag filling, sack dumping and FIBC handling — fine powder captured at the fill and discharge points where it enters the operator's breathing zone, grounded for combustible powder and HEPA-retained for potent materials.",
+ "Vacuum recovery for bag filling, sack dumping and FIBC handling — fine powder captured at the fill and discharge points, grounded and HEPA-retained.",
  },
  tagline: "The two dustiest moments in powder handling are filling a bag and emptying one.",
  heroIntro:

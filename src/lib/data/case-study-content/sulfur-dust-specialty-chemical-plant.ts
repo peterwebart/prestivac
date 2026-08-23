@@ -185,7 +185,7 @@ export const sulfurDustSpecialtyChemicalPlant: CaseStudy = {
  seo: {
  metaTitle: "Sulfur Dust Control in Chemical Processing",
  metaDescription:
- "Representative case study: managing sulfur dust — the most ignition-sensitive common industrial dust — with verified grounding, air-operated explosion-proof HEPA recovery and SO2-aware disposal under NFPA 660/655.",
+ "Representative case study: managing sulfur dust — the most ignition-sensitive common industrial dust — with verified grounding.",
  keywords: [
  "sulfur dust explosion",
  "sulfur dust vacuum",

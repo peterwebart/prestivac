@@ -9,7 +9,7 @@ export const lithiumDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Lithium Dust?",
  description:
- "Lithium is the water-reactive combustible metal at the heart of the battery boom — lithium metal reacts violently with water and even air moisture, releasing hydrogen and heat, burns intensely, and requires Class D handling where water makes a fire worse. Dry, grounded, sealed recovery, in the dry-room conditions battery work already demands.",
+ "Lithium is the water-reactive combustible metal at the heart of the battery boom — lithium metal reacts violently with water and even air moisture.",
  },
  heroIntro:
  "The water-reactive combustible metal at the heart of the battery boom — lithium metal reacts violently with water, and even with the moisture in ordinary air, releasing hydrogen and heat. It burns intensely, water makes a lithium metal fire worse rather than better, and fine lithium can be pyrophoric. Recovery is dry, grounded and sealed, in the low-humidity conditions battery manufacturing already runs.",

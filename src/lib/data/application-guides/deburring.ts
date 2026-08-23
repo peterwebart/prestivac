@@ -10,7 +10,7 @@ export const deburringGuide: ApplicationGuideData = {
  seo: {
  title: "Deburring & Finishing Vacuum Solutions",
  description:
- "Industrial vacuum recovery for deburring, edge-breaking and surface finishing — the fine, often reactive metal fines from benches, tumblers and finishing machines, captured at the source with grounded, HEPA-retained equipment.",
+ "Industrial vacuum recovery for deburring, edge-breaking and surface finishing — the fine, often reactive metal fines from benches.",
  },
  tagline: "Every edge you clean up becomes dust somewhere else.",
  heroIntro:

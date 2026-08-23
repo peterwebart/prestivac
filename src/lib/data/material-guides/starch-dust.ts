@@ -9,7 +9,7 @@ export const starchDustGuide: MaterialGuideData = {
  seo: {
  title: "Is Starch Dust Combustible? Safe Starch Powder",
  description:
- "Starch powder is a combustible organic dust — cornstarch is the reference dust laboratories calibrate against. How starch dust behaves, why it is so easily suspended, and how to recover it safely with explosion-proof, HEPA-filtered equipment.",
+ "Starch powder is a combustible organic dust — cornstarch is the reference dust laboratories calibrate against. How starch dust behaves.",
  },
  heroIntro:
  "Built for the powder that laboratories use as their benchmark. Cornstarch is fine, dry and uniform enough to serve as a standard reference dust in explosion testing — which means the starch in your plant is not an ordinary powder to be swept up, it is the material other dusts get compared to.",

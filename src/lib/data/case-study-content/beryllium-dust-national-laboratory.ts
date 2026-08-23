@@ -153,7 +153,7 @@ export const berylliumDustNationalLaboratory: CaseStudy = {
   seo: {
     metaTitle: "Beryllium Dust Control in a Research Lab",
     metaDescription:
-      "How a government research facility contains beryllium and regulated metal dust with dedicated HEPA 99.99% filtered recovery, sealed disposal and documented cleaning under OSHA 1910.1024.",
+      "How a government research facility contains beryllium and regulated metal dust with dedicated HEPA 99.99% filtered recovery.",
     keywords: ["beryllium dust", "regulated metal dust", "HEPA vacuum", "research laboratory housekeeping", "OSHA 1910.1024"],
   },
 };

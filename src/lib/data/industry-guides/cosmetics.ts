@@ -9,7 +9,7 @@ export const cosmeticsGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Cosmetic & Personal-Care",
  description:
- "Loose powders, talc, pigments, mica and pressed-powder overspray behave like any fine organic dust — combustible fractions, GMP contamination control, and pigment cross-contamination all at once. HEPA-retained recovery for cosmetics manufacturing and compounding.",
+ "Loose powders, talc, pigments, mica and pressed-powder overspray behave like any fine organic dust — combustible fractions, GMP contamination control.",
  },
  heroIntro:
  "The industry where the dust looks harmless and behaves like every other fine powder — combustible organic fractions, exacting contamination and cross-color control, and the honest exception that talc itself is inert while the pigments, starches and binders around it are not.",

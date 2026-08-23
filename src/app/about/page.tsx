@@ -11,7 +11,7 @@ import { pairedAlternates } from "@/lib/i18n";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "PrestiVac Inc. is a national leader in industrial vacuum systems with over 40 years of experience — high quality solid stainless steel construction, powerful suction, efficient filtration and 200+ models. Privately owned and operated, designed and manufactured in the USA.";
+  "PrestiVac Inc. is a national leader in industrial vacuum systems with over 40 years of experience — high quality solid stainless steel construction.";
 
 export const metadata: Metadata = {
   title: "About",

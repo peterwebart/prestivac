@@ -11,6 +11,7 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { FactoryLineSpecs } from "@/components/factory-line-specs";
 import { ProductCatalog } from "@/components/product-catalog";
+import { UL1203 } from "@/lib/data/certification";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { subpageJsonLd } from "@/lib/schema";
 import { cn } from "@/lib/utils";
@@ -282,7 +283,7 @@ export default function ProductsPage() {
             {[
               { title: "NFPA 660", detail: "The consolidated combustible-dust standard — successor to 652, 654, 484, 61, 655 and 664.", href: "/resources/nfpa-guide" },
               { title: "OSHA dust rules", detail: "Grain, silica, lead, coke, cotton — materials with their own federal standards, taught on their guide pages.", href: "/materials" },
-              { title: "UL 1203 Certified", detail: "Certificate  — Class I, Gp. D; Class II, Gps. E, F & G; Temp. Code T3C. Explosion-proof lines certified for hazardous locations.", href: "/images/certifications/csa-certificate-.jpg" },
+              { title: "UL 1203 Certified", detail: `Certificate ${UL1203.certificateNumber}, listed by ${UL1203.issuer}. Scope differs by line — the EX1 line carries Group E, the EV line does not.`, href: "/hazardous-locations/ul-1203" },
               { title: "Your DHA governs", detail: "Area classification and equipment selection flow from the Dust Hazard Analysis — we specify against it.", href: "/resources/combustible-dust-solutions" },
             ].map((s) => (
               <li key={s.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">

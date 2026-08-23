@@ -9,7 +9,7 @@ export const peaProteinGuide: MaterialGuideData = {
  seo: {
   title: "Pea Protein Dust — Combustible Dust Control",
   description:
-   "Pea protein isolate is a very fine combustible organic dust produced in fast-growing plant-protein operations. Where it accumulates and how explosion-proof HEPA recovery controls it.",
+   "Pea protein isolate is a very fine combustible organic dust produced in fast-growing plant-protein operations.",
  },
  heroIntro:
   "Built for plant-protein plants where capacity has often grown faster than the housekeeping programme around it. Pea protein isolate is a very fine, low-density powder that suspends on minimal air movement and settles across the whole building rather than near the equipment that released it.",
@@ -46,27 +46,27 @@ export const peaProteinGuide: MaterialGuideData = {
  "Static in dry handling: dry low-density powder through pneumatic lines accumulates charge, so a bonded conductive path matters throughout.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery specified for an extremely fine, low-density powder that settles building-wide.",
+ "HEPA-filtered collection retaining a fraction that general-purpose filtration passes straight through.",
+ "Building-wide overhead recovery rather than a schedule limited to the process area.",
+ "Interval review against current throughput, since capacity in this sector often outgrows the cleaning plan.",
+ "Grounded, bonded conductive path through air classification and pneumatic transfer.",
+ "Source capture at dumping and blending, the largest repeated release points.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Survey the building, not the department", detail: "Low density carries this powder into areas with no obvious process connection — and those are rarely on the schedule." },
+ { step: "Re-check intervals against capacity", detail: "A frequency set at commissioning will understate the requirement after an expansion." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for classification, drying and blending areas." },
+ { step: "Specify for the finest fraction", detail: "Air classification concentrates and handles the finest material as normal operation." },
+ { step: "Fix the release points", detail: "Dumping and blending dominate the airborne load; capture there before scheduling cleanup." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Extend the survey to the whole building, including areas that look unrelated.",
+ "Reassess frequencies whenever throughput changes.",
+ "Prioritise the classifier, blender and the overhead above them.",
+ "Never blow down — this fraction travels further than any other in the plant.",
+ "Verify grounding continuity through pneumatic runs.",
+ "Empty into sealed disposal away from the process area.",
  ],
  faqs: [
  {

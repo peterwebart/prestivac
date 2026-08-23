@@ -9,7 +9,7 @@ export const coalGuide: IndustryGuideData = {
  seo: {
  title: "Coal & Power Generation Vacuum Solutions",
  description:
- "Explosion-proof vacuum programs for the coal surface world — unloading pits, conveyor galleries, transfer towers, crusher houses, tripper decks and bunker floors — with self-heating discipline, cooled-material rules and HEPA recovery on the ash side.",
+ "Explosion-proof vacuum programs for the coal surface world — unloading pits, conveyor galleries, transfer towers, crusher houses.",
  },
  heroIntro:
  "The oldest combustible dust in the record still runs the most vertical geography in industry — coal climbs from unloading pit to bunker floor through galleries, towers and tripper decks, shedding fines at every elevation. The housekeeping program follows it floor by floor.",

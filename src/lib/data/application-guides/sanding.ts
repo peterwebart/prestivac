@@ -10,7 +10,7 @@ export const sandingGuide: ApplicationGuideData = {
  seo: {
  title: "Sanding & Surface Prep Vacuum Solutions",
  description:
- "Industrial vacuum recovery for sanding — where the hazard depends entirely on the substrate, from combustible wood dust to conductive carbon-fiber composite, toxic legacy paint and combustible metal fines. Tool-integrated and ambient capture, matched to what is being sanded.",
+ "Industrial vacuum recovery for sanding — where the hazard depends entirely on the substrate, from combustible wood dust to conductive carbon-fiber composite.",
  },
  tagline: "Sanding dust is only as safe as its substrate.",
  heroIntro:

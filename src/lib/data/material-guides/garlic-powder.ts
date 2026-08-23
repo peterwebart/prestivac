@@ -9,7 +9,7 @@ export const garlicPowderGuide: MaterialGuideData = {
  seo: {
   title: "Garlic Powder — Combustible Dust Control",
   description:
-   "Dehydrated garlic powder is a fine combustible organic dust that is strongly hygroscopic and cakes readily. Where it accumulates in dehydration and milling, and how to recover it safely.",
+   "Dehydrated garlic powder is a fine combustible organic dust that is strongly hygroscopic and cakes readily. Where it accumulates in dehydration and milling.",
  },
  heroIntro:
   "Built for dehydration and milling operations where the powder draws moisture out of the air almost as fast as it is produced. Garlic powder is fine, strongly hygroscopic and pungent enough that its spread through a building is obvious long before anyone measures the accumulation.",
@@ -46,27 +46,27 @@ export const garlicPowderGuide: MaterialGuideData = {
  "Cross-contact control: strong aromatics carry into adjacent products, so redistribution is a product-integrity failure as well as a safety one.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery specified for a low-density powder that travels far beyond the mill.",
+ "Contact tooling for hygroscopic crusts that resist brushing.",
+ "HEPA-filtered collection so strong aromatics are removed rather than relocated.",
+ "Overhead recovery on structure and duct tops across the whole building, not just the milling room.",
+ "Grounded, bonded conductive path through dehydration, milling and packing.",
+ "Dedicated tooling where aroma carryover into other products would be a defect.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Follow the powder, not the process", detail: "Low density means deposits appear in rooms nobody associates with milling. Survey the building, not the department." },
+ { step: "Plan for crusting", detail: "Hygroscopic caking sets quickly. Contact tooling is needed; suction alone will leave the layer." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for dehydration and milling areas." },
+ { step: "Match filtration to the fine fraction", detail: "The fraction that travels furthest is the finest, and it is the one general-purpose filtration passes." },
+ { step: "Set frequency against humidity", detail: "Caking rate tracks ambient moisture, so the interval is seasonal rather than fixed." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Survey the whole building — this powder does not stay where it was made.",
+ "Break and remove crusts rather than brushing over them.",
+ "Prioritise overhead steel and duct tops, where the travelling fraction lands.",
+ "Avoid compressed air entirely; it spreads aroma as well as dust.",
+ "Keep dedicated tooling where cross-contact matters.",
+ "Verify hose and tool grounding continuity routinely.",
  ],
  faqs: [
  {

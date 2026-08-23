@@ -9,7 +9,7 @@ export const aluminumDustGuide: MaterialGuideData = {
  seo: {
  title: "Aluminum Dust Vacuum Solutions",
  description:
- "Aluminum dust is one of the most severe combustible metal dusts. How it's safely collected: grounded explosion-proof vacuums, immersion separation and HEPA filtration under NFPA 484 / 660.",
+ "Aluminum dust is one of the most severe combustible metal dusts. How it's safely collected: grounded explosion-proof vacuums.",
  },
  heroIntro:
  "Engineered to safely collect and contain aluminum dust and powders in environments where safety, performance and compliance are non-negotiable — because with fine aluminum, they are.",

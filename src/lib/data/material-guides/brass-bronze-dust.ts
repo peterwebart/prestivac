@@ -9,7 +9,7 @@ export const brassBronzeDustGuide: MaterialGuideData = {
  seo: {
  title: "Is Brass Toxic? Brass & Bronze Dust Hazards",
  description:
- "Brass and bronze are copper alloys, and the hazard lives in what they are alloyed with — zinc fume, lead in leaded brass, and fine metal dust from machining. What to control and how to recover it safely.",
+ "Brass and bronze are copper alloys, and the hazard lives in what they are alloyed with — zinc fume, lead in leaded brass, and fine metal dust from machining.",
  },
  heroIntro:
  "Built for alloys whose hazard is inherited rather than intrinsic. Brass and bronze are copper-based and largely benign as solid stock — the exposure questions come from the alloying elements, principally zinc in brass fume and lead in the free-machining grades that most shops actually cut.",

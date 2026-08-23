@@ -17,7 +17,7 @@ export const woodworkingGuide: IndustryGuideData = {
  seo: {
  title: "Woodworking Vacuum Solutions",
  description:
- "Industrial vacuum solutions for furniture plants, cabinet shops and wood processing: explosion-proof HEPA recovery for a classic combustible dust that is also an IARC Group 1 exposure, built to NFPA 664 / 660 practice.",
+ "Explosion-proof HEPA recovery for furniture plants, cabinet shops and wood processing — a classic combustible dust that is also an IARC Group 1 exposure.",
  },
  heroIntro:
  "Wood dust carries two hazards in one material: it's a classic combustible dust with its own legacy standard, and it's a classified human carcinogen. The extraction system captures most of what each machine makes — the housekeeping program exists for the fraction that escapes and settles.",

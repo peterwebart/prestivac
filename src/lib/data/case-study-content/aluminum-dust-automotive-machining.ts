@@ -186,7 +186,7 @@ export const aluminumDustAutomotiveMachining: CaseStudy = {
  seo: {
  metaTitle: "Aluminum Dust Hazards in Automotive Machining",
  metaDescription:
- "Representative case study: how an automotive machining plant controls combustible aluminum fines with grounded, air-operated explosion-proof vacuums and immersion separation under NFPA 660/484.",
+ "Representative case study: how an automotive machining plant controls combustible aluminum fines with grounded.",
  keywords: [
  "aluminum dust vacuum",
  "combustible metal dust",

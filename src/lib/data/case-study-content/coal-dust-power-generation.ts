@@ -152,7 +152,7 @@ export const coalDustPowerGeneration: CaseStudy = {
   seo: {
     metaTitle: "Coal & Biomass Dust Control at a Power Generation",
     metaDescription:
-      "How a generating station controls combustible coal, coke and biomass fuel dust across conveyor galleries and milling areas with UL 1203 certified explosion proof vacuums and HEPA 99.99% filtration.",
+      "How a generating station controls combustible coal, coke and biomass dust across conveyor galleries and milling areas with certified explosion-proof vacuums.",
     keywords: ["coal dust", "biomass dust", "power plant housekeeping", "combustible dust vacuum", "explosion proof vacuum"],
   },
 };

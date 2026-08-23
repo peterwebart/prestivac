@@ -1,3 +1,5 @@
+import { scopeForModel } from "@/lib/data/certification";
+import { performanceSpecs, tankSizeOf } from "@/lib/data/model-specs";
 import { getCategory, type ProductCategory } from "@/lib/data/product-categories";
 import { ALL_MODELS, type FlatModel } from "@/lib/data/product-models";
 
@@ -100,13 +102,16 @@ function familyOf(model: FlatModel): Family | "ACC" {
   return "ACC";
 }
 
-/** Capacity in gallons, parsed from the model designation (e.g. AVX-15 -> 15). */
+/**
+ * Capacity in gallons from the model designation.
+ *
+ * Derived from tankSizeOf so there is one parser rather than two that can
+ * drift apart — this file previously had its own copy.
+ */
 function capacityOf(model: FlatModel): number[] {
-  const match = model.name.match(/-(\d+)(?:-(\d+))?/);
-  if (!match) return [];
-  const values = [Number(match[1])];
-  if (match[2]) values.push(Number(match[2]));
-  return values;
+  const tank = tankSizeOf(model.name);
+  if (!tank) return [];
+  return tank.split("–").map(Number).filter((n) => !Number.isNaN(n));
 }
 
 export type Recommendation = {
@@ -114,8 +119,19 @@ export type Recommendation = {
   headline: string;
   points: string[];
   note?: string;
-  /** Matching models, so the answer is products rather than a category alone. */
-  models: { name: string; slug: string; family: string }[];
+  /**
+   * Matching models with the figures that distinguish them. Without these the
+   * output was eight names with no basis to choose between them.
+   */
+  models: {
+    name: string;
+    slug: string;
+    family: string;
+    tank: string | null;
+    airflow: string | null;
+    /** Certified scope summary, or null where the model holds no listing. */
+    certifiedScope: string | null;
+  }[];
 };
 
 export function recommend(a: FinderAnswers): Recommendation {
@@ -134,6 +150,9 @@ export function recommend(a: FinderAnswers): Recommendation {
     // Metals: AV and EX1 only — no EV.
     families = ["AV", "EX1"];
     points.push("Metal fines are reactive, so we specify from the AV and EX1 lines and leave the EV models out.");
+    points.push(
+      "Metal dust is Class II Group E. Group E is inside the EX1 line's certified scope and not inside the EV line's — the certified scope is shown against each model below.",
+    );
   } else {
     families = ["AV", "EV", "EX1"];
     points.push("Non-metal material opens the full range — AV, EV and EX1.");
@@ -199,10 +218,17 @@ export function recommend(a: FinderAnswers): Recommendation {
       a.metals === "unsure"
         ? "You were not sure whether the material is metal. That changes the recommendation, so tell us the material on the quote form and we will confirm."
         : undefined,
-    models: models.slice(0, 8).map((m) => ({
-      name: m.name,
-      slug: m.slug,
-      family: familyOf(m) as string,
-    })),
+    models: models.slice(0, 8).map((m) => {
+      const scope = scopeForModel(m.name);
+      const tank = tankSizeOf(m.name);
+      return {
+        name: m.name,
+        slug: m.slug,
+        family: familyOf(m) as string,
+        tank: tank ? `${tank} gal` : null,
+        airflow: performanceSpecs(m).find((x) => x.label === "Airflow")?.value ?? null,
+        certifiedScope: scope ? scope.summary : null,
+      };
+    }),
   };
 }

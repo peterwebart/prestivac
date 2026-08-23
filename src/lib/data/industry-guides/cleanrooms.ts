@@ -9,7 +9,7 @@ export const cleanroomsGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Cleanrooms &",
  description:
- "In a cleanroom the particle count is the product spec — recovery equipment must be part of the cleanliness system, not a contaminant in it. ISO 14644 class discipline, HEPA/ULPA exhaust validated cleaner than the room, and wipe-down protocols across pharma, semiconductor and medical-device suites.",
+ "In a cleanroom the particle count is the product spec — recovery equipment must be part of the cleanliness system, not a contaminant in it.",
  },
  heroIntro:
  "The one environment where the vacuum's own cleanliness is a design requirement — a cleanroom is defined by its particle count, so recovery equipment either belongs to the cleanliness system or becomes a breach in it. There is no third option.",

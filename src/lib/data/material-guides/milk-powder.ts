@@ -9,7 +9,7 @@ export const milkPowderGuide: MaterialGuideData = {
  seo: {
   title: "Milk Powder — Combustible Dust Control",
   description:
-   "Spray-dried milk powder is a combustible organic dust with a high fat and protein content that makes residues sticky and self-heating a genuine concern. Where it accumulates in drying and packing, and how to recover it safely.",
+   "Spray-dried milk powder is a combustible organic dust with a high fat and protein content that makes residues sticky and self-heating a genuine concern.",
  },
  heroIntro:
   "Built for the fines that spray-drying and pneumatic conveying leave behind. Milk powder is light, readily suspended and — because of its fat content — leaves residues that bake onto warm surfaces rather than brushing off, which is exactly the accumulation that a primary event would loft.",
@@ -46,27 +46,27 @@ export const milkPowderGuide: MaterialGuideData = {
  "Sanitation overlap: residues are a microbiological and allergen concern as well as a fire one, so cleaning must satisfy both records.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery sized for the dryer hall, where the finest fraction and the most heat occur together.",
+ "Heated-surface cleaning on a defined interval, because fat-bearing deposits bake on rather than brushing off.",
+ "HEPA-filtered collection so the respirable fraction leaves the building instead of resettling on warm plant.",
+ "Sealed container removal, keeping the emptying step out of the dryer and packing areas entirely.",
+ "Conductive, grounded and bonded hose and tool sets throughout pneumatic conveying zones.",
+ "Cleaning records that satisfy the dust programme and the dairy sanitation regime in one pass.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Start at the dryer discharge", detail: "Spray drying and cyclone handling produce the finest powder in the plant and combine it with the most heat." },
+ { step: "Map the warm surfaces", detail: "Fat-bearing deposits adhere where surfaces run warm — dryer skins, conveying lines, motor housings. Those are the priority, not the floor." },
+ { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for drying and conveying areas." },
+ { step: "Specify for adhesion, not just fines", detail: "Deposits that stick need contact tooling, not only suction. Brush and scraper tools belong in the accessory set." },
+ { step: "Set frequency against self-heating", detail: "Warm fat-bearing accumulation supports self-heating, so the interval is a fire control rather than a cleanliness one." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Clean warm surfaces before deposits bake into layers that no longer respond to brushing.",
+ "Treat the dryer and cyclone envelope as the highest-priority zone in the building.",
+ "Never blow down near the packing line — it puts product-contact surfaces into the airborne path.",
+ "Inspect the grounding path through pneumatic conveying runs as a routine item.",
+ "Empty into sealed disposal away from heat sources, given the self-heating behaviour.",
+ "Log every pass so sanitation and the dust programme share one record.",
  ],
  faqs: [
  {

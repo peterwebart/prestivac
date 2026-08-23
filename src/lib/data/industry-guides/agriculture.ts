@@ -17,7 +17,7 @@ export const agricultureGuide: IndustryGuideData = {
  seo: {
  title: "Agriculture & Grain Handling Vacuum Solutions",
  description:
- "Industrial vacuum solutions for grain elevators, feed mills and agricultural processing: explosion-proof recovery for grain dust under NFPA 61 / 660 and OSHA's grain handling standard.",
+ "Industrial vacuum solutions for grain elevators, feed mills and agricultural processing: explosion-proof recovery for grain dust under NFPA 61 and 660.",
  },
  heroIntro:
  "Grain dust wrote the history of dust explosions, and it's the one material family with its own codified housekeeping number — OSHA's grain handling standard sets a 1/8-inch action level in priority areas. Elevators, legs, galleries and mills each generate the fuel; the program's job is to keep removing it.",

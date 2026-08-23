@@ -32,7 +32,7 @@ export const UL1203_TOPIC: HazardousLocationTopic = {
   seo: {
     title: "UL 1203 Explained — Explosion Proof Equipment",
     description:
-      "UL 1203 is the standard for explosion-proof and dust-ignition-proof electrical equipment in hazardous locations. What it governs, what a listing does and does not assert, and the exact scope of PrestiVac's CSA listing.",
+      "UL 1203 is the standard for explosion-proof and dust-ignition-proof electrical equipment in hazardous locations. What it governs.",
   },
   heroIntro:
     "UL 1203 is the North American standard for explosion-proof and dust-ignition-proof electrical equipment intended for hazardous (classified) locations. It matters in a vacuum specification because it is the basis on which an electric machine can be taken into an area where a flammable atmosphere or a combustible dust may be present. What it does not do is tell you a machine is suitable for your application — that is a narrower and more useful distinction than it first appears.",
@@ -130,6 +130,7 @@ export const UL1203_TOPIC: HazardousLocationTopic = {
     },
   ],
   related: [
+    { label: "HEPA vs ULPA filtration", href: "/guides/hepa-vs-ulpa-filtration" },
     { label: "Class II, Division 1", href: "/hazardous-locations/class-ii-division-1" },
     { label: "Class II Groups E, F & G", href: "/hazardous-locations/class-ii-groups-e-f-g" },
     { label: "ATEX vs North American", href: "/hazardous-locations/atex-vs-north-american" },

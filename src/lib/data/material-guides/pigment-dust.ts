@@ -9,7 +9,7 @@ export const pigmentDustGuide: MaterialGuideData = {
  seo: {
   title: "Pigment Dust — Combustible Dust & Recovery",
   description:
-   "Pigment powders are very fine, intensely colouring dusts, some organic and combustible, some containing heavy metals. Why identification comes before any cleaning decision.",
+   "Pigment powders are very fine, intensely colouring dusts, some organic and combustible, some containing heavy metals.",
  },
  heroIntro:
   "Built for pigment handling, where two very different hazards share a product category. Organic pigments are combustible dusts; some inorganic pigments carry heavy metals with a toxicity requirement instead. The particle size that makes both of them work as colourants is what makes them travel.",

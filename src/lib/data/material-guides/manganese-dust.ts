@@ -9,7 +9,7 @@ export const manganeseDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Manganese Dust?",
  description:
- "Manganese is a neurotoxin — chronic overexposure causes manganism, a Parkinson-like condition — and it is ubiquitous because it is present in most steel and welding consumables, making welding fume the primary exposure route. It is also a combustible metal dust. Fume belongs to extraction; the settled fraction to HEPA-retained recovery.",
+ "Manganese is a neurotoxin and a combustible metal dust, present in most steel and welding consumables, which makes welding fume the primary exposure route.",
  },
  heroIntro:
  "The neurotoxin hiding in ordinary steel work. Manganese is present in most steels and welding consumables, so it turns up almost everywhere metal is welded — and chronic overexposure causes manganism, a serious Parkinson-like neurological condition. Its main exposure route is welding fume, which belongs to extraction at the arc; the settled manganese-bearing dust belongs to HEPA-retained recovery, and manganese metal dust is combustible in its own right.",

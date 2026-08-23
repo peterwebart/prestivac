@@ -9,7 +9,7 @@ export const titaniumDustGuide: MaterialGuideData = {
  seo: {
  title: "Titanium Dust Vacuum Solutions",
  description:
- "Titanium dust is a combustible, reactive metal dust with Class D fire behavior. How it's safely collected: air-operated explosion-proof vacuums, immersion separation and grounded recovery under NFPA 484 / 660.",
+ "Titanium dust is a combustible, reactive metal dust with Class D fire behavior. How it's safely collected: air-operated explosion-proof vacuums.",
  },
  heroIntro:
  "Engineered to safely collect and contain titanium dust and powders — a reactive metal whose fire behavior makes prevention the only sensible strategy, and whose fine fractions demand it.",

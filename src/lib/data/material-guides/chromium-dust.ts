@@ -9,7 +9,7 @@ export const chromiumDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Chromium Dust?",
  description:
- "Chromium's hazard depends on its oxidation state — metallic chromium dust is a combustible metal, but hexavalent chromium, Cr(VI), is a potent carcinogen with its own OSHA standard, generated in hot and oxidizing processes and present in chromate materials. HEPA-retained, sealed recovery for the Cr(VI)-bearing fraction.",
+ "Chromium's hazard depends on its oxidation state — metallic chromium dust is a combustible metal, but hexavalent chromium, Cr(VI).",
  },
  heroIntro:
  "The metal whose hazard depends on its oxidation state. Metallic chromium dust is a combustible metal handled like any reactive metal, but the serious health concern is hexavalent chromium — Cr(VI) — a potent carcinogen with a dedicated OSHA standard, generated in hot and oxidizing processes and present in chromate coatings. Knowing which form you have governs how the dust is handled.",

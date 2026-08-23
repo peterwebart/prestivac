@@ -9,7 +9,7 @@ export const fertilizerDustGuide: MaterialGuideData = {
  seo: {
   title: "Fertilizer Dust — Oxidiser & Dust Hazards",
   description:
-   "Fertilizer dust spans combustible organics and strong oxidisers, and ammonium nitrate grades carry a detonation history. Identification governs everything about how it is handled.",
+   "Fertilizer dust spans combustible organics and strong oxidisers, and ammonium nitrate grades carry a detonation history.",
  },
  heroIntro:
   "Built for blending and bagging operations where the product category spans genuinely different hazards. Some fertilizer dusts are combustible; some are powerful oxidisers that make other materials burn; ammonium nitrate has a detonation record. What you are handling has to be established before anything else.",

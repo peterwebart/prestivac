@@ -9,7 +9,7 @@ export const foundryGuide: IndustryGuideData = {
  seo: {
  title: "Foundry & Casting Vacuum Solutions",
  description:
- "Explosion-safe and HEPA vacuum programs for foundries — silica sand from mulling to shakeout to reclaim, reactive aluminum and magnesium casting fines, leaded-alloy exposure streams, cupola coke, and the cooled-material rule everywhere.",
+ "Explosion-safe and HEPA vacuum programs for foundries — silica sand from mulling to shakeout to reclaim, reactive aluminum and magnesium casting fines.",
  },
  heroIntro:
  "The industry that runs the oldest dust hazard and the hottest floor at once — silica sand cycling from mold to shakeout to reclaim, reactive metal fines where aluminum and magnesium pour, heavy-metal exposure streams in the alloy shops, and a cooled-material rule that earns its keep every shift.",

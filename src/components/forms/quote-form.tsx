@@ -1,7 +1,9 @@
 "use client";
 
 import { ArrowRight, Check, Loader2 } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+
+import { findModelBySlug } from "@/lib/data/product-models";
 import { useState } from "react";
 
 import { trackQuoteSubmitted } from "@/lib/analytics";
@@ -85,6 +87,7 @@ export function QuoteForm({
   tone = "dark",
   lang = "en",
   heading = "Get a Quote",
+  productContext,
   intro = "The more you tell us, the more precisely our technical team can specify the right vacuum. If you do not know an answer, choose \u201cNot sure\u201d \u2014 that is what we are here for.",
 }: {
   source: string;
@@ -94,7 +97,33 @@ export function QuoteForm({
   lang?: "en" | "fr";
   heading?: string;
   intro?: string;
+  /**
+   * Model the visitor arrived from, so the lead retains what they were looking
+   * at. Shown read-only rather than pre-filling a free-text field, so it cannot
+   * be silently overwritten and cannot be mistaken for something they typed.
+   */
+  productContext?: { slug: string; name: string; request?: string };
 }) {
+  /**
+   * Resolved on the client from ?product=&request= so /get-a-quote stays a
+   * static page — reading searchParams on the server would force the whole
+   * route to render dynamically for the sake of one optional banner.
+   *
+   * The slug is looked up against the real model list rather than trusted, so
+   * an arbitrary query string cannot inject text into the form.
+   */
+  const searchParams = useSearchParams();
+  const urlSlug = searchParams.get("product");
+  const urlModel = urlSlug ? findModelBySlug(urlSlug) : undefined;
+  const resolvedContext =
+    productContext ??
+    (urlModel
+      ? {
+          slug: urlModel.slug,
+          name: urlModel.name,
+          request: searchParams.get("request") === "datasheet" ? "datasheet" : undefined,
+        }
+      : undefined);
   const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
   const [mailHref, setMailHref] = useState("");
@@ -106,6 +135,11 @@ export function QuoteForm({
     const ref = makeReference("Q");
     setReference(ref);
     const payload: Record<string, string> = { source, reference: ref };
+    if (resolvedContext) {
+      payload.product_slug = resolvedContext.slug;
+      payload.product_name = resolvedContext.name;
+      if (resolvedContext.request) payload.request_type = resolvedContext.request;
+    }
     for (const key of Object.keys(FIELD_LABELS)) {
       if (key === "reference") continue;
       payload[key] = String(data.get(key) ?? "");
@@ -238,6 +272,24 @@ export function QuoteForm({
             </div>
           </div>
         </fieldset>
+
+        {resolvedContext ? (
+          <div className={
+            tone === "light"
+              ? "rounded-xl bg-brand-50 p-4 ring-1 ring-brand-200"
+              : "rounded-xl bg-brand-500/[0.08] p-4 ring-1 ring-brand-500/25"
+          }>
+            <p className={tone === "light" ? "text-[11px] font-bold uppercase tracking-[0.12em] text-brand-700" : "text-[11px] font-bold uppercase tracking-[0.12em] text-brand-300"}>
+              {resolvedContext.request === "datasheet" ? "Documents requested for" : "Enquiry about"}
+            </p>
+            <p className={tone === "light" ? "mt-1 font-display text-[16px] font-extrabold text-steel-900" : "mt-1 font-display text-[16px] font-extrabold text-white"}>
+              {resolvedContext.name}
+            </p>
+            <p className={tone === "light" ? "mt-1 text-[12px] text-steel-600" : "mt-1 text-[12px] text-white/55"}>
+              Sent with your enquiry — you do not need to type it below.
+            </p>
+          </div>
+        ) : null}
 
         <fieldset className="space-y-4">
           <legend className={legend}>{fr ? L.legendMaterial : "What are you vacuuming?"}</legend>

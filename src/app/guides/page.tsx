@@ -9,7 +9,7 @@ import { GUIDE_ARTICLES } from "@/lib/data/guides";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "Plain explanations of the fundamentals — how dust explosions work, what ignites them, what a Dust Hazard Analysis involves, and how industrial vacuums differ from dust collectors.";
+  "Plain explanations of the fundamentals — how dust explosions work, what ignites them, what a Dust Hazard Analysis involves.";
 
 export const metadata: Metadata = {
   title: "Guides — Combustible Dust Fundamentals &",

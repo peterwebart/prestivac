@@ -9,7 +9,7 @@ export const biotechGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Biotechnology &",
  description:
- "Bioprocessing is mostly liquid, but dry powder enters at media prep and leaves at lyophilization — combustible dried biologics and media, biosafety containment, and cleanroom fill-finish all in one flow. HEPA-retained recovery for biotech manufacturing.",
+ "Bioprocessing is mostly liquid, but dry powder enters at media prep and leaves at lyophilization — combustible dried biologics and media.",
  },
  heroIntro:
  "The mostly-wet process with two dry ends — dry media powder goes in at the front, freeze-dried product comes out at the back, and containment runs both ways throughout: protecting the product from the operator, and the operator from biologically active material. The dried biologics, meanwhile, burn like any fine organic dust.",

@@ -9,7 +9,7 @@ export const tobaccoDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Tobacco Dust?",
  description:
- "Tobacco processing dust is a combustible agricultural dust that follows the same physics as grain — and it carries a pharmacologically active compound, nicotine, alongside recognized respiratory effects for processing workers. Grounded, rated, HEPA-retained recovery serves the combustion and the exposure side.",
+ "Tobacco processing dust is a combustible agricultural dust that follows the same physics as grain — and it carries a pharmacologically active compound.",
  },
  heroIntro:
  "A combustible farm dust that carries an active compound. Threshing, conditioning, cutting and blending tobacco generates a fine agricultural dust that deflagrates on the same physics as grain — and beyond the fire hazard, tobacco dust is associated with respiratory effects in processing workers and contains nicotine, a systemically active alkaloid. Recovery is grounded and rated for the combustion side, HEPA-retained and sealed for the exposure side.",

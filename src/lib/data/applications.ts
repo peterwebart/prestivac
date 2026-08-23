@@ -341,6 +341,13 @@ export type FeaturedApplication = {
 /** Applications with dedicated deep-dive pages. */
 export const FEATURED_APPLICATIONS: FeaturedApplication[] = [
  {
+  slug: "coolant-recovery",
+  name: "Coolant & Metalworking Fluid Recovery",
+  category: "Metalworking & Machining",
+  blurb:
+   "Sump evacuation with chip and fluid separation — recover the settled bed, not just the surface.",
+ },
+ {
  slug: "grinding-dust",
  name: "Grinding Dust",
  category: "Metalworking & Machining",

@@ -9,7 +9,7 @@ export const vacuumFurnaceGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Vacuum Furnace &",
  description:
- "The furnace itself is lined with combustible dust — vacuum-furnace hot zones use graphite insulation, elements and fixtures, so maintenance and cleanout generate conductive, combustible graphite dust in confined spaces. Add metal condensate, braze and sintering powders. Rated, bonded, HEPA-retained recovery.",
+ "The furnace itself is lined with combustible dust — vacuum-furnace hot zones use graphite insulation, elements and fixtures.",
  },
  heroIntro:
  "The industry where the furnace itself is lined with combustible dust — vacuum-furnace hot zones are built from graphite insulation, heating elements and fixtures, so maintenance and cleanout liberate graphite dust that is both combustible and electrically conductive, often inside a confined hot zone. Metal condensate, braze residues and sintering powders round out a recovery picture that demands rated, bonded equipment.",

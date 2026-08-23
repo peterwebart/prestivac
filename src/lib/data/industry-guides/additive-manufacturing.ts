@@ -9,7 +9,7 @@ export const additiveManufacturingGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Powder in Additive",
  description:
- "The one industry built on handling, by design, the exact material combustible-dust standards were written to control — loose reactive-metal and polymer powder as feedstock. From loading to depowdering to sieving and reuse, the whole workflow is powder handling, and the powder is fuel. Dedicated, grounded, HEPA-retained recovery.",
+ "The one industry built on handling, by design, the exact material combustible-dust standards were written to control.",
  },
  heroIntro:
  "The industry whose feedstock is the hazard — additive manufacturing handles, by design, the loose reactive-metal and polymer powder that combustible-dust standards were written to control. From receiving to loading, depowdering, sieving and reuse, the entire workflow is powder handling, and that powder is fuel. Recovery is dedicated, grounded, and HEPA-retained at every step.",

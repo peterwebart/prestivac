@@ -9,7 +9,7 @@ export const proteinPowderGuide: MaterialGuideData = {
  seo: {
   title: "Protein Powder — Combustible Dust Control",
   description:
-   "Protein powders are fine combustible organic dusts produced in high-throughput blending and filling operations. Where they accumulate and how explosion-proof HEPA recovery controls them.",
+   "Protein powders are fine combustible organic dusts produced in high-throughput blending and filling operations.",
  },
  heroIntro:
   "Built for the blending and filling rooms behind the supplement industry, where large volumes of very fine powder move through the building every shift. Protein powders are light, readily suspended and blended in operations that put the finest fraction into the air by design.",
@@ -46,27 +46,27 @@ export const proteinPowderGuide: MaterialGuideData = {
  "Allergen cross-contact: dairy, soy and other allergen-bearing proteins share equipment, making redistribution a labelling exposure.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Source capture at the tote and sack dump station, which is the largest repeated release point.",
+ "Explosion-proof recovery sized for high-throughput blending rather than intermittent housekeeping.",
+ "HEPA-filtered collection retaining a very fine fraction across a large open room.",
+ "Frequent overhead recovery, because accumulation tracks volume and these plants run hard.",
+ "Dedicated units or accessory sets where dairy and soy allergen segregation applies.",
+ "Grounded, bonded conductive path through chutes, blenders and pneumatic transfer.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Fix the dump station first", detail: "Manual tote and sack dumping is open by design and repeats every shift. Source capture there changes the airborne load more than anything else." },
+ { step: "Size for throughput", detail: "Accumulation tracks volume. Intervals set for a low-volume plant will not hold here." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for blending and dumping areas." },
+ { step: "Plan for allergen segregation", detail: "Dairy and soy proteins share equipment routinely; segregation policy drives the equipment count." },
+ { step: "Schedule overhead against volume", detail: "By the time overhead deposits are visible from the floor, the inventory is already substantial." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Capture at the dump point rather than relying on cleaning it up afterwards.",
+ "Set intervals against throughput, not appearance.",
+ "Keep dedicated units or accessories where allergen segregation applies.",
+ "Include the whole room overhead, not just above the blender.",
+ "Verify grounding continuity through chutes and pneumatic runs.",
+ "Empty into sealed disposal away from the blending area.",
  ],
  faqs: [
  {

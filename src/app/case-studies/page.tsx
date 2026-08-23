@@ -8,7 +8,7 @@ import { CASE_STUDY_LIBRARY } from "@/lib/data/case-study-library";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "Representative industry case studies: realistic, educational engineering scenarios for explosion-proof vacuum applications across combustible dust and flammable liquid environments.";
+  "Representative engineering scenarios for explosion-proof vacuum applications across combustible dust and flammable liquid environments.";
 
 export const metadata: Metadata = {
   title: "Case Studies",

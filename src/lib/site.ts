@@ -32,7 +32,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://prestivac.com",
   title: "Explosion Proof Industrial Vacuum Manufacturer",
   description:
-    "Manufacturer of certified vacuum cleaners for combustible dusts and flammable liquids and solvents. UL 1203 certified explosion-proof and dust-ignition-proof electrical vacuum cleaners for Hazardous (Classified) Locations. Solid stainless steel, 200+ models, made in the USA.",
+    "Manufacturer of UL 1203 certified explosion-proof and dust-ignition-proof industrial vacuums for combustible dust and flammable liquids. Made in the USA.",
   /** Confirmed public contact details for PrestiVac Inc. */
   email: "info@prestivac.com",
   /**

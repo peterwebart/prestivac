@@ -9,7 +9,7 @@ export const abatementGuide: IndustryGuideData = {
  seo: {
  title: "Abatement & Remediation Vacuum Solutions",
  description:
- "HEPA vacuum programs for the trades where HEPA is written into the rules — asbestos abatement, lead and RRP work, mold remediation and demolition silica. Containment-side recovery, sealed bag-out discipline, and equipment specified against the governing jurisdiction's requirements.",
+ "HEPA vacuum programs for the trades where HEPA is written into the rules — asbestos abatement, lead and RRP work, mold remediation and demolition silica.",
  },
  heroIntro:
  "The trades where HEPA filtration isn't a preference — it's written into the rules. Work happens inside containment, waste leaves sealed and labeled, clearance decides when it's done, and every piece of equipment is specified with the governing jurisdiction's requirements in hand.",

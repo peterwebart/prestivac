@@ -9,7 +9,7 @@ export const asbestosGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Asbestos?",
  description:
- "Asbestos doesn't burn — it was installed as fire protection — and that is exactly why its fibers persist in the lung. A Group 1 carcinogen with its own OSHA standards, handled by licensed, accredited crews inside containment; HEPA vacuums are named equipment within that framework, never a shortcut around it.",
+ "Asbestos doesn't burn — it was installed as fire protection — and that is exactly why its fibers persist in the lung.",
  },
  heroIntro:
  "Built for the material whose safety story inverted completely — installed for a century as fire protection, now a Group 1 carcinogen whose removal belongs to licensed, accredited crews inside containment. HEPA recovery is named equipment within that framework; this guide explains its role, not a way around the rules.",

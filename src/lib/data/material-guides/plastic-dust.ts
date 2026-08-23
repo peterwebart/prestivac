@@ -9,7 +9,7 @@ export const plasticDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Plastic & Polymer Dust?",
  description:
- "Most thermoplastics and resins are combustible dusts — polyethylene, polypropylene, ABS, PET and nylon ignite readily as fines. And because plastics are insulators, the dust charges itself: a combustible cloud that can supply its own static ignition. Behavior varies widely by polymer, so testing governs.",
+ "Most thermoplastics and resins are combustible dusts — polyethylene, polypropylene, ABS, PET and nylon ignite readily as fines.",
  },
  heroIntro:
  "Built for the dust that makes its own spark — most plastics and polymers are combustible fines, and because the material is an electrical insulator it builds triboelectric charge as it's ground, conveyed and handled, so a combustible cloud can arrive carrying its own ignition source. Behavior spans a huge range across polymers, which is exactly why testing, not reputation, governs.",

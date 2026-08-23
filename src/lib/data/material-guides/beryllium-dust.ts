@@ -9,7 +9,7 @@ export const berylliumDustGuide: MaterialGuideData = {
  seo: {
  title: "Is Beryllium Toxic? Beryllium Dust Hazards & Safe",
  description:
- "Beryllium is acutely hazardous at extremely low airborne concentrations and has its own OSHA standard. Chronic beryllium disease, sensitisation, where exposure arises, and why HEPA recovery replaces sweeping entirely.",
+ "Beryllium is acutely hazardous at extremely low airborne concentrations and has its own OSHA standard. Chronic beryllium disease, sensitisation.",
  },
  heroIntro:
  "Built for one of the most exposure-sensitive metals in industry. Beryllium causes an irreversible immune-mediated lung disease in susceptible people at airborne concentrations orders of magnitude below ordinary dust limits — which is why it carries its own OSHA standard and why dry cleaning methods are simply not on the table.",

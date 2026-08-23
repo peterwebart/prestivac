@@ -9,7 +9,7 @@ export const paprikaDustGuide: MaterialGuideData = {
  seo: {
   title: "Paprika Dust — Combustible Dust Control",
   description:
-   "Ground paprika is a fine combustible organic dust with sugar and oil content that makes deposits tacky and staining. How to recover it without spreading colour and fuel through the plant.",
+   "Ground paprika is a fine combustible organic dust with sugar and oil content that makes deposits tacky and staining.",
  },
  heroIntro:
   "Built for grinding and blending lines handling a powder that announces every housekeeping failure in colour. Paprika is fine, light and carries both sugar and oil content, so deposits are tacky, they stain, and they build on surfaces rather than shedding.",
@@ -46,27 +46,27 @@ export const paprikaDustGuide: MaterialGuideData = {
  "Cross-contact control: colour and aromatics carry into adjacent lines, so dispersal is a product-integrity problem.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery for a tacky, intensely staining powder that adheres to warm surfaces.",
+ "Contact tooling for deposits that smear rather than lift under suction alone.",
+ "HEPA-filtered collection so pigment-bearing fines are removed rather than spread.",
+ "Dedicated units or accessory sets per colour family, since carryover is visible at trace levels.",
+ "Overhead recovery guided by where staining appears — a visible map of where all fines settle.",
+ "Grounded, bonded conductive path through milling, blending and filling.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Use the staining as a survey tool", detail: "Where paprika shows on high steel is a visible map of where every finer, invisible dust is landing too." },
+ { step: "Plan for tacky deposits", detail: "Sugar and oil content make accumulation adhere. Contact tooling is required." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for grinding and blending areas." },
+ { step: "Segregate by colour family", detail: "Trace carryover is immediately visible, so segregation policy is usually stricter than safety alone would set." },
+ { step: "Schedule before layers set", detail: "Tacky deposits become progressively harder to remove the longer they are left." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Use visible staining to set the accumulation survey, not just to judge cleanliness.",
+ "Remove tacky deposits with contact tooling before they set.",
+ "Keep dedicated units or accessories per colour family.",
+ "Never blow down — it spreads pigment across adjacent lines.",
+ "Include high steel and duct tops in the schedule.",
+ "Verify grounding continuity across the full flow path.",
  ],
  faqs: [
  {

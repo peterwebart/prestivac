@@ -16,7 +16,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "Explosion Proof Vacuums",
  tagline: "Grounded, bonded recovery for combustible dust",
  description:
- "Built for facilities where the dust itself is the hazard. Conductive stainless construction, grounded and bonded from hose tip to casters, with power units selected for the area classification — so routine housekeeping never becomes an ignition source.",
+ "Built for facilities where the dust itself is the hazard. Conductive stainless construction, grounded and bonded from hose tip to casters.",
  image: "/images/products/explosion-proof.jpg",
  alt: "PrestiVac AVX-55 EX explosion-proof industrial vacuum",
  industries: ["Food Processing", "Metalworking", "Chemical", "Woodworking"],
@@ -32,7 +32,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "HEPA Vacuums",
  tagline: "99.99% filtration for fine and hazardous dust",
  description:
- "Tested HEPA filtration keeps captured fines captured — for pharmaceutical powders, silica, allergens and any application where exhaust air quality is part of the requirement.",
+ "Tested HEPA filtration keeps captured fines captured — for pharmaceutical powders, silica, allergens and anywhere exhaust air quality is part of the spec.",
  image: "/images/products/hepa.jpg",
  alt: "PrestiVac EX1-15 HEPA industrial vacuum",
  industries: ["Pharmaceutical", "Food Processing", "Abatement", "Electronics"],
@@ -80,7 +80,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "ESD Static Free Vacuum Cleaners",
  tagline: "Static dissipating throughout",
  description:
- "Built with static dissipating components throughout — housings, filters, hoses and tools — so charge cannot accumulate where it matters. Specified where a discharge could ignite combustible dust, and where sensitive electronics must be protected from electrostatic damage.",
+ "Built with static dissipating components throughout — housings, filters, hoses and tools — so charge cannot accumulate where it matters.",
  image: "/images/products/explosion-proof.jpg",
  alt: "PrestiVac stainless steel ESD static free industrial vacuum cleaner",
  industries: ["Electronics", "Battery Manufacturing", "Semiconductor", "Aerospace", "Cleanrooms"],
@@ -96,7 +96,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "Cleanroom Vacuum Cleaners",
  tagline: "Judged by what leaves the exhaust",
  description:
- "Vacuum cleaners for controlled environments, where the machine must remove contamination without contributing any. Absolute filtration, smooth wipeable stainless surfaces and contained collection so a cleaning pass does not raise the particle count of the room.",
+ "Vacuum cleaners for controlled environments, where the machine must remove contamination without contributing any. Absolute filtration.",
  image: "/images/products/hepa.jpg",
  alt: "PrestiVac stainless steel cleanroom vacuum cleaner with absolute filtration",
  industries: ["Cleanrooms", "Semiconductor", "Medical Devices", "Biotech", "Electronics"],
@@ -112,7 +112,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "Pharmaceutical Vacuum Cleaners",
  tagline: "Containment and sanitation together",
  description:
- "Built for active ingredients, excipients and potent compounds, where exposure limits and sanitation requirements govern the specification. Absolute filtration retains the fine fraction, and stainless construction stands up to wash-down and changeover routines.",
+ "Built for active ingredients, excipients and potent compounds, where exposure limits and sanitation requirements govern the specification.",
  image: "/images/products/hepa.jpg",
  alt: "PrestiVac stainless steel pharmaceutical vacuum cleaner",
  industries: ["Pharmaceutical", "Biotech", "Medical Devices", "Cleanrooms", "Food & Beverage"],
@@ -144,7 +144,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "Central Vacuum Systems",
  tagline: "Facility-wide housekeeping from fixed drops",
  description:
- "A remote power unit and separator serving inlet drops across the plant through engineered piping. Operators clean at every station without moving equipment; material consolidates at one discharge point.",
+ "A remote power unit and separator serving inlet drops across the plant. Operators clean at every station without moving equipment, consolidating at one point.",
  image: "/images/products/central.jpg",
  alt: "PrestiVac EVX-15 EX HEPA vacuum system",
  industries: ["Food Processing", "Pharmaceutical", "Manufacturing"],
@@ -160,7 +160,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  name: "Custom Engineered Systems",
  tagline: "Designed around your exact application",
  description:
- "When the material, the process or the facility doesn't fit a standard configuration, we build the system that does — from specialty separators to complete recovery installations.",
+ "When the material, the process or the facility doesn't fit a standard configuration, we build the system that does.",
  image: "/images/products/custom.jpg",
  alt: "PrestiVac stainless steel industrial vacuum product family",
  industries: ["All industries"],

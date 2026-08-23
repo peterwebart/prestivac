@@ -17,7 +17,7 @@ export const metalworkingGuide: IndustryGuideData = {
  seo: {
  title: "Metalworking & Machining Vacuum Solutions",
  description:
- "Industrial vacuum solutions for machine shops and fabricators: explosion-proof wet/dry recovery for chips, fines and coolant across changing material mixes — built to NFPA 660 practice.",
+ "Industrial vacuum solutions for machine shops and fabricators: explosion-proof wet/dry recovery for chips, fines and coolant across changing material mixes.",
  },
  heroIntro:
  "A machine shop's hazard profile changes with its order book — aluminum this week, titanium the next, cast iron in between. Chips, fines and coolant arrive together at every spindle, and the recovery program has to be specified for the most demanding material that ever crosses the floor.",

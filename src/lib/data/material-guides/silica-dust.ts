@@ -9,7 +9,7 @@ export const silicaDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Silica Dust?",
  description:
- "Respirable crystalline silica causes the oldest documented occupational lung disease and carries its own OSHA standards with a 50 µg/m³ exposure limit. HEPA-retained recovery — the standards' own control family — for foundries, concrete work and stone fabrication.",
+ "Respirable crystalline silica causes the oldest documented occupational lung disease and carries its own OSHA standards with a 50 µg/m³ exposure limit.",
  },
  heroIntro:
  "Built for the dust behind the oldest occupational disease on record — an inert mineral with no explosion story at all, and a respirable fraction serious enough to carry its own federal standards, a numeric exposure limit, and the current century's most urgent fabrication-shop crisis.",

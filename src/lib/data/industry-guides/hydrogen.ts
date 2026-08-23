@@ -9,7 +9,7 @@ export const hydrogenGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Hydrogen &",
  description:
- "The energy-transition industry where the product itself is a Class I, Group B flammable gas — and building the equipment to make and use it involves fine catalyst, carbon and metal powders. In flammable-gas areas the conservative default is air-operated, zero-electrical recovery; the manufacturing dusts are captured HEPA-retained.",
+ "The energy-transition industry where the product itself is a Class I, Group B flammable gas — and building the equipment to make and use it involves fine catalyst.",
  },
  heroIntro:
  "The industry of the energy transition, where the product itself is the headline hazard — hydrogen is a Class I, Group B flammable gas with an exceptionally wide flammability range and very low ignition energy. Building the electrolyzers and fuel cells that make and use it involves fine catalyst, carbon and metal powders. In gas-classified areas the conservative default is air-operated recovery with no electrical parts at all.",

@@ -10,7 +10,7 @@ export const mixingBlendingGuide: ApplicationGuideData = {
  seo: {
  title: "Mixing & Blending Vacuum Solutions",
  description:
- "Industrial vacuum recovery for powder mixing and blending — dust captured at charging and discharge, grounded and rated for combustible powders, HEPA-retained and sealed for potent materials, with fast, dedicated changeover cleaning between batches.",
+ "Industrial vacuum recovery for powder mixing and blending — dust captured at charging and discharge, grounded and rated for combustible powders.",
  },
  tagline: "Every batch sheds the powder it's made from.",
  heroIntro:

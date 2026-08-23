@@ -9,7 +9,7 @@ export const eggPowderGuide: MaterialGuideData = {
  seo: {
   title: "Egg Powder — Combustible Dust Control",
   description:
-   "Dried egg powder is a fine protein dust with a significant salmonella and allergen dimension alongside its combustibility. How to recover it without redistributing it through the plant.",
+   "Dried egg powder is a fine protein dust with a significant salmonella and allergen dimension alongside its combustibility.",
  },
  heroIntro:
   "Built for a powder where the microbiological requirement is as demanding as the fire one. Dried egg is fine, light and protein-rich, and a cleaning method that lifts it into the air fails on two counts at once — it disperses combustible fuel and it distributes a pathogen risk across the room.",
@@ -46,27 +46,27 @@ export const eggPowderGuide: MaterialGuideData = {
  "Static in dry handling: dry powder through chutes and pneumatic lines accumulates charge, so a bonded conductive path matters throughout.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Retained-filtration recovery so a pathogen-associated powder leaves the building rather than being redistributed.",
+ "Dedicated equipment per line, because egg is a major allergen and shared tooling is a cross-contact route.",
+ "Explosion-proof construction across drying, milling and packing where the fine fraction is generated.",
+ "Warm-surface cleaning for yolk-bearing grades, whose fat content makes deposits adhere.",
+ "Grounded, bonded conductive flow path through dry handling and pneumatic transfer.",
+ "Sealed container removal, keeping the emptying step away from product-contact areas.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Treat cleaning as a food-safety control", detail: "Method matters more here than in most dust work: dispersal spreads a pathogen-associated allergen across the plant." },
+ { step: "Identify the grade", detail: "Yolk-bearing powders carry fat and adhere to warm surfaces; white powders behave differently." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for drying and powder handling areas." },
+ { step: "Specify filtration for retention", detail: "The requirement is what the unit keeps, not what it picks up. A passing filter defeats both objectives." },
+ { step: "Write segregation into the equipment plan", detail: "Allergen policy should drive whether units are shared, not be retrofitted afterwards." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Never sweep or blow down — with this material that is a contamination event, not just a dust one.",
+ "Keep dedicated units or accessory sets per product line.",
+ "Prioritise dryer, mill and packing enclosures over open floor.",
+ "Clean warm surfaces before yolk-bearing deposits set.",
+ "Verify the grounding path from tool to container as routine.",
+ "Empty into sealed disposal outside the production area.",
  ],
  faqs: [
  {

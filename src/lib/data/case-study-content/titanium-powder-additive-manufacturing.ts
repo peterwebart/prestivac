@@ -185,7 +185,7 @@ export const titaniumPowderAdditiveManufacturing: CaseStudy = {
  seo: {
  metaTitle: "Titanium Powder Recovery in Additive Manufacturing",
  metaDescription:
- "Representative case study: how a metal AM facility recovers reactive titanium powder and chamber condensate with air-operated explosion-proof vacuums and immersion separation under NFPA 660/484.",
+ "How a metal AM facility recovers reactive titanium powder and chamber condensate with air-operated vacuums and immersion separation.",
  keywords: [
  "titanium powder vacuum",
  "additive manufacturing powder recovery",

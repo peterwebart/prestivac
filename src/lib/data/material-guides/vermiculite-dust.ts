@@ -9,7 +9,7 @@ export const vermiculiteDustGuide: MaterialGuideData = {
  seo: {
  title: "Vermiculite Insulation & Asbestos Risk — Safe",
  description:
- "Vermiculite itself is a non-combustible mineral. The hazard is that much loose-fill vermiculite insulation is contaminated with asbestos. Why you should not disturb it, how it is tested, and where HEPA recovery fits in licensed abatement.",
+ "Vermiculite itself is a non-combustible mineral. The hazard is that much loose-fill vermiculite insulation is contaminated with asbestos.",
  },
  heroIntro:
  "The important thing about vermiculite is not what it is, but what may be mixed in with it. Vermiculite is an inert, non-combustible mineral — but a large share of the loose-fill vermiculite insulation installed across North America is contaminated with asbestos, and the correct first response to finding it is to leave it alone.",

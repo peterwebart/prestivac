@@ -10,7 +10,7 @@ export const weldingCleanupGuide: ApplicationGuideData = {
  seo: {
  title: "Welding & Fabrication Cleanup Vacuum Solutions",
  description:
- "Industrial vacuum recovery for welding and fabrication shops — grinding fines, cooled spatter and slag, and mixed metal dust collected without blow-down, with HEPA retention for exposure-limit dusts.",
+ "Industrial vacuum recovery for welding and fabrication shops — grinding fines, cooled spatter and slag, and mixed metal dust collected without blow-down.",
  },
  tagline: "The arc makes fume. The floor makes dust. Different systems.",
  heroIntro:

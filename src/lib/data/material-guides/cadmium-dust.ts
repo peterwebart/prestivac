@@ -9,7 +9,7 @@ export const cadmiumDustGuide: MaterialGuideData = {
  seo: {
  title: "Cadmium Dust & Fume — Toxicity, Exposure Control",
  description:
- "Cadmium is a carcinogenic heavy metal regulated under its own OSHA standard. Where cadmium dust and fume arise, why dry sweeping and compressed air are prohibited practice, and how HEPA vacuum recovery controls exposure.",
+ "Cadmium is a carcinogenic heavy metal regulated under its own OSHA standard. Where cadmium dust and fume arise.",
  },
  heroIntro:
  "Built for a metal whose hazard is overwhelmingly toxicological rather than explosive. Cadmium has its own OSHA substance standard, is classified as carcinogenic to humans, and damages kidneys and lungs at exposures far below what feels dusty — which makes how you clean it a regulated question, not a housekeeping preference.",

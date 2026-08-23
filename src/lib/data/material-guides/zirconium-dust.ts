@@ -9,7 +9,7 @@ export const zirconiumDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Zirconium Dust?",
  description:
- "Zirconium is among the most pyrophoric and ignition-sensitive metals there is — fine zirconium can ignite spontaneously in air and has an extremely low ignition energy, so fines are often kept wet during handling to reduce that risk. A burning zirconium fire is still Class D, where water is dangerous. Minimize dry accumulation; recover grounded and sealed.",
+ "Zirconium is among the most pyrophoric and ignition-sensitive metals there is — fine zirconium can ignite spontaneously in air and has an extremely low ignition energy.",
  },
  heroIntro:
  "Among the most ignition-sensitive metals there is — fine zirconium can ignite spontaneously in air and has one of the lowest ignition energies of any metal dust, so the tiniest spark or static discharge can set it off. That extreme sensitivity is why fine zirconium is often kept wet during handling to reduce the risk, and why dry accumulation is the thing to avoid. Recovery treats it as one of the most hazardous reactive metals.",

@@ -37,7 +37,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class I Division 1 Explained — Definition, Groups",
  description:
- "What Class I, Division 1 means: flammable gases or vapours present in ignitible concentrations under normal operating conditions. Groups A–D, temperature codes, and how it drives vacuum equipment selection.",
+ "What Class I, Division 1 means: flammable gases or vapours present in ignitible concentrations under normal operating conditions. Groups A–D.",
  },
  heroIntro:
  "Class I covers flammable gases, flammable liquid-produced vapours and combustible liquid-produced vapours. Division 1 is the more severe of the two divisions: the hazardous atmosphere is expected to be present during normal operation, not just when something fails.",
@@ -115,7 +115,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class I Division 2 Definition — What It Means &",
  description:
- "Class I, Division 2 explained: flammable gases or vapours handled in closed systems and present only under abnormal conditions. Definition, how it differs from Division 1, and what it means for vacuum equipment.",
+ "Class I, Division 2 explained: flammable gases or vapours handled in closed systems and present only under abnormal conditions. Definition.",
  },
  heroIntro:
  "Class I, Division 2 covers locations where flammable gas or vapour is handled, processed or stored, but is confined in closed containers or systems during normal operation — so an ignitible atmosphere appears only if that containment fails.",
@@ -187,7 +187,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class II Division 1 Explained — Combustible Dust",
  description:
- "Class II, Division 1 covers locations where combustible dust is in the air under normal operating conditions in ignitible quantities. Definition, Groups E, F and G, and what it means for dust-ignitionproof vacuum equipment.",
+ "Class II, Division 1 covers locations where combustible dust is in the air under normal operating conditions in ignitible quantities. Definition, Groups E.",
  },
  heroIntro:
  "Class II is the combustible-dust classification, and Division 1 is where the dust is airborne in ignitible quantities under normal operation — or where equipment failure could both produce that cloud and supply the ignition source. This is the classification most dust-handling plants are arguing about.",
@@ -266,7 +266,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class II Division 2 Explained — Definition & Dust",
  description:
- "Class II, Division 2 covers locations where combustible dust is not normally in suspension but accumulations are present. Definition, how it differs from Division 1, Group G considerations and equipment implications.",
+ "Class II, Division 2 covers locations where combustible dust is not normally in suspension but accumulations are present. Definition.",
  },
  heroIntro:
  "Class II, Division 2 applies where combustible dust is present but is not normally suspended in ignitible concentrations — dust accumulations exist, and abnormal operation could put enough of it into the air to matter.",
@@ -338,7 +338,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class 1 Div 1 vs Div 2 — Differences Explained",
  description:
- "Class I Division 1 vs Division 2 compared: when the flammable atmosphere is expected, what each classification assumes about failure, and how the difference changes equipment selection.",
+ "Class I Division 1 vs Division 2 compared: when the flammable atmosphere is expected, what each classification assumes about failure.",
  },
  heroIntro:
  "Both divisions describe areas where flammable gas or vapour is a factor. The difference is whether an ignitible atmosphere is expected during normal operation, or only when containment fails — and that single distinction drives everything downstream.",
@@ -438,7 +438,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class 2 Div 1 vs Div 2 — Combustible Dust",
  description:
- "Class II Division 1 vs Division 2 compared for combustible dust: airborne in normal operation versus accumulation with abnormal-condition clouds, plus Group E conductive dust and equipment implications.",
+ "Class II Division 1 vs Division 2 compared for combustible dust: airborne in normal operation versus accumulation with abnormal-condition clouds.",
  },
  heroIntro:
  "For combustible dust the division turns on whether an ignitible cloud is part of normal operation or only appears when something malfunctions. Accumulation matters in both — and with conductive metal dust the calculus shifts sharply toward Division 1.",
@@ -538,7 +538,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Class II Group E, F & G Dusts — Vacuum Cleaner",
  description:
- "Class II dust Groups explained: Group E combustible metal dust, Group F carbonaceous dust, Group G non-conductive dusts like flour and wood. What each group means for vacuum cleaner selection and certification.",
+ "Class II dust Groups explained: Group E combustible metal dust, Group F carbonaceous dust, Group G non-conductive dusts like flour and wood.",
  },
  heroIntro:
  "Class II locations are subdivided by the dust itself, because conductivity and combustion behaviour differ enormously between aluminium powder, coal dust and flour. Equipment is certified to specific Groups — which is why a general claim of dust suitability tells you very little.",
@@ -615,7 +615,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Intrinsically Safe Vacuums Explained",
  description:
- "Intrinsic safety is an energy-limiting protection concept for electrical circuits. What it means for industrial vacuums, why air-operated units answer the question differently, and which documents to request.",
+ "Intrinsic safety is an energy-limiting protection concept for electrical circuits. What it means for industrial vacuums.",
  },
  heroIntro:
  "Intrinsic safety is a specific, defined protection concept — not a general synonym for safe in a hazardous area. Understanding what it actually covers explains why air-operated vacuums are so often the answer when someone searches for an intrinsically safe one.",
@@ -694,7 +694,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "ATEX vs Class/Division — Hazardous Area Schemes",
  description:
- "ATEX Zones 20–22 versus North American Class II Divisions: how the two hazardous-area frameworks differ, why certifications are not interchangeable, and what documentation to request for your jurisdiction.",
+ "ATEX Zones 20–22 versus North American Class II Divisions: how the two hazardous-area frameworks differ, why certifications are not interchangeable.",
  },
  heroIntro:
  "Europe and North America classify hazardous areas differently, and equipment approved under one scheme is not automatically acceptable under the other. Knowing which framework governs your site is the first step, well before choosing a machine.",
@@ -765,7 +765,7 @@ const CLASSIFICATION_TOPICS: HazardousLocationTopic[] = [
  seo: {
  title: "Combustible Dust Classification — OSHA & NFPA 660",
  description:
- "How combustible dust is classified and regulated: why there is no single OSHA combustible dust standard, how the National Emphasis Program and General Duty Clause apply, and what NFPA 660 consolidated.",
+ "How combustible dust is classified and regulated: why there is no single OSHA standard, how the General Duty Clause applies, and what NFPA 660 consolidated.",
  },
  heroIntro:
  "One of the most common questions about dust safety has a surprising answer: there is no single comprehensive OSHA combustible dust standard. Understanding what does apply — and where NFPA sits in relation to it — is what makes a programme defensible.",

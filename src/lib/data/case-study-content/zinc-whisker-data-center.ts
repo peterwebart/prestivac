@@ -165,7 +165,7 @@ export const zincWhiskerDataCenter: CaseStudy = {
  seo: {
  metaTitle: "Data Center Zinc Whisker & Subfloor Dust Control",
  metaDescription:
- "A representative colocation facility manages conductive zinc whiskers and subfloor plenum dust where dust is measured in failures, not fires — capture at tile disturbance, plenum air-path hygiene, and HEPA recovery around a live load.",
+ "A representative colocation facility manages conductive zinc whiskers and subfloor plenum dust where dust is measured in failures, not fires.",
  keywords: [
  "zinc whiskers data center",
  "data center dust control",

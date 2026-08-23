@@ -9,7 +9,7 @@ export const metalAdditiveManufacturingPowderGuide: MaterialGuideData = {
  seo: {
   title: "Metal AM Powder — Group E Recovery",
   description:
-   "Metal additive manufacturing powders are conductive Group E dusts, frequently reactive, and valuable enough that recovery method affects reuse. Handled under NFPA 484 principles.",
+   "Metal additive manufacturing powders are conductive Group E dusts, frequently reactive, and valuable enough that recovery method affects reuse.",
  },
  heroIntro:
   "Built for metal 3D printing, where the powder is simultaneously a Group E conductive dust, a potentially pyrophoric reactive metal, and an expensive feedstock that the operation would prefer to reclaim rather than dispose of.",

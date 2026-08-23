@@ -185,7 +185,7 @@ export const woodDustFurnitureManufacturing: CaseStudy = {
  seo: {
  metaTitle: "Wood Dust Control in Furniture Manufacturing",
  metaDescription:
- "Representative case study: how a furniture plant controls fugitive combustible wood dust with explosion-proof HEPA vacuums, elevated-surface routines and hot-work coordination under NFPA 660/664.",
+ "Representative case study: how a furniture plant controls fugitive combustible wood dust with explosion-proof HEPA vacuums.",
  keywords: [
  "wood dust collection",
  "furniture plant combustible dust",

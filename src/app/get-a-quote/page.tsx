@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Check, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
@@ -9,7 +10,7 @@ import { subpageJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 const description =
-  "Get a quote on a PrestiVac explosion proof industrial vacuum cleaner. Tell us your material, classification and utilities and our technical team will recommend the right model.";
+  "Get a quote on a PrestiVac explosion proof industrial vacuum. Tell us your material and classification and our technical team will recommend the model.";
 
 export const metadata: Metadata = {
   title: "Get a Quote",
@@ -57,11 +58,15 @@ export default function GetAQuotePage() {
       <section className="bg-steel-50 py-10 lg:py-14">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
-            <QuoteForm
-              source="/get-a-quote"
-              tone="light"
-              heading="Tell us about your application"
-            />
+            {/* Suspense boundary: QuoteForm reads the ?product= context from the
+                URL, which requires one, and this keeps the route static. */}
+            <Suspense fallback={<div className="min-h-[560px] rounded-2xl bg-white shadow-card ring-1 ring-steel-200" />}>
+              <QuoteForm
+                source="/get-a-quote"
+                tone="light"
+                heading="Tell us about your application"
+              />
+            </Suspense>
 
             <aside className="space-y-5 lg:sticky lg:top-24">
               <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-steel-200">

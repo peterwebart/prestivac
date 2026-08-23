@@ -18,7 +18,7 @@ export const pharmaceuticalGuide: IndustryGuideData = {
  seo: {
  title: "Pharmaceutical Manufacturing Vacuum Solutions",
  description:
- "Industrial vacuum solutions for pharmaceutical manufacturing: HEPA-filtered, stainless, containment-oriented systems for API powders, lactose, excipients and cleanroom environments.",
+ "Industrial vacuum solutions for pharmaceutical manufacturing: HEPA-filtered, stainless, containment-oriented systems for API powders, lactose.",
  },
  heroIntro:
  "Sterile environments, potent powders, validated cleaning and combustible excipients — pharmaceutical housekeeping carries more simultaneous requirements than any other industry. The equipment has to satisfy all of them at once.",

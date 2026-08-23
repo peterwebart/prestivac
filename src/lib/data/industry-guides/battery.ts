@@ -17,7 +17,7 @@ export const batteryGuide: IndustryGuideData = {
  seo: {
  title: "Battery Manufacturing Vacuum Solutions",
  description:
- "Industrial vacuum solutions for battery manufacturing: explosion-proof HEPA recovery for combustible, conductive graphite and carbon dusts, exposure-limited cathode powders and dry-room assembly environments.",
+ "Industrial vacuum solutions for battery manufacturing: explosion-proof HEPA recovery for combustible, conductive graphite and carbon dusts.",
  },
  heroIntro:
  "Combustible carbon dusts that are also conductive, cathode powders governed by exposure limits, dry rooms that constrain every piece of equipment — and all of it running 24/7. Battery-plant housekeeping is a specification problem before it's a cleaning one.",

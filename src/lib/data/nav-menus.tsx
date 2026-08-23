@@ -2,7 +2,7 @@ import { GUIDE_ARTICLES } from "@/lib/data/guides";
 import { HAZARDOUS_LOCATION_TOPICS } from "@/lib/data/hazardous-locations";
 import { PRODUCT_CATEGORIES } from "@/lib/data/product-categories";
 import { INDUSTRY_DIRECTORY } from "@/lib/data/industries-directory";
-import { MATERIAL_GROUPS } from "@/lib/data/materials";
+import { FEATURED_MATERIALS, MATERIAL_GROUPS } from "@/lib/data/materials";
 import { RESOURCES } from "@/lib/data/resources";
 
 export type MenuLink = { label: string; href: string; description?: string };
@@ -384,98 +384,17 @@ export const NAV_MENUS: Record<string, NavMenu> = {
   Materials: {
     mega: true,
     sorted: true,
+    /**
+     * Derived from FEATURED_MATERIALS so every material guide appears here.
+     * Previously an 18-item hand-written list that fell behind as guides were
+     * added — 62 of 80 pages were missing from this menu.
+     */
     links: [
-      {
-        label: "Vermiculite",
-        href: "/materials/vermiculite-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Tea Dust",
-        href: "/materials/tea-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Calcium Dust",
-        href: "/materials/calcium-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Cadmium Dust",
-        href: "/materials/cadmium-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Beryllium Dust",
-        href: "/materials/beryllium-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Arsenic Dust",
-        href: "/materials/arsenic-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Brass & Bronze Dust",
-        href: "/materials/brass-bronze-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Malt Dust",
-        href: "/materials/malt-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Combustible Metal Dust",
-        href: "/materials/combustible-metal-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Starch Dust",
-        href: "/materials/starch-dust",
-        description: "Material guide",
-      },
-      {
-        label: "Aluminum Dust",
-        href: "/materials/aluminum-dust",
-        description: "Severity, standards and safe recovery",
-      },
-      {
-        label: "Titanium Dust",
-        href: "/materials/titanium-dust",
-        description: "Reactive metal — prevention by design",
-      },
-      {
-        label: "Graphite Dust",
-        href: "/materials/graphite-dust",
-        description: "Combustible and conductive at once",
-      },
-      {
-        label: "Wood Dust",
-        href: "/materials/wood-dust",
-        description: "The fugitive fraction is the gap",
-      },
-      {
-        label: "Carbon Black",
-        href: "/materials/carbon-black",
-        description: "The collected bulk is the hazard",
-      },
-      {
-        label: "Flour Dust",
-        href: "/materials/flour-dust",
-        description: "The archetypal combustible dust",
-      },
-      {
-        label: "Grain Dust",
-        href: "/materials/grain-dust",
-        description: "Schedule below the action level",
-      },
-      {
-        label: "Sugar Dust",
-        href: "/materials/sugar-dust",
-        description: "The 2008 lesson, engineered in",
-      },
-      ...MATERIAL_GROUPS.slice(0, 6).map((group) => ({
+      ...FEATURED_MATERIALS.map((material) => ({
+        label: material.name,
+        href: "/materials/" + material.slug,
+      })),
+      ...MATERIAL_GROUPS.map((group) => ({
         label: group.name,
         href: "/materials#" + group.slug,
       })),

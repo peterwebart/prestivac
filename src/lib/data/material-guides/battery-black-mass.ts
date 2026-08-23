@@ -9,7 +9,7 @@ export const batteryBlackMassGuide: MaterialGuideData = {
  seo: {
   title: "Battery Black Mass — Recycling Dust Control",
   description:
-   "Black mass from battery recycling is a conductive, metal-bearing, potentially reactive dust that can also retain residual charge. One of the most demanding recovery materials there is.",
+   "Black mass from battery recycling is a conductive, metal-bearing, potentially reactive dust that can also retain residual charge.",
  },
  heroIntro:
   "Built for battery recycling, where the recovered material combines almost every hazard in this directory at once. Black mass carries conductive metal content, carbonaceous graphite, potentially reactive lithium compounds, toxicity, and the possibility of residual stored energy.",

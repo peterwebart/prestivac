@@ -9,7 +9,7 @@ export const carbonFiberDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Carbon Fiber Dust?",
  description:
- "Carbon fiber machining dust is electrically conductive — it shorts electronics and electrical equipment the way most dusts never would — and it is a fine skin and respiratory irritant. Machining composites releases carbon fiber and resin together. Conductive-aware, HEPA-retained recovery, tested for the composite mix.",
+ "Carbon fiber machining dust is electrically conductive — it shorts electronics and electrical equipment the way most dusts never would.",
  },
  heroIntro:
  "The dust that shorts what other dusts leave alone — carbon fiber machining dust is electrically conductive, so it finds its way into electronics and electrical panels and causes shorts that ordinary dusts never would. It is also a fine skin and respiratory irritant, and because it comes from composites, it arrives mixed with resin dust. Recovery is conductive-aware and HEPA-retained, matched to the composite it comes from.",

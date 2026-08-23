@@ -9,7 +9,7 @@ export const onionPowderGuide: MaterialGuideData = {
  seo: {
   title: "Onion Powder — Combustible Dust Control",
   description:
-   "Dehydrated onion powder is a fine combustible organic dust with high sugar content that makes deposits sticky and hygroscopic. Where it accumulates and how to recover it without spreading it.",
+   "Dehydrated onion powder is a fine combustible organic dust with high sugar content that makes deposits sticky and hygroscopic.",
  },
  heroIntro:
   "Built for dehydration and milling lines handling a powder that is both hygroscopic and sugar-rich. Onion powder cakes readily, sticks to surfaces rather than shedding, and produces a fine fraction that travels well beyond the room where it was milled.",
@@ -46,27 +46,27 @@ export const onionPowderGuide: MaterialGuideData = {
  "Cross-contact control: strong aromatics carry into adjacent products, making redistribution a product-integrity problem.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery for a sugar-bearing powder whose deposits adhere rather than shed.",
+ "Contact tooling for tacky accumulation on warm equipment surfaces.",
+ "HEPA-filtered collection so the travelling fine fraction leaves the building.",
+ "Overhead recovery across the plant, since low bulk density carries fines well beyond milling.",
+ "Grounded, bonded conductive path through dehydration, milling and filling.",
+ "Dedicated tooling where aroma or colour carryover would affect adjacent products.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Identify the warm surfaces", detail: "Sugar content makes deposits tacky on warm equipment. Those layers grow steadily and resist brushing." },
+ { step: "Treat crusts as inventory", detail: "A caked deposit looks stable but breaks back into fines under vibration." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for dehydration and milling areas." },
+ { step: "Specify contact tooling", detail: "Tacky deposits need mechanical removal; a suction-only kit smears rather than clears." },
+ { step: "Extend the survey beyond the department", detail: "Low density carries fines into adjacent areas that are not on the cleaning schedule." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Remove tacky deposits before they build into layers that resist cleaning.",
+ "Include adjacent rooms in the survey, not just the milling area.",
+ "Never blow down — it relocates sticky fines into harder-to-reach places.",
+ "Keep dedicated tooling where cross-contact matters.",
+ "Check the grounding path across the full flow path.",
+ "Empty into sealed disposal rather than tipping in place.",
  ],
  faqs: [
  {

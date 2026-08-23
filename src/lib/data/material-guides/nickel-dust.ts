@@ -9,7 +9,7 @@ export const nickelDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Nickel Dust?",
  description:
- "Fine nickel is a combustible metal dust — but it is unusual in that its health hazard rivals its fire hazard. Nickel and many nickel compounds are recognized respiratory carcinogens, and nickel is a leading skin sensitizer, so exposure control weighs as heavily as deflagration control. HEPA-retained recovery serves both.",
+ "Fine nickel is a combustible metal dust — but it is unusual in that its health hazard rivals its fire hazard.",
  },
  heroIntro:
  "Built for the metal with two serious hazards at once — fine nickel is a combustible metal dust handled like any reactive metal, but it is also a recognized respiratory carcinogen and one of the most common skin sensitizers, so the exposure ledger weighs as heavily as the fire ledger. The fortunate part: the same HEPA-retained, grounded recovery that controls the combustion risk also controls the exposure.",

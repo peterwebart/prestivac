@@ -152,7 +152,7 @@ export const paperDustPackagingConverting: CaseStudy = {
   seo: {
     metaTitle: "Paper & Corrugated Dust Control in Packaging",
     metaDescription:
-      "How a corrugated converting plant controls combustible paper and starch adhesive dust with UL 1203 certified explosion proof vacuums and HEPA 99.99% filtration, replacing compressed-air blowdown.",
+      "How a corrugated converting plant controls combustible paper and starch adhesive dust with UL 1203 certified explosion proof vacuums and HEPA 99.99% filtration.",
     keywords: ["paper dust", "corrugated dust", "packaging plant housekeeping", "combustible dust vacuum", "explosion proof vacuum"],
   },
 };

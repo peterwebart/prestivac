@@ -10,7 +10,7 @@ export const cncMachiningGuide: ApplicationGuideData = {
  seo: {
  title: "CNC Machining Vacuum Solutions",
  description:
- "Explosion-proof industrial vacuums built to safely collect metal chips, combustible fine dust and coolant from CNC machining operations — grounded, filtered and built for continuous duty.",
+ "Explosion-proof industrial vacuums built to safely collect metal chips, combustible fine dust and coolant from CNC machining operations — grounded.",
  },
  tagline: "Clean. Safe. Productive.",
  heroIntro:

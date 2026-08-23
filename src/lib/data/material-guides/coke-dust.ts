@@ -9,7 +9,7 @@ export const cokeDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Coke Dust?",
  description:
- "Coke's low volatile content makes its dust less reactive than coal's — but less isn't none, and coke-oven emissions carry their own OSHA standard, 1910.1029. HEPA-retained explosion-safe recovery for batteries, screening stations and blast-furnace stockhouses.",
+ "Coke's low volatile content makes its dust less reactive than coal's — but less isn't none, and coke-oven emissions carry their own OSHA standard, 1910.1029.",
  },
  heroIntro:
  "Built for coal's high-temperature offspring — a dust less reactive than its parent but wrapped in some of the strictest exposure rules in heavy industry, handled where everything nearby is hot and the cooled-material rule does real work.",

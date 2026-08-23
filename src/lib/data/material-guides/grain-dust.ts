@@ -9,7 +9,7 @@ export const grainDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Grain Dust?",
  description:
- "Grain is the one dust family with its own OSHA standard — 1910.272 and its codified 1/8-inch action level in priority areas. Explosion-proof recovery for elevators, bins and feed mills: leg surrounds, reach-first bin cleaning, scheduled priority areas.",
+ "Grain is the one dust family with its own OSHA standard — 1910.272 and its codified 1/8-inch action level in priority areas.",
  },
  heroIntro:
  "Built for the industry that wrote the rules — grain handling is the one sector whose housekeeping carries its own OSHA standard, with a codified action level to schedule below rather than a judgment call to argue about. The program is built around the geography: legs, bins, pits and the priority areas the standard names.",

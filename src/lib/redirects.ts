@@ -106,7 +106,7 @@ const PRODUCTS: LegacyRedirect[] = [
   { source: "/portfolio/av-1015-ex-rct-cm-ex-air-containment-vacuums", destination: "/products/pneumatic-vacuums", permanent: true },
   { source: "/portfolio/av-1015-ex-rct-is-ex-air-immersion-separator-wet-mix-vacuum-cleaners", destination: "/products/pneumatic-vacuums", permanent: true },
   { source: "/portfolio/av-1015-hepa-air-operated-industrial-hepa-vacuums", destination: "/products/hepa-vacuums", permanent: true },
-  { source: "/portfolio/av-1015-mc-air-operated-mercury-collection-vacuums", destination: "/products/pneumatic-vacuums", permanent: true },
+  { source: "/portfolio/av-1015-mc-air-operated-mercury-collection-vacuums", destination: "/materials/mercury", permanent: true },
   { source: "/portfolio/av-10152025-ex-rct-cr-ex-air-cleanroom-vacuums", destination: "/products/cleanroom-vacuums", permanent: true },
   { source: "/portfolio/av1-1-ex-ttbp-cr-ex-air-cleanroom-vacuums", destination: "/products/cleanroom-vacuums", permanent: true },
   // Electric Division 2
@@ -114,7 +114,7 @@ const PRODUCTS: LegacyRedirect[] = [
   { source: "/portfolio/ev-1015-ex-div2-cr-division-2-cleanroom-vacuums", destination: "/products/cleanroom-vacuums", permanent: true },
   { source: "/portfolio/ev-1015-ex-div2-is-ds-ex-division-2-immersion-separator-wet-mix-dustless-sanding-vacuum", destination: "/products/explosion-proof-vacuums", permanent: true },
   { source: "/portfolio/ev-1015-ex-div2-rct-is-ds-ex-division-2-immersion-separator-wet-mix-dustless-sanding", destination: "/products/explosion-proof-vacuums", permanent: true },
-  { source: "/portfolio/ev-1015-mc-electric-mercury-collection-vacuums", destination: "/products/industrial-vacuums", permanent: true },
+  { source: "/portfolio/ev-1015-mc-electric-mercury-collection-vacuums", destination: "/materials/mercury", permanent: true },
   // Explosion proof Division 1
   { source: "/portfolio/ex-1015-ds-explosion-proof-dustless-sanding-vacuums", destination: "/products/explosion-proof-vacuums", permanent: true },
   { source: "/portfolio/ex-1015-explosion-proof-vacuums", destination: "/products/explosion-proof-vacuums", permanent: true },
@@ -127,7 +127,7 @@ const PRODUCTS: LegacyRedirect[] = [
   { source: "/product-category/explosion-proof-division-1-air-immersion-separator-wet-mix-dust-collector-sanding-kits", destination: "/products/explosion-proof-vacuums", permanent: true },
   { source: "/product-category/fuel-solvents-air-explosion-proof", destination: "/guides/flammable-liquid-recovery", permanent: true },
   { source: "/product-category/immersion-separator-wet-mix-dust-collector-sanding-kits-sanding-kits", destination: "/products/wet-dry-systems", permanent: true },
-  { source: "/product-category/mercury-air-explosion-proof", destination: "/products/pneumatic-vacuums", permanent: true },
+  { source: "/product-category/mercury-air-explosion-proof", destination: "/materials/mercury", permanent: true },
   { source: "/products-categories/air-operated-0", destination: "/products/pneumatic-vacuums", permanent: true },
   { source: "/products-categories/cleanroom-0", destination: "/products/cleanroom-vacuums", permanent: true },
   { source: "/products-categories/continuous-duty-0", destination: "/products/industrial-vacuums", permanent: true },

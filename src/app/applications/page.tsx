@@ -13,7 +13,7 @@ import { getCategory } from "@/lib/data/product-categories";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "Industrial vacuum solutions for every application — from CNC machining and additive manufacturing to pharmaceutical powder transfer, silo cleaning and combustible dust cleanup.";
+  "Industrial vacuum solutions for every application — from CNC machining and additive manufacturing to pharmaceutical powder transfer.";
 
 export const metadata: Metadata = {
   title: "Applications",

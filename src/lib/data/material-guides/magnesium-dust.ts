@@ -9,7 +9,7 @@ export const magnesiumDustGuide: MaterialGuideData = {
  seo: {
  title: "Magnesium Dust Vacuum Solutions",
  description:
- "Magnesium is among the most ignitable structural metals — Class D fire behavior, hydrogen evolution when wet. How its fines are safely collected under NFPA 484 / 660: air-operated vacuums, vented wet collection, verified grounding.",
+ "Magnesium is among the most ignitable structural metals — Class D fire behavior, hydrogen evolution when wet.",
  },
  heroIntro:
  "Built for the most ignition-sensitive of the common structural metals — where even the collected material keeps making demands: wetting controls ignition, hydrogen evolution demands venting, and nothing about magnesium tolerates improvisation.",

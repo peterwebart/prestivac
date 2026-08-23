@@ -245,6 +245,7 @@ export const INDUSTRY_DIRECTORY: IndustryEntry[] = [
  slug: "defense",
  name: "Defense & Explosives",
  icon: Shield,
+ href: "/industries/ammunition",
  segments: ["Ammunition plants", "Weapons manufacturing", "Military maintenance"],
  dusts: ["Energetic materials", "Metal powders"],
  },

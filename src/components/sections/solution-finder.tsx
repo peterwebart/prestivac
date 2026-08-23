@@ -127,11 +127,34 @@ export function SolutionFinder() {
                       <ul className="mt-3 flex flex-wrap gap-2">
                         {result.models.map((model) => (
                           <li key={model.slug}>
+                            {/*
+                              Each recommendation carries the figures that let a
+                              reader choose between them, and its certified scope
+                              — which is the deciding factor for metal dust,
+                              where Group E sits in the EX1 scope only.
+                            */}
                             <Link
                               href={"/products/models/" + model.slug}
-                              className="inline-flex items-center gap-1.5 rounded-lg bg-steel-100 px-3 py-1.5 text-[12.5px] font-semibold text-steel-700 transition-colors hover:text-brand-600"
+                              className="block rounded-xl bg-steel-100 px-4 py-3 transition-colors hover:bg-steel-200/70"
                             >
-                              {model.name}
+                              <span className="block text-[13px] font-bold text-steel-800">
+                                {model.name}
+                              </span>
+                              <span className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-[11.5px] text-steel-600">
+                                {model.tank ? <span>{model.tank}</span> : null}
+                                {model.airflow ? <span>{model.airflow}</span> : null}
+                              </span>
+                              <span
+                                className={
+                                  model.certifiedScope
+                                    ? "mt-1.5 block text-[11px] font-semibold text-brand-700"
+                                    : "mt-1.5 block text-[11px] text-steel-500"
+                                }
+                              >
+                                {model.certifiedScope
+                                  ? `UL 1203 — ${model.certifiedScope}`
+                                  : "Not within the UL 1203 listing"}
+                              </span>
                             </Link>
                           </li>
                         ))}

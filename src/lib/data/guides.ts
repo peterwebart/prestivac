@@ -2,7 +2,10 @@ import type { GuideArticle } from "@/components/templates/guide-article";
 
 import { UL1203_EQUIPMENT_NOTE } from "@/lib/data/certification";
 import { COMPARISON_GUIDES } from "@/lib/data/guides-comparison";
+import { GENERAL_SELECTION_GUIDES } from "@/lib/data/guides-general-selection";
+import { INDUSTRY_SELECTION_GUIDES } from "@/lib/data/guides-industry-selection";
 import { RECOVERED_GUIDES } from "@/lib/data/guides-recovered";
+import { SERVICE_GUIDES } from "@/lib/data/guides-service";
 import { SELECTION_GUIDES } from "@/lib/data/guides-selection";
 
 /**
@@ -27,7 +30,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "What Is Black Dust? Industrial Sources",
  description:
- "Black dust in a plant is usually carbon black, coal or coke, graphite, toner, iron oxide or rubber — each with different hazards. How to identify what you have and why the answer changes the cleanup method.",
+ "Black dust in a plant is usually carbon black, coal or coke, graphite, toner, iron oxide or rubber — each with different hazards.",
  },
  heroIntro:
  "Black dust is a description, not a material, and the materials it describes behave very differently. Some smoulder for days. One is electrically conductive. Several are combustible, one is essentially inert, and a couple carry exposure concerns that have nothing to do with fire. Identifying which you have is the first real step.",
@@ -105,6 +108,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "HEPA vs ULPA filtration", href: "/guides/hepa-vs-ulpa-filtration" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Carbon Black guide", href: "/materials/carbon-black" },
  { label: "Coal Dust guide", href: "/materials/coal-dust" },
@@ -184,6 +188,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "Wet vs dry recovery", href: "/guides/wet-vs-dry-recovery" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Powder coating guide", href: "/applications/powder-coating" },
  { label: "Combustible metal dust", href: "/materials/combustible-metal-dust" },
@@ -200,7 +205,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "Toxic Liquid Recovery — Chemical Spills, Coolant",
  description:
- "Recovering hazardous liquids is a compatibility problem before it is a suction problem. How chemistry, containment and disposal shape the specification for wet recovery.",
+ "Recovering hazardous liquids is a compatibility problem before it is a suction problem. How chemistry, containment and disposal shape the specification.",
  },
  heroIntro:
  "With liquids the usual questions invert. Suction is rarely the constraint; what the liquid does to the machine and to whoever empties it usually is. Specifying wet recovery for aggressive or toxic material starts with chemistry rather than performance.",
@@ -261,6 +266,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "Wet vs dry recovery", href: "/guides/wet-vs-dry-recovery" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Wet & dry systems", href: "/products/wet-dry-systems" },
  { label: "Spill cleanup guide", href: "/applications/spill-cleanup" },
@@ -277,7 +283,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "Industrial Vacuum vs Dust Collector — Which Do",
  description:
- "Dust collectors capture dust at the source; industrial vacuums remove what has already settled. How high-volume/low-vacuum differs from low-volume/high-vacuum, and why a complete dust programme needs both.",
+ "Dust collectors capture dust at the source; industrial vacuums remove what has already settled. How high-volume/low-vacuum differs from low-volume/high-vacuum.",
  },
  heroIntro:
  "These two machines get searched for interchangeably and they are not interchangeable. A dust collector stops dust reaching the room; an industrial vacuum removes the dust that got there anyway. Almost every serious dust programme needs both, and confusing them is how facilities end up with an expensive collection system and a broom.",
@@ -385,6 +391,8 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "Industrial vs shop vacuums", href: "/guides/industrial-vs-shop-vacuums" },
+ { label: "Portable vs central systems", href: "/guides/portable-vs-central-vacuum-systems" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Dust hazard analysis", href: "/guides/dust-hazard-analysis" },
  { label: "Combustible dust vacuums", href: "/combustible-dust" },
@@ -401,7 +409,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "Sources of Ignition for Combustible Dust",
  description:
- "Mechanical sparks, hot surfaces, static discharge, electrical arcs, hot work, self-heating and smouldering — the ignition sources that matter in dust handling, and how each is controlled.",
+ "Mechanical sparks, hot surfaces, static discharge, electrical arcs, hot work, self-heating and smouldering.",
  },
  heroIntro:
  "A dust cloud is not dangerous on its own. It becomes dangerous when it meets an ignition source, and the list of credible sources in a working plant is longer and more mundane than most people assume — which is exactly why removing the fuel remains the most reliable control.",
@@ -478,6 +486,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "Industrial vs shop vacuums", href: "/guides/industrial-vs-shop-vacuums" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Dust explosion basics", href: "/guides/dust-explosion-basics" },
  { label: "Dust hazard analysis", href: "/guides/dust-hazard-analysis" },
@@ -494,7 +503,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "How Dust Explosions Happen — Primary, Secondary &",
  description:
- "The five conditions a dust deflagration needs, why particle size changes everything, and why the secondary explosion — fed by accumulated dust — is what destroys buildings.",
+ "The five conditions a dust deflagration needs, why particle size changes everything, and why the secondary explosion — fed by accumulated dust.",
  },
  heroIntro:
  "Dust explosions are not mysterious. They need five specific conditions present together, and industrial processes routinely supply four of them. Understanding which condition you can actually control is what turns dust safety from anxiety into a programme.",
@@ -557,6 +566,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "The cost of a dust explosion", href: "/guides/cost-of-a-dust-explosion" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Sources of ignition", href: "/guides/sources-of-ignition" },
  { label: "Dust hazard analysis", href: "/guides/dust-hazard-analysis" },
@@ -573,7 +583,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "Dust Hazard Analysis (DHA) — What It Is and What",
  description:
- "The Dust Hazard Analysis is the centrepiece of NFPA's combustible dust requirements. What a DHA covers, who performs it, what it produces, and how housekeeping frequencies come out of it.",
+ "The Dust Hazard Analysis is the centrepiece of NFPA's combustible dust requirements. What a DHA covers, who performs it, what it produces.",
  },
  heroIntro:
  "The Dust Hazard Analysis is where a facility's dust situation becomes a written, defensible programme instead of an accumulation of habits. It is also the document that turns vague intentions about housekeeping into specific intervals for specific surfaces.",
@@ -643,6 +653,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "The cost of a dust explosion", href: "/guides/cost-of-a-dust-explosion" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Dust explosion basics", href: "/guides/dust-explosion-basics" },
  { label: "Hazardous location vacuums", href: "/hazardous-location-vacuums" },
@@ -659,7 +670,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  seo: {
  title: "ESD Safe vs Anti-Static Vacuums",
  description:
- "Anti-static construction prevents static discharge igniting dust; ESD-safe protects sensitive electronics from damage. Two different goals, and why knowing which you need changes the specification.",
+ "Anti-static construction prevents static discharge igniting dust; ESD-safe protects sensitive electronics from damage. Two different goals.",
  },
  heroIntro:
  "Anti-static and ESD-safe get used as synonyms and they answer different questions. One is about not igniting a dust cloud. The other is about not destroying a component worth more than the vacuum. Facilities that need both should say so, because the specification is not identical.",
@@ -722,6 +733,7 @@ export const EXPLAINER_GUIDES: GuideArticle[] = [
  },
  ],
  related: [
+ { label: "Explosion proof vs dust ignition proof", href: "/guides/explosion-proof-vs-dust-ignition-proof" },
  { label: "Explosion proof vacuums", href: "/products/explosion-proof-vacuums" },
  { label: "Sources of ignition", href: "/guides/sources-of-ignition" },
  { label: "Electronics deep dive", href: "/industries/electronics" },
@@ -740,7 +752,10 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   ...EXPLAINER_GUIDES,
   ...COMPARISON_GUIDES,
   ...SELECTION_GUIDES,
+  ...INDUSTRY_SELECTION_GUIDES,
+  ...GENERAL_SELECTION_GUIDES,
   ...RECOVERED_GUIDES,
+  ...SERVICE_GUIDES,
 ];
 
 export function getGuideArticle(slug: string) {

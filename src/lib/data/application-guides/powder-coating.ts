@@ -10,7 +10,7 @@ export const powderCoatingGuide: ApplicationGuideData = {
  seo: {
  title: "Powder Coating Vacuum Solutions",
  description:
- "Explosion-proof vacuum solutions for powder coating operations: combustible polymer coating powders recovered safely in an electrostatic environment — color change, booth cleanout and fugitive overspray under NFPA 33 / 660.",
+ "Explosion-proof vacuum solutions for powder coating operations: combustible polymer coating powders recovered safely in an electrostatic environment.",
  },
  tagline: "Grounded. Contained. Color-change ready.",
  heroIntro:

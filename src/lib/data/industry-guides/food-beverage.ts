@@ -17,7 +17,7 @@ export const foodBeverageGuide: IndustryGuideData = {
  seo: {
  title: "Food & Beverage Vacuum Solutions",
  description:
- "Industrial vacuum solutions for food and beverage manufacturing: explosion-proof, HEPA-filtered, sanitation-compatible recovery for flour, sugar, starch and ingredient dusts under NFPA 61 / 660.",
+ "Industrial vacuum solutions for food and beverage manufacturing: explosion-proof, HEPA-filtered, sanitation-compatible recovery for flour, sugar.",
  },
  heroIntro:
  "The ingredients are familiar; the dusts are not benign. Flour, sugar, starch and cocoa are classic combustible dusts — the material family behind the disaster that reshaped OSHA enforcement — and they're handled in plants where sanitation, allergen control and wet floors add rules of their own.",

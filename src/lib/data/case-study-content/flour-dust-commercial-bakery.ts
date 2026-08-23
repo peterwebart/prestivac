@@ -186,7 +186,7 @@ export const flourDustCommercialBakery: CaseStudy = {
  seo: {
  metaTitle: "Flour Dust Control in a Commercial Bakery",
  metaDescription:
- "Representative case study: how a high-volume bakery controls combustible flour dust with explosion-proof HEPA vacuums, wet/dry units and a DHA-aligned elevated-surface program under NFPA 660/61.",
+ "Representative case study: how a high-volume bakery controls combustible flour dust with explosion-proof HEPA vacuums.",
  keywords: [
  "flour dust explosion prevention",
  "bakery combustible dust",

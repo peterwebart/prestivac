@@ -10,7 +10,7 @@ export const dustCollectorCleaningGuide: ApplicationGuideData = {
  seo: {
  title: "Dust Collector Cleaning Vacuum Solutions",
  description:
- "The collector concentrates a facility's combustible dust by design — which makes servicing it the highest-stakes housekeeping task on site. Vacuum-supported filter changes, hopper pulldowns and sealed cake handling. Recovery supports collector service; it never substitutes for deflagration protection.",
+ "The collector concentrates a facility's combustible dust by design — which makes servicing it the highest-stakes housekeeping task on site.",
  },
  tagline: "The collector concentrates the hazard by design. Service it accordingly.",
  heroIntro:

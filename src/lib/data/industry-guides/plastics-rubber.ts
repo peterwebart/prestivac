@@ -9,7 +9,7 @@ export const plasticsRubberGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Plastics & Rubber",
  description:
- "Two combustible dusts sit side by side here — self-charging plastic dust from compounding, grinding and regrind, and carbon black from rubber and tire compounding, one of the most ignition-prone dusts of all. Both demand bonded, grounded, HEPA-retained recovery. Testing governs the plastic side; carbon black is treated as readily ignitable.",
+ "Two combustible dusts sit side by side here — self-charging plastic dust from compounding, grinding and regrind.",
  },
  heroIntro:
  "The industry where two combustible dusts sit side by side — self-charging plastic dust on the polymer side, and carbon black on the rubber side. Plastics processing sheds insulating polymer fines that build their own static ignition, while rubber and tire compounding handle carbon black, among the most readily ignitable dusts in industry. Both call for bonded, grounded, HEPA-retained recovery.",

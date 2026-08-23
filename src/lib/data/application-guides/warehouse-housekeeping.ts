@@ -10,7 +10,7 @@ export const warehouseHousekeepingGuide: ApplicationGuideData = {
  seo: {
  title: "Warehouse Housekeeping Vacuum Solutions",
  description:
- "Industrial vacuum programs for warehouses and distribution centers — rack tops and beams on long-reach rotation, continuous cardboard fly, dock and staging discipline, and OSHA's walking-surface and storage-area housekeeping obligations.",
+ "Industrial vacuum programs for warehouses and distribution centers — rack tops and beams on long-reach rotation, continuous cardboard fly.",
  },
  tagline: "A warehouse inherits its inventory's dust.",
  heroIntro:

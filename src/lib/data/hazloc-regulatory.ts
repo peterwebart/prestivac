@@ -28,7 +28,7 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "NFPA 70 / NEC Hazardous Area Classification",
       description:
-        "The National Electrical Code is where the Class, Division and Group system originates. How classification works, who assigns it, and why it comes before equipment selection.",
+        "The National Electrical Code is where the Class, Division and Group system originates. How classification works, who assigns it.",
     },
     heroIntro:
       "The National Electrical Code, published as NFPA 70, is where the North American hazardous location framework comes from. Every 'Class II, Division 1, Group E' designation traces back to it. Understanding that the classification is a property of your facility — not of any equipment — is the single most useful thing to take from it.",
@@ -87,6 +87,8 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "ATEX", href: "/hazardous-locations/atex" },
+      { label: "Explosion proof vs dust ignition proof", href: "/guides/explosion-proof-vs-dust-ignition-proof" },
       { label: "Class II, Division 1", href: "/hazardous-locations/class-ii-division-1" },
       { label: "Class II Groups E, F & G", href: "/hazardous-locations/class-ii-groups-e-f-g" },
       { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
@@ -102,7 +104,7 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "OSHA Combustible Dust Requirements Explained",
       description:
-        "There is no single OSHA combustible dust standard. How the General Duty Clause, the National Emphasis Program and existing standards combine into real enforceable obligations.",
+        "There is no single OSHA combustible dust standard. How the General Duty Clause, the National Emphasis Program and existing standards combine into obligations.",
     },
     heroIntro:
       "Facilities frequently ask which OSHA combustible dust standard applies to them, and the answer surprises people: there isn't one comprehensive standard. That does not mean there are no obligations. It means they arrive through a combination of routes, and the absence of a single document is a poor basis for assuming the hazard is unregulated.",
@@ -161,6 +163,8 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 654", href: "/hazardous-locations/nfpa-654" },
+      { label: "The cost of a dust explosion", href: "/guides/cost-of-a-dust-explosion" },
       { label: "Combustible dust classification", href: "/hazardous-locations/combustible-dust-classification" },
       { label: "Dust hazard analysis", href: "/guides/dust-hazard-analysis" },
       { label: "NFPA 660", href: "/hazardous-locations/nfpa-660" },
@@ -176,7 +180,7 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
     seo: {
       title: "ATEX Explained — Zones, Categories, Marking",
       description:
-        "ATEX governs equipment and workplaces where explosive atmospheres may occur in the EU. Zones, equipment categories, protection levels, and why ATEX and North American certification are not interchangeable.",
+        "ATEX governs equipment and workplaces where explosive atmospheres may occur in the EU. Zones, equipment categories, protection levels.",
     },
     heroIntro:
       "ATEX is the European framework covering explosive atmospheres. It addresses the same physical hazards as the North American system through a different structure — zones rather than divisions, equipment categories, and a marking scheme that encodes the equipment's intended application. Certification under one scheme is not certification under the other.",
@@ -238,6 +242,7 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 70 / NEC", href: "/hazardous-locations/nfpa-70-nec" },
       { label: "ATEX vs North American", href: "/hazardous-locations/atex-vs-north-american" },
       { label: "IECEx", href: "/hazardous-locations/iecex" },
       { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },
@@ -315,6 +320,7 @@ export const REGULATORY_TOPICS: HazardousLocationTopic[] = [
       },
     ],
     related: [
+      { label: "NFPA 70 / NEC", href: "/hazardous-locations/nfpa-70-nec" },
       { label: "ATEX", href: "/hazardous-locations/atex" },
       { label: "ATEX vs North American", href: "/hazardous-locations/atex-vs-north-american" },
       { label: "UL 1203 explained", href: "/hazardous-locations/ul-1203" },

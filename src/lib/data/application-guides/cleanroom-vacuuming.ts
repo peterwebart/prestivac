@@ -10,7 +10,7 @@ export const cleanroomVacuumingGuide: ApplicationGuideData = {
  seo: {
  title: "Cleanroom Vacuums — HEPA & ULPA Filtered",
  description:
- "Vacuuming inside a controlled environment without adding to the particle count. HEPA and ULPA filtration, non-shedding construction, ESD considerations and containment for pharmaceutical and semiconductor cleanrooms.",
+ "Vacuuming inside a controlled environment without adding to the particle count. HEPA and ULPA filtration, non-shedding construction.",
  },
  tagline: "Cleaning without adding particles",
  heroIntro:

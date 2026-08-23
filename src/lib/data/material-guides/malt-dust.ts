@@ -9,7 +9,7 @@ export const maltDustGuide: MaterialGuideData = {
  seo: {
  title: "Malt Dust — Combustibility, Respiratory Hazards &",
  description:
- "Malt dust is a combustible grain-derived dust with a respiratory dimension of its own. Where it accumulates in malting, brewing and distilling, and how explosion-proof vacuum recovery controls it.",
+ "Malt dust is a combustible grain-derived dust with a respiratory dimension of its own. Where it accumulates in malting, brewing and distilling.",
  },
  heroIntro:
  "Built for the dust that brewing and distilling generate at every transfer. Malt is grain, so it carries the grain dust explosion record with it - and malting adds a respiratory hazard of its own that ordinary grain handling does not.",

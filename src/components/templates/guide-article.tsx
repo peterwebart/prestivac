@@ -4,7 +4,8 @@ import Link from "next/link";
 
 import { FinalCta } from "@/components/sections/final-cta";
 import { Container } from "@/components/ui/container";
-import { subpageJsonLd } from "@/lib/schema";
+import { articleJsonLd, subpageJsonLd } from "@/lib/schema";
+import CONTENT_DATES from "@/lib/seo/content-dates.json";
 import { site } from "@/lib/site";
 
 export type GuideArticle = {
@@ -53,6 +54,13 @@ export function GuideArticlePage({ article }: { article: GuideArticle }) {
         path: `/guides/${article.slug}`,
         parents: [{ name: "Guides", path: "/guides" }],
       })["@graph"],
+      articleJsonLd({
+        path: `/guides/${article.slug}`,
+        headline: article.title,
+        description: article.seo.description,
+        dateModified: (CONTENT_DATES as Record<string, string>)[`/guides/${article.slug}`],
+        about: article.related.map((r) => r.label),
+      }),
       ...(article.faqs.length
         ? [
             {

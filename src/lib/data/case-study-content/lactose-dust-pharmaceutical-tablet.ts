@@ -184,7 +184,7 @@ export const lactoseDustPharmaceuticalTablet: CaseStudy = {
  seo: {
  metaTitle: "Combustible Excipient Dust in Tablet Manufacturing",
  metaDescription:
- "Representative case study: how a pharmaceutical CDMO controls combustible lactose and blend dust in compression suites with explosion-proof HEPA vacuums and a central system under NFPA 660.",
+ "How a pharmaceutical CDMO controls combustible lactose and blend dust in compression suites with explosion-proof HEPA vacuums and a central system.",
  keywords: [
  "pharmaceutical vacuum system",
  "lactose combustible dust",

@@ -9,7 +9,7 @@ export const energyGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Power Generation?",
  description:
- "Powering the grid means handling combustible fuel dust by the ton — pulverized coal and milled biomass are fine, highly explosive dusts, fuel-handling conveyors shed fugitive fuel everywhere, and fly ash adds a respirable, sometimes silica-bearing fraction. Rated recovery that supports the plant's deflagration and dust-collection systems.",
+ "Powering the grid means handling combustible fuel dust by the ton — pulverized coal and milled biomass are fine, highly explosive dusts.",
  },
  heroIntro:
  "The industry where powering the grid means handling combustible fuel dust by the ton — pulverized coal and milled biomass are among the finest and most explosive dusts in industry, fuel-handling conveyors shed fugitive fuel across the plant, and fly ash adds a respirable, sometimes silica-bearing fraction. Recovery here supports, never replaces, the plant's explosion-protection and dust-collection systems.",

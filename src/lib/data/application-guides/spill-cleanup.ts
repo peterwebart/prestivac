@@ -10,7 +10,7 @@ export const spillCleanupGuide: ApplicationGuideData = {
  seo: {
  title: "Spill Cleanup Vacuum Solutions",
  description:
- "Vacuum recovery for incidental spills — powder bag breaks that keep their material's rules, liquid leaks with slip and vapor management, and air-operated zero-electrical options for flammable areas. Emergencies belong to HAZWOPER, and the line is drawn before the spill.",
+ "Vacuum recovery for incidental spills — powder bag breaks that keep their material's rules, liquid leaks with slip and vapor management.",
  },
  tagline: "Incidental spills, handled. Emergencies belong to HAZWOPER.",
  heroIntro:

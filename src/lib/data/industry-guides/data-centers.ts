@@ -9,7 +9,7 @@ export const dataCentersGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Highly Sensitive",
  description:
- "In a data center, dust is measured in failures, not fires — zinc whiskers from raised-floor hardware, subfloor plenums that feed every server intake, and construction migration into rooms that cannot absorb it. HEPA recovery under live-load protocols.",
+ "In a data center, dust is measured in failures, not fires — zinc whiskers from raised-floor hardware, subfloor plenums that feed every server intake.",
  },
  heroIntro:
  "The facility where dust is measured in failures, not fires — conductive zinc whiskers shed by raised-floor hardware, a subfloor plenum that doubles as the supply duct for every server intake, and uptime commitments that mean cleaning happens around running equipment, never instead of it.",

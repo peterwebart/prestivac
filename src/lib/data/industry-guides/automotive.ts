@@ -17,7 +17,7 @@ export const automotiveGuide: IndustryGuideData = {
  seo: {
  title: "Automotive Manufacturing Vacuum Solutions",
  description:
- "Industrial vacuum solutions for automotive plants: explosion-proof recovery for aluminum and magnesium machining fines, chips-plus-coolant streams, powder coating areas and EV battery lines — built to NFPA 660 practice.",
+ "Industrial vacuum solutions for automotive plants: explosion-proof recovery for aluminum and magnesium machining fines, chips-plus-coolant streams.",
  },
  heroIntro:
  "An automotive plant runs half the combustible dust catalog under one roof: reactive metal fines off powertrain machining, chips swimming in coolant, charged powder in the paint shop, and — increasingly — conductive graphite on the EV line. The program is material segregation plus scheduled recovery, area by area.",

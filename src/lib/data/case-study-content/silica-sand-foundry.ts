@@ -165,7 +165,7 @@ export const silicaSandFoundry: CaseStudy = {
  seo: {
  metaTitle: "Foundry Silica & Reactive-Metal Dust Control",
  metaDescription:
- "A representative foundry runs two dust programs on one floor: respirable crystalline silica under OSHA 1910.1053 and reactive-metal fines under the combustible-metal framework. Shakeout, reclamation and dedicated aluminum-cell recovery.",
+ "A representative foundry runs two dust programs on one floor: respirable crystalline silica, and reactive-metal fines under the combustible-metal framework.",
  keywords: [
  "foundry silica dust",
  "respirable crystalline silica foundry",

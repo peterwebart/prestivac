@@ -116,9 +116,9 @@ export function CaseStudyExplorer({ index }: { index: CaseStudyIndexEntry[] }) {
                       {entry.material}
                     </span>
                   </span>
-                  <h3 className="mt-4 font-display text-[19px]/[1.3] font-extrabold text-white">
+                  <h2 className="mt-4 font-display text-[19px]/[1.3] font-extrabold text-white">
                     {entry.title}
-                  </h3>
+                  </h2>
                   <p className="mt-2 text-[13px]/[1.6] text-white/55">
                     {entry.subtitle}
                   </p>

@@ -9,7 +9,7 @@ export const teaDustGuide: MaterialGuideData = {
  seo: {
  title: "Tea Dust — Combustibility, Respiratory Hazards &",
  description:
- "Tea dust and fannings are a combustible organic dust with a documented respiratory dimension. Where they accumulate in blending, sifting and packing, and how explosion-proof HEPA recovery controls both hazards.",
+ "Tea dust and fannings are a combustible organic dust with a documented respiratory dimension. Where they accumulate in blending, sifting and packing.",
  },
  heroIntro:
  "Built for the fine fraction that every tea operation produces and few account for. Cutting, sorting, blending and packing all abrade leaf into dust and fannings — a light organic powder that suspends easily, and one with a respiratory record among tea workers as well as a combustible-dust classification.",

@@ -9,7 +9,7 @@ export const arsenicDustGuide: MaterialGuideData = {
  seo: {
  title: "Arsenic Metal & Dust — Toxicity, Regulation &",
  description:
- "Inorganic arsenic is a regulated human carcinogen with its own OSHA standard. Where arsenic dust arises in smelting, semiconductor and treated-wood work, and why HEPA vacuum recovery replaces dry cleaning.",
+ "Inorganic arsenic is a regulated human carcinogen with its own OSHA standard. Where arsenic dust arises in smelting, semiconductor and treated-wood work.",
  },
  heroIntro:
  "Built for a metalloid whose hazard is chemical, not combustible. Inorganic arsenic is a regulated human carcinogen with its own OSHA substance standard, and the practical consequence for a plant is that accumulation has to be removed by contained methods rather than swept, blown or hosed around.",

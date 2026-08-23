@@ -9,7 +9,7 @@ export const spiceDustGuide: MaterialGuideData = {
  seo: {
   title: "Spice Dust — Combustible Dust & Recovery",
   description:
-   "Ground spices are fine combustible organic dusts, and several carry volatile oils that add a flammable dimension. Where spice dust accumulates in grinding and blending, and how to control it.",
+   "Ground spices are fine combustible organic dusts, and several carry volatile oils that add a flammable dimension.",
  },
  heroIntro:
   "Built for grinding and blending rooms, where the finest fraction in the building is produced by design. Ground spice is light, aromatic and readily suspended, and several spices carry volatile oil content that adds a flammable vapour dimension on top of the dust one.",
@@ -46,27 +46,27 @@ export const spiceDustGuide: MaterialGuideData = {
  "Allergen and cross-contact control: spice blends carry allergen and product-integrity requirements, so redistribution is a quality failure too.",
  ],
  solutions: [
- "Explosion-proof vacuum recovery with a conductive, grounded and bonded path from hose tip to container.",
- "Air-operated units where compressed air is available and the classification favours a drive with no electrical components.",
- "HEPA filtration tested to 99.99% at 0.3 um so the respirable fraction is retained rather than returned to the room.",
- "Elimination of compressed-air blowdown, which converts settled fines directly into a suspended cloud.",
- "Defined-frequency recovery on high steel, equipment housings, conveyor runs and packing lines.",
- "One documented cleaning pass serving both the dust programme and sanitation records.",
+ "Explosion-proof recovery for grinding rooms, where the finest fraction in the plant is produced by design.",
+ "Assessment of enclosed mills for a flammable vapour component from oleoresin-rich materials.",
+ "Contact tooling for oil-bearing deposits that adhere to warm grinder housings.",
+ "HEPA-filtered collection so aromatics are removed rather than redistributed onto adjacent lines.",
+ "Dedicated units per product family where cross-contact would be a quality failure.",
+ "Grounded, bonded conductive path across milling, sifting and filling.",
  ],
  configuration: [
- { step: "Find where the fines are made", detail: "Milling, sifting, blending and transfer produce the finest fraction. Start the programme there rather than where the floor looks worst." },
- { step: "Confirm the classification", detail: "Your electrical or process engineer assigns the classification for handling areas, which determines which equipment is eligible." },
- { step: "Specify the conductive chain", detail: "Anti-static hose and conductive accessories bonded to the unit — the accessory chain is part of the grounding path, not an add-on." },
- { step: "Match filtration to the fraction", detail: "Fine food powders defeat general-purpose filtration. Retained HEPA keeps the respirable fraction out of the room." },
- { step: "Write frequencies into the DHA", detail: "A Dust Hazard Analysis turns the accumulation map into defined intervals and a record that the pass happened." },
+ { step: "Start at the mill", detail: "Grinding exists to reduce particle size, so the mill is by definition the largest source of respirable fines." },
+ { step: "Ask whether vapour is in play", detail: "Oleoresin-rich spices can contribute a flammable vapour component inside enclosed equipment — a Class I question, not Class II." },
+ { step: "Confirm the classification", detail: "Your engineer assigns the classification for grinding and blending areas." },
+ { step: "Specify for adherence", detail: "Oil-bearing fines stick to warm housings. Contact tooling belongs in the kit alongside suction." },
+ { step: "Plan segregation by product", detail: "Aroma carryover is a quality defect, so segregation policy shapes the equipment count." },
  ],
  bestPractices: [
- "Treat equipment enclosures as priority accumulation zones, not occasional deep-clean targets.",
- "Never blow down with compressed air; it creates precisely the suspended cloud the programme exists to prevent.",
- "Include high steel, duct tops and above suspended ceilings in the schedule — that is where secondary-event fuel sits.",
- "Ground and bond the whole recovery chain and inspect anti-static hoses as routine.",
- "Empty collection into sealed disposal away from ignition sources rather than tipping containers in place.",
- "Use the cleaning record for both sanitation and dust-programme documentation.",
+ "Clean mill and sifter housings before oil-bearing layers build.",
+ "Include overhead structure well beyond the grinding room — aromatic fines travel.",
+ "Never use compressed air near open product.",
+ "Keep dedicated tooling per product family.",
+ "Check the conductive path through the whole flow, not just at the machine.",
+ "Have the vapour question answered for enclosed mills rather than assumed.",
  ],
  faqs: [
  {

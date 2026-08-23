@@ -9,7 +9,7 @@ export const educationGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in School & University",
  description:
- "Campus dust hazards hide in plain sight — wood dust in shop classes, metal fines in machining and makerspaces, chemical and specialty dusts in research labs. One institution runs many small industrial environments, each with its own recovery rule.",
+ "Campus dust hazards hide in plain sight — wood dust in shop classes, metal fines in machining and makerspaces, chemical and specialty dusts in research labs.",
  },
  heroIntro:
  "The one 'facility' that is really a dozen small industrial environments under one roof — a woodshop that is a woodshop, a machine lab that is a machine lab, research labs that handle real chemistry — where the hazard is that nobody thinks of a campus as an industrial site until the dust says otherwise.",

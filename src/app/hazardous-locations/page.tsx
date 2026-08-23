@@ -9,7 +9,7 @@ import { HAZARDOUS_LOCATION_TOPICS } from "@/lib/data/hazardous-locations";
 import { subpageJsonLd } from "@/lib/schema";
 
 const description =
-  "Class I and Class II, Divisions 1 and 2, dust Groups E, F and G, temperature codes, intrinsic safety and ATEX — the hazardous-location framework explained, and what each part means when you specify vacuum recovery equipment.";
+  "Class I and Class II, Divisions 1 and 2, dust Groups E, F and G, temperature codes, intrinsic safety and ATEX — the hazardous-location framework explained.";
 
 export const metadata: Metadata = {
   title: "Hazardous Location Classification — Class I & II",
@@ -18,7 +18,13 @@ export const metadata: Metadata = {
   openGraph: { url: "/hazardous-locations", title: "Hazardous Locations", description },
 };
 
-const GROUPINGS: { heading: string; slugs: string[] }[] = [
+/**
+ * Curated groupings. Any topic NOT named here is picked up automatically by the
+ * catch-all below, so adding a topic to HAZARDOUS_LOCATION_TOPICS can never
+ * silently leave it unlinked from this index again — which is how the standards
+ * pages ended up orphaned.
+ */
+const CURATED: { heading: string; slugs: string[] }[] = [
   {
     heading: "Class II — combustible dust",
     slugs: [
@@ -26,6 +32,7 @@ const GROUPINGS: { heading: string; slugs: string[] }[] = [
       "class-ii-division-2",
       "class-ii-division-1-vs-division-2",
       "class-ii-groups-e-f-g",
+      "combustible-dust-classification",
     ],
   },
   {
@@ -33,9 +40,28 @@ const GROUPINGS: { heading: string; slugs: string[] }[] = [
     slugs: ["class-i-division-1", "class-i-division-2", "class-i-division-1-vs-division-2"],
   },
   {
-    heading: "Protection concepts & standards",
-    slugs: ["intrinsically-safe-vacuums", "atex-vs-north-american", "combustible-dust-classification"],
+    heading: "Equipment standards & certification",
+    slugs: ["ul-1203", "intrinsically-safe-vacuums", "nfpa-70-nec"],
   },
+  {
+    heading: "Combustible dust standards",
+    slugs: ["nfpa-660", "nfpa-652", "nfpa-654", "nfpa-484", "osha-combustible-dust"],
+  },
+  {
+    heading: "International schemes",
+    slugs: ["atex", "iecex", "atex-vs-north-american"],
+  },
+];
+
+const CURATED_SLUGS = new Set(CURATED.flatMap((group) => group.slugs));
+
+const UNGROUPED = HAZARDOUS_LOCATION_TOPICS.filter(
+  (topic) => !CURATED_SLUGS.has(topic.slug),
+).map((topic) => topic.slug);
+
+const GROUPINGS: { heading: string; slugs: string[] }[] = [
+  ...CURATED,
+  ...(UNGROUPED.length ? [{ heading: "More topics", slugs: UNGROUPED }] : []),
 ];
 
 export default function HazardousLocationsPage() {
@@ -123,9 +149,10 @@ export default function HazardousLocationsPage() {
           <p className="mt-12 max-w-3xl text-[12.5px]/[1.7] text-white/45">
             These pages are explanatory. They do not classify your facility, they do not replace the
             applicable code or your Dust Hazard Analysis, and they are not a substitute for advice
-            from your own engineer. PrestiVac explosion proof vacuum cleaners are UL 1203 certified. Documentation for
-            Compliance No.  covering the EX1 HEPA line — ask us for the documents that apply
-            to the configuration you are specifying.
+            Our listing is CSA Certificate 70122393, assessed against UL 1203 (5th Edition). It
+            carries two scopes: the EX1 HEPA line for Class I, Gp.&nbsp;D and Class II, Gps.&nbsp;E,
+            F and G at T3C; the EV EX HEPA line for Class II, Div.&nbsp;2, Gps.&nbsp;F and G only.
+            Ask us for the documents that apply
           </p>
         </Container>
       </section>

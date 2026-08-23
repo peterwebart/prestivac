@@ -9,7 +9,7 @@ export const electronicsGuide: IndustryGuideData = {
  seo: {
  title: "Electronics Dust & ESD Vacuum Recovery",
  description:
- "Electronics manufacturing hides two hazard classes behind a clean-looking fab: toxic and chemical exposures — arsenic, heavy metals, solder and etch residues — and combustible dusts most people never associate with chips, from silicon to the metal 3D-printed components feeding advanced packaging.",
+ "Electronics manufacturing hides two hazard classes behind a clean-looking fab: toxic and chemical exposures — arsenic, heavy metals, solder and etch residues.",
  },
  heroIntro:
  "The industry whose dust surprises people twice — the pristine fab hides a toxic-and-chemical exposure ledger, and the same 'high-tech, surely inert' assumption hides genuinely combustible dusts, from fine silicon to the reactive-metal powders now feeding advanced packaging.",

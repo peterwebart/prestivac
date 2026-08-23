@@ -9,7 +9,7 @@ export const sugarDustGuide: MaterialGuideData = {
  seo: {
  title: "How to Safely Recover Combustible Sugar Dust?",
  description:
- "Sugar dust reshaped modern combustible-dust enforcement after the 2008 Georgia refinery disaster. Explosion-proof HEPA recovery for conveying galleries, elevator legs and packaging mezzanines — dry-first methods for a material that melts, caramelizes and hardens.",
+ "Sugar dust reshaped modern combustible-dust enforcement after the 2008 Georgia refinery disaster. Explosion-proof HEPA recovery for conveying galleries.",
  },
  heroIntro:
  "Built for the dust that defined the modern enforcement era — the 2008 Georgia sugar refinery disaster put accumulated sugar dust at the center of national combustible-dust policy, and the finest powdered grades remain among the most ignition-sensitive organic dusts a food plant handles.",

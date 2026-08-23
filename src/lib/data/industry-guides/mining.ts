@@ -9,7 +9,7 @@ export const miningGuide: IndustryGuideData = {
  seo: {
  title: "How to Safely Recover Dust in Mining & Mineral",
  description:
- "The original dust industry — where dust is measured by the ton and the same fugitive cloud is both an explosion risk and, at the respirable scale, a slow-motion health catastrophe. Silica-bearing minerals, explosive coal and sulfides, and massive-tonnage handling, controlled at the source in processing facilities.",
+ "The original dust industry — where dust is measured by the ton and the same fugitive cloud is both an explosion risk and, at the respirable scale.",
  },
  heroIntro:
  "The industry that wrote the first chapters of occupational-dust regulation — where dust is measured by the ton and the same fugitive cloud is two hazards at once: an explosion risk in the case of coal and sulfides, and at the respirable scale a slow-motion health catastrophe. In crushing, screening, milling and bagging facilities, that dual hazard is managed where the dust is generated.",
