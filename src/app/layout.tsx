@@ -5,6 +5,7 @@ import Script from "next/script";
 import { FloatingSupport } from "@/components/layout/floating-support";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { RouteChangeTracker } from "@/components/analytics/route-change-tracker";
 import { MotionProvider } from "@/components/motion-provider";
 import { DEFAULT_LOCALE, pairedAlternates } from "@/lib/i18n";
 import { site } from "@/lib/site";
@@ -135,6 +136,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         >
           Skip to content
         </a>
+        {/* Route-change pageviews. GTM fires one pageview on container load and
+            never again, so client-side navigations — including the router.push
+            to /thank-you after a form submit — were invisible to GA4.
+            Renders nothing; see docs/ANALYTICS.md for the container config. */}
+        {GTM_ID && <RouteChangeTracker />}
         <MotionProvider>
           <Navbar />
           {/* Flex column so page heroes can fill the first viewport and the
