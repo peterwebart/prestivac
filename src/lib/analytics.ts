@@ -14,9 +14,10 @@
  *  - Google Ads: import both GA4 conversions, or add GTM triggers on the two
  *    event names.
  *  - The payload carries `source` (which page produced the lead), `reference`
- *    (PV-Q-YYYYMMDD-XXXX or PV-C-..., matching the customer's confirmation) and
- *    `delivery` ("webhook" or "mail_fallback") so you can tell from analytics
- *    whether delivery is actually working or quietly falling back.
+ *    (PV-Q-YYYYMMDD-XXXX or PV-C-..., matching the customer's confirmation
+ *    email exactly — see lib/reference.ts), `delivery`
+ *    ("webhook" or "mail_fallback") so you can tell from analytics whether
+ *    delivery is working or quietly falling back, and `form`.
  */
 
 type DataLayerEvent = Record<string, unknown> & { event: string };

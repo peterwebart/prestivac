@@ -122,13 +122,16 @@ export function RouteChangeTracker() {
     };
 
     // Normal path: fire as soon as the new route's metadata lands.
-    const titleEl = document.querySelector("title");
+    //
+    // Observes <head> rather than the <title> element, because Next.js may
+    // REPLACE the title node on navigation rather than mutate it. An observer
+    // bound to the old node would then be watching a detached element and
+    // never fire, leaving every pageview to the timeout backstop.
+    // scripts/test-route-tracker.mjs covers both cases.
     const observer = new MutationObserver(() => {
       if (document.title !== titleBefore) fire();
     });
-    if (titleEl) {
-      observer.observe(titleEl, { childList: true, characterData: true, subtree: true });
-    }
+    observer.observe(document.head, { childList: true, characterData: true, subtree: true });
 
     // Backstop: two routes sharing a title, or metadata that never mutates.
     const timeout = window.setTimeout(fire, TITLE_SETTLE_TIMEOUT_MS);

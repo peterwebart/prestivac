@@ -1,18 +1,25 @@
 # Analytics
 
-GA4 is loaded **through GTM**, not via a direct `gtag` snippet. The container is
-mounted in `src/app/layout.tsx` (`beforeInteractive` loader plus the `<noscript>`
-iframe as the first element in `<body>`).
+GA4 is loaded **through GTM**, via a **Google tag** (`GT-`/`G-`) configured
+inside container `GTM-KGJFZGS` — not a direct `gtag` snippet on the page, and
+not the older "GA4 Configuration" tag type. The container is mounted in
+`src/app/layout.tsx` (`beforeInteractive` loader plus the `<noscript>` iframe as
+the first element in `<body>`).
 
 Container ID comes from `NEXT_PUBLIC_GTM_ID`, falling back to `GTM-KGJFZGS`.
 
-> **Confirm the container ID belongs to this property.** `GTM-KGJFZGS` is
-> hardcoded as the fallback and cannot be verified from the codebase. PrestiVac
-> runs two properties, and pointing prestivac.com at the .ca container would
-> silently merge both sites' traffic into one GA4 property. Check in the GTM UI
-> that this container is the one linked to the prestivac.com GA4 stream, and if
-> it is not, set `NEXT_PUBLIC_GTM_ID` in Coolify rather than editing the
-> fallback.
+**Confirmed prestivac.com pairing:**
+
+| | |
+|---|---|
+| GTM container | `GTM-KGJFZGS` |
+| GA4 measurement ID | `G-H2642EBS2B` |
+
+PrestiVac runs two properties. The `.ca` domain has its own container and its
+own GA4 stream; pointing one at the other silently merges both sites into a
+single property, and the damage is retroactive in reporting. When cloning for
+`.ca`, set `NEXT_PUBLIC_GTM_ID` in Coolify rather than editing the fallback in
+`layout.tsx`.
 
 ---
 
@@ -78,6 +85,42 @@ before and after, zero dynamic route markers.**
 
 ---
 
+## Still not working? Find out which half is missing, in 30 seconds
+
+This fix has two halves and **both** are required. The code pushes an event;
+the container has to consume it. If thank-you pageviews are still missing,
+this tells you which half to look at.
+
+Submit a form on the **live site**, land on the thank-you page, then open
+DevTools → Console and run:
+
+```js
+dataLayer.filter(e => e.event === 'spa_pageview')
+```
+
+**Empty array** → the code half is not live. Either the deploy has not gone
+out, or `NEXT_PUBLIC_GTM_ID` is unset *and* the fallback was removed, which
+gates the component. Check the deployed bundle contains it:
+
+```js
+// should print the pageview fields
+dataLayer.filter(e => e.event === 'spa_pageview')[0]
+```
+
+**One object with the right `page_title`** → the code half is working. The
+missing piece is container-side: the trigger and GA4 Event tag below have not
+been created, so the event fires into the dataLayer and nothing consumes it.
+
+### Why GTM Preview can mislead you here
+
+GTM natively pushes `gtm.historyChange` on every SPA navigation, so **GTM
+Preview will show a History Change event whether or not this fix is deployed**.
+Seeing activity in the left panel does not mean pageviews are being recorded.
+What matters is whether a GA4 tag appears under *Tags Fired* — and before the
+container work below, it will not.
+
+---
+
 ## GTM container configuration
 
 The code alone does not fix this. Without the container work below, the event
@@ -116,15 +159,19 @@ component exists to avoid.
 
 ### 3. GA4 tag
 
-Leave the existing **Google Tag / GA4 Configuration** tag as it is, with
-"Send a page view event when this configuration loads" **ON**. That covers the
-entry page, which is why the component skips its first run.
+**Leave the existing Google tag alone.** Its default behaviour — sending a
+`page_view` when it loads — is what covers the entry page, and is exactly why
+the component skips its first run. Do not switch that off, or you will lose the
+landing pageview instead of gaining the rest.
 
-Then add a new tag:
+Then add a **new, separate** tag:
 
-- **Tag Type:** Google Analytics: GA4 Event
-- **Configuration:** your existing Google Tag / GA4 Config
-- **Event Name:** `page_view`
+- **Tag Type:** Google Analytics → **Google Analytics: GA4 Event**
+- **Measurement ID:** `G-H2642EBS2B` — the prestivac.com stream. In newer GTM
+  this field may offer *"Inherit from Google tag"*, which is fine and is the
+  safer choice, because it cannot drift from the Google tag if that is ever
+  repointed. If you type it manually, check it is not the `.ca` stream.
+- **Event Name:** `page_view` — typed literally, not selected from a dropdown
 - **Trigger:** `CE - spa_pageview`
 - **Event Parameters:**
 
