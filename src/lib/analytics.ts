@@ -55,3 +55,21 @@ export function trackContactSubmitted(args: {
 }): void {
   trackEvent("contact", { ...args, form: "contact" });
 }
+
+/**
+ * Marks a submission reference as already counted, so the thank-you page does
+ * not fire the same conversion a second time.
+ *
+ * Used by the mail-fallback paths, which push the event from the form because
+ * they do not navigate immediately. The webhook paths do not call this — they
+ * let the thank-you page own the event, because window.location.assign()
+ * unloads the document and would abort an in-flight beacon.
+ */
+export function markConversionTracked(reference: string): void {
+  try {
+    window.sessionStorage.setItem(`pv_conv:${reference}`, "1");
+  } catch {
+    // Storage unavailable. Worst case the thank-you page fires a duplicate,
+    // which is preferable to losing the conversion entirely.
+  }
+}

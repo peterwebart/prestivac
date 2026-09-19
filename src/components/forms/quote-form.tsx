@@ -1,12 +1,12 @@
 "use client";
 
 import { ArrowRight, Check, Loader2 } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 import { findModelBySlug } from "@/lib/data/product-models";
 import { useState } from "react";
 
-import { trackQuoteSubmitted } from "@/lib/analytics";
+import { markConversionTracked, trackQuoteSubmitted } from "@/lib/analytics";
 import { makeReference } from "@/lib/reference";
 import { site } from "@/lib/site";
 
@@ -124,7 +124,6 @@ export function QuoteForm({
           request: searchParams.get("request") === "datasheet" ? "datasheet" : undefined,
         }
       : undefined);
-  const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
   const [mailHref, setMailHref] = useState("");
   const [reference, setReference] = useState("");
@@ -153,12 +152,14 @@ export function QuoteForm({
         body: JSON.stringify(payload),
       });
       if (response.ok) {
-        trackQuoteSubmitted({
-          source,
-          reference: ref,
-          delivery: "webhook",
-        });
-        router.push(`${fr ? "/fr/merci" : "/thank-you/quote"}?ref=${encodeURIComponent(ref)}`);
+        /* Full document load so GTM's Page View trigger fires. The conversion
+           event is pushed by the thank-you page rather than here: assign()
+           unloads immediately and would abort the in-flight beacon. Context
+           travels in the URL. See components/analytics/conversion-tracker. */
+        const target = `${fr ? "/fr/merci" : "/thank-you/quote"}?ref=${encodeURIComponent(
+          ref,
+        )}&source=${encodeURIComponent(source)}&delivery=webhook`;
+        window.location.assign(target);
         return;
       }
       const lines = Object.entries(FIELD_LABELS).map(
@@ -170,6 +171,9 @@ export function QuoteForm({
           `Quote request ${ref} — ` + (payload.company || payload.name),
         )}&body=${encodeURIComponent(lines.join("\n"))}`,
       );
+      /* Safe to push here: this path does not navigate immediately. Marked so
+         the thank-you page skips it if the visitor later lands there. */
+      markConversionTracked(ref);
       trackQuoteSubmitted({
         source,
         reference: ref,
@@ -469,8 +473,8 @@ export function QuoteForm({
               // Reach the confirmation page on this path too, so the reference is
               // shown and the conversion page is consistent across both routes.
               window.setTimeout(() => {
-                router.push(
-                  `${fr ? "/fr/merci" : "/thank-you/quote"}?ref=${encodeURIComponent(reference)}`,
+                window.location.assign(
+                  `/thank-you/quote?ref=${encodeURIComponent(reference)}&delivery=mail_fallback`,
                 );
               }, 800);
             }}

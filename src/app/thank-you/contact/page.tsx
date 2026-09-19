@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Check, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
+import { ConversionTracker } from "@/components/analytics/conversion-tracker";
 import { Container } from "@/components/ui/container";
 import { site } from "@/lib/site";
 
@@ -14,12 +15,21 @@ export const metadata: Metadata = {
 export default async function ContactThankYouPage({
   searchParams,
 }: {
-  searchParams: Promise<{ ref?: string }>;
+  searchParams: Promise<{ ref?: string; source?: string; delivery?: string }>;
 }) {
-  const { ref } = await searchParams;
+  const { ref, source, delivery } = await searchParams;
 
   return (
     <section className="bg-graphite-950 pb-20 pt-28 lg:pt-32">
+      {/* Conversion fires here, on a real document load, rather than in the
+          form — window.location.assign() unloads immediately and would abort
+          an in-flight beacon. Deduped by reference against sessionStorage. */}
+      <ConversionTracker
+        event="contact"
+        reference={ref}
+        source={source}
+        delivery={delivery}
+      />
       <Container>
         <div className="mx-auto max-w-xl text-center">
           <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-brand-500/15 ring-1 ring-brand-500/30">

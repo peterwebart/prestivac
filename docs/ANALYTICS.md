@@ -85,6 +85,48 @@ before and after, zero dynamic route markers.**
 
 ---
 
+## Form redirects are full document loads
+
+Both forms navigate with `window.location.assign()`, not `router.push()`. The
+thank-you pages are therefore genuine document loads, and GTM's **Page View**
+trigger sees them — which is what the Page URL-based conversion setup needs.
+
+**The conversion event fires from the thank-you page, not the form.**
+`assign()` unloads the document immediately, and a dataLayer push made
+microseconds earlier is only a queued instruction: GTM's network request to GA4
+is asynchronous and can be aborted by the unload. Firing on the new document
+removes the race entirely.
+
+Context travels in the URL so nothing is lost:
+
+```
+/thank-you/quote?ref=PV-Q-20260919-K3F9&source=/get-a-quote&delivery=webhook
+```
+
+**Refresh safety.** The thank-you page writes `pv_conv:<reference>` to
+sessionStorage and will not fire twice for the same reference. This matters more
+now than it did: with a Page URL trigger, a visitor refreshing the thank-you
+page would otherwise count a second conversion for the same lead. The
+mail-fallback path writes the same key from the form, so the two cannot
+double-fire either.
+
+**This does not replace `spa_pageview`.** Only the form redirects became full
+loads. Every other navigation on the site is still client-side, so the
+route-change tracker is still required for the other 285 pages.
+
+### Conversion trigger options
+
+Either works now that the thank-you page is a real load:
+
+| Approach | Trigger | Note |
+|---|---|---|
+| Page URL | Page View, Page Path contains `/thank-you/` | What you use today. Simple, and now reliable. |
+| dataLayer event | Custom Event, `quote` or `contact` | Carries `reference`, `source` and `delivery`, so you can see whether webhook delivery is working. |
+
+Do not enable both for the same conversion, or every lead counts twice.
+
+---
+
 ## Still not working? Find out which half is missing, in 30 seconds
 
 This fix has two halves and **both** are required. The code pushes an event;

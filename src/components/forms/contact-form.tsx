@@ -1,11 +1,10 @@
 "use client";
 
 import { ArrowRight, Check, Mail } from "lucide-react";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { trackContactSubmitted } from "@/lib/analytics";
+import { markConversionTracked, trackContactSubmitted } from "@/lib/analytics";
 import { makeReference } from "@/lib/reference";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -27,7 +26,6 @@ const labelClass =
   "mb-1.5 block text-[11px] font-bold uppercase tracking-[0.12em] text-white/55";
 
 export function ContactForm({ source = "contact" }: { source?: string }) {
-  const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
   const [reference, setReference] = useState("");
   const [mailHref, setMailHref] = useState("");
@@ -84,18 +82,26 @@ export function ContactForm({ source = "contact" }: { source?: string }) {
       });
 
       if (response.ok) {
-        trackContactSubmitted({ source, reference: ref, delivery: "webhook" });
-        router.push(`/thank-you/contact?ref=${encodeURIComponent(ref)}`);
+        /* Full document load so GTM's Page View trigger fires. Conversion is
+           pushed by the thank-you page — assign() unloads immediately and
+           would abort the in-flight beacon. Context travels in the URL. */
+        window.location.assign(
+          `/thank-you/contact?ref=${encodeURIComponent(ref)}&source=${encodeURIComponent(
+            source,
+          )}&delivery=webhook`,
+        );
         return;
       }
 
       // Not configured, or the endpoint failed — hand the visitor a pre-filled
       // draft rather than losing the enquiry.
       setMailHref(buildMailHref(ref));
+      markConversionTracked(ref);
       trackContactSubmitted({ source, reference: ref, delivery: "mail_fallback" });
       setStatus("fallback");
     } catch {
       setMailHref(buildMailHref(ref));
+      markConversionTracked(ref);
       trackContactSubmitted({ source, reference: ref, delivery: "mail_fallback" });
       setStatus("fallback");
     }
@@ -124,7 +130,9 @@ export function ContactForm({ source = "contact" }: { source?: string }) {
           href={mailHref}
           onClick={() => {
             window.setTimeout(() => {
-              router.push(`/thank-you/contact?ref=${encodeURIComponent(reference)}`);
+              window.location.assign(
+                `/thank-you/contact?ref=${encodeURIComponent(reference)}&delivery=mail_fallback`,
+              );
             }, 800);
           }}
           className="mt-4 inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-[12.5px] font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-brand-500"
